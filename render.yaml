@@ -22,13 +22,11 @@ services:
         value: utf-8
       - key: PYTHONUNBUFFERED
         value: "1"
-      # CORS — muss die Frontend-URL enthalten. Render erlaubt
-      # gegenseitige Referenzen zwischen Services:
+      # CORS — Wildcard für Demo. Sicher, weil allow_credentials=False.
+      # Falls du's enger willst: hier den Frontend-Hostnamen eintragen,
+      # z.B. "https://leistungsjungle-frontend.onrender.com"
       - key: CORS_ORIGINS
-        fromService:
-          type: web
-          name: leistungsjungle-frontend
-          property: host
+        value: "*"
       # API-Keys → manuell im Dashboard nachtragen (Render Secret)
       - key: OPENAI_API_KEY
         sync: false
