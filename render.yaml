@@ -42,12 +42,13 @@ services:
     staticPublishPath: ./frontend/dist
     pullRequestPreviewsEnabled: true
     envVars:
-      # Frontend ruft Backend-URL auf — wird automatisch verlinkt
+      # Frontend ruft Backend-URL auf. fromService:host klappt bei Render's
+      # Static-Site-Builds nicht zuverlässig zur Build-Time → manuell setzen:
+      # Im Dashboard → Frontend-Service → Environment:
+      #   VITE_API_URL = https://leistungsjungle-backend.onrender.com
+      # (Wert von der Backend-Service-URL, ohne trailing /)
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: leistungsjungle-backend
-          property: host
+        sync: false
     routes:
       # SPA — alle Pfade auf index.html
       - type: rewrite

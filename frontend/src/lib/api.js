@@ -1,6 +1,18 @@
 // Minimal fetch-Wrapper für das FastAPI-Backend.
 
-export const API_BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
+// Render's fromService.host gibt nur den Hostname zurück, ohne Protocol-Prefix.
+// Wir prependen https:// defensiv damit fetch() nicht abkackt.
+function normalizeApiUrl(raw) {
+  const fallback = 'http://localhost:8000';
+  if (!raw) return fallback;
+  const trimmed = String(raw).trim().replace(/\/+$/, '');
+  if (!trimmed) return fallback;
+  if (/^https?:\/\//.test(trimmed)) return trimmed;
+  // Hostname-only → in Production immer HTTPS
+  return `https://${trimmed}`;
+}
+
+export const API_BASE = normalizeApiUrl(import.meta.env.VITE_API_URL);
 
 /** Macht aus „/logos/foo.svg" eine absolute URL aufs Backend. */
 export function backendUrl(path) {
