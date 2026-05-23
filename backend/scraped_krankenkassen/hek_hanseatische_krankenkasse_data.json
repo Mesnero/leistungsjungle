@@ -1,0 +1,578 @@
+{
+    "krankenkasse": {
+        "name": "HEK - Hanseatische Krankenkasse",
+        "slug": "hek_hanseatische_krankenkasse",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/254/Satzung%20in%20der%20Fassung%20des%20115.%20Nachtrages.pdf",
+        "satzung_stand": "05.01.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die HEK bezuschusst verhaltensbezogene Präventionskurse in den Handlungsfeldern Bewegung, Ernährung, Stress- und Ressourcenmanagement sowie Suchtmittelkonsum. Für publizierte Online-Angebote und bestimmte HEK-Vertragsmaßnahmen erfolgt eine vollständige Kostenerstattung; zusätzlich kann bei wohnortfernen Kompaktangeboten ein täglicher Zuschuss gewährt werden.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach § 20 SGB V / Leitfaden Prävention; bei Online-Angeboten und HEK-Verträgen abweichend volle Kostenerstattung."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und Malariaprophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die HEK übernimmt die Kosten für alle Schutzimpfungen mit in Deutschland zugelassenen Impfstoffen sowie für die Prophylaxe gegen Malaria, soweit keine Leistungspflicht nach dem SGB V besteht. Die Impfstoff- und Medikamentenkosten werden abzüglich gesetzlicher Zuzahlung in voller Höhe übernommen; die Impfleistung wird bis zur Höhe der Sachleistung erstattet.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach ärztlicher Indikation / einmal je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte zur Verhütung von Krankheiten; keine anderweitige Leistungspflicht nach § 20i SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei medizinisch erforderlichen ambulanten Vorsorgeleistungen in anerkannten Kurorten übernimmt die HEK die Kosten der Leistung. Zu den übrigen Kosten wird ein pauschaler Zuschuss gezahlt; bei Kompaktkuren und bei chronisch kranken Kleinkindern gelten besondere tägliche Zuschüsse.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Pro Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahme mindestens 14 Tage; bei Kompaktkur 16 EUR täglich, bei chronisch kranken Kleinkindern 25 EUR täglich."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeuntersuchungen bei Risikofaktoren",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die HEK erstattet bestimmte ärztlich durchgeführte oder veranlasste Vorsorgeuntersuchungen bei vorhandenen Risikofaktoren, darunter Brustkrebsfrüherkennung, Gesundheitsuntersuchung und Darmkrebsfrüherkennung. Erstattet werden 70 % bis zu einem jährlichen Höchstbetrag.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 100 Euro jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vorliegenden Risikofaktoren; spezifizierte Rechnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Kinder- und Jugendvorsorge U10, U11 und J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für die Kinderuntersuchungen U10 und U11 sowie die Jugendgesundheitsuntersuchung J2 erstattet die HEK die Kosten in Höhe der Vertragssätze, wenn die jeweils genannten Entwicklungs-, Verhaltens- oder Gesundheitsrisiken vorliegen.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur bei den genannten Indikationen; spezifizierte Rechnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsbezogene Vorsorgeuntersuchungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die HEK beteiligt sich an den Kosten bestimmter zusätzlicher Vorsorgeuntersuchungen in der Schwangerschaft, etwa Toxoplasmose-, Ringelröteln-, Windpocken-, Streptokokken- und Zytomegalie-Tests, sofern keine Leistung nach den Mutterschafts-Richtlinien besteht.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft und Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei schwangeren Frauen mit möglichen Risikofaktoren oder Gefährdung des ungeborenen Kindes; ärztlich durchgeführt."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsbezogene Arzneimittel",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die HEK erstattet nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit den Wirkstoffen Folsäure, Jod, Eisen und Magnesium, wenn sie ärztlich auf Privatrezept verordnet und wegen der Schwangerschaft medizinisch notwendig sind.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Arztverordnung auf Privatrezept; Bezug über Apotheke oder zulässigen Versandhandel."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vor Aufnahme einer sportlichen Betätigung beteiligt sich die HEK an den Kosten für eine sportmedizinische Untersuchung und Beratung, wenn diese zur Verhütung oder Vermeidung einer Verschlimmerung kardialer oder orthopädischer Erkrankungen geeignet und notwendig ist. Bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen mit umfasst sein.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Einmal innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzweiterbildung Sportmedizin."
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Begleitperson",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die HEK erstattet die Kosten für eine Begleitperson anlässlich eines gemeinsamen Geburtsvorbereitungskurses, wenn der Kurs durch eine zugelassene oder berechtigte Hebamme bzw. einen Entbindungspfleger durchgeführt wird.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; spezifizierte Rechnung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Hebammen-Rufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die HEK erstattet die Kosten der Hebammen-Rufbereitschaft ab der 37. Schwangerschaftswoche, sofern die Hebamme zugelassen oder berechtigt ist und die Versicherte bei der HEK versichert ist.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab der 37. Schwangerschaftswoche."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung in der Schwangerschaft",
+            "kategorie": "Zahn",
+            "beschreibung": "Während einer Schwangerschaft erstattet die HEK einmalig die Kosten für eine professionelle Zahnreinigung, wenn sie von einem zugelassenen oder berechtigten Leistungserbringer durchgeführt wird.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzlich zu den Leistungen nach § 28 Abs. 2 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsleibbinde",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die HEK übernimmt die Mehrkosten für eine Schwangerschaftsleibbinde, soweit das Hilfsmittel im Hilfsmittelverzeichnis gelistet oder von den dort genannten Produktgruppen erfasst ist und ärztlich verordnet wurde.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; ärztliche Verordnung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die gesetzliche Kostenbeteiligung hinaus gewährt die HEK bei IVF oder ICSI einen zusätzlichen Zuschuss je Versuch, begrenzt auf drei Versuche.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Versuche"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für das Ehepaar bei Durchführung einer IVF oder ICSI."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Leistungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Die HEK erstattet bestimmte zusätzliche zahnärztliche und kieferorthopädische Leistungen, darunter Vollnarkose bei Weisheitszahnentfernung, Fissuren-Versiegelung und festsitzende Retainer. Für Versicherte ab 16 Jahren gibt es zusätzlich einen Zuschuss zur professionellen Zahnreinigung.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Je Leistung bzw. jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für kieferorthopädische Leistungen muss die Behandlung vor Vollendung des 18. Lebensjahres begonnen haben."
+                },
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Professionelle Zahnreinigung nur, wenn hierfür nicht bereits ein Bonus nach § 25a gezahlt wurde."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige Arzneimittel der Homöopathie, Phytotherapie und Anthroposophie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die HEK erstattet apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Phytotherapie und Anthroposophie, wenn sie ärztlich verordnet wurden und nicht vom Gemeinsamen Bundesausschuss ausgeschlossen sind.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Je Arzneimittelgruppe jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maximal 100 Euro je Arzneimittelgruppe und Jahr."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die HEK erstattet ärztlich verordnete osteopathische Leistungen, wenn sie medizinisch notwendig sind und durch qualifizierte Leistungserbringer erbracht werden. Erstattet werden bis zu drei Sitzungen pro Jahr.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Sitzungen jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Notwendigkeit; spezifizierte Rechnungen und Verordnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Anthroposophische Heilmittel",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die HEK erstattet ärztlich verordnete anthroposophische Heilmittel wie Heileurythmie, Kunsttherapie und Rhythmische Massage, sofern die Behandlung medizinisch notwendig ist und qualifizierte Leistungserbringer eingesetzt werden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maximal 100 Euro jährlich."
+                }
+            ]
+        },
+        {
+            "name": "Weitere Heilmittel im Rahmen von Naturheilverfahren",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die HEK erstattet ärztlich verordnete weitere Heilmittel im Rahmen von Naturheilverfahren, darunter Ayurveda, Feldenkrais, Shiatsu und Traditionelle chinesische Medizin. Voraussetzung ist eine qualifizierte Leistungserbringung durch berechtigte Ärzte oder Physiotherapeuten.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maximal 100 Euro jährlich."
+                }
+            ]
+        },
+        {
+            "name": "Sportbrille",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die HEK beteiligt sich an den Kosten für medizinisch notwendige Sportbrillen für Versicherte ab 18 Jahren, wenn die Sehbeeinträchtigung die in der Satzung genannten Voraussetzungen erfüllt und die Brille fachgerecht bezogen wurde.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei schwerer Sehbeeinträchtigung bzw. entsprechendem Fernkorrekturausgleich; augenärztliche Verordnung oder Augenglasbestimmung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Digitales Gesundheitskonto",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die HEK erstattet digitale Versorgungsprodukte für Heilmittel, Hilfsmittel und bestimmte digitale Gesundheitsanwendungen, sofern sie im HEK-Verzeichnis gelistet, ärztlich verordnet und vorab genehmigt wurden. Für Heilmittel und Hilfsmittel werden die Kosten anteilig erstattet; die Genehmigung gilt für sechs Monate.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 250 Euro jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Produkt muss im HEK-Verzeichnis stehen; Antrag vor Inanspruchnahme mit ärztlicher Verordnung und ICD-Diagnose; Genehmigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen von nicht zugelassenen Leistungserbringern",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die HEK ermöglicht ambulante medizinische Leistungen durch nicht zugelassene Leistungserbringer, wenn eine entsprechende Vereinbarung besteht oder im Anschluss an eine stationäre Behandlung durch denselben Chefarzt bzw. leitenden Arzt. Auch operative Eingriffe in nicht zugelassenen Krankenhäusern können unter engen Voraussetzungen übernommen werden.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Vereinbarung / Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Notwendigkeit und vertraglicher Vereinbarung bzw. vorheriger Zustimmung der HEK."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die HEK fördert die Kompetenz der Versicherten im selbstbestimmten gesundheitsorientierten Einsatz digitaler oder telemedizinischer Anwendungen und Verfahren. Die Förderung erfolgt als Schulungsmaßnahme.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der Schulungsangebote"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung als Sachleistung in Form von Schulungsmaßnahmen."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "HEK-Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können am HEK-Bonusprogramm teilnehmen und für definierte Vorsorge- und Gesundheitsmaßnahmen einen Bonus erhalten. Der Bonus kann als Geldbetrag oder als Zuschuss zu ausgewählten Leistungen aus dem Katalog der Satzung verwendet werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Bonusmaßnahmen und Auszahlungslogik sind in den §§ 25a bis 25c sowie der Anlage zu §§ 25a und b geregelt."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Vorsorgebonus",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifiziert werden u. a. Früherkennungs- und Vorsorgeleistungen, Mutterschaftsleistungen, Schutzimpfungen sowie eine selbst finanzierte professionelle Zahnreinigung. Kinderfrüherkennungsuntersuchungen U1 bis U5 und Mutterschaftsvorsorge werden nur einmalig bonifiziert.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonus nach § 65a SGB V; bei professioneller Zahnreinigung ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsbonus",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert werden Aktivmaßnahmen wie Sportverein, Fitnessstudio, Betriebssport, Hochschulsport, Sportveranstaltungen, Präventionskurse, Sport- oder Schwimmabzeichen und Schwimmkurse sowie Passivmaßnahmen wie altersentsprechender BMI, Normwerte oder Nichtraucherstatus. Die Höhe hängt von Alter und Anzahl der Aktivmaßnahmen ab.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 36,
+                "waehrung": "EUR",
+                "turnus": "Jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonus nach § 65a Abs. 1a SGB V; Nachweis einer Passivmaßnahme erforderlich, außer unter 6 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Bonus für Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Arbeitgeber und Versicherte können für die erfolgreiche Teilnahme an mit der HEK vereinbarten Programmen der betrieblichen Gesundheitsförderung einen Bonus erhalten. Für Versicherte ist eine individuelle verhaltensbezogene Maßnahme mit mindestens 80 Prozent Teilnahme erforderlich.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Vertragslaufzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte nur bei Arbeitgebervereinbarung zur betrieblichen Gesundheitsförderung."
+                }
+            ]
+        }
+    ]
+}

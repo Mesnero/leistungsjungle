@@ -1,0 +1,43 @@
+/* Übernommen 1:1 aus dem Wellness-App.html <style>-Block */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #EFEFEF;
+  font-family: -apple-system, system-ui, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+#root {
+  display: flex;
+}
+
+/* Phone-Viewport: kein „Handy-im-Handy"-Look — Body komplett auf
+   die App umstellen, App selbst rendert sich fullscreen. */
+@media (max-width: 599px) {
+  body {
+    padding: 0;
+    background: #fff;
+    display: block;
+  }
+  #root {
+    display: block;
+  }
+}
+
+/* Scrollbars überall ausblenden — Scrollen via Wheel/Touchpad/Touch bleibt aktiv. */
+* {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE / Legacy Edge */
+}
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;                /* Chrome / Safari / neue Edge */
+}

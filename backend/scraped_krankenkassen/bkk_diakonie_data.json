@@ -1,0 +1,504 @@
+{
+    "krankenkasse": {
+        "name": "BKK Diakonie",
+        "slug": "bkk_diakonie",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/29/Satzung%20vom%2001%2001%2010%20inkl.%2059-62,%2064.pdf",
+        "satzung_stand": "01.01.2024"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Geburtsvorbereitungskurs für den Partner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die gesetzlichen Leistungen hinaus werden die Kosten für einen Geburtsvorbereitungskurs für den Partner übernommen, wenn beide Elternteile bei der BKK Diakonie versichert sind und der Kurs von einer anerkannten Hebamme oder einer nach § 13 Abs. 4 SGB V berechtigten Leistungserbringerin erbracht wird.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Beide Elternteile müssen bei der BKK Diakonie versichert sein."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die BKK Diakonie erstattet die Kosten für professionell durchgeführte Zahnreinigungen bei zugelassenen oder nach § 13 Abs. 4 SGB V berechtigten Zahnärzten. Erstattet werden bis zu zwei Behandlungen pro Jahr.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorlage der detaillierten Rechnung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Hebammen-Rufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Versicherte erhalten eine Erstattung für die Rufbereitschaft einer freiberuflich tätigen Hebamme in der 38. bis 42. Schwangerschaftswoche, sofern die Hebamme zugelassen oder berechtigt ist. Die Rufbereitschaft muss eine 24-stündige Erreichbarkeit und sofortige Bereitschaft zur Geburtshilfe umfassen.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Inanspruchnahme von Hebammenhilfe; keine Erstattung für eine weitere Hebamme."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzliche Vorsorgeleistungen über die Regelversorgung hinaus werden für verschiedene ärztlich durchgeführte Untersuchungen bei Vorliegen von Risikofaktoren erstattet, darunter Hautkrebsvorsorge, Glaukom-Vorsorge, Mammographie, Mamma-Sonographie, Check-up vor 35, Knochendichtemessung, sportmedizinische Vorsorge und Toxoplasmosetest.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Leistung, teils 1x pro Jahr oder nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Vorliegen der jeweils genannten Risikofaktoren und soweit kein Anspruch in der Regelversorgung besteht; einzelne Teilleistungen haben zusätzliche Alters- oder Geschlechtsvoraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Osteopathische Behandlungen werden bei ärztlicher Verordnung übernommen, wenn sie medizinisch geeignet sind und die Leistungserbringer die fachlichen Voraussetzungen erfüllen. Die Erstattung ist auf vier Sitzungen pro Jahr begrenzt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 4 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich; Leistungserbringer muss qualifiziert sein."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der Homöopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die BKK Diakonie übernimmt ärztlich verordnete, nicht verschreibungspflichtige apothekenpflichtige homöopathische Arzneimittel, sofern sie medizinisch notwendig sind und die weiteren satzungsrechtlichen Voraussetzungen erfüllt sind.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Verordnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Verordnung durch Vertragsarzt oder berechtigten Arzt mit Zusatzqualifikation Homöopathie auf Privatrezept; Bezug aus Apotheke oder zulässigem Versandhandel."
+                }
+            ]
+        },
+        {
+            "name": "Sportbrille",
+            "kategorie": "Sehhilfe",
+            "beschreibung": "Für Versicherte bis zur Vollendung des 18. Lebensjahres werden medizinisch notwendige Sportbrillen als zusätzliche Sehhilfe erstattet. Voraussetzung ist eine augenärztliche Verordnung oder eine entsprechende Bestimmung durch den Optiker.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "1x alle 3 Kalenderjahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für medizinisch notwendige Sportbrillen; Bezug im Optikfachgeschäft oder zulässigem Versandhandel."
+                }
+            ]
+        },
+        {
+            "name": "Kopforthesenversorgung",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Säuglinge im Alter von 4 bis 15 Monaten werden die Kosten für eine Versorgung mittels Kopforthese übernommen, wenn dies medizinisch erforderlich ist, um den Behandlungserfolg zu sichern. Die Versorgung muss fachgerecht verordnet und durchgeführt werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Einmal je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Gilt ab dem 4. bis zum vollendeten 15. Lebensmonat; medizinische Indikation erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Anästhesie (Vollnarkose) bei Weisheitszahnentfernung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die Kosten für eine Vollnarkose bei der chirurgischen Entfernung von Weisheitszähnen werden zusätzlich zur Regelversorgung erstattet, wenn die Leistung zahnärztlich erbracht wird und nicht bereits von der G-BA-Richtlinie umfasst ist.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Maximal 100 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei chirurgischer Entfernung von Weisheitszähnen; Abrechnung nach GOÄ."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen in anerkannten Kurorten zahlt die BKK Diakonie einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei chronisch kranken Kleinkindern beträgt der Zuschuss 21 EUR täglich."
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung Orthopädie",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können zusätzlich zur gesetzlichen Zweitmeinung eine unabhängige ärztliche Zweitmeinung zu planbaren ambulanten und stationären orthopädischen Eingriffen erhalten. Die Kosten werden vollständig übernommen.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Eingriff"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei gesicherter Diagnose aus den ICD-Bereichen M00 bis M25 sowie M40 bis M54."
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung durch medizinische Tastuntersucherinnen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Über die Regelversorgung hinaus werden die Kosten für eine Brustkrebsuntersuchung durch qualifizierte blinde oder sehbehinderte medizinische Tastuntersucherinnen im Einzelfall erstattet. Voraussetzung ist eine ärztlich bestätigte familiäre oder medizinische Vorbelastung.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 49.5,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Untersuchung muss von einer Frauenärztin/einem Frauenarzt veranlasst werden."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können durch den Nachweis bestimmter Vorsorge-, Impf- und Präventionsmaßnahmen einen jährlichen Geldbonus erhalten. Die Maßnahmen werden im Bonusheft oder digital nachgewiesen; die Auszahlung erfolgt als einmaliger Geldbonus.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Die Höhe des Bonus richtet sich nach der Anlage zu § 13d; jede nachgewiesene Maßnahme wird mit 10 EUR vergütet, maximal 50 EUR pro Jahr."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheitsuntersuchungen und Früherkennungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis von Gesundheitsuntersuchungen und organisierten Früherkennungsprogrammen als Bonusmaßnahme.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Kinder und Jugendliche bis 18 Jahre; bei Erwachsenen ebenfalls bonusfähig nach § 65a Abs. 1 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Kontrolluntersuchungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Regelmäßige zahnärztliche Kontrolluntersuchungen sind als Bonusmaßnahme anerkannt.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusheft erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Schutzimpfungen nach den satzungsrechtlichen Bonusregeln werden bonifiziert.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusheft erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Qualitätsgesicherte Leistungen zur primären Prävention werden als Bonusmaßnahme anerkannt.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Maßnahme nach § 20 Abs. 5 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Sportliche Aktivitäten",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßige Teilnahme an qualitätsgesicherten sportlichen Aktivitäten wie Lauftreff, Nordic Walking, Fitnessstudio, Sportverein, Betriebs- oder Hochschulsport sowie Sportabzeichen und organisierte Touren wird bonifiziert.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte sportliche Aktivität; Nachweis erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Maßnahmen zur Erhöhung der gesundheitlichen Kompetenz",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Vorträge und Workshops zur Stressbewältigung, Ernährung, Suchtmittelkonsum und gesundheitsförderlicher Bewegung werden als Bonusmaßnahme anerkannt.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Maßnahme mit Zuordnung zu einem Präventionshandlungsfeld."
+                }
+            ]
+        },
+        {
+            "name": "Body Mass Index im Normbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ein im Normbereich liegender Body Mass Index kann als Gesundheitswert für den Bonus nachgewiesen werden.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis durch Arzt erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Nichtraucherstatus seit mindestens 6 Monaten",
+            "kategorie": "Prävention",
+            "beschreibung": "Ein seit mindestens sechs Monaten bestehender Nichtraucherstatus ist als Bonusmaßnahme anerkannt.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis durch Arzt erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Qualifizierte Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Qualifizierte Rückbildungsgymnastik durch eine qualifizierte Hebamme kann im Bonusprogramm berücksichtigt werden.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis durch qualifizierte Hebamme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an qualitätsgesicherten Maßnahmen der betrieblichen Gesundheitsförderung wird mit einem Geldbonus berücksichtigt.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahmebestätigung und Nachweis über mindestens 80 % der Kurseinheiten erforderlich."
+                }
+            ]
+        }
+    ]
+}

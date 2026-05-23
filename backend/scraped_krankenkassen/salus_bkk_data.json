@@ -1,0 +1,1406 @@
+{
+    "krankenkasse": {
+        "name": "Salus BKK",
+        "slug": "salus_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/220/Salus_BKK_Satzung_60_Nachtrag.pdf",
+        "satzung_stand": "22.12.2023"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege (zusätzliche Grundpflege und hauswirtschaftliche Versorgung)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der medizinisch notwendigen Behandlungspflege wird im Einzelfall auch zusätzliche Grundpflege und hauswirtschaftliche Versorgung erbracht, wenn keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere Person im Haushalt den Kranken ausreichend versorgen kann. Die Leistung ist zeitlich und vom Umfang her begrenzt.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 1 Stunde je Pflegeeinsatz, maximal 25 Einsätze je Kalendermonat; höchstens 8 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit mit mindestens Pflegegrad 2; keine andere im Haushalt lebende Person kann ausreichend pflegen und versorgen."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Bei akuter schwerer Krankheit wird Haushaltshilfe gewährt, wenn die Weiterführung des Haushalts ärztlich bescheinigt nicht möglich ist und keine andere Person im Haushalt den Haushalt weiterführen kann. Die Leistung kann als Ersatzkraft oder als Erstattung einer selbstbeschafften Ersatzkraft erbracht werden.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Längstens 13 Wochen; bei Kind im Haushalt unter 14 Jahren oder behindertem Kind bis zu 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit mit Pflegegrad 2, 3, 4 oder 5; akute schwere Krankheit; ärztliche Bescheinigung."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld auf Basis des entgangenen Arbeitsentgelts gezahlt. Die Leistung ist an die Tage gekoppelt, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage, an denen gearbeitet worden wäre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mitglied mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in bestimmten Leistungsbereichen. Die Erstattung ist auf die Höhe der sonst von der Kasse zu tragenden Kosten begrenzt und wird um Verwaltungskostenabschläge gekürzt.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Nach Inanspruchnahme; mindestens ein Kalendervierteljahr Bindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Information an die Kasse; Bindung mindestens ein Kalendervierteljahr; ggf. vorherige Zustimmung bei nicht im SGB V genannten Leistungserbringern."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können auch andere als die von der Kasse bevorzugten Arzneimittel wählen und erhalten dafür Kostenerstattung nach den Satzungsregeln. Die Erstattung ist begrenzt und es werden Abschläge für entgangene Vertragsrabatte und höhere Kosten vorgenommen.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Erstattungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorlage spezifizierter Rechnungen und Verordnungen; Wahl eines nicht rabattierten bzw. nicht preisgünstigsten Arzneimittels."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse fördert Präventionskurse in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Eigene Leistungen werden ohne Kostenbeteiligung erbracht; bei Fremdanbietern gibt es Zuschüsse nach den Satzungsregeln.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätskriterien des GKV-Leitfadens Prävention; Teilnahmebescheinigung und Nachweis über mindestens 80 % der Kurseinheiten."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Kasse übernimmt über den gesetzlichen Anspruch hinaus bestimmte Impfungen, darunter Grippe, HPV, Hepatitis A/B und FSME sowie Reiseimpfungen und Nachholimpfungen für Jugendliche. Die Leistung wird grundsätzlich als Sachleistung oder als Kostenerstattung erbracht.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Impfserie bzw. Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilweise altersbezogene Voraussetzungen, z. B. HPV für 18- bis 26-Jährige und Nachholimpfungen bis zum vollendeten 18. Lebensjahr."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen zahlt die Kasse einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder ist der Zuschuss höher.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Abs. 2 SGB V; für chronisch kranke Kleinkinder erhöhter Zuschuss."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Osteopathische Leistungen können bei ärztlicher Verordnung in Anspruch genommen werden, wenn die Behandlung medizinisch geeignet ist und von qualifizierten Leistungserbringern durchgeführt wird. Die Kasse erstattet je nach Alter bis zu sechs Sitzungen pro Kalenderjahr.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 6 Sitzungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 12,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung; qualifizierter Osteopath; maximal 6 Sitzungen pro Kalenderjahr."
+                },
+                {
+                    "alter_min": 13,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung; qualifizierter Osteopath; maximal 6 Sitzungen pro Kalenderjahr."
+                }
+            ]
+        },
+        {
+            "name": "Nicht zugelassene Leistungserbringer – stationäre Behandlung",
+            "kategorie": "Reha",
+            "beschreibung": "Die Kasse übernimmt Kosten für stationäre Leistungen in nicht zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze, wenn die medizinischen und formalen Voraussetzungen erfüllt sind. Erforderlich sind unter anderem ärztliche Bescheinigung, gleichwertige Versorgung und vorherige Zustimmung der Kasse.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Krankenhausbehandlungsbedürftigkeit, gleichwertige Versorgung, kein Ausschluss durch den G-BA, Kostenvoranschlag und vorherige Zustimmung."
+                }
+            ]
+        },
+        {
+            "name": "Tumorprognosetest (uPA-PAI-1) bei Brustkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Für Risikopatientinnen oder bei konkretem individuellem Untersuchungsansatz wird ein Zuschuss zu einem Tumorprognosetest bei Brustkrebs gewährt. Die Erstattung ist einmalig und an die Vorlage der Rechnung gebunden.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 350,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikopatientinnen oder konkreter individueller Untersuchungsansatz, z. B. positive Familienanamnese."
+                }
+            ]
+        },
+        {
+            "name": "Sensomotorische Einlagen",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die Kasse erstattet sensomotorische Einlagen bei medizinischer Notwendigkeit und entsprechender ärztlicher Verordnung. Die Leistung ist auf einen Jahresbetrag begrenzt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 78,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Verordnung durch Vertragsarzt oder berechtigten Leistungserbringer; medizinische Notwendigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Kinderuntersuchungen U10, U11 und Jugenduntersuchung J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Kasse erstattet die Kosten für die zusätzlichen Kinder- und Jugenduntersuchungen U10, U11 und J2 vollständig. Voraussetzung ist, dass die jeweilige Untersuchung medizinisch angezeigt ist und noch keine Erkrankung vorliegt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erkrankung liegt noch nicht vor; Schwächung der Gesundheit bzw. Gefährdung der gesundheitlichen Entwicklung."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Familie",
+            "beschreibung": "Bei IVF oder ICSI wird zusätzlich zum gesetzlichen Anspruch ein Zuschuss für bis zu drei Behandlungsversuche pro Ehepaar gewährt. Die Leistung ist an die tatsächlichen Kosten und die spezifizierte Rechnung gebunden.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Behandlungsversuche pro Ehepaar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch nach § 27a SGB V; Durchführung einer IVF oder ICSI."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung",
+            "kategorie": "Prävention",
+            "beschreibung": "Vor Aufnahme sportlicher Betätigung beteiligt sich die Kasse an den Kosten für eine sportmedizinische Untersuchung und Beratung, wenn medizinische Notwendigkeit und Risikofaktoren vorliegen. Zusätzliche diagnostische Leistungen können bei besonderen Risiken ebenfalls einbezogen sein.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung; Leistung durch Arzt mit Zusatzweiterbildung Sportmedizin; Risikofaktoren vorhanden."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Versicherte unter 35 Jahren können ein zusätzliches Hautkrebsscreening in Anspruch nehmen, wenn Risikofaktoren vorliegen. Die Kasse erstattet die Kosten in einem festen Betrag alle zwei Jahre.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren wie positive Familienanamnese; Leistung durch berechtigte Ärzte."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsleistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für ausgewählte Leistungen bei Schwangerschaft und Mutterschaft gibt es einen Gesamtzuschuss pro Schwangerschaft. Dazu gehören unter anderem Geburtsvorbereitung mit Begleitperson, Hebammen-Rufbereitschaft, bestimmte Vorsorge-Tests und ausgewählte Arzneimittel.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Schwangerschaft; einzelne Leistungen nur bei den jeweils genannten medizinischen und formalen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse bietet Leistungen zur Förderung des selbstbestimmten Umgangs mit digitalen oder telemedizinischen Anwendungen an. Wenn eine Sachleistung im Einzelfall nicht möglich ist, wird ein jährlicher Zuschuss gewährt.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur Leistungen mit konkretem Gesundheitsbezug; wenn Sachleistung im Einzelfall nicht verfügbar ist."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die Salus BKK vergibt Geldboni für nachgewiesene Vorsorge-, Impf- und Zahnvorsorgemaßnahmen sowie für gesundheitsbewusstes Verhalten. Zusätzlich gibt es einen Vorsorgebonus als Sach-/Zuschussalternative zum Geldbonus.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusantrag ist erforderlich; Nachweise müssen bestätigt werden. Für den Vorsorgebonus gilt ein Höchstbetrag von 200 EUR pro Kalenderjahr."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Vorsorge-, Gesundheits- und Krebsfrüherkennungsmaßnahmen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbar sind Vorsorge-, Gesundheits- und Krebsfrüherkennungsmaßnahmen nach den genannten gesetzlichen Vorschriften. Die Maßnahme wird erst nach vollständiger Durchführung bzw. bei Impfungen nach Abschluss der Immunisierung berücksichtigt.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nach Anzahl der nachgewiesenen Maßnahmen; bis 31.03. des Folgejahres beantragen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis über Bonusantrag; ärztliche bzw. anbieterseitige Bestätigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsmaßnahmen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Krebsfrüherkennungsmaßnahmen werden im Rahmen des Bonusprogramms berücksichtigt. Die Bonifizierung erfolgt nach den allgemeinen Regeln des Programms.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nach Anzahl der nachgewiesenen Maßnahmen; bis 31.03. des Folgejahres beantragen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis über Bonusantrag; ärztliche bzw. anbieterseitige Bestätigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen für Kinder und Jugendliche",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchungen für Kinder und Jugendliche werden bonifiziert, wenn die vorgesehenen Stufen vollständig durchgeführt wurden. Für unter 18-Jährige gelten besondere Regeln bei den Vorsorgeuntersuchungen.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nach Anzahl der nachgewiesenen Maßnahmen; bis 31.03. des Folgejahres beantragen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mehrstufige Vorsorgeuntersuchungen vollständig durchgeführt; Nachweis erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Schutzimpfungen werden als Bonusmaßnahme anerkannt, wenn die Immunisierung abgeschlossen ist. Kombinationsimpfungen zählen dabei als eine Maßnahme.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nach Anzahl der nachgewiesenen Maßnahmen; bis 31.03. des Folgejahres beantragen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Abschluss der Immunisierung erforderlich; Nachweis erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Zahnvorsorge nach den genannten Vorschriften wird im Bonusprogramm berücksichtigt. Für Versicherte unter 18 Jahren gilt die halbjährliche Vorsorge als Voraussetzung.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nach Anzahl der nachgewiesenen Maßnahmen; bis 31.03. des Folgejahres beantragen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis über Bonusantrag; ärztliche bzw. anbieterseitige Bestätigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft in einem qualifizierten Sportverein",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßige Teilnahme an gesundheitsbewusstem Verhalten kann über eine aktive Mitgliedschaft in einem qualifizierten Sportverein bonifiziert werden. Die Maßnahme ist Teil des Bonusprogramms für Versicherte ab 15 Jahren und auch für jüngere Versicherte relevant.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierter Sportverein; Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierter Sportverein; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft in einem qualifizierten Fitnessstudio / Gesundheitsstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Eine aktive Mitgliedschaft in einem qualifizierten Fitness- oder Gesundheitsstudio kann als Bonusmaßnahme anerkannt werden. Sie zählt im Rahmen der Gesundheitsverhaltens-Bonifizierung für Versicherte ab 15 Jahren.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifiziertes Fitness-/Gesundheitsstudio; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßige Teilnahme am Training einer Betriebssport- bzw. Hochschulsportgruppe",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßiges Training in einer Betriebssport- oder Hochschulsportgruppe kann bonifiziert werden, sofern es außerhalb der Arbeitszeit stattfindet und die weiteren Voraussetzungen erfüllt sind.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Betriebssport außerhalb der Arbeitszeit; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgreiche Durchführung eines Präventionskurses nach § 20 Abs. 5 SGB V",
+            "kategorie": "Prävention",
+            "beschreibung": "Erfolgreich absolvierte Präventionskurse können als Bonusmaßnahme anerkannt werden. Die Teilnahme muss qualitätsgesichert und nachweisbar sein.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherter Präventionskurs; Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherter Präventionskurs; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßige Nutzung von Apps mit gesundheitsfördernden Inhalten",
+            "kategorie": "Prävention",
+            "beschreibung": "Die regelmäßige Nutzung geeigneter Apps mit gesundheitsfördernden Inhalten kann bonifiziert werden, wenn sie den Themenfeldern der Prävention entspricht.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Inhalte vergleichbar mit § 20 Abs. 5 SGB V; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßige Nutzung von webbasierten Schulungen mit gesundheitsfördernden Inhalten",
+            "kategorie": "Prävention",
+            "beschreibung": "Webbasierte Schulungen mit gesundheitsfördernden Inhalten können als Bonusmaßnahme anerkannt werden, wenn sie regelmäßig genutzt werden und einen Präventionsbezug haben.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Inhalte vergleichbar mit § 20 Abs. 5 SGB V; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiges Online Coaching",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Regelmäßiges Online-Coaching mit gesundheitsförderndem Bezug kann bonifiziert werden, sofern es den Präventionsinhalten entspricht.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Inhalte vergleichbar mit § 20 Abs. 5 SGB V; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgreiche Teilnahme an einem wohnortentfernten Präventionsprogramm oder Kompaktkurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Die erfolgreiche Teilnahme an einem wohnortfernen Präventionsprogramm oder Kompaktkurs kann als Bonusmaßnahme anerkannt werden, wenn das Angebot den qualitätsgesicherten Präventionsleistungen entspricht.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Entspricht qualitätsgesicherten Leistungen zur primären Prävention; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme am Baby-Schwimmkurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die Teilnahme an einem Baby-Schwimmkurs kann als Bonusmaßnahme anerkannt werden. Sie ist Teil des Programms für gesundheitsbewusstes Verhalten.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme am Eltern-Kind-Turnen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die Teilnahme am Eltern-Kind-Turnen kann im Bonusprogramm berücksichtigt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einem Rückbildungskurs",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Teilnahme an einem Rückbildungskurs kann als Bonusmaßnahme anerkannt werden. Sie wird im Rahmen des Gesundheitsbonus berücksichtigt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einer Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die Teilnahme an einer qualifiziert geleiteten Sportveranstaltung kann bonifiziert werden. Als Nachweis gelten Stempel, Finisher-Urkunde oder vergleichbare Bestätigungen.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierte Leitung; Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierte Leitung; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "BMI im Normalgewicht",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ein BMI im Normalgewicht kann als Bonusmaßnahme berücksichtigt werden. Die Maßnahme zählt zusammen mit weiteren Nachweisen im Bonusprogramm.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Mindestens seit 6 Monaten Nichtraucher",
+            "kategorie": "Prävention",
+            "beschreibung": "Ein mindestens sechsmonatiger Nichtraucherstatus kann als Bonusmaßnahme anerkannt werden. Er ist Teil der gesundheitsbewussten Verhaltensnachweise.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Sportabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Der Erwerb eines Sportabzeichens kann im Bonusprogramm berücksichtigt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Schwimmabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Der Erwerb eines Schwimmabzeichens kann als Bonusmaßnahme anerkannt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Wanderabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Der Erwerb eines Wanderabzeichens kann im Bonusprogramm berücksichtigt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Tanzsportabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Der Erwerb eines Tanzsportabzeichens kann als Bonusmaßnahme anerkannt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb des Deutschen Feuerwehr-Fitness-Abzeichens oder des Deutschen Jugendfeuerwehr-Fitness-Abzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Der Erwerb eines Feuerwehr-Fitness-Abzeichens kann im Bonusprogramm berücksichtigt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft in einem qualifizierten Sportverein",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann die aktive Mitgliedschaft in einem qualifizierten Sportverein ebenfalls als Bonusmaßnahme anerkannt werden. Ein Nachweis ist erforderlich.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierter Sportverein; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgreiche Durchführung eines Präventionskurses nach § 20 Abs. 5 SGB V",
+            "kategorie": "Prävention",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann ein erfolgreich durchgeführter Präventionskurs als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherter Präventionskurs; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgreiche Teilnahme an einem wohnortentfernten Präventionsprogramm oder Kompaktkurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann die erfolgreiche Teilnahme an einem wohnortfernen Präventionsprogramm oder Kompaktkurs bonifiziert werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Entspricht qualitätsgesicherten Leistungen zur primären Prävention; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme am Baby-Schwimmkurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann die Teilnahme am Baby-Schwimmkurs als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme am Eltern-Kind-Turnen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann die Teilnahme am Eltern-Kind-Turnen als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einer Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann die Teilnahme an einer qualifiziert geleiteten Sportveranstaltung als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualifizierte Leitung; Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "BMI im Normalgewicht",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann ein BMI im Normalgewicht als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Sportabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann der Erwerb eines Sportabzeichens als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Schwimmabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann der Erwerb eines Schwimmabzeichens als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb des Wanderabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann der Erwerb des Wanderabzeichens als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb eines Tanzsportabzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann der Erwerb eines Tanzsportabzeichens als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Erwerb des Deutschen Jugendfeuerwehr-Fitness-Abzeichens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Für Versicherte unter 15 Jahren kann der Erwerb des Deutschen Jugendfeuerwehr-Fitness-Abzeichens als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Maßnahmenerfüllung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis im Bonusantrag."
+                }
+            ]
+        },
+        {
+            "name": "Arbeitgeberbonus für Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Arbeitgeber können einen Bonus erhalten, wenn sie einen strukturierten betrieblichen Gesundheitsförderungsprozess nachweisen und die weiteren Voraussetzungen erfüllen. Die konkrete Höhe wird im Bonusvertrag geregelt.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 2500,
+                "waehrung": "EUR",
+                "turnus": "Je Arbeitgeber und Bonusvertrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mindestens ein bei der Salus BKK versicherter Arbeitnehmer muss zu mindestens 80 % teilgenommen haben."
+                }
+            ]
+        },
+        {
+            "name": "Bewegungsförderliches Arbeiten und körperlich aktive Beschäftigte",
+            "kategorie": "Bewegung",
+            "beschreibung": "Diese qualitätsgesicherte Maßnahme der betrieblichen Gesundheitsförderung kann als Bonusmaßnahme für Versicherte anerkannt werden, wenn die Voraussetzungen des Arbeitgeber-Bonusvertrags erfüllt sind.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme, maximal 3 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusvertrag des Arbeitgebers mit der Salus BKK; Teilnahme mindestens 80 %."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsgerechte Ernährung im Arbeitsalltag",
+            "kategorie": "Ernährung",
+            "beschreibung": "Diese qualitätsgesicherte Maßnahme der betrieblichen Gesundheitsförderung kann als Bonusmaßnahme für Versicherte anerkannt werden, wenn die Voraussetzungen des Arbeitgeber-Bonusvertrags erfüllt sind.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme, maximal 3 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusvertrag des Arbeitgebers mit der Salus BKK; Teilnahme mindestens 80 %."
+                }
+            ]
+        },
+        {
+            "name": "Suchtprävention im Betrieb",
+            "kategorie": "Prävention",
+            "beschreibung": "Diese qualitätsgesicherte Maßnahme der betrieblichen Gesundheitsförderung kann als Bonusmaßnahme für Versicherte anerkannt werden, wenn die Voraussetzungen des Arbeitgeber-Bonusvertrags erfüllt sind.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme, maximal 3 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusvertrag des Arbeitgebers mit der Salus BKK; Teilnahme mindestens 80 %."
+                }
+            ]
+        },
+        {
+            "name": "Prävention zur Stressbewältigung und Ressourcenstärkung",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Diese qualitätsgesicherte Maßnahme der betrieblichen Gesundheitsförderung kann als Bonusmaßnahme für Versicherte anerkannt werden, wenn die Voraussetzungen des Arbeitgeber-Bonusvertrags erfüllt sind.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme, maximal 3 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusvertrag des Arbeitgebers mit der Salus BKK; Teilnahme mindestens 80 %."
+                }
+            ]
+        }
+    ]
+}

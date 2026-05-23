@@ -1,0 +1,26 @@
+# Netlify-Build für das Vite-Frontend.
+# Backend muss separat gehostet werden (Render/Fly.io/Railway etc.),
+# die URL kommt via VITE_API_URL als Build-Env in den Netlify-Settings rein.
+
+[build]
+  # Build wird im frontend/ Subfolder ausgeführt
+  base    = "frontend"
+  command = "npm run build"
+  # Output relativ zur base — Vite legt das nach frontend/dist
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_VERSION  = "10"
+
+# SPA: alle Pfade auf index.html mappen damit Client-Side-Routing klappt
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# Headers fürs SVG/JSON-Caching (statische Assets aggressiv cachen)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

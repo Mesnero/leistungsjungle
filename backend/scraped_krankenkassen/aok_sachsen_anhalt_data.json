@@ -1,0 +1,592 @@
+{
+    "krankenkasse": {
+        "name": "AOK Sachsen-Anhalt",
+        "slug": "aok_sachsen_anhalt",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/246/2025_Satzung%20_AOK_Sachsen-Anhalt.pdf",
+        "satzung_stand": "17.12.2024"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Zuschuss bei ambulanten Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei medizinisch erforderlichen ambulanten Vorsorgeleistungen in anerkannten Kurorten gewährt die AOK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Kurtaxe und Fahrkosten. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Täglich während der ambulanten Vorsorgeleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch erforderliche ambulante Vorsorgeleistung in anerkanntem Kurort"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege werden unter bestimmten Voraussetzungen auch Grundpflege und hauswirtschaftliche Versorgung übernommen. Der Anspruch kann bei ärztlich verordneter subkutaner Infusion bis zu sieben Tage je Krankheitsfall bestehen.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach ärztlicher Verordnung und gesetzlicher Anspruchsdauer"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Notwendig zur Sicherung des Behandlungsziels und keine im Haushalt lebende Person kann ausreichend pflegen"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Bescheinigung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet und nicht ausgeschlossen ist. Die Leistung muss qualitätsgesichert durch einen zugelassenen Leistungserbringer erfolgen.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Maximal 4 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung und qualitätsgesicherte Durchführung durch zugelassenen Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Zusätzlich zu den gesetzlichen Ansprüchen wird ein weiterer Betrag für einen vierten Behandlungszyklus zur künstlichen Befruchtung erstattet, wenn der dritte Zyklus gesetzlich genehmigt und durchgeführt wurde. Die Leistung setzt die vollständige Erfüllung der gesetzlichen Voraussetzungen voraus.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Einmal für einen vierten Behandlungszyklus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Voraussetzungen des § 27a SGB V vollständig erfüllt; dritter Behandlungszyklus genehmigt und durchgeführt"
+                }
+            ]
+        },
+        {
+            "name": "Zuschuss für eine Brillenentspiegelung für Berufskraftfahrer, Busfahrer sowie Schienenfahrzeugführer",
+            "kategorie": "Sehhilfe",
+            "beschreibung": "Versicherte, die den Beruf des Berufskraftfahrers, Busfahrers oder Schienenfahrzeugführers aktiv ausüben, erhalten einen Zuschuss zur Entspiegelung ihrer Brille. Die Erstattung erfolgt gegen Vorlage der Rechnung.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Anspruchsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Aktive Ausübung des Berufs als Berufskraftfahrer, Busfahrer oder Schienenfahrzeugführer"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die AOK erstattet die Kosten für ein Hautkrebsscreening bei bestehendem Risikoprofil, wenn die Leistung durch einen zugelassenen Facharzt für Haut- und Geschlechtskrankheiten erbracht wird. Die Rechnung ist vorzulegen.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Einmal innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Erkrankung, aber bestehende Risikofaktoren; Leistung durch zugelassenen Facharzt für Haut- und Geschlechtskrankheiten"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Erstattet werden ärztlich auf Privatrezept verordnete nicht verschreibungspflichtige apothekenpflichtige Arzneimittel, wenn sie medizinisch notwendig sind und aus einer Apotheke oder zulässigem Versandhandel bezogen wurden. Ausgeschlossene Arzneimittel bleiben unberücksichtigt.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Privatrezept-Verordnung und medizinische Notwendigkeit"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheits- und Vorsorgeleistungen bei Schwangerschaft und Geburt",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Zusätzlich zu den gesetzlichen Schwangerschafts- und Mutterschaftsleistungen werden bestimmte Untersuchungen, Folsäure sowie ein GBS-Screening erstattet. Außerdem wird die Geburtsvorbereitung für eine Begleitperson bezuschusst.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 45,
+                "waehrung": "EUR",
+                "turnus": "Je nach Einzelleistung; teils einmalig, teils pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Schwangerschaft und Geburt; einzelne Leistungen teils nur auf ärztliche Durchführung oder Initiative der Versicherten"
+                }
+            ]
+        },
+        {
+            "name": "Hebammenrufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Versicherte können die Rufbereitschaft ihrer gewählten freiberuflich tätigen Hebamme in Anspruch nehmen, wenn eine außerklinische Geburt oder Beleggeburt vereinbart ist. Die Leistung umfasst die Bereitschaft ab der 37. Schwangerschaftswoche bis zum Ende der Geburt sowie telefonische Erreichbarkeit und sofortige Geburtshilfe.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Maximal eine Kostenerstattung je Schwangerschaft/Geburt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Außerklinische Geburt oder Beleggeburt in 1:1-Betreuung; Hebamme zugelassen/berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Frühkindliche Gesundheitsangebote",
+            "kategorie": "Familie",
+            "beschreibung": "Für das erste Lebensjahr werden Kosten für PEKiP, DELFI, Babyschwimmen und Babymassage erstattet. Die Angebote müssen im Rahmen der frühkindlichen Gesundheitsangebote in Anspruch genommen werden.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Je nach Angebot; teils mehrfach, teils einmalig im 1. Lebensjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Versicherte im 1. Lebensjahr"
+                }
+            ]
+        },
+        {
+            "name": "Multimodales Stressmanagement für Kinder",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Für Kinder werden die Kosten für ein multimodales Stressmanagement übernommen, sofern die Behandlung qualitätsgesichert durch einen geeigneten Leistungserbringer erfolgt. Die Erstattung ist pro Kalenderjahr begrenzt.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmal je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 12,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Durchführung durch Leistungserbringer nach Ausführungsbestimmungen"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistung für Flash-Glukose-Messsysteme",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die AOK übernimmt die Kosten für ein Flash-Glukose-Messsystem bestehend aus Lesegerät und Sensoren. Die Leistung kann als Sachleistung oder im Wege der Kostenerstattung beansprucht werden, wenn die medizinischen und genehmigungsrechtlichen Voraussetzungen erfüllt sind.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmalig für das Lesegerät; Sensoren fortlaufend nach Bedarf"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Insulinpflichtiger Diabetes mit ICT oder Insulinpumpentherapie; ärztliche Bescheinigung und Genehmigung vor Versorgungsbeginn"
+                }
+            ]
+        },
+        {
+            "name": "Glattflächenversiegelung für Kinder und Jugendliche bei festsitzenden Apparaturen während einer laufenden KFO-Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Kinder und Jugendliche können während einer kieferorthopädischen Behandlung mit festsitzenden Apparaturen einen Zuschuss zu zwei Glattflächenversiegelungen erhalten. Die Leistung muss im Zusammenhang mit der laufenden KFO-Behandlung stehen und gegen Rechnung nachgewiesen werden.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Maximal zwei Behandlungen im Rahmen einer laufenden KFO-Behandlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bewilligter kieferorthopädischer Behandlungsplan; festsitzende Apparaturen; keine abgebrochene Behandlung"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte können eine professionelle Zahnreinigung beim Vertragszahnarzt in Anspruch nehmen. Die Leistung umfasst die Reinigung von Zahn- und Wurzeloberflächen, Zahnzwischenräumen, Biofilm, Politur und geeignete Fluoridierungsmaßnahmen.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Bis zu zweimal im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung beim Vertragszahnarzt"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen zur Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Außerhalb der gesetzlichen Regelfälle stellt die AOK Haushaltshilfe zur Verfügung, wenn die Weiterführung des Haushalts wegen akuter schwerer Krankheit, akuter Verschlimmerung oder notwendiger Abwesenheit als Begleitperson nicht möglich ist und ein Kind im Haushalt lebt. Die Leistung ist zeitlich begrenzt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis längstens 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebt ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeldanspruch nach § 44 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte freiwillig Versicherte und weitere wahlberechtigte Personengruppen können Krankengeld nach den für versicherungspflichtige Arbeitnehmer geltenden Regelungen wählen oder erhalten. Die Satzung regelt auch besondere Berechnungs- und Wahlmöglichkeiten.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des Krankengeldanspruchs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillig versicherte Mitglieder im Arbeitsverhältnis oder wahlberechtigte Personengruppen nach § 13 der Satzung"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen, auch für Leistungen im EU-/EWR-Ausland und der Schweiz, soweit die gesetzlichen Voraussetzungen erfüllt sind. Die Erstattung erfolgt grundsätzlich bis zur Höhe der vergleichbaren Sachleistung und unter Berücksichtigung gesetzlicher Abzüge.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "Nach Maßgabe des jeweiligen Leistungsfalls"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung bzw. Inanspruchnahme erstattungsfähiger Leistungen"
+                }
+            ]
+        },
+        {
+            "name": "Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "DO-Angestellte und vergleichbare Personengruppen mit gewählter Teilkostenversicherung erhalten eine Teilkostenerstattung. Die Satzung regelt die Umstellung auf Kassenleistungen und die Verrechnung mit Beihilfeansprüchen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "Jährlich bzw. nach Maßgabe der Teilkostenversicherung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "DO-Angestellte bzw. vergleichbare Personengruppen mit Teilkostenversicherung"
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Volljährige Versicherte können freiwillig an einer hausarztzentrierten Versorgung teilnehmen. Dabei wählen sie einen Hausarzt und nehmen fachärztliche Leistungen grundsätzlich nur auf Überweisung in Anspruch.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme an der Versorgungsform"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an der hausarztzentrierten Versorgung nach Versorgungsvertrag"
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme - DMP",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können an strukturierten Behandlungsprogrammen zur Verbesserung der Versorgung chronischer Erkrankungen teilnehmen. Inhalt, Ausgestaltung und Dauer ergeben sich aus den zugelassenen Verträgen.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme am jeweiligen DMP"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gesicherte Diagnose der jeweiligen chronischen Erkrankung und Teilnahme am zugelassenen DMP"
+                }
+            ]
+        },
+        {
+            "name": "Besondere ambulante ärztliche Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können auf Grundlage von Versorgungsverträgen an besonderen ambulanten Versorgungsformen teilnehmen. Die Teilnahme ist freiwillig und an die vertraglichen Vorgaben gebunden.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme am jeweiligen Vertrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem entsprechenden Versorgungsvertrag"
+                }
+            ]
+        },
+        {
+            "name": "Modellvorhaben zur Erprobung des Einsatzes einer arztunterstützenden Praxis-Software",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK kann Modellvorhaben zur Erprobung arztunterstützender Praxis-Software vereinbaren, um die ärztliche Aufklärung und Beratung zu unterstützen. Das Modellvorhaben dient der Qualitäts- und Wirtschaftlichkeitsverbesserung der Versorgung.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Rahmen des jeweiligen Modellvorhabens"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem von der AOK vereinbarten Modellvorhaben"
+                }
+            ]
+        },
+        {
+            "name": "Beitrag Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die AOK erstattet Mitgliedsbeiträge für die aktive Mitgliedschaft im Fitnessstudio, wenn ein jährlicher Nachweis über die Aktivität und ein Zahlungsnachweis vorgelegt werden. Die Leistung soll regelmäßige gesundheitsfördernde Bewegung unterstützen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Aktive Mitgliedschaft im Fitnessstudio und jährlicher Nachweis"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "AOK-Gesundheitsbonus / AOK-Aktivbonus / AOK-Kinderbonus",
+        "beschreibung": "Die AOK Sachsen-Anhalt führt mehrere Bonusprogramme mit Punktekonto bzw. Geldprämie. Versicherte erhalten Boni für nachgewiesene Vorsorge-, Früherkennungs-, Impf- und Gesundheitsförderungsmaßnahmen; die Auszahlung erfolgt nach den jeweiligen Ausführungsbestimmungen als Geldprämie oder Punkteauszahlung.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Die konkreten Punktwerte und Auszahlungsmodalitäten ergeben sich aus den Satzungsregelungen und Ausführungsbestimmungen; bei einigen Tarifen ist die Teilnahme an anderen Bonus-/Wahltarifen ausgeschlossen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "AOK-Kinderbonus",
+            "kategorie": "Familie",
+            "beschreibung": "Bonuspunkte für regelmäßige Inanspruchnahme von Primärprävention, gesundheitsfördernden Maßnahmen, Früherkennungsuntersuchungen, Kinderuntersuchungen und öffentlich empfohlenen Schutzimpfungen. Zusätzlich kann ein Treuebonus bei langfristiger Teilnahme entstehen.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Jährlich je Teilnehmer, Auszahlung nach Tariflaufzeit und Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme in einer Gruppe mit mindestens einem familienversicherten Kind und bis zu 4 weiteren Familienmitgliedern"
+                }
+            ]
+        },
+        {
+            "name": "AOK-Gesundheitsbonus",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonuspunkte für Früherkennungsuntersuchungen, öffentlich empfohlene Schutzimpfungen und weitere gesundheitsfördernde Maßnahmen. Die Punkte werden auf einem Bonuspunkte-Konto gesammelt und als Geldprämie ausgezahlt.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "EUR",
+                "turnus": "Jährlich nach Einreichung der Nachweise"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am AOK-Gesundheitsbonus; Nachweise bis 30.06. des Folgejahres"
+                }
+            ]
+        },
+        {
+            "name": "AOK-Aktivbonus",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für öffentlich empfohlene Schutzimpfungen sowie Maßnahmen zur Gesundheitsförderung und gesundheitsbewussten Verhaltensweisen, einschließlich Zahngesundheit und Mundhygiene. Die Auszahlung erfolgt als Geldprämie nach Nachweis.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "EUR",
+                "turnus": "Jährlich nach Vorlage aller Nachweise"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am AOK-Aktivbonus; Nachweis bis 31.01. des Folgejahres"
+                }
+            ]
+        }
+    ]
+}

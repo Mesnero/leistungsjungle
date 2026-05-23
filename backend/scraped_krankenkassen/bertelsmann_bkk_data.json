@@ -1,0 +1,482 @@
+{
+    "krankenkasse": {
+        "name": "Bertelsmann BKK",
+        "slug": "bertelsmann_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1115/Satzung%20Bertelsmann%20BKK%20Krankenversicherung%20inkl.%20Nachtrag%2053%20-%20Stand%2012.01.2024_bf.pdf",
+        "satzung_stand": "12.01.2024"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Grundpflege und hauswirtschaftliche Versorgung werden zusätzlich zur Behandlungspflege gewährt, wenn dies zur Sicherung des Ziels der ärztlichen Behandlung erforderlich ist. Die Leistung ist zeitlich und vom Umfang her begrenzt und setzt voraus, dass keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere Person im Haushalt die Versorgung übernehmen kann.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 1 Stunde je Pflegeeinsatz und bis zu 25 Einsätze je Kalendermonat"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn keine Pflegebedürftigkeit mit mindestens Pflegegrad 2 vorliegt und keine andere im Haushalt lebende Person den Kranken ausreichend pflegen kann."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Über die gesetzlichen Fälle hinaus wird Haushaltshilfe auch bei häuslicher Krankenpflege, nach ambulanter Operation statt Krankenhausbehandlung sowie bei akuter Erkrankung gewährt. In bestimmten Fällen muss ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind im Haushalt leben.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer der medizinischen Notwendigkeit bzw. der häuslichen Krankenpflege"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die gesetzlichen Voraussetzungen der Satzung erfüllt sind; in Fall c zusätzlich nur, wenn ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind im Haushalt lebt."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld nach einer besonderen Berechnungsregel gezahlt. Die Leistung orientiert sich am entgangenen Arbeitsentgelt und ist an die Tage gebunden, an denen gearbeitet worden wäre.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Behandlung im Inland",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen. Für ambulante ärztliche und zahnärztliche Behandlung gelten pauschalierte Erstattungssätze; die Wahl ist an eine Mindestbindungsfrist gebunden und kann auf einzelne Leistungsbereiche beschränkt werden.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 33,
+                "waehrung": "Prozent",
+                "turnus": "1x je Rechnung bzw. nach Inanspruchnahme; Wahl mindestens ein Kalendervierteljahr bindend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach vorheriger Information der BKK; für nicht im Vierten Kapitel des SGB V genannte Leistungserbringer ist vorherige Zustimmung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Behandlung im Ausland",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können Leistungserbringer in EU-/EWR-Staaten oder der Schweiz im Wege der Kostenerstattung in Anspruch nehmen. Die Erstattung ist grundsätzlich auf die in Deutschland entstehenden Sachleistungskosten begrenzt; bei medizinisch nur im Ausland möglicher Behandlung kann die BKK die Kosten auch ganz übernehmen.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Inanspruchnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für zugelassene bzw. im jeweiligen nationalen System berechtigte Leistungserbringer; Krankenhausleistungen im Ausland nur nach vorheriger Zustimmung."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Rahmen der Arzneimittelversorgung können Versicherte im Einzelfall Kostenerstattung wählen und ein anderes Arzneimittel als das regulär abzugebende wählen. Die Erstattung ist auf die Höhe der Sachleistung begrenzt und wird um pauschale Abschläge gekürzt.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der Voraussetzungen des § 129 Abs. 1 SGB V; keine Mindestbindungsfrist."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten bei Inanspruchnahme nicht zugelassener Ärzte, Zahnärzte, Psychotherapeuten oder Privatkliniken einen Zuschuss in Höhe des kassenüblichen Vertragspreises. Voraussetzung ist eine entsprechende Approbation; ausgeschlossene Methoden bleiben unberücksichtigt.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Inanspruchnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Leistungserbringern mit Approbation als Arzt, Zahnarzt oder Psychotherapeut; keine vom G-BA ausgeschlossenen Methoden."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die BKK bezuschusst zahnärztliche Leistungen der professionellen Zahnreinigung über den gesetzlichen Rahmen hinaus. Voraussetzung ist eine qualitätsgesicherte Durchführung durch einen zugelassenen Leistungserbringer; der Zuschuss ist kalenderjährlich begrenzt.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei qualitätsgesicherter Durchführung durch einen an der vertragszahnärztlichen Versorgung teilnehmenden oder nach § 13 Abs. 4 SGB V berechtigten Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Individuelle Gesundheitsleistungen (IGeL) zu Vorsorgemaßnahmen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Einmal jährlich werden bestimmte individuelle Gesundheitsleistungen mit Vorsorgebezug bezuschusst, sofern sie nicht Bestandteil der vertragsärztlichen Versorgung sind. Die Leistung ist an zugelassene Vertragsärzte oder berechtigte Leistungserbringer gebunden und umfasst nur die in der Satzung genannten Untersuchungen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in der Satzung genannten Vorsorgeuntersuchungen und nur bei Leistungserbringern mit entsprechender Berechtigung."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsbezogene Zusatzleistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für schwangere Versicherte werden bestimmte zusätzliche Vorsorge- und Behandlungsleistungen bezuschusst, wenn eine positive Familienanamnese oder eine besonders begründete Indikation vorliegt. Dazu zählen unter anderem Toxoplasmose-Screening, Tests auf Ringelröteln/Streptokokken/Windpocken sowie Folsäurepräparate bei nachgewiesenem Mangel.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall, kalenderjährlich begrenzt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei schwangeren Frauen mit erhöhtem Risiko bzw. positiver Familienanamnese oder besonders begründeter Indikation; Durchführung durch Vertragsarzt oder berechtigten Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Auf ärztliche Veranlassung können osteopathische Leistungen in Anspruch genommen werden, wenn sie medizinisch geeignet und nicht ausgeschlossen sind. Die BKK erstattet die Kosten für bis zu drei Sitzungen pro Kalenderjahr innerhalb eines festen Höchstbetrags je Sitzung.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur mit ärztlicher Verordnung und qualitätsgesicherter osteopathischer Ausbildung des Leistungserbringers."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn Risikofaktoren für kardiale oder orthopädische Erkrankungen vorliegen. Bei medizinischer Notwendigkeit können zusätzliche diagnostische Leistungen wie Belastungs-EKG, Lungenfunktionsuntersuchung und Laktatbestimmung mit umfasst sein.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall, kalenderjährlich im Rahmen des Gesundheitsbudgets"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ärztlich bescheinigten Risikofaktoren und durch Vertragsärzte bzw. berechtigte Leistungserbringer mit Zusatzbezeichnung Sportmedizin."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Familie",
+            "beschreibung": "Zusätzlich zu den genehmigten Kosten nach § 27a SGB V wird ein Zuschuss für bis zu drei Behandlungsversuche pro Ehepaar gewährt. Die Leistung ist an eine spezifizierte Rechnung gebunden und ergänzt die gesetzlichen Regelungen zur künstlichen Befruchtung.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Behandlungsversuche pro Ehepaar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Zusammenhang mit Maßnahmen zur künstlichen Befruchtung nach § 27a SGB V und für Ehepaare."
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für versicherte Frauen wird die Rufbereitschaftspauschale der Hebamme für die Zeit der 38. bis 42. Schwangerschaftswoche bezuschusst. Die Hebamme muss zur Leistungserbringung berechtigt sein; erstattungsfähig sind nur tatsächlich entstandene und nachgewiesene Kosten.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die Zeit der 38. bis 42. Schwangerschaftswoche und nur bei berechtigter Hebamme."
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung durch MTU",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Im Einzelfall werden Kosten für eine Brustkrebsuntersuchung durch qualifizierte medizinische Tastuntersucherinnen erstattet. Voraussetzung ist eine ärztlich bestätigte familiäre oder medizinische Vorbelastung und die Veranlassung durch eine Fachärztin oder einen Facharzt für Frauenheilkunde und Geburtshilfe.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesener familiärer oder medizinischer Vorbelastung und ärztlicher Veranlassung."
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung Onkologie",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bei onkologischen Indikationen erhalten Versicherte eine unabhängige ärztliche Zweitmeinung zu planbaren Eingriffen. Die Kosten der Zweitmeinung werden vollständig übernommen; der Anspruch besteht bei den in der Satzung genannten gesicherten Diagnosen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je planbarem Eingriff bei onkologischer Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei gesicherter onkologischer Diagnose und bestehender Versicherung bei Antragstellung."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK fördert Maßnahmen der primären Prävention und Gesundheitsförderung in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Bezuschusst werden qualitätsgesicherte Kurse nach den Präventionsleitlinien; die Höhe richtet sich nach dem Kalenderjahr und dem jeweiligen Handlungsfeld.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Je Kalenderjahr und Handlungsfeld"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für qualitätsgesicherte Präventionskurse nach dem GKV-Handlungsleitfaden; bei Erreichen der Belastungsgrenze 100%."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die BKK übernimmt die Kosten für Schutzimpfungen im Rahmen der G-BA-Richtlinie sowie darüber hinaus für die von der STIKO empfohlenen Impfungen in den genannten Kategorien. Die HPV-Impfung wird für Frauen bis einschließlich 26 Jahre über die Regelleistung hinaus übernommen.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Impfungen nach G-BA-Richtlinie und STIKO-Empfehlungen; HPV-Impfung zusätzlich für Frauen bis 26 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK gewährt Leistungen zur Förderung des selbstbestimmten gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen. Wenn eine Sachleistung im Einzelfall nicht verfügbar ist, wird ein jährlicher Zuschuss für die tatsächlich angefallenen Kosten gewährt.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Leistungen mit konkretem Gesundheitsbezug; allgemeine digitale Grundkenntnisse sind ausgeschlossen."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V übernimmt die BKK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für ambulante Vorsorgeleistungen für chronisch kranke Kleinkinder gilt ein höherer täglicher Zuschuss.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V; für chronisch kranke Kleinkinder gilt ein abweichender Satz."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Gesundheitsbonus",
+        "beschreibung": "Die BKK belohnt gesundheitsbewusstes Verhalten von Versicherten mit einem Gesundheitsbonus. Näheres zu Anspruchsvoraussetzungen, berücksichtigungsfähigen Leistungen, Höhe und Auszahlung regelt die Anlage zur Satzung.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Die konkreten Bonusmaßnahmen und Auszahlungsregeln stehen in der Anlage; im vorliegenden Text sind sie nicht ausformuliert."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Der Arbeitgeber kann einen Bonus erhalten, wenn er qualitätsgesicherte Maßnahmen der betrieblichen Gesundheitsförderung nachweist. Die Maßnahme umfasst unter anderem Organisationsstrukturen für BGF, Gesundheitssport, Check-ups und ärztliche Untersuchungen zur Risikofaktoren-Identifikation.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Bonusvertrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Arbeitgeber bzw. teilnehmende Betriebe nach Bonusvertrag."
+                }
+            ]
+        }
+    ]
+}

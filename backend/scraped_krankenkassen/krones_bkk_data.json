@@ -1,0 +1,768 @@
+{
+    "krankenkasse": {
+        "name": "Krones BKK",
+        "slug": "krones_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1148/krones_bkk_satzung.pdf",
+        "satzung_stand": "09.12.2021"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die Krones BKK gewährt Haushaltshilfe, wenn die Weiterführung des Haushalts wegen Krankheit nach stationärer Behandlung, nach ambulanter Operation oder wegen strenger Bettruhe nicht möglich ist und keine andere im Haushalt lebende Person den Haushalt weiterführen kann. Auch bei Bezug häuslicher Krankenpflege wird Haushaltshilfe unter den genannten Voraussetzungen gewährt.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 13 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Weiterführung des Haushalts aus Krankheitsgründen nicht möglich; keine andere im Haushalt lebende Person kann den Haushalt weiterführen."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch beschränkt auf einzelne Leistungsbereiche. Die Erstattung ist auf die Höhe der sonst von der Krankenkasse zu tragenden Kosten begrenzt; für Leistungen im Inland wird pauschal erstattet, für Leistungen im EU-/EWR-Ausland und in der Schweiz gelten besondere Kürzungsregeln.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 33,
+                "waehrung": "Prozent",
+                "turnus": "Mindestens 1 Kalendervierteljahr bindend; Kündigung mit 6 Wochen zum Quartalsende"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme schriftlich gegenüber der Krones BKK erklären."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung bei Wahlarzneimitteln",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei Arzneimitteln können Versicherte im Einzelfall Kostenerstattung wählen, wenn sie ein anderes Arzneimittel als das rabattvertraglich vorgesehene wünschen. Die Erstattung ist begrenzt und orientiert sich an den Kosten, die der Kasse bei Sachleistung entstanden wären.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorlage spezifizierter Rechnungen und Verordnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Primäre Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Krones BKK fördert Maßnahmen in den Bereichen Bewegung, Ernährung, Stressreduktion/Entspannung und Suchtmittelkonsum. Eigene Leistungen werden ohne Kostenbeteiligung bis zu einem Jahresbetrag erbracht; bei Fremdanbietern ist ein Zuschuss bei erfüllten Qualitätskriterien möglich.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 180 EUR je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung muss den Vorgaben des Leitfadens Prävention entsprechen."
+                }
+            ]
+        },
+        {
+            "name": "Digitale oder telemedizinische Anwendungen und Verfahren",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten Leistungen zur Förderung des selbstbestimmten gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen und Verfahren. Wenn eine Sachleistung im Einzelfall nicht möglich ist, kann ein jährlicher Zuschuss gewährt werden.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich je Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung nach den Festlegungen des GKV-Spitzenverbandes zu digitalen oder telemedizinischen Anwendungen."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Krones BKK übernimmt die Kosten für von der STIKO oder nach Infektionsschutzgesetz empfohlene Schutzimpfungen sowie für Impfungen auf Grundlage von Verträgen mit den Kassenärztlichen Vereinigungen. Für Impfungen wegen eines nicht beruflich bedingten Auslandsaufenthalts werden die Kosten vollständig übernommen.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Zuständigkeit des öffentlichen Gesundheitsdienstes oder des Arbeitgebers."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V zahlt die Krones BKK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrtkosten und Kurtaxe. Für chronisch kranke Kleinkinder bis zum vollendeten 6. Lebensjahr gilt ein erhöhter Zuschuss.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistung nach § 23 Abs. 2 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Krones BKK bietet eine hausarztzentrierte Versorgung auf Grundlage von Verträgen mit Hausärzten, Hausarztgemeinschaften, MVZ oder Kassenärztlichen Vereinigungen an. Die Teilnahme ist freiwillig und an die vertraglichen Regelungen gebunden.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nach den jeweils regional abgeschlossenen Verträgen."
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Krones BKK führt strukturierte Behandlungsprogramme für Diabetes mellitus Typ 1 und 2, Brustkrebs, koronare Herzkrankheit, Asthma sowie chronisch obstruktive Lungenerkrankungen durch. Inhalt und Ausgestaltung richten sich nach den jeweils zugelassenen Programmen.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Programmabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nur bei entsprechender Erkrankung und nach Maßgabe des jeweiligen DMP."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen auf ärztliche Verordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und von qualifizierten Leistungserbringern durchgeführt wird. Die Krones BKK erstattet die Kosten für bis zu sechs Sitzungen pro Kalenderjahr.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 6 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und qualitätsgesicherte Durchführung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Für professionelle Zahnreinigung bei zugelassenen oder nach § 13 Abs. 4 SGB V berechtigten Zahnärzten gewährt die Krones BKK einen Zuschuss. Die Leistung ist auf einen jährlichen Höchstbetrag begrenzt.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Professionelle Zahnreinigung mit Originalrechnung."
+                }
+            ]
+        },
+        {
+            "name": "Kieferorthopädische Behandlung - Retentionsspange",
+            "kategorie": "Zahn",
+            "beschreibung": "Die Krones BKK erstattet die Kosten für eine festsitzende Retentionsspange zu Beginn der Retentionsbehandlung, wenn sie die Kosten der vorherigen kieferorthopädischen Behandlung getragen hat. Die Erstattung ist je Kiefer begrenzt.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Je Kiefer, einmal zu Beginn der Retentionsbehandlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige kieferorthopädische Behandlung muss von der Krones BKK getragen worden sein."
+                }
+            ]
+        },
+        {
+            "name": "Hebammenhilfe (Rufbereitschaft)",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten einen Zuschuss zu den Kosten der Rufbereitschaft einer freiberuflich tätigen Hebamme ab der 32. Schwangerschaftswoche. Die Hebamme muss zugelassen oder berechtigt sein; erstattet werden die tatsächlichen Kosten bis zum Höchstbetrag.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab der 32. Schwangerschaftswoche; Hebamme muss nach § 134a Abs. 2 SGB V oder § 13 Abs. 4 SGB V zugelassen/berechtigt sein."
+                }
+            ]
+        },
+        {
+            "name": "Qualifizierte ärztliche Zweitmeinung im Bereich der Orthopädie",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Krones BKK ermöglicht eine qualifizierte ärztliche Zweitmeinung bei orthopädischen Indikationen zu Operationen oder Therapieentscheidungen. Die Leistung wird über vereinbarte nicht zugelassene Leistungserbringer organisiert und ist freiwillig.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Orthopädische Indikation in den Bereichen Knie, Hüfte, Rücken, Schulter oder Fuß."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Untersuchungen in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten einen Zuschuss zu zusätzlichen vorgeburtlichen nicht-invasiven Ergänzungsuntersuchungen, insbesondere zusätzlichen Blut- und Ultraschalluntersuchungen, soweit diese nicht ausgeschlossen sind. Der Zuschuss ist pro Schwangerschaft begrenzt.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach ärztlicher Beratung und Aufklärung; nur bei Vertragsarzt bzw. entsprechender gynäkologischer/laborärztlicher Leistung."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können für Vorsorge, Impfungen, Sport, Prävention und weitere gesundheitsbewusste Maßnahmen einen Geldbonus erhalten. Alternativ kann der Bonus als Zuschussprämie für bestimmte Gesundheitsleistungen mit erhöhtem Wert eingesetzt werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1.5,
+        "hinweis": "Der Höchstbonus beträgt 100 EUR für Erwachsene und 50 EUR für Kinder pro Antragsjahr."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ärztliche Gesundheitsuntersuchung nach § 25 Abs. 1 SGB V innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Krebsvorsorgeuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Ärztliche Krebsvorsorgeuntersuchung nach § 25 Abs. 2 SGB V innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Jugendgesundheitsuntersuchung J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der Jugendgesundheitsuntersuchung J2 innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung zur Zahngesundheit",
+            "kategorie": "Zahn",
+            "beschreibung": "Untersuchung zur Zahngesundheit nach Maßgabe der §§ 22 SGB V und 55 Abs. 1 Satz 4 Nr. 2 SGB V innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis über die Durchführung von Schutzimpfungen nach § 20i Abs. 1 und 2 SGB V oder § 13b Nr. 1 innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Erwachsenen- und Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Immunologischer Stuhltest",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an einem immunologischen Stuhltest im Antragsjahr.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einer betrieblichen Gesundheitsförderung nach § 20b SGB V durch den Arbeitgeber im Antragsjahr.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Zertifizierte Leistung zur verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einer zertifizierten Leistung zur verhaltensbezogenen Prävention nach § 20 Abs. 1 SGB V innerhalb des Antragsjahres.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Veranstaltung im Ausdauersport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an einer Veranstaltung im Ausdauersport innerhalb des Antragsjahres; anerkannt sind unter anderem Walking, Nordic-Walking, Langstreckenlauf, Jogging, Radfahren, Eisschnelllauf, Inlineskating, Schwimmen, Skilanglauf, Triathlon, Duathlon, Aquathlon, Wintertriathlon, Rudern und Paddeln.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Erwachsenen- und Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Mitgliedschaft in einem Sportverein oder Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis einer Mitgliedschaft in einem Sportverein oder Fitnessstudio im Antragsjahr.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Durchführung einer professionellen Zahnreinigung im Antragsjahr.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Sport- oder Schwimmabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Ablegen des Sport- oder Schwimmabzeichens oder eines sonstigen sportlichen Leistungsnachweises im Antragsjahr.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 17,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Kinderuntersuchungen U3 bis U9",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme der vorgesehenen Kinderuntersuchungen U3 bis U9 innerhalb des Antragsjahres.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Jugendgesundheitsuntersuchung J1",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme der Jugendgesundheitsuntersuchung J1 innerhalb des Antragsjahres.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung nach § 22 Abs. 1 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme einer Untersuchung nach § 22 Abs. 1 SGB V innerhalb des Antragsjahres.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis über die Durchführung von Schutzimpfungen nach § 20i Abs. 1 und 2 SGB V oder § 13b Nr. 1 innerhalb des Antragsjahres.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Veranstaltung im Ausdauersport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an einer Veranstaltung im Ausdauersport innerhalb des Antragsjahres; anerkannt sind unter anderem Walking, Nordic-Walking, Langstreckenlauf, Jogging, Radfahren, Eisschnelllauf, Inlineskating, Schwimmen, Skilanglauf, Triathlon, Duathlon, Aquathlon, Wintertriathlon, Rudern und Paddeln.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Deutsches Sport- oder Schwimmabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erfolgreiche Absolvierung des Deutschen Sport- oder Schwimmabzeichens oder eines sonstigen sportlichen Leistungsnachweises im Antragsjahr.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 12.5,
+                "waehrung": "EUR",
+                "turnus": "Je Antragsjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 16,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonus für qualitätsgesicherte Maßnahmen der betrieblichen Gesundheitsförderung, wenn der Arbeitgeber mit der Krones BKK einen Vertrag über Maßnahmen in den Bereichen Nichtraucherschutz oder Suchtvorbeugung abgeschlossen hat und die Durchführung nachgewiesen wird.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Vertrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Arbeitgeber und in dem Betrieb beschäftigte Kassenmitglieder."
+                }
+            ]
+        }
+    ]
+}

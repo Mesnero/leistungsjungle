@@ -1,0 +1,1022 @@
+{
+    "krankenkasse": {
+        "name": "IKK gesund plus",
+        "slug": "ikk_gesund_plus",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/279/Sa20251210_90NT.pdf",
+        "satzung_stand": "10.12.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die IKK übernimmt die Kosten für Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe gegen übertragbare Krankheiten, soweit keine andere Leistungspflicht besteht. Erfasst sind auch von der STIKO empfohlene Impfungen ohne beruflich bedingtes Auslandsrisiko.",
+            "pdf_page": 7,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je nach medizinischer Indikation / Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Soweit nicht bereits eine Leistungspflicht nach § 20i SGB V besteht."
+                }
+            ]
+        },
+        {
+            "name": "Primäre Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK fördert Leistungen der primären Prävention in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Für Fremdanbieter-Kurse gelten Qualitätskriterien; die Erstattung ist pro Maßnahme begrenzt und die Inanspruchnahme auf zwei Maßnahmen je Kalenderjahr beschränkt.",
+            "pdf_page": 8,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kinder und Jugendliche bis zum vollendeten 18. Lebensjahr erhalten 100 % der Kurskosten bis maximal 100 EUR; ab 25 EUR Eigenbeteiligung 10 %."
+                }
+            ]
+        },
+        {
+            "name": "Betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK unterstützt versicherte Betriebe mit verhaltens- und verhältnispräventiven Leistungen zur betrieblichen Gesundheitsförderung. Die Leistungen werden ohne Eigenbeteiligung erbracht und orientieren sich an den Handlungsfeldern des GKV-Leitfadens.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "nach Projekt-/Vertragsgestaltung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Betriebe; Umsetzung im Rahmen qualitätsgesicherter Projekte bzw. betrieblicher Gesundheitsförderung."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK bietet Sachleistungen zur Förderung digitaler Gesundheitskompetenz an, etwa zu digitalen Gesundheitsanwendungen, Telemedizin, ePA, Datenschutz und gesundheitskompetenten Organisationen. Die Angebote erfolgen über Verträge mit Kooperationspartnern.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "im Rahmen der Vertragsangebote"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen von Verträgen mit Kooperationspartnern; reine Software-/IT-Schulungen ohne Gesundheitsbezug sind ausgeschlossen."
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können freiwillig an hausarztzentrierten Versorgungsverträgen teilnehmen. Inhalt und Ausgestaltung ergeben sich aus den regionalen Verträgen; Facharztkontakte erfolgen grundsätzlich über den gewählten Hausarzt, mit Ausnahmen insbesondere für Gynäkologie, Kinder- und Augenärzte.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "während der Vertragslaufzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme; Wahl eines an der Versorgung beteiligten Hausarztes und schriftliche Verpflichtung zur Überweisungspflicht."
+                }
+            ]
+        },
+        {
+            "name": "Besondere ambulante ärztliche Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK führt besondere ambulante Versorgungen auf Grundlage regionaler Versorgungsverträge durch. Die Teilnahme ist freiwillig; die konkreten Inhalte und Teilnahmevoraussetzungen ergeben sich aus den jeweiligen Verträgen.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "während der Vertragslaufzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nur nach Maßgabe des jeweiligen Versorgungsvertrags."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeleistungen in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Zu den übrigen Kosten ambulanter Vorsorgeleistungen in anerkannten Kurorten zahlt die IKK einen täglichen Zuschuss. Für chronisch kranke Kleinkinder gilt ein erhöhter Tageszuschuss.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für chronisch kranke Kleinkinder im Alter von 1 bis 5 Jahren beträgt der Zuschuss 25 EUR täglich."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen auf ärztliche Verordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet und nicht ausgeschlossen ist. Die Behandlung muss qualitätsgesichert durch einen entsprechend qualifizierten Leistungserbringer erfolgen.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "maximal 4 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung; qualitätsgesicherte Durchführung durch Berufsverbandsmitglied oder entsprechend ausgebildeten Osteopathen."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Familie",
+            "beschreibung": "Die IKK erstattet zusätzlich zu den gesetzlichen Ansprüchen die Kosten für einen vierten Behandlungszyklus zur künstlichen Befruchtung. Die Leistung setzt eine vorherige Genehmigung des Behandlungsplans und die Vorlage der Rechnungen voraus.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "einmalig für den vierten Behandlungszyklus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Beide Ehegatten müssen bei der IKK versichert sein; übrige Voraussetzungen des § 27a SGB V müssen erfüllt sein."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschafts-/Mutterschaftsleistungen sowie medizinische Vorsorgeleistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die IKK erstattet zusätzliche Schwangerschafts-, Mutterschafts- und bestimmte medizinische Vorsorgeleistungen, darunter Hebammen-Rufbereitschaft, Geburtsvorbereitungskurse für den Partner sowie ausgewählte pränatale Untersuchungen bei konkreter Indikation.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "je nach Leistung; Hebammenrufbereitschaft max. 250 EUR, insgesamt mit Partnerkurs max. 125 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die Schwangerschaftsleistungen muss eine Schwangerschaft vorliegen; einzelne Vorsorgeleistungen nur bei konkretem individuellen Untersuchungsanlass und ärztlicher Qualifikation."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Geburtsvorbereitungskurs des Partners muss der Partner bei der IKK versichert sein."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige Medikamente",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die IKK erstattet ärztlich auf Privatrezept verordnete nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus Homöopathie, Phytotherapie und Anthroposophie sowie für Versicherte unter 18 Jahren Arzneimittel gegen Neurodermitis. Die Erstattung ist kalenderjährlich begrenzt.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "maximal 100 EUR pro Kalenderjahr und Versichertem"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung auf Privatrezept; medizinische Notwendigkeit; Bezug aus Apotheke oder zulässigem Versandhandel."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzlich für Arzneimittel zur Behandlung von Neurodermitis."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung für Kinder und Jugendliche",
+            "kategorie": "Zahn",
+            "beschreibung": "Für Versicherte bis zur Vollendung des 14. Lebensjahres übernimmt die IKK die Kosten für die Fissuren-Versiegelung der kariesfreien Prämolaren im bleibenden Gebiss. Die Leistung ist auf einen jährlichen Höchstbetrag begrenzt.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte bis zur Vollendung des 14. Lebensjahres."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen für Kinder bei kieferorthopädischer Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die IKK gewährt Kindern und Jugendlichen zusätzliche Zuschüsse im Zusammenhang mit kieferorthopädischer Behandlung, insbesondere für die Versiegelung von Glattflächen und für einen festsitzenden Retainer. Die Erstattung ist an die vorherige Kostenübernahme der KFO-Behandlung geknüpft.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Retainer-Zuschuss je Kiefer 50 EUR; nur wenn die IKK die vorherige kieferorthopädische Behandlung zuletzt getragen hat."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn diese zur Verhütung oder Vermeidung der Verschlimmerung kardialer oder orthopädischer Erkrankungen geeignet und notwendig ist. Bei besonderen Risiken können zusätzliche diagnostische Leistungen eingeschlossen sein.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "1x alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Vertragspartner oder berechtigte Leistungserbringer mit Zusatzbezeichnung 'Sportmedizin'."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen von nicht zugelassenen ambulanten Leistungserbringern",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern in Anspruch nehmen, wenn eine entsprechende Vereinbarung besteht und die Behandlung medizinisch notwendig ist. Die IKK führt hierzu ein Verzeichnis der Vertragspartner.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "nach Vereinbarung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung mit der IKK; qualitativ gleichwertige Versorgung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Nicht zugelassene Leistungserbringer - Stationäre Behandlung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK übernimmt Kosten für stationäre Behandlungen in nicht zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze, wenn Krankenhausbehandlungsbedürftigkeit vorliegt und die IKK vor Behandlungsbeginn zugestimmt hat. Psychische Erkrankungen und Verhaltensstörungen sind ausgeschlossen.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Zustimmung der IKK und Verordnung durch vertragsärztlich tätigen Arzt; keine Behandlung psychischer Erkrankungen/Verhaltensstörungen."
+                }
+            ]
+        },
+        {
+            "name": "Sonstige Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK erstattet zusätzliche Vorsorgeuntersuchungen für junge Erwachsene, Hautkrebsvorsorge, Tomosynthese der Brust, Brustkrebsuntersuchung durch MTU sowie bestimmte Darmkrebsvorsorgeleistungen bei Risikofaktoren. Die Leistungen sind alters- und indikationsgebunden.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "je nach Leistung; teils innerhalb von 2 oder 3 Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzliche Vorsorgeuntersuchung nach § 23 SGB V bei Risikofaktoren."
+                },
+                {
+                    "alter_min": 14,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hautkrebsvorsorge bei Risikofaktoren."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Tomosynthese der Brust bzw. MTU-Untersuchung bzw. Darmkrebsvorsorge nur bei den jeweils genannten medizinischen Voraussetzungen und Risikofaktoren."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen zur Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die IKK gewährt erweiterte Haushaltshilfe, wenn ein Kind im Haushalt lebt oder wenn die Weiterführung des Haushalts wegen Krankheit nicht möglich ist. Die Leistung ist zeitlich und täglich begrenzt.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "bis zu 6 Wochen je Kalenderjahr, maximal 4 Stunden pro Tag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind im Haushalt unter 14 Jahren oder behindertes und auf Hilfe angewiesenes Kind; alternativ bei krankheitsbedingter Haushaltsunfähigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte haben Anspruch auf eine unabhängige ärztliche Zweitmeinung zu bestimmten kardiologischen, kardiochirurgischen, orthopädischen und augenärztlichen Eingriffen sowie zu onkologischen Behandlungsmethoden. Die IKK übernimmt die Kosten der Zweitmeinung in voller Höhe.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je Eingriff bzw. Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Geplante Operation/Eingriff nach Anhang 5 oder gesicherte onkologische Diagnose nach Anhang 5."
+                }
+            ]
+        },
+        {
+            "name": "Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Berechtigte nach § 14 SGB V können anstelle der Sachleistungen eine Teilkostenerstattung wählen. Erstattet wird der nicht durch Beihilfe gedeckte Prozentsatz der Kosten; die Entscheidung wirkt ab Antragseingang.",
+            "pdf_page": 41,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "laufend nach Antrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Berechtigte nach § 14 SGB V bzw. Versorgungsempfänger."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistung Kostenerstattung wählen. Die IKK erstattet bis zur Höhe der Sachleistungskosten abzüglich eines Verwaltungskostenabschlags; die Wahl kann auf einzelne Leistungsbereiche beschränkt werden.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "je Rechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Information der IKK; bei nicht zugelassenen Leistungserbringern nur mit Zustimmung und bei medizinischen oder sozialen Gründen."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt eines der drei günstigsten Arzneimittel oder eines Rabattvertragsarzneimittels ein anderes nicht ausgeschlossenes Arzneimittel wählen und Kostenerstattung erhalten. Von der Erstattung werden vertragliche Abschläge und Verwaltungskosten abgezogen.",
+            "pdf_page": 43,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "je Verordnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für nicht nach § 34 SGB V ausgeschlossene Arzneimittel."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung in einem Mitgliedsstaat der EU, einem Vertragsstaat des Abkommens über den EWR oder der Schweiz",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten Kostenerstattung, wenn sie Leistungen im EU-/EWR-Ausland oder in der Schweiz anstelle von Sach- oder Dienstleistungen in Anspruch nehmen. Die Erstattung ist auf die inländischen Sachleistungskosten abzüglich Zuzahlungen und Verwaltungskosten begrenzt.",
+            "pdf_page": 44,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "je Rechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungserbringung in EU, EWR oder Schweiz; Kostenerstattung nach § 13 Abs. 4 und 5 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Kooperation mit privaten Krankenversicherungsunternehmen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK kann den Abschluss privater Zusatzversicherungen vermitteln, etwa für Wahlarztbehandlung im Krankenhaus, Ein- oder Zweibettzimmerzuschlag oder Auslandskrankenversicherung. Es handelt sich um eine Vermittlungsleistung, nicht um eine eigene Erstattung.",
+            "pdf_page": 44,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "nach Vermittlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vermittlung von privaten Zusatzversicherungsverträgen."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "IKK gesund plus Bonusprogramm",
+        "beschreibung": "Die IKK gesund plus führt drei Bonusprogramme: für Vorsorge/Früherkennung/Impfungen, für Schwangerschafts- und Neugeborenenvorsorge sowie für verhaltensbezogene Prävention. Die Boni werden nach einem Punktesystem gewährt; 1 Punkt entspricht 1 Euro. Die Auszahlung erfolgt nach Einreichung der Nachweise.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonifizierbare Maßnahmen und Punktwerte ergeben sich aus Anhang 4 der Satzung."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Halbjährliche zahnärztliche Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Regelmäßige zahnärztliche Vorsorgeuntersuchung für Kinder und Jugendliche.",
+            "pdf_page": 83,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonifizierbare Schutzimpfungen nach § 20i SGB V.",
+            "pdf_page": 83,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Schutzimpfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonifizierung erst mit Abschluss der Immunisierung."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen für Kinder und Jugendliche",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbare Kinder- und Jugendvorsorgeuntersuchungen U4 bis U11 sowie J1 und J2.",
+            "pdf_page": 83,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Jährliche zahnärztliche Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Jährliche zahnärztliche Vorsorgeuntersuchung für Erwachsene.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für Erwachsene ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbare Gesundheitsuntersuchungen nach § 25 SGB V.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für Erwachsene ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Organisierte Früherkennungsprogramme",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonifizierbare organisierte Früherkennungsprogramme nach § 25a SGB V.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "je Programm"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für Erwachsene ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Professionelle Zahnreinigung als bonifizierbare Maßnahme für Erwachsene.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "Punkte",
+                "turnus": "je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm für Erwachsene ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Vollständige Inanspruchnahme der Schwangerschaftsvorsorgeuntersuchungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Vollständige Teilnahme an den Schwangerschaftsvorsorgeuntersuchungen.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 140,
+                "waehrung": "Punkte",
+                "turnus": "pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gesonderter Bonus für Schwangerschaftsvorsorge gemäß § 24d SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Vollständige Inanspruchnahme der Kinderfrüherkennungsuntersuchungen U1 bis U3",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vollständige Teilnahme an den Kinderfrüherkennungsuntersuchungen U1 bis U3 für das Neugeborene.",
+            "pdf_page": 84,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 60,
+                "waehrung": "Punkte",
+                "turnus": "pro Neugeborenes"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Gesonderter Bonus für Neugeborenenvorsorge."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft im Sportverein",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifizierbare aktive Mitgliedschaft im Sportverein.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Junior-Programm 0 bis 17 Jahre."
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft in einem qualitätsgesicherten Sport-, Gesundheits- und/oder Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifizierbare aktive Mitgliedschaft in einem qualitätsgesicherten Sport-, Gesundheits- oder Fitnessstudio.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "Punkte",
+                "turnus": "je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Junior-Programm 0 bis 17 Jahre."
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurse nach § 20 Abs. 5 SGB V bzw. Präventionskurs Gewalt",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifizierbare Präventionskurse nach § 20 Abs. 5 SGB V sowie Präventionskurse zum Thema Gewalt.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Kurs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Junior-Programm 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Schwimmabzeichen / Sportabzeichen / Teilnahme an einer Sportveranstaltung unter qualifizierter Leitung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifizierbare sportliche Nachweise oder die Teilnahme an einer Sportveranstaltung unter qualifizierter Leitung.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Junior-Programm 0 bis 17 Jahre."
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Eltern-Kind-Kurse oder Baby-/Kinderkurse nach § 20 SGB V",
+            "kategorie": "Familie",
+            "beschreibung": "Bonifizierbare Eltern-Kind-Kurse oder Baby-/Kinderkurse nach § 20 SGB V.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Kurs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Junior-Programm 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte Angebote im Handlungsfeld Bewegung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifizierbare qualitätsgesicherte Angebote der IKK gesund plus im Handlungsfeld Bewegung.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Angebot"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte Angebote im Handlungsfeld Stressbewältigung/Entspannung",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Bonifizierbare qualitätsgesicherte Angebote der IKK gesund plus im Handlungsfeld Stressbewältigung und Entspannung.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Angebot"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte Angebote im Handlungsfeld Ernährung",
+            "kategorie": "Ernährung",
+            "beschreibung": "Bonifizierbare qualitätsgesicherte Angebote der IKK gesund plus im Handlungsfeld Ernährung.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Angebot"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte Angebote im Handlungsfeld Suchtmittelkonsum",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifizierbare qualitätsgesicherte Angebote der IKK gesund plus im Handlungsfeld Suchtmittelkonsum.",
+            "pdf_page": 85,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Angebot"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erwachsenen-Programm ab 18 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonifizierbare Rückbildungsgymnastik.",
+            "pdf_page": 86,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "Punkte",
+                "turnus": "je Kurs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teil des Bonusprogramms für Erwachsene; typischerweise nach Schwangerschaft."
+                }
+            ]
+        }
+    ]
+}

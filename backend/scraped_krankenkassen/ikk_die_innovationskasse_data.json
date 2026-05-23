@@ -1,0 +1,718 @@
+{
+    "krankenkasse": {
+        "name": "IKK - Die Innovationskasse",
+        "slug": "ikk_die_innovationskasse",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/382/vb_20260415_satzung_kv_nachtrag_127.pdf",
+        "satzung_stand": "24.03.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Schutzimpfungen bei Auslandsreisen einschließlich Malariaprophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die IKK übernimmt zusätzlich zu den gesetzlichen Schutzimpfungen auch empfohlene Schutzimpfungen bei Auslandsreisen sowie eine medikamentöse Malariaprophylaxe. Die Leistung gilt nicht für beruflich bedingte Auslandsaufenthalte und entfällt, wenn ein anderer Kostenträger zuständig ist.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Auslandsreisen; nur bei von der STIKO empfohlenen Impfungen; kein Anspruch, wenn ein anderer Kostenträger zuständig ist."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen der primären Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK übernimmt verhaltensbezogene Präventionsleistungen in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Zusätzlich werden Leistungen zur Gesundheitsförderung in Lebenswelten erbracht, soweit die Vorgaben des Leitfadens Prävention eingehalten werden.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 120,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für zertifizierte Kursanbieter (ZPP) und bei mindestens 80 % Teilnahme; je Maßnahme bis 120 EUR."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK bietet Leistungen zur Förderung der digitalen Gesundheitskompetenz an, insbesondere zum selbstbestimmten gesundheitsorientierten Einsatz digitaler und telemedizinischer Anwendungen. Werden Leistungen von Dritten erbracht, erfolgt eine anteilige Kostenübernahme bei erfüllten Qualitätsvorgaben.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Mehrere Leistungen je Kalenderjahr möglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Drittanbietern nur nach vorherigem Antrag; maximal 400 EUR je Kalenderjahr insgesamt."
+                }
+            ]
+        },
+        {
+            "name": "Tarif Selbstbehalt nach § 53 Abs. 1 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnehmende Mitglieder erhalten eine Prämie, wenn sie einen Selbstbehalt-Tarif wählen. Es gibt mehrere Tarifvarianten mit unterschiedlichen Prämien- und Selbstbehaltshöhen sowie Bindungsfristen.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder, deren Beiträge nicht vollständig von Dritten getragen werden; Teilnahme ausgeschlossen bei Beitragsfreiheit, Ruhen des Leistungsanspruchs, Beitragsrückstand oder Teilnahme am Tarif nach § 16e."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 3 SGB V für die Teilnahme an Modellvorhaben zur Weiterentwicklung der Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherten, die an einem von der IKK vereinbarten Modellvorhaben teilnehmen, wird ein besonderer Tarif angeboten. Soweit das Modellvorhaben keine Regelung zur Zuzahlungsermäßigung enthält, gelten die allgemeinen Zuzahlungsbestimmungen.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme am Modellvorhaben"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Teilnahme an einem von der IKK vereinbarten Modellvorhaben."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 3 SGB V für die Teilnahme an der hausarztzentrierten Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherten, die an der hausarztzentrierten Versorgung teilnehmen, werden die Zuzahlungen entsprechend den Teilnahmebedingungen des Versorgungsvertrages ermäßigt. Die Teilnahmeerklärung gilt zugleich als Wahl des Tarifs, sofern nicht widersprochen wird.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "Prozent",
+                "turnus": "Während der Teilnahme an der hausarztzentrierten Versorgung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen eines bestehenden hausarztzentrierten Versorgungsvertrages; Mindestbindung 1 Jahr."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 3 SGB V für die Teilnahme an der Versorgung in einem strukturierten Behandlungsprogramm (DMP)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK führt strukturierte Behandlungsprogramme bei chronischen Krankheiten durch. Die Teilnahmeerklärung an einem DMP gilt zugleich als Erklärung zur Wahl des Tarifs.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme am DMP"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Teilnahme an einem strukturierten Behandlungsprogramm nach § 137f SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 3 SGB V für die Teilnahme an einer besonderen Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK bietet eine besondere Versorgung zur Förderung der Qualität und Wirtschaftlichkeit der medizinischen Versorgung an. Mit der Teilnahme können Zuzahlungsermäßigungen verbunden sein, sofern die jeweiligen Teilnahmebedingungen dies vorsehen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "Prozent",
+                "turnus": "Während der Teilnahme an der besonderen Versorgung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Teilnahme an einer besonderen Versorgung nach § 140a SGB V und wenn der jeweilige Vertrag Zuzahlungsermäßigungen vorsieht."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 2 SGB V bei Leistungsfreiheit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder erhalten eine Prämienzahlung, wenn sie und ihre mitversicherten Angehörigen im Kalenderjahr keine berücksichtigungsfähigen Leistungen in Anspruch genommen haben. Die Prämie ist auf 600 EUR begrenzt und wird im Folgejahr ausgezahlt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 600,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder, die im Kalenderjahr länger als drei Monate versichert waren und an der Beitragsaufbringung beteiligt sind; keine Teilnahme am Tarif nach § 16."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 7 SGB V für die Teilnahme an der Teilkostenerstattung nach § 27 der Satzung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Dienstordnungsangestellte, die Teilkostenerstattung gewählt haben, erhalten eine Prämie. Die Prämie wird mit den monatlich zu zahlenden Krankenversicherungsbeiträgen verrechnet.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "Monatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für bei der IKK versicherte Dienstordnungsangestellte mit Wahlrecht zur Teilkostenerstattung."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 6 SGB V Krankengeldwahltarif",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK bietet Wahltarife für bestimmte Versicherte an, mit denen ein zusätzlicher Krankengeldanspruch für den Zeitraum vom 15. bis zum 42. Tag der Arbeitsunfähigkeit abgesichert wird. Es gelten Prämien, Bindungsfristen und besondere Regelungen zur Wartezeit und Kündigung.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Tarifzugehörigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 44 Abs. 2 Nr. 2 und Nr. 3 sowie § 46 Satz 4 SGB V genannten Versicherten; weitere Sonderregeln für Selbständige, unständig Beschäftigte, befristet Beschäftigte und KSVG-Versicherte."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 6 SGB V Wahltarifkrankengeld für hauptberuflich selbständig Erwerbstätige",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Hauptberuflich selbständig Erwerbstätige können einen Wahltarif mit Krankengeldanspruch vom 15. bis zum 42. Tag der Arbeitsunfähigkeit wählen. Die Leistung ist an Einkommens- und Beschäftigungsvoraussetzungen sowie an eine Mindestprämie gebunden.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Tarifzugehörigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 67,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für freiwillige Mitglieder, die hauptberuflich selbständig erwerbstätig sind; ab 67 Jahren nur unter zusätzlichen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 6 SGB V Wahltarifkrankengeld für unständig Beschäftigte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird ein Wahltarif angeboten, der Krankengeld vom 15. bis zum 42. Tag der Arbeitsunfähigkeit absichert. Die Berechnung erfolgt nach besonderen Regeln für das Arbeitsentgelt der letzten drei Kalendermonate.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Tarifzugehörigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 67,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für unständig Beschäftigte bzw. Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 6 SGB V Wahltarifkrankengeld für versicherungspflichtig Beschäftigte, deren Beschäftigungsverhältnis im Voraus auf weniger als 10 Wochen befristet ist",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für versicherungspflichtig Beschäftigte mit im Voraus auf weniger als 10 Wochen befristetem Beschäftigungsverhältnis wird ein Wahltarif mit Krankengeldanspruch vom 15. bis zum 42. Tag der Arbeitsunfähigkeit angeboten. Die Prämienbemessung erfolgt nach besonderen Regeln.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Tarifzugehörigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 67,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherungspflichtig Beschäftigte mit im Voraus auf weniger als 10 Wochen befristetem Beschäftigungsverhältnis."
+                }
+            ]
+        },
+        {
+            "name": "Tarif nach § 53 Abs. 6 SGB V Wahltarifkrankengeld für Versicherte nach dem Künstlersozialversicherungsgesetz",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte nach dem Künstlersozialversicherungsgesetz können einen Wahltarif mit Krankengeldanspruch vom 15. bis zum 42. Tag der Arbeitsunfähigkeit wählen. Die prämienpflichtigen Einnahmen werden nach besonderen Regeln ermittelt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Tarifzugehörigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte nach dem Künstlersozialversicherungsgesetz."
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK erbringt häusliche Krankenpflege auch dann, wenn sie zur Sicherung des Ziels der ärztlichen Behandlung erforderlich ist. Die Leistung umfasst zusätzlich Grundpflege und hauswirtschaftliche Versorgung im erforderlichen Umfang.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer der Notwendigkeit, längstens 4 Wochen; in Ausnahmefällen bis 26 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Notwendigkeit; Grundpflege und hauswirtschaftliche Versorgung nicht nach Eintritt von Pflegebedürftigkeit nach SGB XI."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die IKK erbringt in den gesetzlich genannten Fällen auch Haushaltshilfe, wenn das im Haushalt lebende Kind bei Beginn der Hilfe das 14. Lebensjahr noch nicht vollendet hat.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach gesetzlichem Anspruchsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur in den in § 38 Abs. 1 SGB V genannten Fällen und wenn ein im Haushalt lebendes Kind unter 14 Jahren vorhanden ist."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillige Mitglieder in einem Arbeits- oder Berufsausbildungsverhältnis erhalten unter bestimmten Voraussetzungen Krankengeld ab Beginn der Arbeitsunfähigkeit, wenn das Beschäftigungsverhältnis wegen Arbeitgeberwechsels kurzzeitig unterbrochen wird.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bei Vorliegen der Voraussetzungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für freiwillige Mitglieder in Arbeits- oder Berufsausbildungsverhältnis; Unterbrechung wegen Wechsel des Arbeitgebers höchstens 7 Kalendertage."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeitsverrichtung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird das Krankengeld nach dem in den letzten drei Kalendermonaten erzielten Arbeitsentgelt berechnet. Einmalig gezahltes Arbeitsentgelt bleibt unberücksichtigt.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bei Vorliegen der Voraussetzungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen gemäß § 11 Abs. 6 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK gewährt ihren Versicherten zusätzliche Leistungen nach § 11 Abs. 6 SGB V. Der konkrete Leistungsumfang ergibt sich aus den nachfolgenden Regelungen der Satzung.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Einzelregelung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Allgemeine Öffnungsklausel für zusätzliche Satzungsleistungen nach § 11 Abs. 6 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte (Hilfsmittel)",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Versicherte haben Anspruch auf digitale Versorgungsprodukte, sofern diese in das Verzeichnis der IKK aufgenommen, ärztlich verordnet, vorab beantragt und genehmigt wurden. Die Produkte müssen sicher angewendet werden und dürfen nicht bereits Bestandteil der Regelleistung sein.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 350,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für im Verzeichnis erstattungsfähiger digitaler Versorgungsprodukte gelistete Produkte; ärztliche Verordnung und vorherige Genehmigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn sie zur Verhütung oder Früherkennung kardialer oder orthopädischer Erkrankungen geeignet und notwendig ist. Bei besonderen Risiken können zusätzliche Untersuchungen wie Belastungs-EKG, Lungenfunktion oder Laktatbestimmung hinzukommen.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 130,
+                "waehrung": "EUR",
+                "turnus": "1x innerhalb von 2 Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ärztlich bescheinigter Eignung/Notwendigkeit und bei vorliegenden Risikofaktoren; Leistung durch entsprechend qualifizierte Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für zahnärztliche Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Über die gesetzliche zahnärztliche Behandlung hinaus gewährt die IKK Zuschüsse für bestimmte zahnärztliche Leistungen, darunter Fissurenversiegelung, Glattflächenversiegelung und professionelle Zahnreinigung. Die Erstattung setzt eine spezifizierte Rechnung voraus.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die einzelnen Leistungen gelten unterschiedliche Altersgrenzen; professionelle Zahnreinigung bis zu zwei Mal jährlich bei zugelassenen Leistungserbringern."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen. Die Erstattung erfolgt nach Rechnung und ist auf die Kosten begrenzt, die bei Sach- oder Dienstleistung entstanden wären; im ambulanten ärztlichen und zahnärztlichen Bereich gilt grundsätzlich eine pauschalierte Abgeltung von 50 %.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "Nach Wahl der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach schriftlicher Wahl der Kostenerstattung; Bindung mindestens ein Kalendervierteljahr."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel gemäß § 129 Abs. 1 Satz 5 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Wahlarzneimittel erstattet die IKK den Apothekenverkaufspreis des gewählten Arzneimittels bis zur Höhe des maßgeblichen Vergleichspreises, abzüglich gesetzlicher Abschläge und einer Verwaltungskostenpauschale.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Verordnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Wahl eines Wahlarzneimittels nach § 129 Abs. 1 Satz 5 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für selbst beschaffte Leistungen im Ausland",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten für selbst beschaffte Leistungen im Ausland Kostenerstattung im Rahmen des § 13 Abs. 4 SGB V. Die Erstattung ist auf die in Deutschland entstehenden Sachleistungskosten begrenzt und wird um einen Verwaltungskostenabschlag gekürzt.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Inanspruchnahme von Leistungserbringern in EU/EWR/Schweiz; keine Erstattung bei Pauschalbeträgen oder vereinbartem Erstattungsverzicht."
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK übernimmt die Kosten für eine unabhängige ärztliche Zweitmeinung zu planbaren ambulanten und/oder stationären Eingriffen bei den in der Anlage genannten Indikationen. Die Zweitmeinung umfasst Beratung und erforderliche Untersuchungen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Indikation und Eingriff"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei den in der Anlage zu § 30 gelisteten Indikationen; Verdachtsdiagnose reicht nicht aus."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die IKK führt ein Bonusprogramm mit einem 12-monatigen Bonuszeitraum. Versicherte können für nachgewiesene Vorsorge-, Impf- und Aktivmaßnahmen einen Geldbonus oder Zuschuss erhalten; Nachweise müssen fristgerecht eingereicht werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusleistungen werden je Bonuszeitraum gewährt; nicht ausgeschöpfte Boni werden nicht übertragen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Vorsorgebonus",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonus für nachgewiesene Vorsorge- und Früherkennungsleistungen, Zahnvorsorge, Mutterschaftsleistungen und Schutzimpfungen. Für Kinderfrüherkennungsuntersuchungen U1 bis U6 sowie Mutterschaftsvorsorge gelten besondere Bonifizierungsregeln.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich 15 Jahre gelten gestaffelte Beträge je Maßnahme; besondere Einmalbonifizierung für U1 bis U6 und Mutterschaftsleistungen."
+                },
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab 16 Jahren gelten gestaffelte Beträge je Maßnahme; Nachweis durch Arzt/Zahnarzt/Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsbonus",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für Aktivmaßnahmen wie Mitgliedschaft im Sportverein oder qualitätsgesicherten Fitnessstudio sowie die Durchführung eines zertifizierten Präventionskurses. Zusätzliche Passivmaßnahmen wie BMI-Nachweis oder Nichtraucherstatus können den Bonus erhöhen.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Je Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis einer oder mehrerer Aktivmaßnahmen; zusätzliche Erhöhung bei Passivmaßnahmen möglich."
+                }
+            ]
+        },
+        {
+            "name": "Kombinierter Bonus",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Kombination aus Vorsorge- und Aktivmaßnahmen mit höherem Geldbonus. Alternativ kann bis zu einem bestimmten Alter statt des Barbonus ein Zuschuss für eine Proteomanalyse beantragt werden.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 350,
+                "waehrung": "EUR",
+                "turnus": "Je Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vollständigem Nachweis aller altersentsprechenden Vorsorgeleistungen sowie je einer Aktiv- und Passivmaßnahme."
+                },
+                {
+                    "alter_min": 35,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vollständigem Nachweis aller altersentsprechenden Vorsorgeleistungen sowie je einer Aktiv- und Passivmaßnahme; ab 35 Jahren höherer Barbonus bzw. Zuschuss für Proteomanalyse möglich."
+                }
+            ]
+        },
+        {
+            "name": "Bonus für Maßnahmen zur betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Arbeitgeber erhalten einen Bonus für erfolgreich durchgeführte betriebliche Gesundheitsförderungsmaßnahmen. Versicherte Beschäftigte im Betrieb können ebenfalls einen Geldbonus erhalten, wenn sie vollständig an den qualitätsgesicherten Angeboten teilnehmen.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Je erfolgreich durchgeführtem Projekt bzw. je Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Arbeitgeber bei erfolgreich durchgeführten BGF-Maßnahmen; für IKK-versicherte Beschäftigte im Betrieb bei vollständiger Teilnahme an den qualitätsgesicherten Angeboten."
+                }
+            ]
+        }
+    ]
+}

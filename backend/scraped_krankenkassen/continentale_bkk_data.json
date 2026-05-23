@@ -1,0 +1,1186 @@
+{
+    "krankenkasse": {
+        "name": "Continentale BKK",
+        "slug": "continentale_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/160/KV_Satzung_Gesamt.pdf",
+        "satzung_stand": "13.12.2023"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Primärprävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Continentale BKK erbringt Leistungen zur primären Prävention und zur Gesundheitsförderung nach dem individuellen Ansatz, dem Setting-Ansatz sowie zur betrieblichen Gesundheitsförderung auf Grundlage des GKV-Leitfadens Prävention.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Kurse je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach den §§ 20, 20a und 20b SGB V; bei Fremdanbietern nur bei Erfüllung der Qualitätskriterien des Leitfadens Prävention und mit Teilnahmebestätigung über mindestens 80% der Kurseinheiten"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schutzimpfungen und medikamentöse Malariaprophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Continentale BKK übernimmt zusätzlich zu den gesetzlichen Impfleistungen weitere ärztlich empfohlene Schutzimpfungen gegen übertragbare Krankheiten sowie die medikamentöse Malariaprophylaxe, sofern kein anderer Kostenträger zuständig ist.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach ärztlicher Empfehlung, soweit kein anderer Kostenträger zuständig ist"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die Impfung ärztlich empfohlen ist und kein anderer Kostenträger zuständig ist; gilt auch bei erhöhtem Gesundheitsrisiko durch nicht beruflich bedingten Auslandsaufenthalt"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Continentale BKK bietet Leistungen zur Förderung des selbstbestimmten gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen an. Wenn eine Sachleistung im Einzelfall nicht möglich ist, kann ein Zuschuss zu den entstandenen Kosten gewährt werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Leistungen nach § 20k Abs. 2 SGB V; Zuschuss nur, wenn die Leistung im Einzelfall nicht als Sachleistung zur Verfügung gestellt werden kann"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistung in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Für ambulante Vorsorgeleistungen in anerkannten Kurorten wird ein Pauschalbetrag zu den übrigen Kosten gewährt. Für chronisch kranke Kleinkinder gilt ein täglicher Zuschuss.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 160,
+                "waehrung": "EUR",
+                "turnus": "Pro Maßnahme ab 14 Kalendertagen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahme muss mindestens 14 Kalendertage dauern; für chronisch kranke Kleinkinder gilt 25,00 EUR kalendertäglich"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der Homöopathie, Phytotherapie und Anthroposophie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die Continentale BKK erstattet unter bestimmten Voraussetzungen Kosten für nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Phytotherapie und Anthroposophie.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Maximal pro Kalenderjahr und Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch notwendig, ärztliche Verordnung auf Privatrezept, Bezug in Apotheke oder zulässigem Versandhandel; ausgeschlossen bei G-BA-Ausschluss"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Verordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch einen entsprechend qualifizierten Leistungserbringer erfolgt.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich; Leistungserbringer muss qualitätsgesichert und entsprechend qualifiziert sein; nicht bei G-BA-Ausschluss"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorgeuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Continentale BKK beteiligt sich im Einzelfall an den Kosten einer Hautkrebsvorsorgeuntersuchung bei Vorliegen bestimmter Risikofaktoren und wenn die Untersuchung durch entsprechend zugelassene Fachärzte erfolgt.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 28,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren wie Hauttyp 1, mehr als 50 Leberflecken, größere Leberflecken oder immunsuppressiver Therapie nach Organtransplantation; nur durch zugelassene bzw. berechtigte Fachärzte für Haut- und Geschlechtskrankheiten/Dermatologen"
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebs-Tastuntersuchung durch medizinische Tastuntersucherinnen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Continentale BKK erstattet im Einzelfall die Kosten für eine Brustkrebsuntersuchung durch blinde oder sehbehinderte medizinische Tastuntersucherinnen bei familiärer oder medizinischer Vorbelastung.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bestätigung einer familiären oder medizinischen Vorbelastung erforderlich; Veranlassung durch Fachärztin/Facharzt für Frauenheilkunde und Geburtshilfe"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Vor Aufnahme einer sportlichen Betätigung beteiligt sich die Continentale BKK im Einzelfall an den Kosten für eine sportmedizinische Untersuchung und Beratung, wenn gesundheitliche Risikofaktoren vorliegen. Zusätzliche diagnostische Leistungen können bei besonderer ärztlicher Begründung mit umfasst sein.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "1x innerhalb von 2 Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur vor Aufnahme einer sportlichen Betätigung; erforderlich sind ärztliche Bescheinigung und Leistungserbringung durch Vertragsarzt bzw. berechtigten Leistungserbringer mit Zusatzweiterbildung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bei IVF oder ICSI erhalten Versicherte zusätzlich zum gesetzlichen Anspruch einen Zuschuss für bis zu drei Behandlungsversuche pro Ehepaar.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Behandlungsversuche pro Ehepaar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn Anspruch auf Maßnahmen der künstlichen Befruchtung nach § 27a SGB V besteht und eine IVF oder ICSI durchgeführt wird"
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Continentale BKK erstattet die Kosten für die Rufbereitschaft einer freiberuflich tätigen Hebamme in den letzten Wochen der Schwangerschaft, wenn die Hebamme zugelassen oder berechtigt ist und die Rufbereitschaft die 24-stündige Erreichbarkeit sowie sofortige Geburtsbereitschaft umfasst.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in der 37. bis 42. Schwangerschaftswoche; Hebamme muss zugelassen bzw. berechtigt sein"
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für den Lebenspartner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Continentale BKK übernimmt die Kosten für einen Geburtsvorbereitungskurs für den Lebenspartner, wenn der Kurs von einer zugelassenen oder berechtigten Hebamme erbracht wird.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kurs muss von einer nach § 134a Abs. 2 SGB V zugelassenen oder nach § 13 Abs. 4 SGB V berechtigten Hebamme erbracht werden"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen bei Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für ausgewählte ärztliche Vorsorgeleistungen in der Schwangerschaft gewährt die Continentale BKK einen Zuschuss, wenn ein individueller Untersuchungsanlass vorliegt und die Leistungen durch entsprechend qualifizierte Ärzte erbracht werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 120,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für B-Streptokokken-Test, Antikörpertests auf Ringelröteln/Windpocken, Toxoplasmose-Test und Zytomegalie-Test; nur bei besonderer Infektionsgefährdung und durch qualifizierten Arzt"
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel während der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten Kosten für bestimmte apothekenpflichtige, nicht verschreibungspflichtige Arzneimittel mit Eisen, Magnesium, Folsäure und Jod als Mono- oder Kombinationspräparate erstattet, sofern sie ärztlich verordnet und in Apotheke oder zulässigem Versandhandel bezogen wurden.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Verordnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; ausgeschlossen bei G-BA-Ausschluss"
+                }
+            ]
+        },
+        {
+            "name": "Krankenhausbehandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Reha",
+            "beschreibung": "Die Continentale BKK übernimmt Kosten für Krankenhausleistungen in nicht zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze, wenn die Behandlung medizinisch notwendig ist und die weiteren Satzungsvoraussetzungen erfüllt sind.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ärztlich bescheinigter Notwendigkeit, gleichwertiger Versorgung, vorgelegtem Kostenvoranschlag und vorheriger Zustimmung der Continentale BKK"
+                }
+            ]
+        },
+        {
+            "name": "Persönliche elektronische Gesundheitsakte",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Continentale BKK unterstützt Versicherte finanziell bei der Nutzung einer persönlichen elektronischen Gesundheitsakte und trägt die Nutzungsentgelte für die Dauer des Versicherungsverhältnisses.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer des Versicherungsverhältnisses"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nutzung über einen Vertrag mit einem von der Continentale BKK beauftragten Dritten"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird ein besonderes Krankengeld gezahlt. Die Leistung orientiert sich an dem entgangenen Arbeitsentgelt und ist auf das entgangene Nettoentgelt begrenzt.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Versicherte können für bestimmte Vorsorge-, Früherkennungs-, Impf- und Präventionsmaßnahmen einen Geldbonus oder alternativ einen Gesundheitszuschuss erhalten. Das Programm ist freiwillig; die konkrete Ausgestaltung und die zuschussfähigen Leistungen ergeben sich aus der Satzung und Anlage 3.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Der Bonus kann als Geldbonus oder als Gesundheitszuschuss gewählt werden. Der Gesundheitszuschuss ist an den Katalog zuschussfähiger Leistungen gebunden."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Ärztliche Gesundheitsuntersuchung (Check-up)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der ärztlichen Gesundheitsuntersuchung im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig im Rahmen des Bonusprogramms für gesundheitsbewusstes Verhalten"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung für Kinder und Jugendliche",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an Kinder- und Jugendvorsorgeuntersuchungen im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U7 bis U11 sowie J1 und J2"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme von Schutzimpfungen im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig sind Schutzimpfungen nach § 20i SGB V und § 16 der Satzung"
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung von Krebserkrankungen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an Früherkennungsuntersuchungen auf Krebserkrankungen im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den Satzungs- und G-BA-Regelungen"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebs-Screening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme am Hautkrebs-Screening im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Mammographie-Screening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme am Mammographie-Screening im Rahmen des Bonusprogramms.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung von Gebärmutterhalskrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an der Früherkennung von Gebärmutterhalskrebs im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung von Darmkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an der Früherkennung von Darmkrebs im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Screening auf Chlamydia trachomatis-Infektion",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme am Screening auf Chlamydia trachomatis-Infektion im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Screening auf Aneurysmen der Bauchaorta",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme am Screening auf Aneurysmen der Bauchaorta im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Vorsorgeuntersuchungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Teilnahme an zahnärztlichen Vorsorgeuntersuchungen im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Teilnahme an einer professionellen Zahnreinigung im Rahmen des Bonusprogramms.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig nach den geltenden Richtlinien"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitskurse zur verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an Gesundheitskursen zur verhaltensbezogenen Prävention oder vergleichbaren Angeboten zur Förderung eines gesundheitsbewussten Verhaltens.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Handlungsfelder Bewegung, Ernährung/Gewichtsreduktion, Stressreduktion/Entspannung, Genuss- und Suchtmittelkonsum"
+                }
+            ]
+        },
+        {
+            "name": "Baby-Schwimmkurs und Eltern-Kind-Turnen",
+            "kategorie": "Familie",
+            "beschreibung": "Teilnahme an einem Baby-Schwimmkurs oder Eltern-Kind-Turnen im Rahmen des Bonusprogramms.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nicht im Rahmen einer aktiven Vereinsmitgliedschaft"
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Teilnahme an Rückbildungsgymnastik im Rahmen des Bonusprogramms.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Bonuszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusfähig im Rahmen des Bonusprogramms"
+                }
+            ]
+        },
+        {
+            "name": "Bewegungsangebote im Sportverein, qualitätsgesichertem Fitnessstudio oder im Betriebs-/Hochschulsport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an qualitätsgesicherten Bewegungsangeboten im Sportverein, Fitnessstudio oder Betriebs-/Hochschulsport im Rahmen des Bonusprogramms.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gilt nicht für betriebliche Gesundheitsförderung nach § 20b SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiger Sport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßiger, qualitätsgesicherter Gemeinschaftssport kann im Bonusprogramm berücksichtigt werden, wenn eine entsprechende Teilnahme nachgewiesen wird.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter qualifizierter Leitung mit Vorbereitung; Nachweis z. B. durch Teilnahmebescheinigung oder Urkunde"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erwerb eines Sportabzeichens kann im Bonusprogramm berücksichtigt werden.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Einmal jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+                }
+            ]
+        },
+        {
+            "name": "Blutzucker im Normalbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ein im Normalbereich liegender Blutzuckerwert kann im Bonusprogramm als zusätzliche Maßnahme berücksichtigt werden.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+                }
+            ]
+        },
+        {
+            "name": "Blutdruck im Normalbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ein im Normalbereich liegender Blutdruckwert kann im Bonusprogramm als zusätzliche Maßnahme berücksichtigt werden.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+                }
+            ]
+        },
+        {
+            "name": "Cholesterin im Normalbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ein im Normalbereich liegender Cholesterinwert kann im Bonusprogramm als zusätzliche Maßnahme berücksichtigt werden.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+                }
+            ]
+        },
+        {
+            "name": "Nichtraucher seit mindestens sechs Monaten",
+            "kategorie": "Prävention",
+            "beschreibung": "Ein mindestens seit sechs Monaten bestehender Nichtraucherstatus kann im Bonusprogramm als zusätzliche Maßnahme berücksichtigt werden.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in Verbindung mit einer Maßnahme nach Ziffer 3.1.2 Buchstabe a"
+                }
+            ]
+        },
+        {
+            "name": "Knochendichtemessung (Osteodensitometrie)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Knochendichtemessung eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Sehtest",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für einen Sehtest eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Mitgliedschaft im Sportverein / Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Mitgliedschaft im Sportverein oder Fitnessstudio eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Sport- und Fitnessausrüstung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für Sport- und Fitnessausrüstung eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Sport- und Fitnesskurse",
+            "kategorie": "Bewegung",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für Sport- und Fitnesskurse, auch Online-Kurse, eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Sportveranstaltungen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für Start- oder Teilnahmegebühren von Sportveranstaltungen eingesetzt werden.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Zusatzkrankenversicherung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Zusatzkrankenversicherung eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Pflegezusatzversicherung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Pflegezusatzversicherung eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Unfallversicherung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Unfallversicherung eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Auslandskrankenversicherung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für eine Auslandskrankenversicherung eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Partner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für einen Geburtsvorbereitungskurs für den Partner eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitende Akupunktur",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für geburtsvorbereitende Akupunktur eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen bei Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog können zusätzliche Leistungen bei Schwangerschaft mit dem Bonus bezuschusst werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Daten- und Dokumentationsservice für medizinische Notfälle",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Gesundheitszuschuss-Katalog kann der Bonus für einen Daten- und Dokumentationsservice für medizinische Notfälle eingesetzt werden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Als zuschussfähige Leistung im Rahmen des Bonusprogramms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Teilnehmer am Bonusprogramm mit Gesundheitszuschuss"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,512 @@
+{
+    "krankenkasse": {
+        "name": "BKK MAHLE",
+        "slug": "bkk_mahle",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1151/BKK%20Mahle%20Satzung%2001.01.2020.pdf",
+        "satzung_stand": "01.01.2020"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege wird im Einzelfall auch die erforderliche Grundpflege und hauswirtschaftliche Versorgung erbracht. Voraussetzung ist, dass keine Pflegebedürftigkeit ab Pflegegrad 2 oder höher vorliegt und keine andere im Haushalt lebende Person die Versorgung übernehmen kann.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall, solange erforderlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit mit Pflegegrad 2 oder höher; keine andere im Haushalt lebende Person kann pflegen und versorgen"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Über die gesetzlichen Fälle hinaus wird Haushaltshilfe auch bei schwerer Krankheit oder akuter Verschlimmerung einer Krankheit gewährt, wenn die Weiterführung des Haushalts ärztlich bescheinigt nicht möglich ist und keine andere Person im Haushalt den Haushalt weiterführen kann. Die Leistung wird zusätzlich für bis zu 4 weitere Wochen erbracht.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen zusätzlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich bescheinigte schwere Krankheit oder akute Verschlimmerung; keine andere im Haushalt lebende Person kann den Haushalt weiterführen"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld gezahlt. Die Leistung orientiert sich an den entgangenen Arbeitstagen und ist auf die gesetzlichen Höchstgrenzen begrenzt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage, an denen gearbeitet worden wäre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in beschränkten Leistungsbereichen. Die Erstattung erfolgt grundsätzlich bis zur Höhe der sonst von der Kasse zu tragenden Kosten, abzüglich der gesetzlichen Zuzahlungen und eines Verwaltungskostenabschlags.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Mindestens ein Kalendervierteljahr Bindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vor Inanspruchnahme der Leistungen ist die Kasse zu informieren; ggf. Zustimmung bei nicht im SGB V genannten Leistungserbringern"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Rahmen der Arzneimittelversorgung können Versicherte im Einzelfall Kostenerstattung für ein anderes als das regulär abzugebende Arzneimittel wählen. Die Erstattung ist auf die sonst von der Kasse zu tragenden Kosten begrenzt, abzüglich gesetzlicher Zuzahlungen und weiterer Abschläge.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl eines anderen Arzneimittels nach den gesetzlichen Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Bescheinigung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und durch qualifizierte Leistungserbringer erfolgt. Die Kosten werden bis zu sechs Sitzungen pro Kalenderjahr bezuschusst.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 6 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung; qualitätsgesicherte Behandlung durch qualifizierten Osteopathen"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante psychotherapeutische Behandlung bei nicht zugelassenen Leistungserbringern",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Medizinisch notwendige ambulante Psychotherapie kann auch bei nicht zugelassenen Psychotherapeuten in Anspruch genommen werden, wenn diese vergleichbar qualifiziert sind. Die Kostenübernahme ist vorab zu beantragen und richtet sich maximal nach den maßgebenden Kassensätzen.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall nach Genehmigung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Beantragung mit fachärztlicher Verordnung, Qualifizierungsnachweisen und Kostenvoranschlag"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für Versicherte mit Anspruch auf künstliche Befruchtung werden zusätzliche Kostenanteile übernommen. Die Leistung gilt ergänzend zu den gesetzlichen Ansprüchen und setzt einen vor Behandlungsbeginn genehmigten Behandlungsplan voraus.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 25,
+                "waehrung": "Prozent",
+                "turnus": "Für die ersten drei Versuche; 75 % für einen 4. Versuch bei erfüllten Voraussetzungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch nach § 27a SGB V; genehmigter ärztlicher Behandlungsplan"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen für Schwangere: Eisen-, Magnesium- und/oder Folsäure-Arzneimittel",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte können nicht verschreibungspflichtige, apothekenpflichtige Arzneimittel mit Eisen, Magnesium und/oder Folsäure als Mono- oder Kombinationspräparate erstattet bekommen. Die Erstattung ist auf einmalig pro Schwangerschaft begrenzt und setzt eine ärztliche Verordnung sowie Originalrechnung voraus.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Verordnung durch Vertragsarzt außerhalb der vertragsärztlichen Versorgung; Abgabe durch zugelassene deutsche Apotheke oder zulässigen Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schwangerschaftsleistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Zusätzlich werden bestimmte Schwangerschaftsleistungen wie Ultraschalluntersuchungen, Geburtsvorbereitung für eine Begleitperson, Säuglingspflegekurse, Entspannungs- und Bewegungskurse, Nackentransparenzmessung, Toxoplasmose-Test und Frühgeburtenscreening bezuschusst. Die Leistung ist je Schwangerschaft begrenzt.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; einzelne Leistungen dürfen keine Mutterschafts-Richtlinien-Leistungen sein"
+                }
+            ]
+        },
+        {
+            "name": "Hebammenrufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten einer 24-stündigen Rufbereitschaft einer freiberuflichen Hebamme oder eines Entbindungspflegers, wenn eine außerklinische Geburt oder Beleggeburt in 1:1-Betreuung vereinbart ist. Die Leistung ist an die Zulassung bzw. Berechtigung der Hebamme oder des Entbindungspflegers gebunden.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vereinbarte außerklinische Geburt oder Beleggeburt in 1:1-Betreuung"
+                }
+            ]
+        },
+        {
+            "name": "Homöopathie, Anthroposophie und Phytotherapie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Anthroposophie und Phytotherapie werden erstattet, wenn sie ärztlich verordnet und medizinisch notwendig sind. Die Erstattung ist auf einen Jahresbetrag begrenzt.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliches Privatrezept; Bezug in Apotheke oder zulässigem Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige Arzneimittel für Kinder von 12 bis 17 Jahren",
+            "kategorie": "Familie",
+            "beschreibung": "Für Kinder und Jugendliche ab dem 12. bis zur Vollendung des 17. Lebensjahres werden bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel erstattet, sofern sie im Rahmen des genannten Kinder- und Jugendprogramms verordnet wurden. Die Erstattung ist auf einen Jahresbetrag begrenzt.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 12,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind muss im Gesundheitsprogramm für Kinder und Jugendliche eingeschrieben sein"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistung für häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Über die gesetzlichen Fälle hinaus werden Grund- und Behandlungspflege sowie hauswirtschaftliche Versorgung als zusätzliche Satzungsleistung für bestimmte Versicherte in stationären Pflegeeinrichtungen erbracht. Die Leistung ist an besondere Pflege- und Beobachtungsvoraussetzungen gebunden und monatlich begrenzt.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3.000 EUR je Kalendermonat"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wechsel aus häuslicher Versorgung oder stationärer Behandlung in eine stationäre Pflegeeinrichtung; Pflegebedürftigkeit und spezielle Krankenbeobachtung erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können sportmedizinische Vorsorgeuntersuchungen und Beratungen in Anspruch nehmen, wenn diese zur Verhütung oder Vermeidung der Verschlimmerung kardialer oder orthopädischer Erkrankungen geeignet und notwendig sind. Bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen mit umfasst sein.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Pro Untersuchung; erneute Erstattung frühestens nach 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzbezeichnung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Flash Glukose Messsystem",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die Kasse übernimmt die Versorgung mit einem Lesegerät und den zugehörigen Sensoren zur Glukosemessung im Unterhautgewebe. Voraussetzung ist eine intensivierte Insulintherapie oder Insulinpumpentherapie bei Diabetes mellitus sowie eine ärztlich bestätigte Notwendigkeit und vorherige Zustimmung der Kasse.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Intensivierte konventionelle Insulintherapie oder Insulinpumpentherapie bei Diabetes mellitus; ärztliche Verordnung und Schulung"
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Über den gesetzlichen Anspruch hinaus kann bei Therapie- oder Operations-Empfehlungen eine ärztliche Zweitmeinung durch einen nicht zugelassenen Leistungserbringer in Anspruch genommen werden. Voraussetzung ist eine entsprechende Vereinbarung der Kasse mit dem Leistungserbringer.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Therapieempfehlung oder OP-Empfehlung; Leistungserbringer muss vertraglich gebunden sein"
+                }
+            ]
+        },
+        {
+            "name": "Primäre Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse fördert Maßnahmen der primären Prävention und Gesundheitsförderung in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Gefördert werden eigene Angebote kostenfrei sowie Fremdanbieter-Kurse bei erfüllten Qualitätskriterien mit Zuschuss.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse pro Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maximal zwei Kurse pro Kalenderjahr; bei Fremdanbietern Teilnahmebestätigung und mindestens 80 % Teilnahme erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Zusätzlich zu den gesetzlichen Impfungen werden weitere Impfungen wie FSME, Influenza und HPV für Frauen von 18 bis 26 Jahren bei medizinischer Indikation übernommen. Auch Reiseimpfungen bei erhöhtem Gesundheitsrisiko können erstattet werden, sofern sie von der STIKO empfohlen sind.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 26,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "HPV nur bei entsprechender medizinischer Indikation"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Reiseimpfungen bei erhöhtem Gesundheitsrisiko und STIKO-Empfehlung"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V wird ein täglicher Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe gezahlt. Für ambulante Vorsorgeleistungen bei chronisch kranken Kleinkindern gilt ein erhöhter Tageszuschuss.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich; 25 EUR bei chronisch kranken Kleinkindern"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Abs. 2 SGB V"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen für chronisch kranke Kleinkinder"
+                }
+            ]
+        }
+    ],
+    "bonus_massnahmen": [
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnehmende Versicherte erhalten nach Einschreibung in die hausarztzentrierte Versorgung eine Prämie. Die Teilnahme ist freiwillig und an die vertraglichen Bedingungen gebunden.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Einmalig nach Einschreibung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an der hausarztzentrierten Versorgung"
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnehmende Versicherte an einem strukturierten Behandlungsprogramm erhalten eine einmalige Prämienzahlung. Die Programme umfassen unter anderem Diabetes mellitus Typ 1 und 2, Brustkrebs, KHK, Asthma und COPD.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem strukturierten Behandlungsprogramm nach § 137f SGB V"
+                }
+            ]
+        }
+    ]
+}

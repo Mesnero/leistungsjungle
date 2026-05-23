@@ -1,0 +1,940 @@
+{
+    "krankenkasse": {
+        "name": "Techniker Krankenkasse (TK)",
+        "slug": "techniker_krankenkasse_tk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/258/tk-satzung-data.pdf",
+        "satzung_stand": "05.01.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die TK gewährt ausgewählte Leistungen zur primären Prävention in den Handlungsfeldern Bewegung, Ernährung, Stressreduktion/Entspannung sowie Genuss- und Suchtmittelkonsum. Bezuschusst werden verhaltensbezogene Präventionsmaßnahmen und qualitätsgesicherte Projekte nach den Vorgaben des GKV-Leitfadens Prävention.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "2 Maßnahmen innerhalb eines Kalenderjahres"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leitfadenkonforme Maßnahmen bzw. qualitätsgesicherte Projekte nach GKV-Vorgaben"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die TK übernimmt Kosten für empfohlene Schutzimpfungen sowie weitere definierte Impfungen und die medikamentöse Malariaprophylaxe. Dazu gehören insbesondere HPV-, FSME- und Grippeschutzimpfungen sowie Impfungen bei erhöhtem Auslandsrisiko.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach medizinischer Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 26,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "HPV-Impfung"
+                },
+                {
+                    "alter_min": 1,
+                    "alter_max": 60,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Grippeschutzimpfung ab dem 1. bis zur Vollendung des 60. Lebensjahres"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "FSME-Impfung, sofern kein anderweitiger Anspruch besteht"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medikamentöse Malariaprophylaxe, sofern keine andere Leistungspflicht besteht"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Leistungen der Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für ambulante Vorsorgeleistungen in anerkannten Kurorten gewährt die TK einen Zuschuss zu den übrigen Kosten, wenn die Maßnahme mindestens 21 Kalendertage dauert. Der Zuschuss ist für chronisch kranke Kleinkinder und für alle anderen Versicherten unterschiedlich ausgestaltet.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "1x pro Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistung in anerkanntem Kurort, mindestens 21 Kalendertage"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzlich zur Behandlungspflege übernimmt die TK auch Grundpflege und hauswirtschaftliche Versorgung, wenn dies zur Sicherung des Ziels der ärztlichen Behandlung notwendig ist. Der Anspruch ist zeitlich nicht begrenzt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Ohne zeitliche Begrenzung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zur Sicherung des Ziels der ärztlichen Behandlung notwendig"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Über die gesetzlichen Ansprüche hinaus gewährt die TK Haushaltshilfe, wenn die Weiterführung des Haushalts wegen Krankheit vorübergehend nicht möglich ist und die TK die Kosten der Behandlung trägt. Zusätzliche Voraussetzungen gelten insbesondere bei im Haushalt lebenden Kindern.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der vorübergehenden Haushaltsunfähigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebt ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind; außerdem kann eine im Haushalt lebende Person den Haushalt nicht weiterführen"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Weiterführung des Haushalts wegen Krankheit vorübergehend nicht möglich und TK trägt die Behandlungskosten"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die TK fördert die Kompetenz der Versicherten für den selbstbestimmten gesundheitsorientierten Einsatz digitaler oder telemedizinischer Anwendungen. Die Förderung erfolgt als Schulungsmaßnahme und kann auch durch Dritte erbracht werden.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der Schulungsangebote"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Schulungsmaßnahmen nach den Vorgaben des Spitzenverbandes Bund der Krankenkassen"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der besonderen Therapierichtungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die TK erstattet Kosten für nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus Homöopathie, Phytotherapie und Anthroposophie, wenn sie medizinisch notwendig sind und ärztlich auf Privatrezept verordnet wurden. Erstattet werden die tatsächlich entstandenen Kosten bis zu einer jährlichen Höchstgrenze.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 100 Euro pro Kalenderjahr und Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung auf Privatrezept und Bezug in Apotheke oder zulässigem Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Auf ärztliche Veranlassung können Versicherte osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch entsprechend qualifizierte Leistungserbringer erfolgt. Die TK erstattet die Kosten bis zu einer festgelegten Höchstgrenze pro Sitzung und Kalenderjahr.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Veranlassung und qualitätsgesicherte Durchführung durch qualifizierten Osteopathen"
+                }
+            ]
+        },
+        {
+            "name": "Nicht zugelassene Leistungserbringer – Ambulante Behandlung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die TK kann ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern übernehmen, wenn eine entsprechende Vereinbarung besteht und die Behandlung medizinisch notwendig ist. Für die veranlassten Leistungen gilt die Kostenerstattungsregelung entsprechend.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Nach Maßgabe der vereinbarten Leistungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung mit der TK und medizinischer Notwendigkeit"
+                }
+            ]
+        },
+        {
+            "name": "Nicht zugelassene Leistungserbringer – Stationäre Behandlung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die TK übernimmt Kosten für stationäre Behandlungen in nicht zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze, wenn die gesetzlichen und vertraglichen Voraussetzungen erfüllt sind. Erforderlich sind insbesondere ärztliche Bescheinigung, Kostenvoranschlag und vorherige Zustimmung der TK.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Für die Dauer der medizinischen Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Zustimmung der TK und gleichwertige Versorgung im nicht zugelassenen Krankenhaus"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn diese medizinisch geeignet und notwendig ist. Bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen mit umfasst sein.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Erneute Erstattung frühestens nach 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzbezeichnung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Vorsorgeleistung für Lebendorganspender",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei der TK versicherte Lebendorganspender erhalten nach vorheriger Bewilligung eine stationäre Vorsorgeleistung zur Regenerierung der Gesundheit und zur Vermeidung ambulanter Behandlungen im zeitlichen Zusammenhang mit der Organentnahme. Eine Leistung kommt nur in Betracht, wenn keine andere Rehabilitationsleistung gewährt wird.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einzelfallbezogen nach Bewilligung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für bei der TK versicherte Lebendorganspender"
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten die Kosten der Rufbereitschaft einer freiberuflich tätigen Hebamme erstattet, wenn die Hebamme zugelassen oder berechtigt ist und die Rufbereitschaft die 24-stündige Erreichbarkeit sowie sofortige Geburtsbereitschaft umfasst. Die Leistung ist auf eine Schwangerschaft begrenzt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hebamme nach § 134a Abs. 2 SGB V oder § 13 Abs. 4 SGB V zugelassen/berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bei IVF oder ICSI erhalten anspruchsberechtigte Versicherte zusätzlich zu den genehmigten Kosten einen Zuschuss je Behandlungsversuch. Auch für medizinisch erforderliche TESE sowie für Assisted Hatching bestehen ergänzende Zuschüsse unter den genannten Voraussetzungen.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "Pro durchgeführten Behandlungsversuch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch nach § 27a SGB V; bei TESE männliche Versicherte, bei Assisted Hatching weibliche Versicherte ab vollendetem 37. Lebensjahr"
+                }
+            ]
+        },
+        {
+            "name": "Kieferorthopädische Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die TK beteiligt sich an den Kosten eines festsitzenden Frontzahnretainers nach erfolgreich abgeschlossener kieferorthopädischer Behandlung, wenn die Versorgung über den gesetzlichen Leistungsumfang hinausgeht. Zusätzlich gibt es einen einmaligen Zuschuss für die Versiegelung der Glattflächen vor dem erstmaligen Einsetzen der Brackets.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig für die Retainerversorgung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Retainer nur nach erfolgreich abgeschlossener kieferorthopädischer Behandlung; Versorgung spätestens 12 Monate nach Bestätigung"
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel während der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten die Kosten für apothekenpflichtige, nicht verschreibungspflichtige Arzneimittel mit Eisen, Magnesium, Folsäure und Jod als Mono- oder Kombinationspräparate erstattet, wenn diese ärztlich verordnet wurden. Die Leistung dient der Vermeidung eines Mangels während der Schwangerschaft.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Während der Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und Nachweis der Schwangerschaft"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte (Hilfsmittel)",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Versicherte haben Anspruch auf digitale Versorgungsprodukte, wenn diese in das TK-Verzeichnis aufgenommen, ärztlich verordnet, vorab beantragt und von der TK genehmigt wurden. Die Produkte müssen sicher anwendbar sein und die technischen sowie datenschutzrechtlichen Anforderungen erfüllen.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 300 Euro je Versicherten im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für in Anlage 7 gelistete digitale Versorgungsprodukte mit ärztlicher Verordnung und vorheriger Genehmigung"
+                }
+            ]
+        },
+        {
+            "name": "Partner-Geburtsvorbereitungskurs",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Versicherte mit ärztlich festgestellter Schwangerschaft erhalten die Kosten der Teilnahme ihrer Begleitperson an einem von einer Hebamme durchgeführten Partner-Geburtsvorbereitungskurs erstattet. Voraussetzung ist eine zugelassene oder berechtigte Hebamme und ein nach Inkrafttreten begonnener Kurs.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich festgestellte Schwangerschaft; Kurs durch zugelassene/berechtigte Hebamme"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche kinderorthopädische Hilfsmittel",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Versicherte im frühen Säuglingsalter übernimmt die TK die Kosten für Kopforthesen, wenn dies medizinisch erforderlich ist, um den Erfolg der Krankenbehandlung zu sichern. Die Versorgung muss durch spezialisierte orthopädische Einrichtungen oder Fachärzte verordnet werden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Einmalige Versorgung, maximal 2.000 Euro"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab dem 4. und bis zum vollendeten 15. Lebensmonat"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Vorsorgeleistungen bei Risikofaktoren",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei bestehenden Risikofaktoren erstattet die TK im Einzelfall über den gesetzlichen Anspruch hinaus bestimmte Vorsorgeleistungen, etwa Untersuchungen bei Risikofaktoren wie Übergewicht, Hypertonie oder Hypercholesterinämie sowie Hautkrebsuntersuchungen bei erhöhtem Risiko. Die Leistungen müssen von zugelassenen oder berechtigten Ärzten durchgeführt oder veranlasst werden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Untersuchungsart alle 2 bzw. 3 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Untersuchungen bei Risikofaktoren wie Übergewicht, Hypertonie oder Hypercholesterinämie"
+                },
+                {
+                    "alter_min": 15,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hautkrebsuntersuchung bei erhöhtem Risiko"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte ab dem vollendeten 18. Lebensjahr erhalten ergänzend zu den Vorsorgeleistungen einen Zuschuss zu professionellen Zahnreinigungen. Die Leistung muss bei einem Zahnarzt oder berechtigten zahnärztlichen Leistungserbringer erfolgen und auf nachgewiesenen Kosten beruhen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Behandlung bei Zahnarzt oder berechtigtem zahnärztlichen Leistungserbringer"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "TK-Bonusprogramm für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können am Bonusprogramm teilnehmen und für bestimmte Gesundheitsmaßnahmen Bonuspunkte sammeln. Der Gesundheitsbonus kann als Geldbonus, als TK-Gesundheitsdividende mit doppeltem Wert oder alternativ als Sachbonus ausgezahlt werden.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 0.01,
+        "wechselkurs_gesundheitskonto": 0.02,
+        "hinweis": "100 Bonuspunkte entsprechen 1,00 Euro; als TK-Gesundheitsdividende gilt der doppelte Wert."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Kinderfrüherkennungsuntersuchung U1 und U2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an den Kinderfrüherkennungsuntersuchungen U1 und U2 im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Kinderfrüherkennungsuntersuchungen U3 bis U7",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an den Kinderfrüherkennungsuntersuchungen U3 bis U7 im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Bonuserhöhung für die lückenlose Durchführung der Kinderfrüherkennungsuntersuchungen U1 bis U7",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzliche Bonifizierung bei lückenloser Durchführung der Kinderfrüherkennungsuntersuchungen U1 bis U7.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 2000,
+                "waehrung": "Punkte",
+                "turnus": "Einmal je lückenloser U1-bis-U7-Reihe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Kinderfrüherkennungsuntersuchung U7a bis U11",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an den Kinderfrüherkennungsuntersuchungen U7a bis U11 im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Jugendgesundheitsuntersuchung J1 und J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an den Jugendgesundheitsuntersuchungen J1 und J2 im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchungen zur Krebsfrüherkennung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an Untersuchungen zur Krebsfrüherkennung im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheits-Check-up",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme am Gesundheits-Check-up im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Check-up"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Vollständige Vorsorge nach den Mutterschafts-Richtlinien",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Teilnahme an der vollständigen Vorsorge nach den Mutterschafts-Richtlinien im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Teilnahme an zahnärztlicher Vorsorge im Teilnahmezeitraum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 2x je Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Teilnahme an Schutzimpfungen im Teilnahmezeitraum; Kombinationsimpfstoffe gelten als eine Impfung.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Immunisierung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsangebote zur verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an Gesundheitsangeboten zur verhaltensbezogenen Prävention in den Handlungsfeldern Bewegung, Ernährung oder Gewichtsreduktion, Stressbewältigung oder Entspannung sowie Suchtmittelkonsum.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Fitness-Studio, -angebote, Sportverein, Betriebs-/Hochschulsport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an qualitätsgesicherten Fitness- oder Sportangeboten.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Sportveranstaltungen und vergleichbare Aktivitäten unter qualifizierter Anleitung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an Sportveranstaltungen oder vergleichbaren Aktivitäten unter qualifizierter Anleitung.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen und vergleichbare Auszeichnungen mit regelmäßiger qualitätsgesicherter Vorbereitung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erwerb eines Sportabzeichens oder einer vergleichbaren Auszeichnung mit regelmäßiger qualitätsgesicherter Vorbereitung.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Auszeichnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Teilnahme an Rückbildungsgymnastik.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Baby-Schwimmkurs",
+            "kategorie": "Familie",
+            "beschreibung": "Teilnahme an einem Baby-Schwimmkurs für Kinder bis 2 Jahre.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 2,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Eltern-Kind-Turnen",
+            "kategorie": "Familie",
+            "beschreibung": "Teilnahme am Eltern-Kind-Turnen für Kinder bis 6 Jahre.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Gewaltprävention in Schulen",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an Maßnahmen der Gewaltprävention in Schulen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am TK-Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "TK-Gesundheitsbonus für qualitätsgesicherte Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "TK-versicherte Beschäftigte erhalten einen Bonus für die erfolgreiche Teilnahme an qualitätsgesicherten Maßnahmen der betrieblichen Gesundheitsförderung. Die Maßnahme muss mindestens 80 Prozent absolviert werden und aus den genannten Handlungsfeldern stammen.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je erfolgreich absolvierte Maßnahme, maximal 3 Maßnahmen je Vertragslaufzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur TK-versicherte Beschäftigte; Maßnahme nach Vertrag mit Arbeitgeber und TK"
+                }
+            ]
+        }
+    ]
+}

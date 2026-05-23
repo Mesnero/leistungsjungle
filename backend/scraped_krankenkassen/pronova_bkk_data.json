@@ -1,0 +1,856 @@
+{
+    "krankenkasse": {
+        "name": "Pronova BKK",
+        "slug": "pronova_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1189/Satzung%20der%20Pronova%20BKK%20Stand%2001.01.2026%20inkl.%2035.%20bis%2038.%20Nachtrag.pdf",
+        "satzung_stand": "01.01.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der häuslichen Krankenpflege als Behandlungspflege übernimmt die Pronova BKK im Einzelfall auch erforderliche Grundpflege und hauswirtschaftliche Versorgung, wenn keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere im Haushalt lebende Person die Versorgung übernehmen kann. Die Leistung ist zeitlich begrenzt und gilt nur, soweit die Behandlungspflege notwendig ist.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 8 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wenn Pflegebedürftigkeit mit mindestens Pflegegrad 2 nicht vorliegt und keine andere im Haushalt lebende Person den Kranken ausreichend versorgen kann."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Haushaltshilfe wird auch dann gewährt, wenn im Haushalt ein Kind lebt, das bei Beginn der Hilfe das 14. Lebensjahr noch nicht vollendet hat. Die übrigen gesetzlichen Voraussetzungen müssen erfüllt sein.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach § 38 SGB V"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind im Haushalt lebt und hat bei Beginn der Haushaltshilfe das 14. Lebensjahr noch nicht vollendet."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die Pronova BKK erstattet osteopathische Leistungen, wenn sie ärztlich veranlasst, qualitätsgesichert und durch einen entsprechend qualifizierten Leistungserbringer durchgeführt werden. Die Behandlung muss geeignet sein, Krankheiten zu heilen, zu verhüten oder Beschwerden zu lindern und darf nicht vom Gemeinsamen Bundesausschuss ausgeschlossen sein.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 4 Behandlungseinheiten je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur auf ärztliche Veranlassung und durch qualifizierte Osteopathen."
+                }
+            ]
+        },
+        {
+            "name": "Hebammen-Rufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Pronova BKK erstattet die Kosten für die Rufbereitschaft einer freiberuflich tätigen Hebamme ab der 32. Schwangerschaftswoche. Voraussetzung ist, dass die Hebamme zugelassen oder berechtigt ist und die Rufbereitschaft eine 24-stündige Erreichbarkeit sowie sofortige Bereitschaft zur Geburtshilfe umfasst.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab der 32. Schwangerschaftswoche; freiberufliche Hebamme mit Zulassung/Berechtigung."
+                }
+            ]
+        },
+        {
+            "name": "Vorgeburtliche Ergänzungsuntersuchungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten einen Zuschuss zu bestimmten nichtinvasiven Ergänzungsuntersuchungen in der Schwangerschaft, etwa Streptokokken-, Toxoplasmose-, Ringelröteln-/Windpocken- und CMV-Tests. Die Leistung setzt eine ärztliche Beratung und eine entsprechende Risikosituation voraus.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 125,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Schwangerschaft und entsprechender Risikosituation."
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Begleitpersonen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Begleitpersonen erhalten einen Zuschuss zu den Kosten, wenn sie gemeinsam mit dem schwangeren Elternteil an einem Geburtsvorbereitungskurs teilnehmen. Der Kurs muss von einer zugelassenen oder berechtigten Hebamme durchgeführt werden.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 100 EUR je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme gemeinsam mit dem schwangeren Elternteil."
+                }
+            ]
+        },
+        {
+            "name": "Untersuchungen von Kindern und Jugendlichen U10, U11, J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Über die gesetzlichen Kinderuntersuchungen hinaus erstattet die Pronova BKK die Kosten für die Vorsorgeuntersuchungen U10, U11 und J2. Voraussetzung ist, dass noch keine Erkrankung vorliegt, aber Risikofaktoren auf eine drohende Erkrankung hinweisen.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchungsart einmal"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder- und Jugendvorsorgeuntersuchungen U10, U11 und J2."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für schwangere Versicherte übernimmt die Pronova BKK bestimmte nicht verschreibungspflichtige, apothekenpflichtige Arzneimittel mit den genannten Wirkstoffen, sofern sie ärztlich verordnet und über eine Apotheke bezogen werden. Nahrungsergänzungsmittel sind ausgeschlossen.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die genannten Wirkstoffe und bei ärztlicher Verordnung."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Pronova BKK erstattet sportmedizinische Vorsorgeuntersuchungen und Beratung, wenn diese ärztlich bescheinigt geeignet und notwendig sind, um kardiale oder orthopädische Erkrankungen zu verhüten. Zusätzliche diagnostische Leistungen können bei entsprechender Indikation mit umfasst sein.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Untersuchung, frühestens alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Leistungserbringer mit Zusatzbezeichnung Sportmedizin."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche kinderorthopädische Hilfsmittel",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Säuglinge und Kleinkinder übernimmt die Pronova BKK die Kosten für eine Kopforthesenversorgung, wenn diese medizinisch erforderlich ist und die Voraussetzungen der spezialisierten Indikationsstellung erfüllt sind. Die Versorgung muss dem Stand der Medizin entsprechen.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmalige Versorgung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Ab dem 4. und bis zum vollendeten 15. Lebensmonat."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Pronova BKK übernimmt im Einzelfall die Kosten für eine Hautkrebsvorsorge bei bestehenden Risikofaktoren, wenn die Leistung durch einen Vertragsarzt oder berechtigten Arzt erbracht wird. Die Vorsorge umfasst die Ganzkörperinspektion der Haut und ist ausgeschlossen, wenn bereits eine Regelleistung oder vertragliche Versorgung besteht.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 33,
+                "waehrung": "EUR",
+                "turnus": "Innerhalb von 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren und wenn keine GKV-Regelleistung bzw. vertragliche Leistung verfügbar ist."
+                }
+            ]
+        },
+        {
+            "name": "Fissurenversiegelung der kariesfreien Prämolaren",
+            "kategorie": "Zahn",
+            "beschreibung": "Die Pronova BKK beteiligt sich an den Kosten für die Fissurenversiegelung der kariesfreien Prämolaren 4 und 5 im bleibenden Gebiss. Die Leistung gilt für Versicherte im Kindes- und Jugendalter und wird nach Rechnungsvorlage erstattet.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bleibendes Gebiss; Prämolaren 4 und 5; durch Vertragszahnärzte oder berechtigte Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung durch MTU",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Pronova BKK erstattet die Kosten für eine Brustkrebsuntersuchung durch medizinische Tastuntersucherinnen, wenn eine familiäre oder medizinische Vorbelastung vorliegt und die Untersuchung ärztlich veranlasst wird. Die Leistung ist auf einen jährlichen Höchstbetrag begrenzt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 58.5,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesener familiärer oder medizinischer Vorbelastung und ärztlicher Veranlassung."
+                }
+            ]
+        },
+        {
+            "name": "Darmkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Pronova BKK beteiligt sich an den Kosten einer Früherkennungskoloskopie für Versicherte im Alter von 40 bis unter 50 Jahren, wenn Risikofaktoren auf ein erhöhtes erbliches Erkrankungsrisiko hinweisen. Die Untersuchung muss durch einen Vertragsarzt oder berechtigten Arzt erfolgen.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 40,
+                    "alter_max": 49,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren wie familiär erhöhtem Darmkrebsrisiko."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Pronova BKK fördert Maßnahmen der primären Prävention in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Je nach Anbieter und Maßnahme werden Kosten anteilig, vollständig oder als Zuschuss übernommen; die Förderung ist auf eine begrenzte Zahl von Maßnahmen pro Kalenderjahr beschränkt.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Einhaltung der Qualitätskriterien des Leitfadens Prävention; bei Überschreiten der Belastungsgrenze 90 % bzw. höhere Höchstbeträge."
+                }
+            ]
+        },
+        {
+            "name": "Kompaktangebote zur Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Für Kompaktangebote, die dem Leitfaden Prävention entsprechen, beteiligt sich die Pronova BKK an den Kosten. Für Kinder und Jugendliche gelten abweichende Höchstbeträge; Unterkunft und Freizeitaktivitäten sind vom Versicherten selbst zu tragen.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Vollendung des 6. Lebensjahres; bei 6 bis unter 14 Jahren im Rahmen von Familienprogrammen gelten besondere Höchstbeträge."
+                }
+            ]
+        },
+        {
+            "name": "Digitale oder telemedizinische Präventionsanwendungen",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Pronova BKK gewährt Leistungen zur Förderung des selbstbestimmten gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen und Verfahren. Wenn eine Sachleistung im Einzelfall nicht möglich ist, wird ein jährlicher Zuschuss gewährt.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur soweit die Leistung im Einzelfall nicht als Sachleistung zur Verfügung gestellt werden kann."
+                }
+            ]
+        },
+        {
+            "name": "Weitere Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Pronova BKK übernimmt zusätzlich zu den Schutzimpfungen nach dem SGB V weitere Impfungen gegen übertragbare Krankheiten, darunter FSME, Influenza, HPV, Tollwut und Meningokokken, soweit kein anderer Kostenträger zuständig ist. Auch Reiseschutzimpfungen und ärztlich individuell indizierte Impfungen sind umfasst.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Impfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Soweit kein anderer Kostenträger zuständig ist; bei Reiseschutzimpfungen nur bei nicht beruflich bedingtem Auslandsaufenthalt."
+                }
+            ]
+        },
+        {
+            "name": "Medikamentöse Malariaprophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Bei nicht beruflich bedingten Auslandsaufenthalten übernimmt die Pronova BKK auch die Kosten einer medikamentösen Malariaprophylaxe, wenn sie medizinisch indiziert und von der WHO empfohlen ist. Die Erstattung umfasst die Leistungserbringung und das Arzneimittel.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Reise"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nicht beruflich bedingtem Auslandsaufenthalt und entsprechender Indikation."
+                }
+            ]
+        },
+        {
+            "name": "Geldzuschuss bei medizinischen Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach dem SGB V übernimmt die Pronova BKK einen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe, wenn die Maßnahme mindestens 14 Tage dauert. Für chronisch kranke Kleinkinder gilt ein täglicher Pauschalbetrag, für alle anderen Versicherte ein einmaliger Pauschalbetrag.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ambulanter Vorsorgeleistung von mindestens 14 Tagen Dauer; für chronisch kranke Kleinkinder abweichender Tagessatz."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Versicherte können für nachgewiesene Vorsorge- und Aktivitätsmaßnahmen einen Geldbonus erhalten. Zusätzlich gibt es einen Starter-Bonus bei erstmaliger Teilnahme oder nach fünfjähriger Pause sowie die Möglichkeit, den Geldbonus als Zuschuss für bestimmte Versicherungen zu nutzen.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 2,
+        "hinweis": "Bonus wird nach Nachweis im Bonusheft ausgezahlt; Bonus Plus ist als Zuschuss für ausgewählte Versicherungen möglich."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheits-Check-up",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der Gesundheitsuntersuchung nach § 25 Abs. 1 SGB V.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "STI-Test",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ärztlich durchgeführter Test auf sexuell übertragbare Infektionserkrankungen.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Ultraschalluntersuchung zur Früherkennung eines Bauchaortenaneurysmas",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der Ultraschalluntersuchung zur Früherkennung eines Bauchaortenaneurysmas.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsmaßnahmen nur für Frauen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an den für Frauen vorgesehenen Krebsfrüherkennungsmaßnahmen.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsmaßnahmen nur für Männer",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an den für Männer vorgesehenen Krebsfrüherkennungsmaßnahmen.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "M",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Früherkennungsuntersuchungen auf Hautkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an Früherkennungsuntersuchungen auf Hautkrebs.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Früherkennungsuntersuchungen auf kolorektales Karzinom",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an Früherkennungsuntersuchungen auf kolorektales Karzinom.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Leistung zur Verhütung übertragbarer Krankheiten",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme einer von der Pronova BKK zu übernehmenden Leistung zur Verhütung übertragbarer Krankheiten.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Erwachsene im Rahmen der Bonusregelung."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Untersuchung der Zähne auf der Grundlage des § 55 Abs. 1 Satz 4 Nr. 2 SGB V.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerenvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Vollständige Durchführung der in den Mutterschaftsrichtlinien vorgesehenen Schwangerenvorsorge.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig im Kalenderjahr des Schwangerschaftsendes"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Professionelle Zahnreinigung in einer Zahnarztpraxis.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Erwachsene."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistung zur Vorsorge nach der Satzung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme zusätzlicher Vorsorgeleistungen nach der Satzung, insbesondere Schwangerschaftsvorsorge, Sportmedizin, Hautkrebsvorsorge oder Brustkrebsuntersuchung.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "Je nach Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bezieht sich auf die in § 14 Abs. V, IX, XII und XIV genannten Leistungen."
+                }
+            ]
+        },
+        {
+            "name": "Kinder-/Jugendvorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme einer Gesundheitsuntersuchung für Kinder und Jugendliche nach § 26 Abs. 1 SGB V oder der zusätzlichen Satzungsleistung nach § 14 Abs. VII.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche."
+                }
+            ]
+        },
+        {
+            "name": "Leistung zur Verhütung übertragbarer Krankheiten Kinder/Jugendliche",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme einer Leistung zur Verhütung übertragbarer Krankheiten nach § 20i SGB V oder nach § 16 der Satzung.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge Kinder/Jugendliche",
+            "kategorie": "Zahn",
+            "beschreibung": "Untersuchung der Zähne nach § 22 Abs. 1 SGB V.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspoint (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung Jugendliche",
+            "kategorie": "Zahn",
+            "beschreibung": "Professionelle Zahnreinigung in einer Zahnarztpraxis für Jugendliche.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 12,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Versicherte ab dem vollendeten 12. Lebensjahr."
+                }
+            ]
+        },
+        {
+            "name": "Bewegungsangebote im Sportverein oder qualitätsgesicherten Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßige Teilnahme an Bewegungsangeboten im Sportverein, qualitätsgesicherten Fitnessstudio oder Betriebs-/Hochschulsport außerhalb der Arbeitszeit.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Betriebliche Gesundheitsförderung ist ausgenommen."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte primäre Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Inanspruchnahme einer qualitätsgesicherten Leistung zur primären Prävention gemäß § 20 Abs. 5 SGB V.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur soweit es sich nicht um gesetzliche oder satzungsmäßige Leistungen handelt."
+                }
+            ]
+        }
+    ]
+}

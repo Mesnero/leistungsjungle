@@ -1,0 +1,1020 @@
+{
+    "krankenkasse": {
+        "name": "AOK PLUS",
+        "slug": "aok_plus",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/245/AOK%20PLUS_Satzung%20KV%20Stand%2001.02.2025.pdf",
+        "satzung_stand": "01.02.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Ambulante Vorsorgeleistung im Kurort",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei medizinisch erforderlicher ambulanter Vorsorgeleistung in anerkannten Kurorten beteiligt sich die AOK PLUS an Unterkunft, Verpflegung, Kurtaxe und Fahrkosten. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Täglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch erforderliche ambulante Vorsorgeleistung in anerkannten Kurorten; für Absatz 2 chronisch kranke Kleinkinder"
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeleistungen und Rehabilitationsleistungen in Einrichtungen des Müttergenesungswerks",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Die AOK PLUS übernimmt die Kosten für medizinisch erforderliche Vorsorge- oder Rehabilitationsleistungen in Einrichtungen des Müttergenesungswerks, gleichartigen Einrichtungen oder geeigneten Vater-Kind-Einrichtungen mit Versorgungsvertrag. Die Leistung kann auch als Mutter/Vater-Kind-Maßnahme erbracht werden.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch erforderliche Vorsorgeleistung nach § 24 SGB V oder Rehabilitationsleistung nach § 41 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen als Zusatzleistung",
+            "kategorie": "Impfung",
+            "beschreibung": "Neben den Pflichtimpfungen übernimmt die AOK PLUS auch die Kosten für weitere Schutzimpfungen, wenn diese auf Grundlage besonderer vertraglicher Regelungen durch berechtigte Leistungserbringer durchgeführt werden. Einzelheiten zu Voraussetzungen und Umfang ergeben sich aus den Vereinbarungen.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Impfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusatzleistungen nach § 10 Abs. 4 der Satzung; Durchführung durch vertraglich berechtigte Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen zur primären Prävention",
+            "kategorie": "Impfung",
+            "beschreibung": "Die AOK PLUS kann auch außerhalb der ausdrücklich genannten Fälle die Kosten von Schutzimpfungen zur primären Prävention übernehmen oder Zuschüsse leisten, sofern kein anderer Kostenträger zuständig ist.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Impfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Soweit kein anderer Kostenträger zuständig ist"
+                }
+            ]
+        },
+        {
+            "name": "Medikamentöse Malariaprophylaxe",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK PLUS übernimmt die Kosten für die medikamentöse Malariaprophylaxe als Maßnahme der spezifischen Prophylaxe. Erstattet werden zugelassene verschreibungspflichtige Arzneimittel bei erhöhtem Gesundheitsrisiko durch einen privaten Auslandsaufenthalt.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Reise"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Privater Auslandsaufenthalt mit erhöhtem Gesundheitsrisiko; keine Zuständigkeit eines anderen Kostenträgers"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel für Schwangere und junge Mütter",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte können bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit Jodid, Eisen, Magnesium und/oder Folsäure erhalten. Für Mütter gilt dies für Jodid bis zum Ende des ersten Lebensjahres des Kindes, sofern die Verordnung durch einen Vertragsarzt erfolgt.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft bzw. bis zum 1. Lebensjahr des Kindes"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Verordnung auf Privatrezept durch Vertragsarzt; keine ausgeschlossenen Arzneimittel oder Nahrungsergänzungsmittel"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Mütter von der Geburt bis zur Vollendung des 1. Lebensjahres ihres Kindes; nur Jodid als Monopräparat"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte ab 18 Jahren erhalten einen Zuschuss zu professionellen Zahnreinigungen beim Vertragszahnarzt. Erstattet werden nachgewiesene Kosten bis zum jährlichen Höchstbetrag.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Inanspruchnahme bei einem Vertragszahnarzt"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Prophylaxe bei kieferorthopädischer Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Während einer kieferorthopädischen Behandlung mit festsitzenden Apparaturen wird statt der regulären Zahnreinigung eine erweiterte Prophylaxe bezuschusst. Dazu gehören zusätzlich das Entfernen und Wiedereingliedern der Bögen und Zusatzteile.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderhalbjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kieferorthopädische Behandlung mit festsitzenden Apparaturen (Multibracket)"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK PLUS erstattet sportmedizinische Vorsorgeuntersuchungen und Beratungen bei approbierten Ärzten mit Zusatzbezeichnung Sportmedizin. Je nach Umfang der Untersuchung gelten unterschiedliche Höchstbeträge; eine erneute Erstattung ist erst nach zwei Jahren möglich.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "1x alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch geeignet und notwendig zur Verhütung kardialer oder orthopädischer Erkrankungen; ärztliche Bescheinigung bei erweiterter Untersuchung"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Gesundheitsanwendungen",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK PLUS erstattet zusätzliche, nicht ausgeschlossene digitale Gesundheitsanwendungen für Anwendungsbereiche, die über den gesetzlichen Leistungsumfang hinausgehen. Voraussetzung ist die Aufnahme in das DiGA PLUS-Verzeichnis und der Nachweis der tatsächlichen Kosten.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Aufnahme in das DiGA PLUS-Verzeichnis; medizinische Indikation; keine Ausschlusskriterien; sichere Anwendung"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können auf ärztliche Bescheinigung osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet und nicht ausgeschlossen ist. Die AOK PLUS beteiligt sich an den Kosten für bis zu drei Sitzungen pro Kalenderjahr.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 3 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung; qualitätsgesicherte Durchführung durch berechtigten Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen U 10, U 11 und J 2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK PLUS bietet zusätzliche Vorsorgeuntersuchungen für Kinder und Jugendliche an. Die Untersuchungen U 10, U 11 und J 2 dienen der Früherkennung von Entwicklungs-, Verhaltens- und anderen Gesundheitsstörungen und werden als Sachleistung erbracht.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "U10, U11 und J2 jeweils nach Altersgruppe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 8,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U 10"
+                },
+                {
+                    "alter_min": 9,
+                    "alter_max": 10,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U 11"
+                },
+                {
+                    "alter_min": 16,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "J 2"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen im Rahmen der künstlichen Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK PLUS übernimmt zusätzlich zu den genehmigten Behandlungskosten weitere Leistungen im Zusammenhang mit künstlicher Befruchtung. Dazu gehören ein zusätzlicher Kostenanteil, TESE bei Männern sowie Assisted Hatching bei bestimmten weiblichen Versicherten.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 25,
+                "waehrung": "Prozent",
+                "turnus": "Pro Behandlungsplan"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Voraussetzungen der Absätze 4 und 5; genehmigter Behandlungsplan; Leistungen nur im Geltungsbereich und unter Einhaltung des Embryonenschutzgesetzes"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Diabetes-Vorsorge (Check-up PLUS)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzlich zur gesetzlichen Gesundheitsuntersuchung bietet die AOK PLUS erweiterte Leistungen zur Diabetes-Vorsorge an, darunter Risikoanalyse, Taillenumfang, Kreatinin und weitere Laborparameter. Anspruch besteht nur bei erfüllten Alters- und Gesundheitsvoraussetzungen.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Zeitgleich zu jeder gesetzlichen Gesundheitsuntersuchung für Erwachsene"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 64,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch auf Gesundheitsuntersuchung nach § 25 Abs. 1 SGB V; noch kein Diabetes mellitus diagnostiziert"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorge Ganzkörperuntersuchung Haut-Check",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Versicherte können ab dem 14. Lebensjahr bis zum Alter von 34 Jahren alle zwei Kalenderjahre an der Hautkrebsvorsorge teilnehmen. Die Leistung umfasst Hauttypbestimmung, vollständige Hautuntersuchung und bei Bedarf Auflichtmikroskopie sowie Beratung.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Jedes zweite Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 14,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an den vertraglich geregelten Leistungen bei berechtigten Fachärzten oder Einrichtungen"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Darmkrebsvorsorge bei Risikofaktoren",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bei bestehenden Risikofaktoren beteiligt sich die AOK PLUS im Einzelfall an zusätzlichen Darmkrebsvorsorgeleistungen. Dazu gehören Stuhltests und Früherkennungskoloskopien für Versicherte zwischen 40 und 49 Jahren.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Stuhltest alle 2 Jahre; Koloskopie alle 5 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 40,
+                    "alter_max": 49,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorlage einer spezifizierten Rechnung und benannter Risikofaktoren, z. B. erhöhtes familiäres Risiko auf Darmkrebs"
+                }
+            ]
+        },
+        {
+            "name": "Kopfkorrekturorthesen für Säuglinge",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die AOK PLUS übernimmt die Kosten für Kopfkorrekturorthesen zur Behandlung schwerer lagerungsbedingter nicht-synostotischer Schädelasymmetrien bei Säuglingen. Voraussetzung sind ärztliche Verordnung, erfolglose konservative Behandlung und Genehmigung vor Therapiebeginn.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Behandlungsbeginn grundsätzlich zwischen 6 und 9 Monaten; schwere lagerungsbedingte nicht-synostotische Schädelasymmetrie"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen zur Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die AOK PLUS stellt über die gesetzlichen Fälle hinaus Haushaltshilfe zur Verfügung, wenn wegen schwerer Krankheit, akuter Verschlimmerung oder einer medizinisch erforderlichen Abwesenheit die Weiterführung des Haushalts nicht möglich ist. In bestimmten Fällen ist die Leistung auf längere Zeiträume ausgedehnt.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 6 Wochen bzw. bis zu 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit mit Pflegegrad 2 bis 5; ärztliche Bescheinigung erforderlich"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonusprogramm",
+        "beschreibung": "Die AOK PLUS vergibt Bonuspunkte für gesundheitsbewusstes Verhalten und bestimmte Vorsorge- und Präventionsmaßnahmen. Punkte können in Geld ausgezahlt oder alternativ für ausgewählte PLUS-Leistungen als Zuschuss genutzt werden.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 0.01,
+        "wechselkurs_gesundheitskonto": 0.02,
+        "hinweis": "100 Bonuspunkte entsprechen 1,00 EUR als Geldbonus; für PLUS-Leistungen entspricht 100 Bonuspunkten 2,00 EUR."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Empfohlene Schutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonuspunkte für jede empfohlene Schutzimpfung nach den genannten gesetzlichen Vorschriften.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Je empfohlener Schutzimpfung im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung nach § 25 Abs. 1 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für die gesetzliche Gesundheitsuntersuchung für Erwachsene.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Empfohlene Krebsfrüherkennungsuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonuspunkte für eine empfohlene Krebsfrüherkennungsuntersuchung nach den gesetzlichen Vorgaben.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "U1 bis U3",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für die vollständige Inanspruchnahme der U1 bis U3 bei Kindern.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1500,
+                "waehrung": "Punkte",
+                "turnus": "Einmalig bei vollständiger Inanspruchnahme aller drei Untersuchungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; vollständige Inanspruchnahme aller drei Untersuchungen"
+                }
+            ]
+        },
+        {
+            "name": "Weitere U-Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für jede weitere U-Untersuchung bei Kindern.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Je weiterer U-Untersuchung im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung zur Früherkennung von Zahn-, Mund- und Kieferkrankheiten",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonuspunkte für die zahnärztliche Früherkennungsuntersuchung bei Kindern.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Neugeborenen-Hörscreening",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für das Neugeborenen-Hörscreening.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung zur Früherkennung von Krankheiten bei Jugendlichen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für die Jugendvorsorge nach den gesetzlichen Vorgaben.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonuspunkte für zusätzliche Schutzimpfungen nach der Satzung, ausgenommen Reiseschutzimpfungen.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Je Impfung im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; keine Reiseschutzimpfungen"
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorgeuntersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonuspunkte für Zahnvorsorgeuntersuchungen nach den gesetzlichen Vorgaben.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Bis 18 Jahre nur bei beiden halbjährlichen Untersuchungen; ab 18 Jahren jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; beide halbjährlichen Untersuchungen erforderlich"
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; jährlich"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonuspunkte für eine professionelle Zahnreinigung oder eine professionelle Zahnreinigung für Multibrackets.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung im Rahmen der Schwangerschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonuspunkte für eine einmalige Untersuchung im Rahmen der Schwangerschaftsvorsorge.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Nichtraucherkurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonuspunkte für die Teilnahme an einem Nichtraucherkurs.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Eignungs- oder Tauglichkeitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für eine Eignungs- oder Tauglichkeitsuntersuchung.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "U10, U11 und J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für die Kinder- und Jugendgesundheitsuntersuchungen U10, U11 und J2.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für eine sportmedizinische Vorsorgeuntersuchung mit ärztlicher Bescheinigung durch einen Vertragsarzt mit Zusatzbezeichnung Sportmedizin.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Ganzkörperuntersuchung Haut-Check",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonuspunkte für die nach der Satzung vorgesehene Hautkrebsvorsorge.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 14,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Aktive Teilnahme an einer Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für die aktive Teilnahme an einer Sportveranstaltung.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für das Ablegen eines Sportabzeichens.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Mitgliedschaft in einem Sportverein oder Hochschul-/Betriebssport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für eine Mitgliedschaft in einem Sportverein oder die Teilnahme am Hochschul- oder Betriebssport.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Mitgliedschaft in einem Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für eine Mitgliedschaft in einem Fitnessstudio.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Fitnesstracker",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonuspunkte für den Erwerb eines Fitnesstrackers zur sportlichen Betätigung.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Knochenmarktypisierung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für eine Knochenmarktypisierung.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Blutspende",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonuspunkte für eine Blutspende.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Sportliche Aktivität per App",
+            "kategorie": "Bewegung",
+            "beschreibung": "Zusätzliche Bonuspunkte für nachgewiesene sportliche Aktivitäten über die App, wenn definierte Aktivitätsziele erreicht werden. Pro Tag und Monat gelten Obergrenzen für anerkannte Aktivitäten.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 1 Aktivität pro Tag und 15 Aktivitäten pro Monat"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; Nutzung der App über eigenes Smartphone"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsziel per App",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnehmer können für die Verwirklichung eines Gesundheitsziels innerhalb einer Laufzeit von bis zu 90 Tagen zusätzliche Bonuspunkte erhalten. Voraussetzung ist die qualitätsgesicherte Erfüllung eines Großteils der vorgegebenen Aufgaben.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1500,
+                "waehrung": "Punkte",
+                "turnus": "Bis zu 4 Gesundheitsziele pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm; Nutzung der App über eigenes Smartphone"
+                }
+            ]
+        }
+    ]
+}

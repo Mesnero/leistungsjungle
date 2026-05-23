@@ -1,0 +1,572 @@
+{
+    "krankenkasse": {
+        "name": "Debeka BKK",
+        "slug": "debeka_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1119/Satzung%20der%20Debeka%20BKK_%2042.%20Nachtrag%20%282022_07_01%29.pdf",
+        "satzung_stand": "01.07.2022"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzlich zur Behandlungspflege wird im Einzelfall erforderliche Grundpflege und hauswirtschaftliche Versorgung erbracht, wenn keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere im Haushalt lebende Person den Kranken ausreichend versorgen kann. Die Leistung ist zeitlich begrenzt und an die gesetzlichen Zuzahlungsregeln gebunden.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1 Stunde je Pflegeeinsatz, längstens 25 Pflegeeinsätze je Kalendermonat; maximal 26 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn Pflegebedürftigkeit mit mindestens Pflegegrad 2 nicht vorliegt und keine andere im Haushalt lebende Person den Kranken in erforderlichem Umfang pflegen kann."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Versicherte erhalten Haushaltshilfe, wenn die gesetzlichen Voraussetzungen vorliegen und das im Haushalt lebende Kind bei Beginn der Hilfe das 14. Lebensjahr noch nicht vollendet hat. Die Leistung ist zeitlich begrenzt und unterliegt den gesetzlichen Zuzahlungsregeln.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Höchstens 2 Stunden je Tag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Anspruchsvoraussetzungen nach § 38 Abs. 1 Satz 1 SGB V; im Haushalt lebendes Kind bei Beginn der Haushaltshilfe unter 14 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld nach den satzungsmäßigen Vorgaben gezahlt. Die Höhe richtet sich nach dem entgangenen Arbeitsentgelt und ist nach oben begrenzt.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in bestimmten Leistungsbereichen und unter Bedingungen für Leistungserbringer im EU-/EWR-Ausland oder der Schweiz. Die Erstattung ist auf die Kosten begrenzt, die der Kasse als Sachleistung entstanden wären, und unterliegt den satzungsmäßigen Abzügen und Zuzahlungen.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 25,
+                "waehrung": "Prozent",
+                "turnus": "Nach Wahl der Kostenerstattung; mindestens ein Kalendervierteljahr Bindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme; ggf. Beschränkung auf bestimmte Leistungsbereiche möglich."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Wahlarzneimittel besteht ein Erstattungsanspruch bis zur Höhe der Sachleistungskosten, begrenzt auf die tatsächlichen Kosten. Es gelten die satzungsmäßigen Abschläge und die allgemeinen Regeln zur Kostenerstattung.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Inanspruchnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Arzneimittel nach § 129 Abs. 1 Satz 5 SGB V im Rahmen der Kostenerstattung."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Debeka BKK übernimmt zusätzlich zu den gesetzlichen Impfungen weitere ärztlich empfohlene Schutzimpfungen, darunter FSME, Influenza, HPV für 18- bis 26-Jährige sowie Meningokokken B für Kleinkinder. Außerdem werden Reiseschutzimpfungen bei entsprechendem Auslandsrisiko übernommen.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Impfung bzw. je Impfserie nach ärztlicher Empfehlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich empfohlen und kein anderer Kostenträger zuständig."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse erbringt Leistungen zur primären Prävention und Gesundheitsförderung nach dem Präventionsleitfaden, einschließlich verhaltensbezogener Prävention, Prävention in Lebenswelten und betrieblicher Gesundheitsförderung. Für Fremdanbieter-Kurse ist ein Zuschuss vorgesehen, wenn Qualitätskriterien und Teilnahmebedingungen erfüllt sind.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse pro Versichertem und Kalenderjahr; bei Fremdanbietern max. 150 EUR je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach Leitfaden Prävention; bei Fremdanbietern Teilnahmebestätigung und mindestens 80 % Kursteilnahme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Anordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und durch qualifizierte Leistungserbringer erfolgt. Die Erstattung ist auf eine bestimmte Zahl von Sitzungen pro Kalenderjahr begrenzt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 6 Sitzungen pro Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Anordnung und qualitätsgesicherte Behandlung durch geeigneten Osteopathen."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn sie medizinisch geeignet und notwendig ist, um kardiale oder orthopädische Erkrankungen zu verhüten oder frühzeitig zu erkennen. Zusätzliche Untersuchungen sind bei ärztlich bescheinigten Risiken möglich.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Erneute Erstattung frühestens nach 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzbezeichnung Sportmedizin."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte ab dem vollendeten 18. Lebensjahr können einmal jährlich die Kosten für eine professionelle Zahnreinigung bei zugelassenen oder berechtigten Zahnärzten erstattet bekommen. Die Leistung ist auf einen Höchstbetrag pro Kalenderjahr begrenzt.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei zugelassenem oder nach § 13 Abs. 4 SGB V berechtigtem Zahnarzt."
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für den Lebenspartner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Je Schwangerschaft werden die Kosten für einen Geburtsvorbereitungskurs für den Lebenspartner übernommen, wenn dieser ebenfalls bei der Debeka BKK versichert ist. Die Leistung muss durch eine berechtigte Hebamme erbracht werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Lebenspartner muss ebenfalls bei der Debeka BKK versichert sein; Leistung durch berechtigte Hebamme."
+                }
+            ]
+        },
+        {
+            "name": "Hebammen-Rufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kosten der Rufbereitschaft einer freiberuflich tätigen Hebamme werden während der Schwangerschaft und bei der Geburt übernommen, wenn die Hebamme entsprechend zugelassen oder berechtigt ist. Die Rufbereitschaft setzt 24-stündige Erreichbarkeit und sofortige Bereitschaft zur Geburtshilfe voraus.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in der 37. bis 42. Schwangerschaftswoche und bei der Geburt; freiberuflich tätige Hebamme mit Zulassung/Berechtigung."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche ärztliche Leistungen bei Risikoschwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bei vorliegenden Risikofaktoren werden zusätzliche ärztliche Leistungen übernommen, die über die regulären Mutterschaftsleistungen hinausgehen und der Vermeidung einer Gefährdung der kindlichen Entwicklung dienen. Dazu zählen unter anderem Nackenfaltenmessung, Toxoplasmosetest, Triple-Test, zusätzliche Ultraschalluntersuchungen und CMV-Test.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vorliegenden Risikofaktoren und durch berechtigte Ärzte mit Qualifikationsnachweis."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Zusätzlich zu den genehmigten Leistungen nach § 27a SGB V gewährt die Debeka BKK einen Zuschuss für Behandlungsversuche der künstlichen Befruchtung. Die Leistung ist auf eine bestimmte Zahl von Versuchen und einen Höchstbetrag je Versuch begrenzt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Behandlungsversuche"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn beide Ehepartner bei der Debeka BKK versichert sind und ein genehmigter Behandlungsplan vorliegt."
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Debeka BKK führt strukturierte Behandlungsprogramme für chronische Krankheiten nach den gesetzlichen Vorgaben durch. Die konkrete Ausgestaltung richtet sich nach den jeweiligen Disease-Management-Programmen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der jeweiligen Programme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für chronische Krankheiten nach § 137f SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen und medizinische Rehabilitationsmaßnahmen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen übernimmt die Kasse einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für ambulante Vorsorgeleistungen bei chronisch kranken Kleinkindern gilt ein erhöhter Zuschuss.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich; bei chronisch kranken Kleinkindern 25 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Abs. 2 SGB V; erhöhter Zuschuss für chronisch kranke Kleinkinder."
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Debeka BKK bietet bestimmten Mitgliedern einen Wahltarif zur Aufstockung oder Wahl von Krankengeld an. Die Teilnahme, Bindungsfristen, Prämien und Leistungsdauer richten sich nach der Satzung und der Anlage 1.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des Wahltarifs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 53 Abs. 6 SGB V genannten Mitglieder bzw. die in der Anlage 1 genannten Personenkreise."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Versicherte können für definierte Vorsorge-, Impf-, Kurs- und Sportmaßnahmen einen Bonus erhalten. Die Auszahlung erfolgt als Geldbonus per Überweisung; die Teilnahme ist freiwillig und an ein Kalenderjahr gebunden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonuskarte bis spätestens 31.12. des Folgejahres einreichen; keine Barauszahlung."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Früherkennungs- und Gesundheitsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbare Früherkennungs- und Gesundheitsuntersuchungen nach den gesetzlichen Vorgaben für die jeweilige Altersgruppe.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je durchgeführter Maßnahme und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms für die Altersgruppe ab 18 Jahren."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonifizierbare Schutzimpfungen nach § 20i SGB V; bei Impfungen nach § 20i Abs. 2 SGB V erst nach Abschluss der Immunisierung.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je durchgeführter Maßnahme und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die Altersgruppe ab 18 Jahren."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Vorsorgeuntersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonifizierbare zahnärztliche Vorsorgeuntersuchung nach den gesetzlichen Vorgaben; die Anzahl der anrechenbaren Untersuchungen richtet sich nach der Altersgruppe.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr ab 18 Jahren; 2x pro Kalenderjahr bei 0 bis 17 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die Altersgruppe ab 18 Jahren."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Jugenduntersuchung J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbare Jugenduntersuchung J2 im Rahmen des Bonusprogramms für Kinder und Jugendliche.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr im Rahmen der Altersgruppe 0 bis 17 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die Altersgruppe 0 bis 17 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitskurse zur verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifizierbare Gesundheitskurse in den Bereichen Bewegung, Ernährung/Gewichtsreduktion, Stressbewältigung/Entspannung oder Suchtmittelkonsum.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Kurse pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kurse nach § 20 Abs. 5 SGB V i. V. m. § 13b Satzung."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft im Sportverein oder qualitätsgesicherten Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifizierbar ist die aktive Mitgliedschaft in einem Sportverein oder qualitätsgesicherten Fitnessstudio.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms für Sport und Gesundheit."
+                }
+            ]
+        },
+        {
+            "name": "Qualifiziert angeleitete sportliche Aktivität",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird eine qualifiziert angeleitete sportliche Aktivität, sofern eine entsprechende Vorbereitung stattgefunden hat.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms für Sport und Gesundheit."
+                }
+            ]
+        }
+    ]
+}

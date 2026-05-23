@@ -1,0 +1,746 @@
+{
+    "krankenkasse": {
+        "name": "Bosch BKK",
+        "slug": "bosch_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/199/BOSCH%20BKK%20Satzung%2011.12.2023.pdf",
+        "satzung_stand": "11.12.2023"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Allgemeiner Leistungsumfang",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Bosch BKK gewährt die gesetzlich vorgesehenen Leistungen bei Schwangerschaft und Mutterschaft, zur Verhütung und Früherkennung von Krankheiten, zur Behandlung von Krankheiten sowie Leistungen des Persönlichen Budgets. Außerdem werden Leistungen zur medizinischen Rehabilitation sowie ergänzende Leistungen erbracht, soweit sie notwendig sind.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "laufend nach gesetzlichem Anspruch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für alle Versicherten nach den gesetzlichen Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Hebammen-Rufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte können die Rufbereitschaft einer ausgewählten Hebamme oder eines Entbindungspflegers in Anspruch nehmen, wenn diese bzw. dieser zugelassen oder leistungsberechtigt ist. Die Leistung umfasst telefonische Erreichbarkeit und sofortige Geburtsbereitschaft im Zeitraum ab Beginn der 37. Schwangerschaftswoche bis zur Geburt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab Beginn der 37. Schwangerschaftswoche bis zum Ende der Geburt"
+                }
+            ]
+        },
+        {
+            "name": "Unterweisung des Geburtspartners",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Bosch BKK erstattet die Kosten für die Unterweisung eines Geburtspartners oder einer Geburtspartnerin im Rahmen eines Geburtsvorbereitungskurses. Voraussetzung ist unter anderem, dass die unterwiesene Person bei der Bosch BKK versichert ist und die Unterweisung durch eine Hebamme oder einen Entbindungspfleger erfolgt.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen eines Geburtsvorbereitungskurses; Geburtspartner muss bei der Bosch BKK versichert sein"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können auf ärztliche Veranlassung osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch entsprechend ausgebildete Leistungserbringer erfolgt. Erstattet werden maximal drei Sitzungen je Kalenderjahr.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Veranlassung und qualitätsgesicherte Durchführung durch qualifizierte Osteopathen"
+                }
+            ]
+        },
+        {
+            "name": "FeNO-Heimmessgerät während der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte mit einer entsprechenden Asthma-bronchiale-Erkrankung können die Kosten für ein FeNO-Heimmessgerät erstattet bekommen. Voraussetzung sind eine ärztliche Verordnung, ein dokumentiertes Therapieziel sowie der Nachweis der Schwangerschaft und der Kosten.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Schwangerschaft und allergisch bedingtem Asthma unter regelmäßiger Steroidtherapie; einmalige Versorgung"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schwangerschaftsuntersuchungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Bosch BKK übernimmt zusätzliche ärztliche Vorsorgeuntersuchungen in der Schwangerschaft, etwa B-Streptokokken-Test, Antikörpertests auf Ringelröteln und Windpocken sowie Toxoplasmose- und CMV-Tests, wenn ein individueller Untersuchungsanlass vorliegt.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach medizinischer Notwendigkeit, max. 200 EUR je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei individuellem Untersuchungsanlass und durch qualifizierte Ärzte"
+                }
+            ]
+        },
+        {
+            "name": "Individuelle Beratungsleistungen und Kurse in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Erstattet werden bestimmte Beratungsleistungen und Kurse im Rahmen der Schwangerschaft, darunter ein individuelles Vorgespräch, Bewegungskurse und Entspannungskurse für Schwangere. Die Leistungen müssen durch zugelassene oder berechtigte Hebammen bzw. Entbindungspfleger erbracht werden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Inanspruchnahme, max. 200 EUR je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur durch zugelassene/berechtigte Hebammen oder gleichgestellte Entbindungspfleger"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für Schwangere werden bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit den Wirkstoffen Eisen, Magnesium, Jodid oder Folsäure übernommen, sofern sie ärztlich verordnet und in der Apotheke oder im zulässigen Versandhandel bezogen wurden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Verordnung und Bezug"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Schwangere; ausgeschlossen sind vom G-BA oder gesetzlich ausgeschlossene Arzneimittel"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung während der Schwangerschaft",
+            "kategorie": "Zahn",
+            "beschreibung": "Während der Schwangerschaft übernimmt die Bosch BKK die Kosten für eine einmalige professionelle Zahnreinigung, wenn sie von einem Zahnarzt empfohlen und durchgeführt wird.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur während der Schwangerschaft und bei zahnärztlicher Empfehlung"
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung durch medizinische Tastuntersucher",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Bosch BKK erstattet die Kosten für eine Brustkrebsuntersuchung durch blinde oder sehbehinderte medizinische Tastuntersucherinnen oder Tastuntersucher, wenn eine familiäre oder medizinische Vorbelastung vorliegt und die Untersuchung ärztlich veranlasst wurde.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 65,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesener familiärer oder medizinischer Vorbelastung und ärztlicher Veranlassung"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege wird im Einzelfall auch Grundpflege und hauswirtschaftliche Versorgung erbracht, wenn keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere Person im Haushalt die Versorgung übernehmen kann.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 1 Stunde je Pflegeeinsatz und maximal 25 Einsätze je Kalendermonat"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit ab Pflegegrad 2 und keine andere im Haushalt lebende Person verfügbar"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die Bosch BKK gewährt Haushaltshilfe unter den gesetzlichen Voraussetzungen, insbesondere wenn im Haushalt ein Kind lebt, das bei Beginn der Hilfe das 12. Lebensjahr vollendet hat, aber noch nicht 14 Jahre alt ist, oder in bestimmten Fällen längstens für 39 Wochen bzw. sechs Wochen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach gesetzlichem Anspruch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind im Haushalt erforderlich; weitere gesetzliche Voraussetzungen nach § 38 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld in einer besonderen Berechnungsweise gezahlt. Die Leistung orientiert sich am entgangenen Arbeitsentgelt und ist auf 90 % des entgangenen Nettoarbeitsentgelts begrenzt.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Während der Arbeitsunfähigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen. Die Erstattung ist auf die Höhe der sonst von der Bosch BKK zu tragenden Vergütung begrenzt und kann auf bestimmte Leistungsbereiche beschränkt werden.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 30,
+                "waehrung": "Prozent",
+                "turnus": "Nach Wahl der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme; Mindestbindungsfrist mindestens ein Kalendervierteljahr"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Bereich der Arzneimittel können Versicherte Kostenerstattung für ein anderes als das regulär abzugebende Arzneimittel wählen. Die Erstattung ist auf die sonstige Sachleistungshöhe begrenzt und wird um gesetzliche Abschläge gekürzt.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall bei Wahl der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der Arzneimittelversorgung nach § 13 Abs. 2 i.V.m. § 129 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Bosch BKK fördert Kurse und Maßnahmen der primären Prävention in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Gefördert werden maximal zwei Kurse je Versicherten und Kalenderjahr; bei Fremdanbietern ist ein Zuschuss bis zu 80 Euro, bei Überschreiten der Belastungsgrenze bis zu 110 Euro möglich.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Kurse je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Präventionskurse nach dem Leitfaden Prävention"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Über die gesetzlichen Impfleistungen hinaus gewährt die Bosch BKK weitere Schutzimpfungen, einschließlich solcher bei erhöhtem Auslandsrisiko, wenn sie ärztlich empfohlen werden und nicht anderweitig unentgeltlich angeboten oder vom öffentlichen Gesundheitsdienst durchgeführt werden können.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach medizinischer Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Empfehlung und keine anderweitige unentgeltliche Durchführung"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen übernimmt die Bosch BKK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder ist der Zuschuss höher.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Abs. 2 SGB V; für chronisch kranke Kleinkinder erhöhter Zuschuss"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Bosch BKK bietet strukturierte Behandlungsprogramme an. Teilnehmende Versicherte erhalten auf Antrag eine Ermäßigung der während der Teilnahme fällig werdenden Zuzahlungen.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Während der Dauer der Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem strukturierten Behandlungsprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Bosch BKK bietet eine hausarztzentrierte Versorgung auf Grundlage von Verträgen mit Hausärzten und weiteren Vertragspartnern an. Die Teilnahme ist freiwillig und erfolgt auf Basis der jeweiligen Regionalverträge.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des jeweiligen Vertrages"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme an der hausarztzentrierten Versorgung"
+                }
+            ]
+        },
+        {
+            "name": "Besondere Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Bosch BKK bietet ihren Versicherten besondere Versorgungsformen nach § 140a SGB V an. Inhalt und Ausgestaltung ergeben sich aus den jeweils regional abgeschlossenen Verträgen.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des jeweiligen Vertrages"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme an der besonderen Versorgung"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Selbstbehalt Option S",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder können einen jährlichen Selbstbehalt in mehreren Stufen wählen und erhalten dafür eine Prämie. Die Höhe des Selbstbehalts und der Prämie richtet sich nach dem Jahreseinkommen und der gewählten Stufe.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder, deren Beiträge nicht vollständig von Dritten getragen werden"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte Mitglieder können einen Wahltarif zur Aufstockung oder Zahlung von Krankengeld wählen. Die Tarife gelten für hauptberuflich Selbständige, unständig Beschäftigte sowie bestimmte Künstler und Publizisten.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Tarif und Leistungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 53 Abs. 6 SGB V genannten Mitgliedergruppen"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten Versicherter",
+        "beschreibung": "Die Bosch BKK führt mehrere Bonusregelungen. Versicherte erhalten Geldboni für Vorsorge, Impfungen und gesundheitsbewusstes Verhalten; zusätzlich gibt es einen separaten Schwangerschaftsbonus sowie einen Arbeitnehmerbonus für betriebliche Gesundheitsförderung. Die Auszahlung erfolgt grundsätzlich per Überweisung nach Nachweis im Online-Kundenportal.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusansprüche müssen fristgerecht nachgewiesen werden; für Schwangerschaftsbonus und Arbeitnehmerbonus gelten eigene Regeln."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten einen Bonus für die Inanspruchnahme von Leistungen zur Erfassung von gesundheitlichen Risiken und Früherkennung von Krankheiten.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung nach §§ 25, 25a oder 26 SGB V zu Lasten der Bosch BKK"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Versicherte erhalten einen Bonus für nachgewiesene Schutzimpfungen zu Lasten der Bosch BKK.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung nach § 20i SGB V zu Lasten der Bosch BKK"
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten einen Bonus für die regelmäßige Teilnahme an einem qualitätsgesicherten Präventionskurs.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Höchstens 1 Maßnahme pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem qualitätsgesicherten Präventionskurs nach § 20 Abs. 5 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiger Sport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Versicherte erhalten einen Bonus für regelmäßige Fitness-, Ausdauer- oder Gesundheitssportangebote unter fachkundiger Anleitung.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Höchstens 3 Sportaktivitäten pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Regelmäßige Teilnahme an qualitätsgesicherten Sportangeboten"
+                }
+            ]
+        },
+        {
+            "name": "Betriebssport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Versicherte erhalten einen Bonus für regelmäßige Teilnahme an vom Arbeitgeber angebotenen qualitätsgesicherten Sportaktivitäten außerhalb der Arbeitszeit.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Höchstens 2 Sportaktivitäten je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nicht als Maßnahme der betrieblichen Gesundheitsförderung"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsförderung in Lebenswelten",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten einen Bonus für die Teilnahme an einem freiwilligen Programm zur Förderung gesundheitsbewussten Verhaltens oder an einem vergleichbaren Programm einer fachlich anerkannten Institution.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Höchstens 1 Maßnahme je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Programm nach § 20a SGB V oder vergleichbares Programm"
+                }
+            ]
+        },
+        {
+            "name": "Gesundes Körpergewicht",
+            "kategorie": "Ernährung",
+            "beschreibung": "Versicherte erhalten einen Bonus, wenn sie ein altersgerechtes gesundes Körpergewicht durch BMI oder Waist-to-Height-Ratio im Normalbereich nachweisen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis eines Normalbereichs beim BMI oder WHtR"
+                }
+            ]
+        },
+        {
+            "name": "Nichtrauchen",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten einen Bonus, wenn sie seit mindestens sechs Monaten Nichtraucher sind.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Seit mindestens 6 Monaten Nichtraucher"
+                }
+            ]
+        },
+        {
+            "name": "Bonus während und nach der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Versicherte erhalten bei erfüllten Vorsorgeuntersuchungen während der Schwangerschaft ein zweckgebundenes Bonusguthaben für bestimmte selbstfinanzierte Leistungen rund um Schwangerschaft und frühe Kindheit.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Alle nach den Mutterschafts-Richtlinien vorgesehenen Vorsorgeuntersuchungen während der Schwangerschaft müssen nachgewiesen sein"
+                }
+            ]
+        },
+        {
+            "name": "Arbeitnehmerbonus für betriebliche Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten einen Bonus für die vollständige Teilnahme an mindestens einem zertifizierten Angebot der betrieblichen Gesundheitsförderung ihres Arbeitgebers.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vollständige Teilnahme an einem zertifizierten BGF-Angebot des Arbeitgebers"
+                }
+            ]
+        }
+    ]
+}

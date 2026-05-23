@@ -1,0 +1,520 @@
+{
+    "krankenkasse": {
+        "name": "hkk Krankenkasse",
+        "slug": "hkk_krankenkasse",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/261/251223_hkk%20satzung_incl._genehmigtem_88._und_89._nachtrag.pdf",
+        "satzung_stand": "24.12.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die hkk erbringt Leistungen zur primären Prävention und Gesundheitsförderung nach den gesetzlichen Vorgaben in den Bereichen verhaltensbezogene Prävention, Gesundheitsförderung in Lebenswelten und betriebliche Gesundheitsförderung. Die Leistung wird grundsätzlich als Sachleistung angeboten; bei fehlender Sachleistung ist eine Kostenerstattung möglich.",
+            "pdf_page": 8,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "1x je Kurs, maximal 100 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Eigenanteil ab 18 Jahren; Online-Angebote ohne Eigenanteil"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und Malariaprophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die hkk übernimmt Kosten für rezeptpflichtige Arzneimittel im Rahmen der Malariaprophylaxe sowie für bestimmte Schutzimpfungen, darunter Reiseimpfungen nach STIKO-Empfehlung und weitere in der Satzung genannte Impfungen. Wenn die Impfungen nicht als Sachleistung erbracht werden, erfolgt eine Kostenerstattung.",
+            "pdf_page": 8,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfung; bei Erstattung 100 %"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur soweit kein anderer Kostenträger zuständig ist; Einzelimporte nach § 73 AMG ausgeschlossen"
+                }
+            ]
+        },
+        {
+            "name": "Kurzuschuss",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei einer medizinisch erforderlichen ambulanten Vorsorgeleistung in anerkannten Kurorten zahlt die hkk einen täglichen Zuschuss zu Unterkunft, Verpflegung, Kurtaxe und Fahrkosten. Für chronisch kranke Kleinkinder gilt ein erhöhter Tagessatz.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich einschließlich An- und Abreisetag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei chronisch kranken Kleinkindern 21 EUR täglich"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzlich zur Behandlungspflege übernimmt die hkk bei Bedarf auch Grundpflege und hauswirtschaftliche Versorgung, wenn dies zur Sicherung des ärztlichen Behandlungsziels notwendig ist und keine im Haushalt lebende Person die Versorgung übernehmen kann. Der Anspruch ist zeitlich begrenzt und endet bei Eintritt von Pflegebedürftigkeit ab Pflegegrad 2.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen, maximal 2 Stunden täglich je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur soweit keine Pflegebedürftigkeit nach SGB XI mit mindestens Pflegegrad 2 besteht"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die hkk gewährt über den gesetzlichen Anspruch hinaus Haushaltshilfe bei Krankheit für die Dauer der medizinischen Notwendigkeit, wenn dies ärztlich bescheinigt ist. Unter bestimmten Voraussetzungen wird Haushaltshilfe auch über die gesetzliche Altersgrenze hinaus gewährt.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung erforderlich"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebt ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind"
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschafts-/Mutterschaftsleistungen und medizinische Vorsorgeleistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die hkk erstattet zusätzliche Leistungen rund um Schwangerschaft und Mutterschaft, darunter Geburtsvorbereitungskurse für den hkk-versicherten Partner, Hebammen-Rufbereitschaft, bestimmte ärztliche Vorsorgeuntersuchungen in der Schwangerschaft sowie Folsäure-Arzneimittel bei medizinischer Notwendigkeit. Insgesamt gilt eine jährliche Obergrenze.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Kalenderjährlich, insgesamt maximal 300 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilweise auch für den hkk-versicherten Ehegatten/Partner bei Geburtsvorbereitungskursen"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die hkk erstattet ärztlich verordnete osteopathische Leistungen bis zu einer bestimmten Anzahl von Sitzungen pro Jahr. Voraussetzung ist eine entsprechende Qualifikation des Leistungserbringers; ausgeschlossene Leistungen des Gemeinsamen Bundesausschusses werden nicht erstattet.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 4 Sitzungen kalenderjährlich, maximal 40 EUR je Sitzung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und qualifizierter Osteopath erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der Homöopathie, Phytotherapie und Anthroposophie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die hkk erstattet bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Phytotherapie und Anthroposophie, sofern sie ärztlich verordnet wurden. Ausgeschlossen sind vom G-BA ausgeschlossene Arzneimittel sowie bestimmte Einzelimporte.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Kalenderjährlich, maximal 100 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung (Check-up)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die hkk erstattet eine Gesundheitsuntersuchung für Versicherte zwischen dem 18. und 35. Lebensjahr, wenn sie im Einzelfall wegen bestehender Risikofaktoren medizinisch notwendig ist. Die Untersuchung muss durch einen zugelassenen Vertragsarzt oder berechtigten Arzt erbracht werden.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Innerhalb von 3 Kalenderjahren, maximal 100 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren wie Übergewicht, Hypertonie oder Hypercholesterinämie"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die hkk erstattet ein Hautkrebsscreening einschließlich Auflichtmikroskopie für Versicherte zwischen dem 18. und 35. Lebensjahr, wenn es wegen bestehender Risikofaktoren medizinisch notwendig ist. Die Leistung muss durch einen zugelassenen oder berechtigten Arzt erbracht werden.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Innerhalb von 2 Kalenderjahren, maximal 100 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren, z. B. familiären Vorerkrankungen"
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die hkk erstattet bestimmte zusätzliche zahnärztliche Leistungen, darunter Vollnarkose bei Weisheitszahnentfernung für jüngere Versicherte sowie Lachgassedierung bei medizinisch indizierten Fällen. Es gelten zusätzliche fachliche und dokumentarische Voraussetzungen.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Kalenderjährlich, insgesamt maximal 100 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Vollnarkose bei chirurgischer Entfernung von Weisheitszähnen"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Lachgassedierung nur bei entsprechender medizinischer Indikation und qualifiziertem Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung von Darmkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die hkk erstattet einmalig die Kosten für eine Darmspiegelung bei Versicherten zwischen dem 45. und 50. Lebensjahr, wenn Risikofaktoren vorliegen. Die Leistung ist an eine medizinische Indikation gebunden.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 45,
+                    "alter_max": 49,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei familiär oder erblich erhöhtem Erkrankungsrisiko"
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung von Brustkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die hkk erstattet eine Brustkrebsuntersuchung durch qualifizierte medizinische Tastuntersucherinnen für Versicherte mit nachgewiesenen familiären oder medizinischen Risikofaktoren. Die Untersuchung muss ärztlich veranlasst sein.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesenen familiären oder medizinischen Risikofaktoren und ärztlicher Veranlassung"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn diese zur Verhütung oder Vermeidung einer Verschlimmerung kardialer oder orthopädischer Erkrankungen geeignet und notwendig ist. Bei zusätzlichen ärztlich bescheinigten Risiken können weitere Untersuchungen eingeschlossen sein.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 1x je 2 Jahre, bis zu 140 EUR insgesamt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch Arzt mit Zusatzbezeichnung Sportmedizin; ärztliche Bescheinigung erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Versicherte Ehegatten mit Anspruch auf Maßnahmen der künstlichen Befruchtung erhalten zusätzlich zum gesetzlichen Anspruch einen Zuschuss für bis zu drei Behandlungsversuche. Der Zuschuss gilt je durchgeführtem Versuch und ist auf die tatsächlich entstandenen Kosten begrenzt.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Behandlungsversuche"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für versicherte Ehegatten mit Anspruch nach § 27a SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche kinderorthopädische Hilfsmittel",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die hkk übernimmt die Kosten für eine Kopforthesen-Versorgung bei Säuglingen und Kleinkindern, wenn sie medizinisch indiziert ist und die Voraussetzungen der Satzung erfüllt sind. Die Kostenübernahme erfolgt zunächst anteilig und wird nach erfolgreichem Abschluss der Behandlung ergänzt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmalige Versorgung, Behandlungsdauer bis zu 8 Monate"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Ab dem 4. und bis zum vollendeten 15. Lebensmonat; Indikation durch spezialisierte orthopädische Einrichtung/Facharzt"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Versicherte haben Anspruch auf digitale Versorgungsprodukte, wenn diese in das Verzeichnis der hkk aufgenommen, ärztlich verordnet und vorab genehmigt wurden. Die hkk erstattet die tatsächlichen Kosten abzüglich eines Eigenanteils bis zu einer jährlichen Höchstgrenze.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich, maximal 250 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für im hkk-Verzeichnis gelistete Produkte mit vorheriger Genehmigung"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die hkk fördert Maßnahmen zur digitalen Gesundheitskompetenz für den gesundheitsorientierten Einsatz digitaler oder telemedizinischer Anwendungen. Soweit keine Sachleistung möglich ist, erfolgt eine Kostenerstattung innerhalb einer jährlichen Höchstgrenze.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Kalenderjährlich, maximal 40 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur Maßnahmen mit konkretem Gesundheitsbezug"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die hkk bietet ein Bonusprogramm für gesundheitsbewusstes Verhalten an. Teilnehmende erhalten einen Bonus, wenn sie bestimmte Vorsorge-, Impf- oder Präventionsleistungen nachweisen oder an vergleichbaren qualitätsgesicherten Angeboten teilnehmen. Die genauen Bedingungen ergeben sich aus der Anlage zur Satzung.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusmaßnahmen werden nach Nachweis der absolvierten Maßnahmen gewährt; die Satzung verweist für Details auf die Teilnahmebedingungen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Leistungen zur Erfassung von gesundheitlichen Risiken und Früherkennung von Krankheiten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweisbare Inanspruchnahme von Vorsorge- und Früherkennungsleistungen kann bonusfähig sein. Dazu zählen Leistungen nach den einschlägigen Vorschriften der Satzung und des SGB V.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Teilnahmebedingungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm-Teilnahme erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweisbare Schutzimpfungen können als Bonusmaßnahme berücksichtigt werden.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Teilnahmebedingungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm-Teilnahme erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen der verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Regelmäßige Teilnahme an Leistungen der verhaltensbezogenen Prävention kann bonusfähig sein.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Teilnahmebedingungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm-Teilnahme erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Vergleichbare qualitätsgesicherte Angebote zur Förderung eines gesundheitsbewussten Verhaltens",
+            "kategorie": "Prävention",
+            "beschreibung": "Auch vergleichbare qualitätsgesicherte Angebote zur Förderung eines gesundheitsbewussten Verhaltens können für den Bonus berücksichtigt werden.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Teilnahmebedingungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm-Teilnahme erforderlich"
+                }
+            ]
+        }
+    ]
+}

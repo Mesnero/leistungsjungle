@@ -1,0 +1,1304 @@
+{
+    "krankenkasse": {
+        "name": "BKK Merck",
+        "slug": "bkk_merck",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1152/Satzung_2022_inkl_6._Satzungsnachtrag.pdf",
+        "satzung_stand": "01.01.2022"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Wahltarif Prämienzahlung",
+            "kategorie": "Prävention",
+            "beschreibung": "Mitglieder können bei Leistungsfreiheit im Kalenderjahr eine Prämienzahlung erhalten, wenn sie die Voraussetzungen des Wahltarifs erfüllen. Bestimmte Vorsorge-, Impf- und Schwangerschaftsleistungen sowie Leistungen für unter 18-jährige familienversicherte Angehörige bleiben dabei unschädlich.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mitglied war im abgelaufenen Kalenderjahr länger als 3 Monate bei der BKK Merck versichert und hat den Wahltarif fristgerecht beantragt."
+                }
+            ]
+        },
+        {
+            "name": "Kassenindividueller Zusatzbeitragssatz",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck erhebt von ihren Mitgliedern einen einkommensabhängigen Zusatzbeitrag auf die beitragspflichtigen Einnahmen.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 1.4,
+                "waehrung": "Prozent",
+                "turnus": "Monatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gilt für Mitglieder der BKK Merck."
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege wird im Einzelfall auch Grundpflege und hauswirtschaftliche Versorgung erbracht, wenn die Voraussetzungen der Satzung erfüllt sind. Die Leistung ist zeitlich begrenzt und an weitere Pflegevoraussetzungen geknüpft.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 6 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine Pflegebedürftigkeit ab Pflegegrad 2; keine andere im Haushalt lebende Person kann den Kranken ausreichend versorgen."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die BKK Merck gewährt über die gesetzlichen Fälle hinaus Haushaltshilfe, wenn die Weiterführung des Haushalts wegen Krankheit nicht möglich ist. Ersatzkräfte werden gestellt; selbstbeschaffte Ersatzkräfte können in angemessener Höhe erstattet werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 2.5,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 6 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich bescheinigte Krankheit; keine andere im Haushalt lebende Person kann den Haushalt weiterführen."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in einzelnen Leistungsbereichen. Die Erstattung ist auf die Kosten begrenzt, die die Krankenkasse als Sachleistung tragen müsste; Verwaltungskosten und Zuzahlungen werden berücksichtigt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 30,
+                "waehrung": "Prozent",
+                "turnus": "Mindestens ein Kalendervierteljahr Bindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vor Inanspruchnahme ist die Krankenkasse zu informieren; Wahl kann auf bestimmte Leistungsbereiche beschränkt werden."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Im Rahmen der Arzneimittelversorgung können Versicherte im Einzelfall Kostenerstattung wählen und ein anderes Arzneimittel als das regulär abzugebende wählen. Die Erstattung ist auf die Kosten begrenzt, die die Krankenkasse als Sachleistung tragen würde.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl nach § 129 SGB V; tatsächliche Mehrkosten über die Sachleistung hinaus trägt der Versicherte selbst."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK Merck fördert Schulungsmaßnahmen zum selbstbestimmten gesundheitsorientierten Einsatz digitaler oder telemedizinischer Anwendungen. Die Leistung kann auch durch Dritte erbracht werden.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der Schulungsmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung als Sachleistung in Form von Schulungsmaßnahmen nach den Vorgaben des GKV-Spitzenverbandes."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Behandlungen in Anspruch nehmen, wenn die Methode medizinisch geeignet und nicht ausgeschlossen ist und die Behandlung qualitätsgesichert erfolgt. Erstattet werden nur Sitzungen bei entsprechend qualifizierten Leistungserbringern.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Behandlung durch qualifizierten Osteopathen; Originalrechnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Behandlung in nicht zugelassenen Krankenhäusern",
+            "kategorie": "Reha",
+            "beschreibung": "Die BKK Merck übernimmt unter bestimmten Voraussetzungen auch Kosten für stationäre Behandlungen in nicht zugelassenen Krankenhäusern. Erforderlich sind medizinische Notwendigkeit, vorherige Beantragung und Genehmigung sowie eine fachärztliche Einweisung.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro genehmigtem Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vor Aufnahme beantragt und genehmigt; Kosten nur bis zur Höhe eines zugelassenen Krankenhauses."
+                }
+            ]
+        },
+        {
+            "name": "Psychotherapeutische Behandlung bei nicht zugelassenen Psychotherapeuten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck übernimmt Kosten für psychotherapeutische Behandlungen bei approbierten Psychotherapeuten ohne Kassenzulassung, wenn die Voraussetzungen der Satzung erfüllt sind. Die Leistung muss vorab beantragt werden und ist auf die Kosten einer zugelassenen Behandlung begrenzt.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachgewiesene psychotherapeutische Sprechstunde; Therapie in der ausstellenden Praxis nicht möglich; Antrag vor Inanspruchnahme."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bei IVF oder ICSI gewährt die BKK Merck zusätzlich zur gesetzlichen Kostenbeteiligung einen weiteren Zuschuss. Die Leistung ist auf mehrere Maßnahmen begrenzt und setzt die Versicherung beider Ehepartner bei der BKK Merck voraus.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Beide Ehepartner müssen bei der BKK Merck versichert sein."
+                }
+            ]
+        },
+        {
+            "name": "Klapperstorch",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für erweiterte Vorsorgeleistungen während der Schwangerschaft und im ersten Lebensjahr des Neugeborenen gewährt die BKK Merck einen Zuschuss. Die Leistung umfasst verschiedene benannte Vorsorge- und Kursangebote und ist an die Versicherungsvoraussetzungen der Beteiligten geknüpft.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Je Rechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Schwangerschaftsleistungen; teils nur bei Versicherung des werdenden Vaters bei der BKK Merck."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Leistungen im ersten Lebensjahr des Neugeborenen; Neugeborenes muss ebenfalls bei der BKK Merck versichert sein."
+                }
+            ]
+        },
+        {
+            "name": "Ovulationsbestimmung bei unerfülltem Kinderwunsch",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Weibliche Versicherte können Produkte zur Ovulationsbestimmung erstattet bekommen, wenn ein seit mindestens sechs Monaten unerfüllter Kinderwunsch vorliegt und eine medizinische Empfehlung besteht. Die Erstattung ist zeitlich und betragsmäßig begrenzt.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 12 Monate"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mindestens 6 Monate unerfüllter Kinderwunsch, Grundlagendiagnostik und ärztliche Empfehlung."
+                }
+            ]
+        },
+        {
+            "name": "Schlaganfallrisikoprophylaxe",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte mit bestimmten Risikofaktoren erhalten ab 50 Jahren eine kostenfreie Schlaganfallrisikoprophylaxe. Bei unauffälligem Befund ist eine Wiederholung nach fünf Jahren möglich.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x ab 50 Jahren, Wiederholung nach 5 Jahren bei negativem Befund"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 50,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mindestens einer der genannten Risikofaktoren muss vorliegen."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK Merck fördert Präventionskurse in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Eigene Angebote sind kostenfrei, Fremdangebote werden bei erfüllten Qualitätskriterien bezuschusst.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Fremdanbieter nur bei Teilnahmebestätigung und mindestens 80% Teilnahme; je Handlungsfeld begrenzt."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die BKK Merck übernimmt die Kosten für von der STIKO oder nach Infektionsschutzgesetz empfohlene Schutzimpfungen, sofern sie nicht vom öffentlichen Gesundheitsdienst durchgeführt werden. Auch bestimmte Reiseimpfungen bei erhöhtem Auslandsrisiko werden übernommen.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfempfehlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nicht vom öffentlichen Gesundheitsdienst durchgeführt; Arbeitgeberregelungen bleiben unberührt."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen übernimmt die BKK Merck einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich für maximal 21 Tage"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Abs. 2 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck bietet eine hausarztzentrierte Versorgung auf Grundlage regionaler Verträge an. Die Teilnahme ist freiwillig und die Ausgestaltung richtet sich nach den jeweiligen Verträgen.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des jeweiligen Vertrages"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme freiwillig; regionale Vertragsregelungen gelten."
+                }
+            ]
+        },
+        {
+            "name": "Besondere Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck bietet ihren Versicherten besondere Versorgungsverträge zur Förderung von Qualität und Wirtschaftlichkeit an. Inhalt und Ausgestaltung ergeben sich aus den regionalen Verträgen.",
+            "pdf_page": 41,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des jeweiligen Vertrages"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme freiwillig; regionale Vertragsregelungen gelten."
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck bietet strukturierte Behandlungsprogramme auf Grundlage von § 137f SGB V an. Inhalt und Ausgestaltung richten sich nach dem jeweiligen Programm und der Region.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des jeweiligen Programms"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nach den jeweiligen Programmvorgaben."
+                }
+            ]
+        },
+        {
+            "name": "Persönliche elektronische Gesundheitsakte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK Merck unterstützt Versicherte finanziell bei der Nutzung einer persönlichen elektronischen Gesundheitsakte. Die Nutzungsentgelte für den Vertragszeitraum werden von der Krankenkasse getragen.",
+            "pdf_page": 44,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer des Versicherungsverhältnisses"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nutzung über einen Kooperationsvertrag mit einem Dritten."
+                }
+            ]
+        },
+        {
+            "name": "Wahltarifkrankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte Mitglieder können einen Wahltarif zur Aufstockung oder Wahl von Krankengeld abschließen. Die Teilnahme, Bindungsfristen, Prämien und Leistungsdauer richten sich nach der Satzungsanlage.",
+            "pdf_page": 45,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Monatlich, abhängig von der gewählten Tarifstufe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 53 Abs. 6 SGB V genannten Mitgliedergruppen."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Versicherte erhalten für definierte Vorsorge-, Impf- und Gesundheitsmaßnahmen einen Bonus oder alternativ einen Zuschuss zu ausgewählten Gesundheitsleistungen. Der Nachweis erfolgt über das Bonusheft oder eigene Nachweise; die Auszahlung erfolgt auf Antrag zu Beginn des Folgejahres.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusprogramm ab 16 Jahren; für 0 bis 15 Jahre gelten eigene Bonusregeln. Maximale Bonuspauschalen und Alternativzuschüsse sind in der Anlage festgelegt."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Krebsvorsorge Frauen ab 20",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Jährliche gynäkologische Krebsvorsorge für Frauen.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 20,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Krebsvorsorge Männer ab 45",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Jährliche urologische oder hausärztliche Krebsvorsorge für Männer.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 45,
+                    "alter_max": 150,
+                    "geschlecht": "M",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Check-Up35",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Regelmäßiger Gesundheits-Check-up beim Hausarzt.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 35,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "J2-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Jugenduntersuchung J2 im vorgesehenen Altersfenster.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x im vorgesehenen Altersfenster"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Hautkrebsscreening ab 35 Jahren im zweijährigen Rhythmus.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 35,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Mammographie-Screening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Mammographie-Screening im vorgesehenen Altersintervall.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 50,
+                    "alter_max": 69,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Darmkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Darmkrebsvorsorge nach den angegebenen Alters- und Intervallregeln.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Jährlich bzw. alle 2 Jahre je nach Alter"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 50,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung Gebärmutterhalskrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Früherkennungsuntersuchung zur Gebärmutterhalskrebs-Vorsorge.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Jährlich bzw. alle 2 Jahre je nach Alter"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 20,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Regelmäßige zahnärztliche Vorsorgeuntersuchung.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Vollständiger Impfschutz",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis eines vollständigen Impfschutzes gemäß STIKO-Empfehlung.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Blutspender/in",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis einer Blutspende im aktuellen Jahr.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Offizieller Nachweis des aktuellen Jahres."
+                }
+            ]
+        },
+        {
+            "name": "Organspender/in",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis eines Organspendeausweises.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kopie des Ausweises erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Knochenmarkspender/in",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis einer Knochenmarkspenderregistrierung oder -bestätigung.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kopie oder Bestätigung der DKMS erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Erste-Hilfe-Kurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis eines Erste-Hilfe-Kurses innerhalb der letzten drei Jahre.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kurs innerhalb der letzten 3 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs nach § 20 SGB V",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einem zertifizierten Präventionskurs nach § 20 SGB V.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Kurs, maximal 3 jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm ab 16 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erwerb eines Sportabzeichens im aktuellen Jahr.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Aktuelles Jahr."
+                }
+            ]
+        },
+        {
+            "name": "Ausdauersportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an einer Ausdauersportveranstaltung im aktuellen Jahr.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Aktuelles Jahr."
+                }
+            ]
+        },
+        {
+            "name": "Aktive sportliche Mitgliedschaft",
+            "kategorie": "Bewegung",
+            "beschreibung": "Mitgliedschaft in einem Fitnessstudio, Sportverein oder einer Betriebssportgemeinschaft.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der aktiven Mitgliedschaft."
+                }
+            ]
+        },
+        {
+            "name": "U3-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U3 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U4-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U4 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U5-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U5 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U6-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U6 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U7-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U7 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U7a-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U7a für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U8-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U8 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U9-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U9 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U10-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U10 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 8,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "U11-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vorsorgeuntersuchung U11 für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 10,
+                    "alter_max": 11,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "J1-Vorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Jugenduntersuchung J1 im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 12,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Zahnärztliche Vorsorge für Kinder im Bonusprogramm.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "2x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Vollständiger Impfschutz",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis eines vollständigen Impfschutzes gemäß STIKO-Empfehlung im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs nach § 20 SGB V",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einem zertifizierten Präventionskurs im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Kurs, maximal 2 jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Erste Hilfe Kurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis eines Erste-Hilfe-Kurses innerhalb der letzten drei Jahre im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "1x je Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft",
+            "kategorie": "Bewegung",
+            "beschreibung": "Aktive Mitgliedschaft in Fitnessstudio oder Sportverein im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Ausdauersportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an einer Ausdauersportveranstaltung im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erwerb eines Sport- oder Schwimmabzeichens im aktuellen Jahr im Kinderbonus.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Bonusprogramm für 0 bis 15 Jahre."
+                }
+            ]
+        }
+    ]
+}

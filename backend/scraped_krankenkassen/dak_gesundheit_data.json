@@ -1,0 +1,740 @@
+{
+    "krankenkasse": {
+        "name": "DAK Gesundheit",
+        "slug": "dak_gesundheit",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/251/satzung-der-dak-gesundheit-in-der-fassung-des-59-nachtrag-stand-25-07-2025.pdf",
+        "satzung_stand": "25.07.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Schutzimpfungen gegen Influenza, Meningokokken und HPV",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Kasse übernimmt Schutzimpfungen gegen Influenza, gegen Meningokokken bis zur Vollendung des 18. Lebensjahres sowie gegen Humane Papillomviren (HPV) bis zur Vollendung des 27. Lebensjahres, soweit keine Leistungspflicht bereits nach dem Gesetz besteht.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Impfleistung nach medizinischer Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Meningokokken-Impfungen"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 26,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für HPV-Impfungen"
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Influenza-Impfungen"
+                }
+            ]
+        },
+        {
+            "name": "Malariaprophylaxe und reisemedizinisch indizierte Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Übernommen werden die Kosten für rezeptpflichtige Arzneimittel im Rahmen der Malariaprophylaxe sowie für Schutzimpfungen gegen übertragbare Krankheiten bei erhöhtem Gesundheitsrisiko aufgrund eines nicht beruflich bedingten Auslandsaufenthalts, sofern die Impfung von der STIKO empfohlen wird.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nicht beruflich bedingtem Auslandsaufenthalt und STIKO-Empfehlung"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die DAK-Gesundheit beteiligt sich an Leistungen der Primärprävention in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum oder bietet diese selbst bzw. mit Kooperationspartnern an. Die Ausgestaltung orientiert sich an den Präventionskriterien des GKV-Spitzenverbandes.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zuschuss zu zertifizierten Präventionsmaßnahmen"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse bietet Leistungen zur Förderung der digitalen Gesundheitskompetenz selbst oder mit Kooperationspartnern an. Vermittelt werden Kenntnisse zu digitalen Gesundheitsinformationen, telemedizinischen Angeboten, digitalen Gesundheitsanwendungen, elektronischen Patientenakten sowie Datenschutz und Datensicherheit im Gesundheitswesen.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der angebotenen Verträge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Sachleistung im Rahmen von Verträgen mit Leistungserbringern"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die DAK-Gesundheit beteiligt sich auf ärztliche Veranlassung an osteopathischen Leistungen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch entsprechend ausgebildete Leistungserbringer erfolgt.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 3 Sitzungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Veranlassung und qualifizierter Osteopath"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Kasse beteiligt sich im Einzelfall an den Kosten für ein Hautkrebsscreening bei Versicherten mit Risikofaktoren. Die Untersuchung darf nur durch qualifizierte Fachärzte oder entsprechend fortgebildete Ärzte erbracht werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "1x alle 2 Kalenderjahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 35,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren wie Hauttyp 1, mehr als 50 Leberflecken, größere Leberflecken oder immunsuppressiver Therapie nach Organtransplantation"
+                }
+            ]
+        },
+        {
+            "name": "Check-up bei Risikofaktoren",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die DAK-Gesundheit beteiligt sich im Einzelfall an den Kosten für einen Check-up bei Versicherten mit Risikofaktoren wie Übergewicht, Hypertonie oder Hypercholesterinämie, um Herz-Kreislauf-Erkrankungen und Diabetes vorzubeugen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x alle 2 Kalenderjahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 35,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren wie Übergewicht, Hypertonie oder Hypercholesterinämie"
+                }
+            ]
+        },
+        {
+            "name": "Homöopathische, anthroposophische und phytotherapeutische Arzneimittel",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten für nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Anthroposophie und Phytotherapie, wenn sie ärztlich auf Privatrezept verordnet und medizinisch notwendig sind.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Privatrezept, medizinische Notwendigkeit, Bezug aus Apotheke oder zulässigem Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die DAK-Gesundheit beteiligt sich an den Kosten für eine professionelle Zahnreinigung durch zugelassene oder berechtigte Leistungserbringer.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene oder berechtigte Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Fissurenversiegelung der bleibenden Prämolaren",
+            "kategorie": "Zahn",
+            "beschreibung": "Für Versicherte unter 18 Jahren beteiligt sich die Kasse an den Kosten einer Fissurenversiegelung der bleibenden Prämolaren durch zugelassene oder berechtigte Leistungserbringer.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte unter 18 Jahren"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vor Aufnahme einer sportlichen Betätigung beteiligt sich die Kasse im Einzelfall an den Kosten für eine sportmedizinische Untersuchung und Beratung; bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen mit umfasst sein.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "1x alle 2 Kalenderjahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Notwendigkeit vor Aufnahme sportlicher Betätigung; Zusatzweiterbildung Sportmedizin erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Kinesiologisches Taping",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten für kinesiologisches Taping bei Erkrankungen des Muskel-Skelett-Systems und des Bindegewebes als Ergänzung zu einer Heilmittelversorgung.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und qualifizierter Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Festsitzender Frontzahnretainer nach kieferorthopädischer Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Zur Sicherung des Behandlungsergebnisses einer kieferorthopädischen Behandlung beteiligt sich die Kasse an den Kosten eines festsitzenden Frontzahnretainers im Ober- oder Unterkiefer.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Anschluss an erfolgreich abgeschlossene kieferorthopädische Behandlung"
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme einer Begleitperson am Geburtsvorbereitungskurs",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse übernimmt die Kosten der Begleitperson für die Teilnahme an einem Geburtsvorbereitungskurs, wenn der Kurs durch eine zugelassene oder berechtigte Hebamme oder einen zugelassenen oder berechtigten Physiotherapeuten durchgeführt wird.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Begleitperson zu Geburtsvorbereitungskurs"
+                }
+            ]
+        },
+        {
+            "name": "Hebammenrufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten eine Erstattung der Kosten für die Rufbereitschaft einer freiberuflich tätigen Hebamme, wenn die Hebamme zugelassen oder berechtigt ist und die Rufbereitschaft eine 24-stündige Erreichbarkeit sowie sofortige Geburtsbereitschaft umfasst.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur während Schwangerschaft und bei der Geburt; keine parallele Sachleistung aus besonderer Versorgungsform"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schwangerschaftsuntersuchungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse beteiligt sich im Einzelfall an zusätzlichen ärztlichen Vorsorgeuntersuchungen in der Schwangerschaft, etwa bei erhöhtem Risiko für Gestationsdiabetes, Infektionsrisiken oder zur Infektionsvorsorge in bestimmten Schwangerschaftswochen.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach medizinischer Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischem Untersuchungsanlass; keine Leistungen nach Mutterschaftsrichtlinie"
+                }
+            ]
+        },
+        {
+            "name": "Nichtverschreibungspflichtige Arzneimittel in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten für nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit Eisen, Jod, Folsäure oder als Kombipräparat, wenn sie in der Schwangerschaft medizinisch notwendig sind und ärztlich auf Privatrezept verordnet wurden.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Privatrezept, medizinische Notwendigkeit, Bezug aus Apotheke oder Versandapotheke"
+                }
+            ]
+        },
+        {
+            "name": "Zahnprophylaxe für werdende Eltern",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse übernimmt die über die Regelversorgung hinausgehenden Kosten einer Zahnprophylaxe für werdende Eltern, einschließlich Mundhygienestatus, Unterweisung und Kontrolle des Übungserfolges.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Praktisches Training zur Mundgesundheit; durch zugelassene oder berechtigte Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Individuelle Beratungsleistungen im Rahmen der Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse übernimmt zusätzliche Beratungsleistungen in der Schwangerschaft und nach der Geburt, etwa zu Stillen, Ernährung, Nikotin- und Alkoholkonsum, Entbindungsart, Neugeborenenpflege und Eltern-Kind-Beziehung.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene oder berechtigte Hebamme"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Erweiterungsangebote in Schwangerschaft und Wochenbett",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse übernimmt die Kosten für digitale Erweiterungsangebote zu Geburtsvorbereitung oder Rückbildung, wenn sie von Hebammen angeboten werden und sich am Hebammenhilfevertrag orientieren.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Onlinekurs, Web- oder App-basiert; technische Ausstattung nicht erstattungsfähig"
+                }
+            ]
+        },
+        {
+            "name": "Mehrkosten für Kompressionstherapie in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse übernimmt in der Schwangerschaft Mehrkosten für Hilfsmittel zur Kompressionstherapie, einschließlich zusätzlicher Ausstattungen oder Varianten sowie einer Schwangerschaftsleibbinde.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hilfsmittel im Hilfsmittelverzeichnis gelistet und ärztlich verordnet"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung für Schwangere",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten für eine professionelle Zahnreinigung in der Schwangerschaft, um Zahnfleischentzündungen und Parodontitis vorzubeugen.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene oder berechtigte Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Zweitmeinung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Kasse übernimmt zusätzliche Leistungen zur Einholung einer unabhängigen ärztlichen Zweitmeinung zu planbaren ambulanten und stationären Eingriffen oder Therapieempfehlungen bei bestimmten Indikationen.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Eingriff bzw. Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei orthopädischen oder onkologischen Erkrankungen, Schilddrüsen-OP-Empfehlung oder bestimmten intensivmedizinisch betreuten Versicherten"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Behandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern in Anspruch nehmen, wenn die DAK-Gesundheit mit dem Leistungserbringer eine Vereinbarung geschlossen hat und die Behandlung medizinisch notwendig ist.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Vereinbarung und medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur mit Vereinbarung der DAK-Gesundheit; Kostenerstattung höchstens bis zur Sachleistungsvergütung"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die Kasse beteiligt sich an den Kosten für digitale Versorgungsprodukte, wenn diese in das Erstattungsverzeichnis aufgenommen, ärztlich verordnet, genehmigt und sicher angewendet werden.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Produkte aus dem Verzeichnis erstattungsfähiger digitaler Versorgungsprodukte"
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Behandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Kasse übernimmt die Kosten für stationäre Leistungen in einem nicht zugelassenen Krankenhaus bis zur Höhe vergleichbarer Vertragssätze, wenn die medizinische Notwendigkeit vorliegt und die Kasse vorab zugestimmt hat.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer der medizinischen Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorherige Zustimmung der DAK-Gesundheit erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Darmkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Kasse beteiligt sich im Einzelfall an den Kosten für einen immunologischen Stuhltest zur Darmkrebsvorsorge bei Versicherten mit Risikofaktoren.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x alle 2 Kalenderjahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 40,
+                    "alter_max": 50,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren wie chronisch-entzündlicher Darmerkrankung oder Darmkrebs bei Verwandten ersten Grades"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Brustkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Kasse übernimmt die Kosten für eine Brustkrebsuntersuchung durch blinde und sehbehinderte medizinische Tastuntersucherinnen, wenn Risikofaktoren vorliegen und die Untersuchung ärztlich veranlasst wird.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Risikofaktoren wie hoher mammographischer Dichte oder Brustkrebs bei nahen Verwandten"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe bei Kind unter 14 Jahren",
+            "kategorie": "Familie",
+            "beschreibung": "Unter den gesetzlichen Voraussetzungen erhält die versicherte Person auch dann Haushaltshilfe, wenn im Haushalt ein Kind lebt, das das 14. Lebensjahr noch nicht vollendet hat.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe des § 38 SGB V"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebendes Kind unter 14 Jahren"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können für die Inanspruchnahme bestimmter Vorsorge-, Impf- und Präventionsleistungen Punkte sammeln. Ein Punkt entspricht 1 Euro; der Bonus kann bar ausgezahlt oder als zweckgebundener Zuschuss für Gesundheitsleistungen verwendet werden.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Die konkreten Bonusmaßnahmen sind in der Anlage zu § 25 geregelt; im vorliegenden Text werden die Maßnahmen nur allgemein beschrieben."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Leistungen zur Erfassung von gesundheitlichen Risiken und Früherkennung von Krankheiten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an Leistungen zur Erfassung gesundheitlicher Risiken und zur Früherkennung von Krankheiten nach den gesetzlichen Vorsorgevorschriften.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis und Programmregeln"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm nach § 25"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme von Schutzimpfungen nach den gesetzlichen Impfregelungen.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis und Programmregeln"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm nach § 25"
+                }
+            ]
+        },
+        {
+            "name": "Verhaltensbezogene Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Regelmäßige Teilnahme an Leistungen der Krankenkassen zur verhaltensbezogenen Prävention oder an vergleichbaren qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis und Programmregeln"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bonusprogramm nach § 25"
+                }
+            ]
+        }
+    ]
+}

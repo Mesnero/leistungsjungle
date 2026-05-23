@@ -1,0 +1,564 @@
+{
+    "krankenkasse": {
+        "name": "SKD BKK",
+        "slug": "skd_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/226/SKD%20BKK%20Satzung16.01.2020.pdf",
+        "satzung_stand": "16.01.2020"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK erbringt Leistungen zur primären Prävention und Gesundheitsförderung nach den Handlungsfeldern des GKV-Präventionsleitfadens. Eigene oder von anderen gesetzlichen Krankenkassen durchgeführte Angebote werden bei regelmäßiger Teilnahme ohne Kostenbeteiligung gewährt; bei Fremdanbietern ist unter den genannten Qualitäts- und Teilnahmekriterien ein Zuschuss möglich.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung muss den Kriterien des GKV-Präventionsleitfadens entsprechen; bei Fremdanbietern Teilnahmebestätigung und mindestens 80 % Teilnahme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die BKK übernimmt die von der STIKO empfohlenen Schutzimpfungen. Zusätzlich werden bestimmte Impfungen bei erhöhtem Gesundheitsrisiko sowie Reiseimpfungen nach den genannten Voraussetzungen erstattet.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung; Reiseimpfungen maximal 220,00 € je Anlass, Rotavirus maximal 150,00 € pro Impfserie"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzlich bei Influenza, HPV bis 26 Jahre, Rotavirus für Säuglinge und Kleinkinder bis zum 6. Lebensmonat sowie Reiseimpfungen bei ärztlicher Indikation und Empfehlung durch Auswärtiges Amt oder RKI."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die BKK beteiligt sich an osteopathischen Behandlungen, wenn diese medizinisch geeignet sind und ärztlich verordnet wurden. Die Behandlung muss durch qualitätsgesicherte, entsprechend qualifizierte Leistungserbringer erfolgen.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 6 Sitzungen je Kalenderjahr und Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich; Leistungserbringer muss Mitglied eines Osteopathen-Berufsverbandes sein oder eine entsprechende Ausbildung nachweisen."
+                }
+            ]
+        },
+        {
+            "name": "Glaukom-Früherkennung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK erstattet die Kosten für eine Glaukom-Früherkennungsuntersuchung bei Versicherten ab 40 Jahren, sofern noch keine Erkrankung vorliegt, aber Risikofaktoren bestehen. Die Untersuchung muss durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer erfolgen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 40,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei noch nicht vorliegender Erkrankung und vorhandenen Risikofaktoren; spezifizierte Rechnung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen bei Schwangerschaft und Entbindung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die BKK bezuschusst zusätzliche Schwangerschaftsleistungen wie bestimmte Ultraschalluntersuchungen und Toxoplasmose-Screening sowie die Hebammenrufbereitschaft. Die Leistungen müssen qualitätsgesichert erbracht und nach der Entbindung beantragt werden.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Pro Schwangerschaft, insgesamt maximal 200,00 €"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzliche Ultraschalluntersuchungen bzw. 3-D/Farbdoppler bei Risikofaktoren oder Gefährdung des ungeborenen Kindes; Toxoplasmose-Screening bei erhöhtem Ansteckungsrisiko; qualitätsgesicherte Durchführung erforderlich."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hebammenrufbereitschaft in den letzten Wochen der Schwangerschaft (38. bis 42. Schwangerschaftswoche) durch zugelassene oder berechtigte Hebamme."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung (PZR)",
+            "kategorie": "Zahn",
+            "beschreibung": "Die BKK erstattet die Kosten für von Zahnärzten durchgeführte professionelle Zahnreinigungen. Die Leistung ist auf einen jährlichen Höchstbetrag begrenzt.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Rechnung des Zahnarztes erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Absatz 2 SGB V zahlt die BKK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gilt bei ambulanten Vorsorgeleistungen nach § 23 Absatz 2 SGB V; kein Zuschuss bei anderweitigem Anspruch nach Bundesversorgungsgesetz oder anderen gesetzlichen Vorschriften."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für chronisch kranke Kleinkinder beträgt der Zuschuss 25,00 € kalendertäglich."
+                }
+            ]
+        },
+        {
+            "name": "Persönliche elektronische Gesundheitsakte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BKK unterstützt ihre Versicherten finanziell bei der Nutzung einer persönlichen elektronischen Gesundheitsakte. Die Nutzungsentgelte gegenüber dem Anbieter trägt die BKK für die Dauer des Versicherungsverhältnisses.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer des Versicherungsverhältnisses"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nutzung nur über einen Vertrag mit dem von der BKK beauftragten Anbieter."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können bei Nachweis bestimmter Gesundheits- und Präventionsaktivitäten einen Geldbonus erhalten. Es gibt getrennte Regelungen für Erwachsene, Kinder und Neugeborene; die Auszahlung erfolgt nach Nachweis über das Bonus-Heft bzw. die vorgesehenen Unterlagen.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusansprüche bestehen nur bei Erfüllung der jeweiligen Aktivitätskombinationen und nur einmal pro Kalenderjahr."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheitsuntersuchung Erwachsene",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der ärztlichen Gesundheitsuntersuchung im vorgesehenen Intervall für Erwachsene.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Basis-Aktivität für den Erwachsenenbonus; zusammen mit weiteren geforderten Wahl-Aktivitäten nachzuweisen."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsuntersuchung Erwachsene",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Teilnahme an der jährlichen Krebsfrüherkennungsuntersuchung entsprechend Alter und Geschlecht.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Frauen ab 20 Jahren, Männer ab 45 Jahren; als Basis-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Präventionsmaßnahme Erwachsene",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einer qualitätsgesicherten Maßnahme der primären Prävention.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Wahl-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfung zur Vervollständigung des Impfschutzes Erwachsene",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme einer von der BKK übernommenen Schutzimpfung zur Vervollständigung des Impfschutzes.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Wahl-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Deutsches Sportabzeichen oder Deutsches Wanderabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Ablegen des Deutschen Sportabzeichens oder des Deutschen Wanderabzeichens.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Wahl-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Fitness-Studio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßiger und aktiver Besuch eines Fitness-Studios, das die Qualitätsanforderungen erfüllt.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Wahl-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Sportverein Erwachsene",
+            "kategorie": "Bewegung",
+            "beschreibung": "Aktive Mitgliedschaft in einem Sportverein.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Erwachsenenbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Als Wahl-Aktivität für den Erwachsenenbonus."
+                }
+            ]
+        },
+        {
+            "name": "Kinderuntersuchungen U4 bis U9",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vollständige Inanspruchnahme der Kinderuntersuchungen U4 bis U9 im jeweiligen Kalenderjahr.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Basis-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Jugenduntersuchung J1",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme der Jugenduntersuchung J1 im jeweiligen Kalenderjahr.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Basis-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfung zur Vervollständigung des Impfschutzes Kinder",
+            "kategorie": "Impfung",
+            "beschreibung": "Inanspruchnahme einer von der BKK übernommenen Schutzimpfung zur Vervollständigung des Impfschutzes.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Untersuchung Kinder/Jugendliche",
+            "kategorie": "Zahn",
+            "beschreibung": "Zahnärztliche Untersuchung ab dem 6. Lebensmonat im jeweiligen Kalenderjahr.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Kinder-/Jugenduntersuchung U10, U11 oder J2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Inanspruchnahme einer zusätzlichen Kinder- oder Jugenduntersuchung U10, U11 oder J2 im jeweiligen Kalenderjahr.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Präventionsmaßnahme oder Gesundheitsaktion Kinder",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an Präventionsmaßnahmen oder Gesundheitsaktionen wie Rückschule, Kinder-Yoga oder Ernährungsberatung.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Seepferdchen-Schwimmkurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Erfolgreiche Teilnahme am Seepferdchen-Schwimmkurs.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Sportverein Kinder/Jugendliche",
+            "kategorie": "Bewegung",
+            "beschreibung": "Aktive Mitgliedschaft in einem Sportverein.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr im Rahmen des Kinderbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Wahl-Aktivität für den Kinderbonus."
+                }
+            ]
+        },
+        {
+            "name": "Baby-Bonus",
+            "kategorie": "Familie",
+            "beschreibung": "Neugeborene erhalten einen zusätzlichen Bonus, wenn U1, U2 und U3 vollständig durchgeführt, die empfohlenen Schutzimpfungen nachgewiesen und Hebammenberatungsleistungen nach der Geburt in Anspruch genommen wurden.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro neugeborenem Kind"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind muss ab Geburt bei der BKK versichert sein; Antrag durch gesetzlichen Vertreter."
+                }
+            ]
+        }
+    ]
+}

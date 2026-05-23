@@ -1,0 +1,1150 @@
+{
+    "krankenkasse": {
+        "name": "KKH Kaufmännische Krankenkasse",
+        "slug": "kkh_kaufm_nnische_krankenkasse",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/257/satzung-kkh-05-26.pdf",
+        "satzung_stand": "01.05.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die KKH klärt über Gesundheitsgefährdungen auf und berät Versicherte zur Vorbeugung von Krankheiten. Sie gewährt qualitätsgesicherte Leistungen der primären Prävention und Gesundheitsförderung in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement/Entspannung und Suchtmittelkonsum.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Pro Kalenderjahr bis zu 2 Maßnahmen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach Leitfaden Prävention; auch durch Fremdanbieter möglich"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und spezifische Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die KKH übernimmt bestimmte Schutzimpfungen und medikamentöse Prophylaxen über die gesetzlichen Leistungen hinaus, darunter Influenza für nicht von der G-BA-Richtlinie erfasste Versicherte, reisemedizinisch indizierte Impfungen und Malariaprophylaxe, HPV, MenB/MenACWY, Masern sowie RSV in der Schwangerschaft.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfart bzw. Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je nach Impfstoff/Indikation; RSV nur für Schwangere 24.-36. SSW, MenB/MenACWY bis 18 Jahre, Masern für vor 1971 Geborene"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante und stationäre Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH kann ambulante Vorsorgeleistungen in anerkannten Kurorten sowie stationäre Vorsorgeleistungen in Vorsorgeeinrichtungen erbringen. Für ambulante Vorsorgeleistungen werden Zuschüsse zu Unterkunft, Verpflegung, Kurtaxe und Fahrkosten gewährt.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Maßnahme; chronisch kranke Kleinkinder 25 EUR täglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 SGB V; mindestens 21 Kalendertage, außer bei versicherten chronisch kranken Kleinkindern"
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH bietet ihren Versicherten eine hausarztzentrierte Versorgung auf Grundlage regionaler Verträge an. Die Teilnahme ist freiwillig und muss schriftlich erklärt werden.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nur im Rahmen der jeweils regional abgeschlossenen Verträge"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die KKH fördert Leistungen zur Vermittlung digitaler oder telemedizinischer Gesundheitskompetenz. Eigene oder beauftragte Angebote werden vollständig übernommen; bei Fremdanbietern beteiligt sich die KKH mit einem Zuschuss.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 1 Leistung pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bis zur Vollendung des 18. Lebensjahres kein Eigenanteil"
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung muss den Vorgaben des § 20k SGB V entsprechen"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Versicherte können zur Aufrechterhaltung des Haushalts eine Haushaltshilfe erhalten, wenn wegen akuter Erkrankung oder akuter Verschlimmerung die Weiterführung des Haushalts nicht möglich ist und ein Kind im Haushalt lebt. Die Leistung ist auf selbst beschaffte Haushaltshilfe bzw. ersatzweise Verdienstausfall des Partners begrenzt.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 10 Leistungstage pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung erforderlich; Kind im Haushalt unter 14 Jahren"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld für besondere Personenkreise",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillig versicherte hauptberuflich Selbständige, unständig Beschäftigte und bestimmte KSVG-Mitglieder können einen Wahltarif mit Krankengeldanspruch wählen. Die Satzung regelt ergänzende Bemessungs- und Berechnungsregeln für das Krankengeld.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Tarifabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 28 genannten Personenkreise"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld 1",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillig versicherte hauptberuflich Selbständige sowie bestimmte Pflichtversicherte können einen Wahltarif Krankengeld für die Zeit vom 22. bis 42. Tag der Arbeitsunfähigkeit wählen. Die monatliche Prämie beträgt 1 % des maßgeblichen Beitragsbemessungswertes.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Tarifmonatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 28b genannten Personenkreise"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld 2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "KSVG-versicherte Mitglieder können einen Wahltarif Krankengeld für die Zeit vom 15. bis 42. Tag der Arbeitsunfähigkeit wählen. Das kalendertägliche Wahltarifkrankengeld beträgt 20 Euro, soweit das entgehende Einkommen nicht niedriger ist.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich im Tarifzeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für nach dem KSVG versicherte Mitglieder"
+                }
+            ]
+        },
+        {
+            "name": "Unterstützung bei Behandlungsfehlern",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH unterstützt Versicherte bei der Verfolgung von Schadenersatzansprüchen, die aus Behandlungsfehlern entstanden sind und nicht auf die KKH übergegangen sind.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Anlassbezogen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Behandlungsfehlern im Zusammenhang mit Versicherungsleistungen"
+                }
+            ]
+        },
+        {
+            "name": "Vermittlung von privaten Zusatzversicherungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH vermittelt den Abschluss privater Zusatzversicherungsverträge zwischen Versicherten und privaten Krankenversicherungsunternehmen.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Anlassbezogen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vermittlungsleistung, kein eigener Leistungsanspruch auf Versicherungsschutz"
+                }
+            ]
+        },
+        {
+            "name": "Zweitmeinungsverfahren",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können vor bestimmten geplanten Eingriffen eine unabhängige ärztliche Zweitmeinung einholen. Die KKH organisiert das Verfahren über Vertragspartner und übernimmt die Kosten vollständig.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je geplanter Eingriff"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in den Anlagen 4, 6 und 7 genannten Eingriffe"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Prämienzahlung bei Leistungsfreiheit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder können bei Leistungsfreiheit eine jährliche Prämienzahlung erhalten. Die Höhe richtet sich nach den gezahlten Beiträgen und der Dauer der Leistungsfreiheit; die Satzung regelt Staffelung, Bindungsfristen und anteilige Berechnung.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder; Leistungsfreiheit und Tarifwahl erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH bietet strukturierte Behandlungsprogramme für chronische Krankheiten an. Teilnahme und Ausgestaltung richten sich nach den regionalen Verträgen.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte mit chronischen Krankheiten im Rahmen der regionalen Verträge"
+                }
+            ]
+        },
+        {
+            "name": "Prämienzahlung für besondere Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte, die an einer besonderen Versorgung nach § 140a SGB V teilnehmen, können eine Prämie erhalten, sofern dies im jeweiligen Verzeichnis vorgesehen ist. Die Teilnahme ist freiwillig und an die Einschreibung gebunden.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Teilnahme an einer besonderen Versorgung nach § 140a SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Selbstbehalt",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder können einen Wahltarif mit Selbstbehalt wählen und erhalten dafür eine Prämienzahlung. Die Prämie und der Selbstbehalt richten sich nach der Einkommensstufe und werden jährlich saldiert.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 400,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit den in § 29f genannten Einkommensvoraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Selbstbehalt für stationäre Krankenhausbehandlungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder können einen auf stationäre Krankenhausbehandlungen beschränkten Selbstbehalt wählen und erhalten dafür eine jährliche Prämie. Die Satzung regelt Bindungsfrist, anteilige Berechnung und Saldierung mit Kosten.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit beitragspflichtigem Jahreseinkommen ab 6.400 Euro"
+                }
+            ]
+        },
+        {
+            "name": "Schwimmschutzotoplastik",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die KKH beteiligt sich bei Versicherten bis 18 Jahre an den Kosten für eine maßgefertigte Otoplastik, die das Eindringen von Wasser in den Gehörgang verhindert. Voraussetzung ist eine Paukendrainage und der Erwerb bei einem Hörakustiker.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Maximal je Ohr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Versorgung mit Paukendrainage; Erwerb bei Hörakustiker"
+                }
+            ]
+        },
+        {
+            "name": "Physiocheck",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können einmalig einen Physiocheck zur Ermittlung muskulärer Dysbalancen und Fehlhaltungen in Anspruch nehmen. Der Anspruch entfällt bei bestimmten in der Anlage genannten Erkrankungen und bei gekündigter Mitgliedschaft.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kein Ausschluss nach Anlage 8; nur bei bestehender Mitgliedschaft"
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Behandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH kann die Kosten für stationäre Behandlungen in nicht nach § 108 SGB V zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze übernehmen, wenn die Satzungsvoraussetzungen erfüllt sind.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vorheriger Zustimmung und Vertrag mit dem Krankenhaus"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen von nicht zugelassenen Leistungserbringern im ambulanten Bereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH kann ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern übernehmen, wenn eine entsprechende Vereinbarung besteht und die Leistung medizinisch notwendig ist.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Vereinbarung mit dem Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Sportbrille bei Sehschwäche",
+            "kategorie": "Sehhilfe",
+            "beschreibung": "Die KKH beteiligt sich bei volljährigen Versicherten an den Kosten für eine medizinisch notwendige Sportbrille. Voraussetzung sind bestimmte Sehbeeinträchtigungen und der Bezug über ein Optikerfachgeschäft oder zulässigen Versandhandel.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bestimmte Sehbeeinträchtigung oder Blindheit; augenärztliche Verordnung erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung (PZR)",
+            "kategorie": "Zahn",
+            "beschreibung": "Die KKH beteiligt sich an den Kosten einer professionellen Zahnreinigung durch zugelassene oder berechtigte Zahnärzte. Es werden bis zu zwei Behandlungen pro Kalenderjahr bezuschusst.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene oder nach § 13 Abs. 4 SGB V berechtigte Zahnärzte"
+                }
+            ]
+        },
+        {
+            "name": "Retainer",
+            "kategorie": "Zahn",
+            "beschreibung": "Zur Sicherung des Behandlungsergebnisses einer kieferorthopädischen Behandlung beteiligt sich die KKH an den Kosten eines festsitzenden Unterkiefer-Frontzahnretainers und an Reparaturen während der laufenden Behandlung.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Einmalig je Retainer; Reparaturen gesondert"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur während laufender kieferorthopädischer Behandlung"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Familie",
+            "beschreibung": "Versicherte mit Anspruch auf künstliche Befruchtung erhalten bei IVF oder ICSI zusätzlich einen Zuschuss für bis zu drei Behandlungsversuche. Die KKH beteiligt sich an den Kosten bis zu einem festen Betrag je Versuch.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 1000,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Behandlungsversuche pro Versicherten"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch nach § 27a SGB V muss bestehen"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung auf Hautkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die KKH beteiligt sich bei Versicherten von 18 bis 34 Jahren an den Kosten einer Hautkrebsuntersuchung, wenn Risikofaktoren vorliegen. Die Untersuchung muss durch qualifizierte Ärzte erfolgen.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung, frühestens alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren müssen ärztlich bestätigt sein"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen bei Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die KKH erstattet in der Schwangerschaft zusätzliche Leistungen wie Hebammen-Rufbereitschaft ab der 37. Schwangerschaftswoche, bestimmte ärztliche Vorsorgeuntersuchungen, ausgewählte Arzneimittel sowie Geburtsvorbereitungskurse für den Partner oder die Partnerin.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft; je nach Leistungsart unterschiedlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nur während der Schwangerschaft; einzelne Leistungen mit zusätzlichen Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung auf Darmkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die KKH beteiligt sich bei Versicherten von 30 bis 49 Jahren an den Kosten eines immunologischen Stuhltests oder einer Koloskopie, wenn Risikofaktoren vorliegen. Für beide Untersuchungen gelten besondere Erstattungssätze und Wiederholungsfristen.",
+            "pdf_page": 41,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung; Stuhltest frühestens alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 30,
+                    "alter_max": 49,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren ärztlich bestätigt; Leistung durch qualifizierte Ärzte"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH beteiligt sich bei 18- bis 34-Jährigen an allgemeinen Gesundheitsuntersuchungen und sportmedizinischen Gesundheitsuntersuchungen, wenn Risikofaktoren vorliegen. Für beide Untersuchungsarten gelten feste Zuschüsse und Wiederholungsfristen.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung; frühestens nach 1 Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren ärztlich bestätigt; sportmedizinische Untersuchung nur mit Zusatzbezeichnung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Fissurenversiegelung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die KKH beteiligt sich bei Versicherten bis 18 Jahre an den Kosten einer Fissurenversiegelung der kariesfreien vorderen Backenzähne. Es werden maximal zwei Versiegelungen bezuschusst.",
+            "pdf_page": 43,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2x"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch Vertragszahnärzte oder berechtigte Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung auf Brustkrebs",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die KKH übernimmt im Einzelfall die Kosten für eine Brustkrebsuntersuchung durch medizinische Tastuntersucherinnen. Voraussetzung sind Risikofaktoren und eine Veranlassung durch eine Fachärztin oder einen Facharzt für Frauenheilkunde und Geburtshilfe.",
+            "pdf_page": 43,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Risikofaktoren und ärztlicher Veranlassung"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die KKH beteiligt sich an den Kosten osteopathischer Leistungen, wenn diese medizinisch geeignet, ärztlich verordnet und qualitätsgesichert erbracht werden. Es werden bis zu vier Sitzungen pro Kalenderjahr bezuschusst.",
+            "pdf_page": 43,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Maximal 4 Sitzungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung auf Privatrezept und qualitätsgesicherte Leistungserbringung"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH beteiligt sich an den Kosten digitaler Versorgungsprodukte, wenn diese im KKH-Verzeichnis gelistet, ärztlich verordnet oder medizinisch indiziert und durch berechtigte Leistungserbringer begleitet werden. Die Erstattung richtet sich nach der Anlage 9.",
+            "pdf_page": 44,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 199,
+                "waehrung": "EUR",
+                "turnus": "Einmalig je Produkt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für in Anlage 9 gelistete digitale Versorgungsprodukte"
+                }
+            ]
+        },
+        {
+            "name": "Real-Time-Messgeräte (rtCGM)",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die KKH übernimmt die Kosten für ein Real-Time-Messgerät und Sensoren zur kontinuierlichen Glukosemessung bei Diabetes Typ 2 unter bestimmten Therapie- und Verordnungsvoraussetzungen. Die Versorgung erfolgt zunächst für sechs Monate und kann verlängert werden.",
+            "pdf_page": 45,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 6 Monate, ggf. Folgeverordnungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Diabetes mellitus Typ 2, BOT-Therapie und ärztliche Bestätigung der Notwendigkeit"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Kinder- und Jugenduntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH beteiligt sich an den Kosten der zusätzlichen Vorsorgeuntersuchungen U10, U11 und J2 sowie an Augenuntersuchungen auf Schwachsichtigkeit bei Kindern. Es gelten Altersgrenzen, medizinische Voraussetzungen und qualifizierte Leistungserbringer.",
+            "pdf_page": 46,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 55,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche innerhalb der genannten Altersfenster"
+                }
+            ]
+        },
+        {
+            "name": "Knochendichtemessung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die KKH beteiligt sich an den Kosten einer DXA-Knochendichtemessung bei ärztlich diagnostizierter Osteoporose. Der Zuschuss wird einmal je Kalenderjahr gewährt, sofern die Leistung nicht bereits als Sachleistung in Anspruch genommen wurde.",
+            "pdf_page": 46,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 33,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich diagnostizierte Osteoporose und qualifizierter Leistungserbringer"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die KKH vergibt Bonuszahlungen für nachgewiesene gesundheitsbewusste Maßnahmen. Der Bonus kann als Geldleistung oder als zweckgebundener Zuschuss zu ausgewählten Gesundheitsleistungen genutzt werden; bei erstmaliger Teilnahme und ausreichender Anzahl an Maßnahmen gibt es einen erhöhten Bonus.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Bonusansprüche und Zuschüsse sind an Nachweise, Fristen und die in den Anlagen 2 und 3 genannten Maßnahmen gebunden."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Leistungen zur Erfassung gesundheitlicher Risiken und Früherkennung von Krankheiten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweisbare Inanspruchnahme von Vorsorge- und Früherkennungsleistungen, sportmedizinischer Untersuchung sowie zahnärztlichen Untersuchungen und Leistungen zur Verhütung von Zahnerkrankungen wird bonifiziert.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr; erste und zweite Leistung je 10 EUR, weitere je 5 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Leistung nach § 24a Abs. 3"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweisbare Schutzimpfungen nach den gesetzlichen Impfregelungen oder nach der Satzung werden bonifiziert.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr; erste und zweite Leistung je 10 EUR, weitere je 5 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Impfung nach § 24a Abs. 3"
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Untersuchungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Nachweisbare zahnärztliche Untersuchungen werden im Bonusprogramm berücksichtigt.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr; erste und zweite Leistung je 10 EUR, weitere je 5 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Untersuchung nach § 24a Abs. 3"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen zur Verhütung von Zahnerkrankungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Leistungen zur Verhütung von Zahnerkrankungen werden als Bonusmaßnahme anerkannt.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr; erste und zweite Leistung je 10 EUR, weitere je 5 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Leistung nach § 24a Abs. 3"
+                }
+            ]
+        },
+        {
+            "name": "Mutterschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Wahrnehmbare Leistungen der Mutterschaftsvorsorge während Schwangerschaft und nach der Entbindung werden einmal je Mutterschaftsfall bonifiziert.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Mutterschaftsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur während Schwangerschaft und nach der Entbindung"
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßige sportliche Aktivität",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßige sportliche Aktivität in Verein, Fitnessstudio, Betriebssport oder über qualitätsgesicherte Präventionsangebote wird als Basismaßnahme bonifiziert.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 15,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Kinder und Jugendliche"
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs nach § 20 Absatz 5 SGB V",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Teilnahme an einem zertifizierten Präventionskurs wird als Basismaßnahme bonifiziert.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 15,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Kinder und Jugendliche"
+                }
+            ]
+        },
+        {
+            "name": "Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die aktive Teilnahme an einer qualifizierten Sportveranstaltung mit Ausdauerleistung wird als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Kinder und Jugendliche"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Ein Leistungsnachweis eines anerkannten Sport- oder Wanderverbandes wird als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Kinder und Jugendliche"
+                }
+            ]
+        },
+        {
+            "name": "Schwimmabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Anerkannte Schwimmabzeichen werden als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Kinder und Jugendliche"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitswerte im Normbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Normwerte bei Blutdruck, Body-Mass-Index oder ein Nichtraucherstatus von mehr als sechs Monaten werden als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Erwachsene"
+                }
+            ]
+        },
+        {
+            "name": "Bewegungskurse für Schwangere",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bewegungskurse für Schwangere werden als Basismaßnahme im Erwachsenen-Katalog bonifiziert.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 15,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Erwachsene"
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik nach der Entbindung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Rückbildungsgymnastik nach der Entbindung wird als Basismaßnahme im Erwachsenen-Katalog bonifiziert.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 15,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach der Entbindung; Maßnahmenkatalog Erwachsene"
+                }
+            ]
+        },
+        {
+            "name": "Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die aktive Teilnahme an einer qualifizierten Sportveranstaltung mit Ausdauerleistung wird als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Erwachsene"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Ein Leistungsnachweis eines anerkannten Sport- oder Wanderverbandes wird als Zusatzmaßnahme bonifiziert.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahmenkatalog Erwachsene"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,814 @@
+{
+    "krankenkasse": {
+        "name": "IKK classic",
+        "slug": "ikk_classic",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/283/Satzung%20IKK%20classic.pdf",
+        "satzung_stand": "08.01.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Schutzimpfungen und Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die IKK classic übernimmt zusätzlich zu den gesetzlichen Impfleistungen weitere von der STIKO empfohlene Schutzimpfungen sowie im Anhang 5 benannte Maßnahmen der spezifischen Prophylaxe. Schutzimpfungen werden grundsätzlich als Sachleistung oder über die Kosten des Impfstoffs und der Impfleistung nach Vertragssätzen erbracht; Prophylaxemaßnahmen werden anteilig erstattet.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je nach Impfempfehlung bzw. Anhang 5"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte; weitere Impfungen/Prophylaxen nach Anhang 5"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen der primären Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK classic fördert qualitätsgesicherte verhaltenspräventive Maßnahmen sowie Prävention und Gesundheitsförderung in Lebenswelten und im Betrieb. Erstattet werden Kurse und Projekte nach den Kriterien des GKV-Leitfadens Prävention; für bestimmte Kooperationsprojekte gelten abweichende Zuschussregelungen.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Maßnahmen nach § 20 Abs. 2, 4, 5 SGB V; pro Kurs bis 90 EUR, max. 2 pro Jahr"
+                }
+            ]
+        },
+        {
+            "name": "Zuschüsse zu Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für ambulante Vorsorgeleistungen in anerkannten Kurorten gewährt die IKK classic einen Zuschuss, wenn die Maßnahme mindestens 14 Kalendertage dauert. Für chronisch kranke Kleinkinder gilt ein täglicher Zuschuss, für alle anderen Versicherte ein Pauschalbetrag.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "1x pro Vorsorgeleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistung in anerkanntem Kurort, mindestens 14 Kalendertage"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die IKK classic bietet Leistungen zur Förderung der digitalen Gesundheitskompetenz an. Werden diese Leistungen durch Dritte erbracht, erstattet die IKK classic die tatsächlich entstandenen Kosten bis zu einem jährlichen Höchstbetrag nach Antrag und Nachweisen.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nicht für Personen mit ruhenden Ansprüchen, Anwartschaftsversicherte oder Personen nach § 264 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "In den gesetzlich vorgesehenen Fällen erbringt die IKK classic Haushaltshilfe, wenn im Haushalt lebende Kinder bei Beginn der Hilfe das 14. Lebensjahr noch nicht vollendet haben.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "nach gesetzlichem Anspruch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kind im Haushalt unter 14 Jahren; gesetzliche Voraussetzungen nach § 38 Abs. 1 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistung Kostenerstattung wählen, auch beschränkt auf bestimmte Leistungsbereiche. Die Erstattung ist auf die Höhe der Sachleistung begrenzt und setzt die vorherige Information der IKK voraus.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "nach Wahl der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme; Bindung mindestens ein Kalendervierteljahr"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei gewählten Arzneimitteln außerhalb der preisgünstigsten bzw. Rabattarzneimittel-Regelung trägt die versicherte Person Mehrkosten. Für die Erstattung gelten die Regeln der Kostenerstattung mit Verwaltungsabschlag.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "im Rahmen der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen einer gewählten Kostenerstattung"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für selbst beschaffte Leistungen im Ausland",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können Leistungen in EU-/EWR-Staaten und der Schweiz anstelle der Inlandssachleistung in Anspruch nehmen. Die Erstattung erfolgt im Rahmen der gesetzlichen Vorgaben und ist auf die Höhe der vergleichbaren Inlandskosten begrenzt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "je Leistungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorlage von Originalrechnungen; Krankenhausleistungen nur mit vorheriger Zustimmung"
+                }
+            ]
+        },
+        {
+            "name": "Teilkostenerstattung für DO-Angestellte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillig versicherte DO-Angestellte erhalten bei Ausübung des Wahlrechts eine Teilkostenerstattung anstelle der regulären SGB-V-Leistungen. Für stationäre Krankenhausbehandlung und Zahnersatz gelten besondere Höchstgrenzen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "nach Wahlrecht"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillig versicherte Angestellte der IKK mit Dienstordnungsunterstellung"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen gemäß § 11 Abs. 6 SGB V",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die IKK classic gewährt zusätzliche Leistungen nach § 11 Abs. 6 SGB V; Art, Umfang und Kosten ergeben sich aus den folgenden Einzelregelungen für Schwangerschaft, Zahnvorsorge und weitere besondere Leistungen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je nach Einzelregelung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Rahmenregelung für die Leistungen nach §§ 34c bis 34q"
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel für Schwangere",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte erhalten nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit Eisen, Folsäure und/oder Magnesium als Mono- oder Kombinationspräparate, sofern sie ärztlich verordnet und in der Apotheke abgegeben wurden.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "bis 100 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; ärztliche Verordnung erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der Homöopathie, Anthroposophie und Phytotherapie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die IKK classic erstattet die Kosten für bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Anthroposophie und Phytotherapie. Die Erstattung ist an ärztliche Verordnung und Apothekenabgabe gebunden.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "bis 50 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur verordnete, nicht ausgeschlossene Arzneimittel"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für zahnärztliche Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Für bestimmte zahnärztliche Leistungen wie Fissurenversiegelung und Glattflächenversiegelung erstattet die IKK classic die Kosten bis zu einem jährlichen Höchstbetrag. Die Leistung ist altersabhängig und setzt eine Rechnung der Zahnarztpraxis voraus.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Fissurenversiegelung der kariesfreien Prämolaren"
+                },
+                {
+                    "alter_min": 10,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Glattflächenversiegelung"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Auf ärztliche Veranlassung können Versicherte osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet und qualitätsgesichert durch entsprechend qualifizierte Leistungserbringer erfolgt. Erstattet werden bis zu vier Sitzungen pro Jahr.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 4 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Veranlassung oder Behandlung durch Arzt; qualitätsgesicherte Osteopathie"
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die IKK classic beteiligt sich an den Kosten ausgewählter zusätzlicher Vorsorgeleistungen in der Schwangerschaft, etwa B-Streptokokken-Test und weitere Infektionsdiagnostik bei besonderem Risiko. Der Gesamtzuschuss ist pro Schwangerschaft begrenzt.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Schwangerschaft; zusätzliche ärztliche Vorsorgeleistungen bei individuellem Anlass"
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaftspauschale für Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Weibliche Versicherte erhalten einen Zuschuss zu den Kosten der Hebammen-Rufbereitschaft in den letzten Wochen der Schwangerschaft. Voraussetzung ist die Inanspruchnahme von Hebammenhilfe durch eine freiberufliche Hebamme.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Rufbereitschaft in der Regel zwischen 37. und 42. Schwangerschaftswoche"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Zusätzlich zu den genehmigten Kosten des Behandlungsplans wird ein Zuschuss für Maßnahmen der künstlichen Befruchtung gewährt. Bei beidseitiger Versicherung beider Ehegatten erhöht sich der Zuschuss je Versuch.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Behandlungsversuch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Genehmigter Behandlungsplan nach § 27a SGB V ab 01.01.2016"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte haben ergänzend zu den gesetzlichen Leistungen Anspruch auf einen Zuschuss für professionelle Zahnreinigung, wenn diese durch einen zugelassenen zahnärztlichen Leistungserbringer durchgeführt wurde.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch Vertragszahnarzt oder nach § 13 Abs. 4 SGB V berechtigten Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen U 10, U 11 und J 2",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die IKK classic übernimmt die Kosten für die zusätzlichen Kinder- und Jugenduntersuchungen U10, U11 und J2 einmalig je Untersuchung, wenn Risikofaktoren oder Entwicklungsauffälligkeiten vorliegen und die Untersuchung durch einen geeigneten Leistungserbringer erfolgt.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 61,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 8,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U10"
+                },
+                {
+                    "alter_min": 9,
+                    "alter_max": 10,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U11"
+                },
+                {
+                    "alter_min": 16,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "J2"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Vor Aufnahme einer sportlichen Betätigung beteiligt sich die IKK classic an den Kosten einer sportmedizinischen Untersuchung und Beratung, wenn medizinische Risiken vorliegen. Zusätzliche diagnostische Leistungen können bei besonderer ärztlicher Begründung mit umfasst sein.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 130,
+                "waehrung": "EUR",
+                "turnus": "1x innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mit Zusatzweiterbildung Sportmedizin; medizinische Risikofaktoren erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Hautkrebsuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die IKK classic beteiligt sich an den Kosten einer zusätzlichen Hautkrebsvorsorgeuntersuchung bis zur Vollendung des 35. Lebensjahres, wenn Risikofaktoren vorliegen. Die Leistung umfasst Anamnese, Ganzkörperinspektion, optische Untersuchung, Beratung und Dokumentation.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "1x innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 35,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren für Hautkrebs; durch Hautarzt/Dermatologen"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Darmkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die IKK classic beteiligt sich an den Kosten eines immunologischen Stuhltests zur Darmkrebsvorsorge, wenn Risikofaktoren vorliegen und das 50. Lebensjahr noch nicht vollendet ist. Eine erneute Untersuchung ist nach zwei Jahren möglich.",
+            "pdf_page": 41,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Mindestens 1x alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 49,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren für Darmkrebs; spezifizierte Rechnung erforderlich"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die IKK classic vergibt einen Geldbonus für nachgewiesene gesundheitsbewusste Maßnahmen. Alternativ kann der Bonus teilweise als Zuschuss für bestimmte selbst bezahlte Gesundheitsleistungen verwendet werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Teilnahmezeitraum ist ein Kalenderjahr; Auszahlung auf Antrag. Für bestimmte Maßnahmen gelten Nachweis- und Kombinationsregeln."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Leistungen zur Erfassung von gesundheitlichen Risiken und Früherkennung von Krankheiten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Regelmäßige Inanspruchnahme von Vorsorge- und Früherkennungsleistungen nach den gesetzlichen Regelungen und den Satzungsleistungen der IKK classic. Dazu zählen unter anderem Gesundheitsuntersuchungen, Mutterschaftsvorsorge, Zahnvorsorge, Kinder- und Jugenduntersuchungen sowie bestimmte Krebsfrüherkennungen.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "je nach nachgewiesener Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der jeweiligen Vorsorge-/Früherkennungsmaßnahme"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis von Schutzimpfungen nach den gesetzlichen Impfempfehlungen oder nach der Satzung der IKK classic. Die Bonifizierung erfolgt erst nach Abschluss der Immunisierung; Kombinationsimpfungen zählen als eine Maßnahme.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "je nach nachgewiesener Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Abgeschlossene Immunisierung"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen zur verhaltensbezogenen Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Regelmäßige qualitätsgesicherte Präventionskurse nach § 20 Abs. 5 SGB V. Die Maßnahme wird nur einmal je Teilnahmezeitraum anerkannt.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "1x je Teilnahmezeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Teilnahme"
+                }
+            ]
+        },
+        {
+            "name": "Vergleichbare qualitätsgesicherte Angebote zur Förderung eines gesundheitsbewussten Verhaltens",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis vergleichbarer gesundheitsfördernder Aktivitäten wie Fitnessstudio-Mitgliedschaft, Sportvereine, Lauftreffs, Rückbildungsgymnastik, Sportabzeichen oder normgerechte Gesundheitswerte. Bestimmte Nachweise müssen mit einer Präventions- oder Bewegungsmaßnahme kombiniert sein.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "1x je Teilnahmezeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis einer anerkannten Aktivität; private sportliche Aktivitäten ohne Qualifikationsnachweis nicht anerkannt"
+                }
+            ]
+        },
+        {
+            "name": "Geräte zur Messung und Erfassung des Fitness- und Gesundheitsstatus",
+            "kategorie": "Prävention",
+            "beschreibung": "Alternativ zum Geldbonus können Zuschüsse für bestimmte selbst in Anspruch genommene Gesundheitsleistungen beantragt werden. Dazu zählen Geräte zur Messung und Erfassung des Fitness- und Gesundheitsstatus, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Sportveranstaltungen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Alternativ zum Geldbonus können Start- und Teilnahmegebühren für Sportveranstaltungen bezuschusst werden, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurse für Partner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Alternativ zum Geldbonus können Kosten für Geburtsvorbereitungskurse für Partner bezuschusst werden, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Beiträge für private Zusatzversicherungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Alternativ zum Geldbonus können Beiträge für bestimmte private Zusatzversicherungen bezuschusst werden, etwa Krankenzusatz-, Auslandsreisekranken-, Pflegezusatz-, Berufsunfähigkeits- und Unfallversicherungen.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Baby- und Kinderschwimmen",
+            "kategorie": "Familie",
+            "beschreibung": "Alternativ zum Geldbonus können Kosten für Baby- und Kinderschwimmen bezuschusst werden, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Eltern-Baby-Kurse",
+            "kategorie": "Familie",
+            "beschreibung": "Alternativ zum Geldbonus können Eltern-Baby-Kurse wie PEKiP, Delfi, ElBa oder Pikler bezuschusst werden, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einem Erste-Hilfe-Kurs",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Alternativ zum Geldbonus können Kosten für die Teilnahme an einem Erste-Hilfe-Kurs bezuschusst werden, sofern keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis"
+                }
+            ]
+        },
+        {
+            "name": "Kosten für eine Zyklus-App und deren Zubehör",
+            "kategorie": "Prävention",
+            "beschreibung": "Alternativ zum Geldbonus können Kosten für eine Zyklus-App und deren Zubehör bezuschusst werden, wenn diese der Erfüllung eines Kinderwunsches dienen und keine anderweitige Leistungspflicht besteht.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 3,
+                "waehrung": "EUR",
+                "turnus": "alternativ zum Geldbonus"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur alternativ zum Geldbonus und mit Nachweis; Kinderwunschbezug"
+                }
+            ]
+        },
+        {
+            "name": "Bonus für Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Arbeitgeber und IKK-versicherte Arbeitnehmer können bei vereinbarten Maßnahmen der betrieblichen Gesundheitsförderung einen Bonus erhalten. Voraussetzung ist eine schriftliche Vereinbarung mit der IKK classic und ein erfolgreicher Abschluss der Maßnahme.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "maximal 3x innerhalb von 5 Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Arbeitgeber bzw. IKK-versicherte Arbeitnehmer; Teilnahme an vereinbartem BGF-Training"
+                }
+            ]
+        }
+    ]
+}

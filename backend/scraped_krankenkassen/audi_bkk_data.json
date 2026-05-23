@@ -1,0 +1,658 @@
+{
+    "krankenkasse": {
+        "name": "Audi BKK",
+        "slug": "audi_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/4/Satzung_KV_Audi_BKK_01.01.2023_Stand_20260101.pdf",
+        "satzung_stand": "01.01.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Allgemeiner Leistungsumfang",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Audi BKK gewährt die gesetzlich vorgesehenen Leistungen bei Schwangerschaft und Mutterschaft, zur Prävention, Früherkennung, Behandlung, Rehabilitation sowie Leistungen des Persönlichen Budgets. Außerdem unterstützt sie Versicherte bei der Verfolgung von Schadensersatzansprüchen aus Behandlungsfehlern.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Gesetzlicher Leistungsumfang"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für alle Versicherten der Audi BKK"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen gemäß § 11 Abs. 6 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Audi BKK gewährt zusätzliche Satzungsleistungen für Homöopathie, zahnärztliche Zusatzleistungen, Osteopathie, Schwangerschaft/Mutterschaft, stationäre neurologische Frührehabilitation, sportmedizinische Vorsorge und zusätzliche kinderorthopädische Hilfsmittel. Für diese Leistungen gelten jeweils die in der Satzung genannten Voraussetzungen und Höchstgrenzen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je nach Einzelleistung und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte der Audi BKK; je nach Einzelleistung gelten zusätzliche Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der besonderen Therapierichtung Homöopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Erstattet werden Kosten für nicht verschreibungspflichtige apothekenpflichtige homöopathische Arzneimittel, wenn sie medizinisch notwendig sind, ärztlich verordnet wurden und aus Apotheke oder zulässigem Versandhandel bezogen wurden. Ausgeschlossene Präparate werden nicht erstattet.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 100 Euro pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Notwendigkeit und ärztlicher Verordnung"
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Zusatzleistungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Die Audi BKK erstattet zusätzliche zahnärztliche Leistungen wie Fissurenversiegelung der kariesfreien Prämolaren, zweite Zahnsteinentfernung im Kalenderjahr, Bakterientest vor Parodontosebehandlung, Metallallergietest, Kariesinfiltration und professionelle Zahnreinigung. Erstattet werden maximal zwei Behandlungen pro Jahr innerhalb der genannten Höchstgrenzen.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "2x pro Kalenderjahr, maximal 60 Euro pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung muss von Zahnärzten durchgeführt werden"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Behandlungen in Anspruch nehmen, wenn sie medizinisch geeignet sind, eine Krankheit zu heilen, Beschwerden zu lindern oder die gesundheitliche Entwicklung eines Kindes zu fördern. Voraussetzung sind eine ärztliche Verordnung und die fachlich geeignete Qualifikation des Leistungserbringers.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "Maximal 4 Sitzungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und qualifizierter Osteopath erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen bei Schwangerschaft/Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die gesetzlichen Leistungen hinaus erstattet die Audi BKK unter anderem Geburtsvorbereitungskurse für den Lebenspartner, bestimmte ärztliche Zusatzuntersuchungen bei Risikofaktoren, Hebammen-Rufbereitschaft sowie bestimmte nicht verschreibungspflichtige Arzneimittel mit Folsäure, Magnesium, Jod und/oder Eisen. Es gelten die jeweils genannten Voraussetzungen und Nachweise.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur während der Schwangerschaft; einzelne Teilleistungen haben zusätzliche Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Stationäre neurologische Frührehabilitation in nicht zugelassenen Krankenhäusern",
+            "kategorie": "Reha",
+            "beschreibung": "Versicherte haben unter bestimmten Voraussetzungen Anspruch auf stationäre neurologische Frührehabilitation in nicht zugelassenen Krankenhäusern oder Rehabilitationseinrichtungen. Die Audi BKK übernimmt die Kosten in voller Höhe für die medizinisch notwendige Dauer, wenn sie vorab eingewilligt hat.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall für die Dauer der medizinischen Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Krankenhausbehandlungsbedürftigkeit, neurologische Frührehabilitation und vorherige Einwilligung der Kasse erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Audi BKK beteiligt sich an den Kosten für sportmedizinische Untersuchungen und Beratungen vor Aufnahme sportlicher Betätigung, wenn medizinische Risiken vorliegen. Zusätzliche diagnostische Leistungen können bei entsprechender ärztlicher Bescheinigung ebenfalls berücksichtigt werden.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "1x innerhalb von 2 Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei zugelassenen Vertragsärzten oder berechtigten Leistungserbringern mit Zusatzweiterbildung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Kinderorthopädische Hilfsmittel",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die Audi BKK gewährt zusätzlich Kopforthesen für Kinder im Alter vom 4. bis zum vollendeten 15. Lebensmonat, wenn dies medizinisch erforderlich ist und die Indikation fachgerecht gestellt wurde. Die Versorgung setzt eine entsprechende Verordnung und die Einhaltung der medizinischen Qualitätsanforderungen voraus.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einzelfallbezogen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder ab dem 4. bis zum vollendeten 15. Lebensmonat"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Audi BKK übernimmt über die Regelleistung hinaus von STIKO oder nach Infektionsschutzgesetz empfohlene Schutzimpfungen, sofern sie nicht vom öffentlichen Gesundheitsdienst oder Arbeitgeber zu tragen sind. Selbst bezahlte ärztlich empfohlene Impfungen werden gegen Nachweis der tatsächlichen Kosten erstattet.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die Impfung nicht durch öffentlichen Gesundheitsdienst oder Arbeitgeber erfolgt"
+                }
+            ]
+        },
+        {
+            "name": "HPV-Impfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Audi BKK übernimmt die Kosten für die HPV-Impfung über die Regelleistung hinaus für den genannten Altersbereich.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmalig im empfohlenen Impfzeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 27,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bis zur Vollendung des 27. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Grippeschutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Audi BKK übernimmt die Kosten für die Grippeschutzimpfung im genannten Altersbereich, sofern kein anderweitiger Anspruch besteht und kein anderer Kostenträger zuständig ist.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Impfempfehlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 1,
+                    "alter_max": 60,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur sofern kein anderweitiger Anspruch besteht bzw. anderer Kostenträger zuständig ist"
+                }
+            ]
+        },
+        {
+            "name": "Meningokokken B-Impfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Die Audi BKK übernimmt die Kosten für die Meningokokken-B-Impfung bei versicherten Kindern im genannten Altersbereich.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Impfempfehlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 5,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für versicherte Kinder"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Audi BKK fördert Maßnahmen der individuellen verhaltensbezogenen Prävention, der Prävention in Lebenswelten und der betrieblichen Gesundheitsförderung. Für Fremdanbieter-Kurse gelten Qualitäts- und Teilnahmevorgaben sowie kalenderjährliche Begrenzungen.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse pro versicherte Person und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Einhaltung der Qualitätskriterien und Teilnahmequote"
+                }
+            ]
+        },
+        {
+            "name": "Audi BKK-Gesundheitswoche / Audi BKK Retreat Wochenende",
+            "kategorie": "Prävention",
+            "beschreibung": "Anstelle von zwei Kursen am Wohnort können Versicherte wohnortferne Präventionsmaßnahmen in Form der Gesundheitswoche oder des Retreat Wochenendes nutzen. Die Inhalte müssen den Vorgaben des Leitfadens Prävention entsprechen.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich für einen einwöchigen bzw. viertägigen Aufenthalt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur als Alternative zu zwei Kursen am Wohnort"
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Audi BKK bietet Leistungen zur Förderung der digitalen Gesundheitskompetenz an. Eigene Angebote sind kostenfrei; bei Fremdanbietern kann bei erfüllten Qualitäts- und Teilnahmevorgaben ein Zuschuss gewährt werden.",
+            "pdf_page": 36,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1 Kurs pro versicherte Person und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Leistungen mit konkretem Gesundheitsbezug und bei Einhaltung der Teilnahmequote"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen übernimmt die Audi BKK einen kalendertäglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für versicherte chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten neben der Behandlungspflege auch Grundpflege und hauswirtschaftliche Versorgung für maximal zwei Stunden täglich und längstens 26 Wochen je Krankheitsfall, soweit die Versorgung im Haushalt nicht anderweitig sichergestellt werden kann.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 26 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn eine im Haushalt lebende Person nicht ausreichend pflegen kann"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die Audi BKK gewährt Haushaltshilfe auch über die gesetzliche Altersgrenze hinaus, wenn im Haushalt ein Kind lebt, das bei Beginn der Hilfe das 14. Lebensjahr noch nicht vollendet hat oder behindert und auf Hilfe angewiesen ist. Kosten einer selbstbeschafften Ersatzkraft können in angemessener Höhe erstattet werden.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur wenn im Haushalt ein Kind unter 14 Jahren oder ein behindertes hilfebedürftiges Kind lebt"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen, auch in bestimmten Leistungsbereichen oder im EU-/EWR-Ausland bzw. der Schweiz. Die Erstattung ist auf die Höhe der Sachleistung begrenzt und kann um Verwaltungskosten gekürzt werden.",
+            "pdf_page": 41,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Nach Inanspruchnahme und Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vorheriger Wahl der Kostenerstattung und Nachweis durch Rechnungen/Verordnungen"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Prämienzahlung",
+            "kategorie": "Prävention",
+            "beschreibung": "Mitglieder können bei Leistungsfreiheit im Kalenderjahr eine Prämienzahlung erhalten. Die Teilnahme ist an Bedingungen, Bindungsfristen und Höchstgrenzen geknüpft; bestimmte Leistungen und Angehörige bleiben unschädlich.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 600,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr, maximal 600 Euro"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit Teilnahme am Wahltarif und ohne in Anspruch genommene Leistungen im Kalenderjahr"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte Mitglieder können einen Wahltarif zur Aufstockung oder Wahl von Krankengeld abschließen. Die Höhe des Wahltarifkrankengeldes ist stufenweise wählbar und an Mindestbindungsfristen, Wartezeiten und Einkommensgrenzen gebunden.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Tarifwahl und während der tariflichen Anspruchszeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 53 Abs. 6 SGB V genannten Mitglieder"
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Audi BKK bietet eine freiwillige hausarztzentrierte Versorgung auf Grundlage regionaler Verträge an. Inhalt und Ausgestaltung ergeben sich aus den jeweiligen Verträgen.",
+            "pdf_page": 44,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme nach regionalem Vertrag"
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Audi BKK bietet strukturierte Behandlungsprogramme auf Grundlage der jeweils zugelassenen Fassung für die betreffende Erkrankung und Region an. Die Teilnahme richtet sich nach den jeweiligen Programmvorgaben.",
+            "pdf_page": 45,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nach jeweiligem Behandlungsprogramm"
+                }
+            ]
+        },
+        {
+            "name": "Besondere Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Audi BKK bietet eine besondere Versorgung zur Förderung von Qualität und Wirtschaftlichkeit der medizinischen Versorgung an. Die Teilnahme ist freiwillig und richtet sich nach den regionalen Verträgen.",
+            "pdf_page": 46,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme nach regionalem Vertrag"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für betriebliche Gesundheitsförderung / Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Die Audi BKK führt zwei Bonusbereiche: einen Arbeitgeberbonus für betriebliche Gesundheitsförderung und einen Versichertenbonus für gesundheitsbewusstes Verhalten. Die Auszahlung erfolgt als Geldbonus nach Nachweis der jeweiligen Maßnahmen und unter Beachtung der jährlichen Höchstgrenzen.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusmaßnahmen sind getrennt von Satzungsleistungen zu betrachten; Nachweise und Fristen sind einzuhalten."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Betriebliche Gesundheitsförderung des Arbeitgebers",
+            "kategorie": "Prävention",
+            "beschreibung": "Der Arbeitgeber erhält einen Bonus, wenn er einen betrieblichen Gesundheitsförderungsprozess nach den Kriterien des Leitfadens Prävention vereinbart und umsetzt. Die Höhe und Auszahlung richten sich nach dem Bonusvertrag.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20000,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich, maximal zweimal innerhalb von fünf Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Arbeitgeber; nicht für Maßnahmen, die bereits Arbeitsschutz oder BEM sind"
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten einen Bonus, wenn sie an zertifizierten Angeboten der betrieblichen Gesundheitsförderung ihres Arbeitgebers mit mindestens 80 % teilnehmen. Je Kalenderjahr werden maximal zwei Maßnahmen bonifiziert.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "1. Maßnahme 50 Euro, 2. Maßnahme 25 Euro je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mindestens 80 % Teilnahme an zertifizierten BGF-Angeboten des Arbeitgebers"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsbewusste Inanspruchnahme von Vorsorge- und Früherkennungsleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten einen Bonus, wenn sie bestimmte zahnärztliche Kontrolluntersuchungen, Früherkennungs- und Gesundheitsuntersuchungen, Früherkennungsmaßnahmen nach Mutterschaftsrichtlinie oder vollständig durchgeführte Schutzimpfungen nachweisen.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für berechtigte Versicherte mit nachgewiesener Maßnahme"
+                }
+            ]
+        },
+        {
+            "name": "Sportliche Aktivität und Präventionskurse",
+            "kategorie": "Bewegung",
+            "beschreibung": "Zusätzlich wird ein Bonus für sportliche Aktivität im Sportverein, Hochschulsport, DOSB-/DSV-Abzeichen mit Vorbereitung, regelmäßige Aktivität im qualitätsgesicherten Fitness- oder Yoga-Studio sowie für Präventionskurse gewährt.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis über sportliche Aktivität oder Präventionskurs erforderlich"
+                }
+            ]
+        }
+    ]
+}

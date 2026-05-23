@@ -1,0 +1,812 @@
+{
+    "krankenkasse": {
+        "name": "BKK ProVita",
+        "slug": "bkk_provita",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/383/SATZUNG-BKK-PROVITA_KV-01.01.2024-neues-Design.pdf",
+        "satzung_stand": "01.01.2024"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege wird im Einzelfall auch Grundpflege und hauswirtschaftliche Versorgung übernommen, wenn keine andere im Haushalt lebende Person die Versorgung leisten kann und keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt. Die Leistung ist zeitlich begrenzt und gilt zusätzlich zu den gesetzlichen Vorgaben.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1 Stunde je Pflegeeinsatz, längstens 25 Einsätze je Kalendermonat; maximal 6 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Keine andere im Haushalt lebende Person kann den Kranken in dem erforderlichen Umfang pflegen und versorgen; keine Pflegebedürftigkeit mit mindestens Pflegegrad 2"
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld auf Basis des entgangenen Arbeitsentgelts gezahlt. Die Leistung ist an die Tage gekoppelt, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Je Kalendertag der Arbeitsunfähigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in bestimmten Leistungsbereichen. Die Erstattung ist auf die Höhe der Sachleistung begrenzt und wird um Verwaltungskosten gekürzt; für Behandlungen im EU-/EWR-Ausland und in der Schweiz gelten besondere Regeln.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Nach Wahl der Kostenerstattung, mindestens ein Kalendervierteljahr Bindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vor Inanspruchnahme ist die Krankenkasse zu informieren; spezifizierte Rechnungen erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Arzneimittel kann im Einzelfall Kostenerstattung gewählt werden, wenn ein anderes Arzneimittel nach den gesetzlichen Voraussetzungen gewählt wird. Die Erstattung ist auf die Höhe der Sachleistung begrenzt und darf die tatsächlichen Kosten nicht überschreiten.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall, ohne Mindestbindungsfrist"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der gesetzlichen Voraussetzungen nach § 129 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Verordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch entsprechend ausgebildete Leistungserbringer erfolgt. Die Leistung ist kalenderjährlich begrenzt und für jüngere Versicherte höher gedeckelt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Kalenderjahr; bis 150 EUR, bis 250 EUR bei Inanspruchnahme bis zur Vollendung des 21. Lebensjahres"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich; Behandlung darf nicht vom G-BA ausgeschlossen sein"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der besonderen Therapierichtungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Erstattet werden ärztlich verordnete, nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus Homöopathie, Phytotherapie und Anthroposophie, sofern sie medizinisch notwendig sind. Für das Kalenderjahr gilt eine Höchstgrenze, für jüngere Versicherte eine höhere.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Kalenderjahr, maximal 160 EUR; bis 250 EUR bei Inanspruchnahme bis zur Vollendung des 21. Lebensjahres"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und Bezug über Apotheke oder zulässigen Versandhandel; keine vom G-BA ausgeschlossenen Arzneimittel"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Arzneimittel in Schwangerschaft und Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Während der Schwangerschaft sowie für Mütter bis zum vollendeten ersten Lebensjahr des Kindes werden bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit Eisen, Jodid, Magnesium und Folsäure bzw. Jodid übernommen. Nahrungsergänzungsmittel sind ausgeschlossen.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Schwangerschaft bzw. bis zur Vollendung des 1. Lebensjahres des Kindes"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mütter zusätzlich bis zur Vollendung des 1. Lebensjahres des Kindes; ärztliches Privatrezept erforderlich"
+                }
+            ]
+        },
+        {
+            "name": "Partner-Geburtsvorbereitungskurs",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Kosten für die Teilnahme des Partners an einem von Hebammen durchgeführten Geburtsvorbereitungskurs werden bis zu einer Höchstgrenze übernommen. Voraussetzung ist eine zugelassene oder berechtigte Hebamme.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für den Partner der werdenden Mutter; Hebamme nach § 134a Abs. 2 SGB V oder § 13 Abs. 4 SGB V zugelassen/berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Schwangere Versicherte haben vor der Entbindung Anspruch auf Hebammenrufbereitschaft ab der 38. Schwangerschaftswoche. Erstattet werden die Kosten bis zu einer festgelegten Höchstgrenze je Schwangerschaft.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab der 38. Schwangerschaftswoche; Hebamme zugelassen oder berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Über die gesetzlichen Vorsorgeleistungen hinaus wird einmal jährlich eine Brustkrebsuntersuchung durch blinde oder sehbehinderte Medizinische Tastuntersucher übernommen. Die Leistung kann als Sachleistung oder bei Selbstzahlung bis zu einem Höchstbetrag erstattet werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Veranlassung durch Facharzt für Frauenheilkunde und Nachweis einer familiären oder medizinischen Vorbelastung bei Brustkrebs"
+                }
+            ]
+        },
+        {
+            "name": "Kieferorthopädische Leistungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Zur Sicherung des Behandlungsergebnisses beteiligt sich die BKK ProVita an bestimmten Mehrkosten einer kieferorthopädischen Behandlung, wenn die Behandlung vor Vollendung des 18. Lebensjahres begonnen wird. Erfasst sind insbesondere Mehrleistungen und Retainer, soweit sie nicht zur Regelleistung gehören.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Einmalig bei Abschluss der kieferorthopädischen Behandlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungspflicht der Krankenkasse muss bestehen; Behandlung durch zugelassenen oder berechtigten Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK ProVita fördert Maßnahmen der primären Prävention und Gesundheitsförderung in den Bereichen Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Für Fremdanbieter wird bei erfüllten Qualitätskriterien ein prozentualer Zuschuss gewährt; die Anzahl förderfähiger Maßnahmen ist begrenzt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Maßnahmen je Versichertem je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Fremdanbieter nur bei Vorlage einer Teilnahmebestätigung und Erfüllung der Qualitätskriterien; eigene Leistungen ohne Kostenbeteiligung"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Über den gesetzlichen Anspruch hinaus übernimmt die BKK ProVita die Kosten für von STIKO oder nach dem Infektionsschutzgesetz empfohlene Schutzimpfungen, einschließlich HPV-Impfung bis zum Alter von 26 Jahren. Selbst bezahlte ärztlich empfohlene Impfungen werden bis zu einer jährlichen Höchstgrenze erstattet.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Je Kalenderjahr, maximal 250 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 26,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die Impfung nicht vom öffentlichen Gesundheitsdienst durchgeführt wird und nicht in die Zuständigkeit des Arbeitgebers fällt"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen zur digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die BKK ProVita fördert Schulungsmaßnahmen und zielgerichtete Informationen zum selbstbestimmten gesundheitsorientierten Einsatz digitaler oder telemedizinischer Anwendungen. Die Leistung kann auch durch Dritte erbracht werden.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Bedarf im Rahmen der Satzung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gemäß den Festlegungen des GKV-Spitzenverbandes nach § 20k SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V wird ein kalendertäglicher Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe gezahlt. Für chronisch kranke Kleinkinder ist der Zuschuss höher.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich; 25 EUR bei ambulanten Vorsorgeleistungen für chronisch kranke Kleinkinder"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten der Versicherten",
+        "beschreibung": "Versicherte können freiwillig am Bonusprogramm teilnehmen und durch nachgewiesene Gesundheitsmaßnahmen Geldboni erhalten. Es gibt zwei Bonustypen: Früherkennungs-/Impfmaßnahmen sowie verhaltensbezogene Prävention; die Auszahlung erfolgt als Geldbonus.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Der Bonus wird ausschließlich als Geldbonus gewährt; Details zu Nachweisen und Bonusstufen ergeben sich aus den Anlagen 1 bis 3 zu § 13b."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Zahnärztliche Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis der zahnärztlichen Untersuchung im vorgesehenen Turnus als Bonusmaßnahme für jüngere Versicherte.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme; bei U-/J-Untersuchungen abweichend 20 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres; ab 6 Jahren bis zur Vollendung des 18. Lebensjahres nachweisbar"
+                }
+            ]
+        },
+        {
+            "name": "U-Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis der altersentsprechenden Früherkennungsuntersuchung U1 bis U11 als Bonusmaßnahme für Kinder und Jugendliche.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "J1- und J2-Untersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis der Jugenduntersuchungen J1 und J2 als Bonusmaßnahme für Kinder und Jugendliche.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis von Schutzimpfungen als Bonusmaßnahme für Kinder, Jugendliche und Erwachsene.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis nach § 20i SGB V bzw. Satzung"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Teilnahme an der Gesundheitsuntersuchung als Bonusmaßnahme für Versicherte ab dem 16. Lebensjahr.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres; ab Vollendung des 18. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsmaßnahme",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Inanspruchnahme einer Krebsfrüherkennungsmaßnahme als Bonusmaßnahme für Versicherte ab dem 16. Lebensjahr.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschafts- und Mutterschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Inanspruchnahme von Leistungen der Schwangerschafts- und Mutterschaftsvorsorge als Bonusmaßnahme.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Jährliche Zahnvorsorgeuntersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Nachweis der jährlichen Zahnvorsorgeuntersuchung als Bonusmaßnahme für Versicherte ab dem 16. Lebensjahr.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einem Kurs zur verhaltensbezogenen Prävention in den Bereichen Bewegung, Ernährung, Stressbewältigung, Entspannung oder Suchtmittelkonsum.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres und ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft im Sportverein oder qualitätsgesicherten Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis einer aktiven Mitgliedschaft in einem Sportverein oder einem qualitätsgesicherten Fitnessstudio als vergleichbare qualitätsgesicherte Maßnahme.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vergleichbare qualitätsgesicherte Angebote zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiger Sport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßiger Sport unter qualifizierter Leitung, etwa organisierte Volksläufe, Radtouren, Wanderungen oder qualifizierte Lauftreffs, kann als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mit Teilnahmebescheinigung oder Urkunde; private Sportmaßnahmen ohne Qualitätsnachweis werden nicht anerkannt"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Das Ablegen eines Sportabzeichens nach DOSB oder DLRG wird als Bonusmaßnahme anerkannt.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis nach DOSB oder DLRG"
+                }
+            ]
+        },
+        {
+            "name": "Baby-Schwimmkurs oder Eltern-Kind-Turnen",
+            "kategorie": "Familie",
+            "beschreibung": "Die regelmäßige Teilnahme an einem Baby-Schwimmkurs oder Eltern-Kind-Turnen unter qualifizierter Übungsleitung kann bonifiziert werden, sofern sie nicht bereits über die Sportvereinsmitgliedschaft berücksichtigt wurde.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Body-Maß-Index",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis von BMI-Werten im altersgerechten Normbereich oder eine Verbesserung in Richtung Normbereich kann als satzungsmäßige Bonusmaßnahme bonifiziert werden.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Schwimmkurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Ein Schwimmkurs unter qualifizierter Übungsleitung kann als satzungsmäßige Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte bis einschließlich zur Vollendung des 15. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Ernährungskurs, Ernährungsberatung oder Ernährungsseminar",
+            "kategorie": "Ernährung",
+            "beschreibung": "Teilnahme an einer Maßnahme zur bedarfsgerechten und ausgewogenen Ernährungsweise kann als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter qualifizierter Leitung zur Vermeidung von Fehl- und Mangelernährung"
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die Teilnahme an einer Rückbildungsgymnastik nach einer Geburt kann als Bonusmaßnahme bonifiziert werden.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Frauen nach einer Geburt"
+                }
+            ]
+        },
+        {
+            "name": "Nichtraucherstatus",
+            "kategorie": "Prävention",
+            "beschreibung": "Der Nachweis des Nichtraucherstatus kann als satzungsmäßige Bonusmaßnahme bonifiziert werden.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Blutdruck im altersgerechten Normbereich",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Der Nachweis eines Blutdrucks im altersgerechten Normbereich kann als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Überprüfung des Versorgungsstatus",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Überprüfung des Versorgungsstatus, etwa für Vitamin B12, kann als Bonusmaßnahme bonifiziert werden.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte ab Beginn des 16. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Ernährungskurs, Ernährungsberatung oder Ernährungsseminar",
+            "kategorie": "Ernährung",
+            "beschreibung": "Teilnahme an einer Maßnahme zur bedarfsgerechten und ausgewogenen Ernährungsweise kann als Bonusmaßnahme anerkannt werden.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Bonusmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 16,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter qualifizierter Leitung zur Vermeidung von Fehl- und Mangelernährung"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+.env
+.env.local
+.env.*.local
+
+# Scraper PDF-Cache (lokal, nicht ins Repo)
+backend/scraper/cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.vite/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

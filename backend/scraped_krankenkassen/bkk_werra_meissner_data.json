@@ -1,0 +1,10 @@
+{
+    "krankenkasse": {
+        "name": "BKK Werra-Meissner",
+        "slug": "bkk_werra_meissner",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/194/Satzung_Neufassung_BKK_WM_01.01.2025.pdf",
+        "satzung_stand": "01.01.2025"
+    },
+    "satzungsleistungen": [],
+    "bonus_massnahmen": []
+}

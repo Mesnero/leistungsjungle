@@ -1,0 +1,726 @@
+{
+  "krankenkassen": {
+    "aok_baden_w_rttemberg": {
+      "last_scraped": "2026-05-22T18:53:44+00:00",
+      "model": null,
+      "name": "AOK Baden-Württemberg",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/234/Satzung%20AOK%20BW%2001012025.pdf"
+    },
+    "aok_bayern": {
+      "last_scraped": "2026-05-22T18:54:08+00:00",
+      "model": null,
+      "name": "AOK Bayern",
+      "provider": "openai",
+      "satzung_date": "2024-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/235/20251101%20Satzung%20AOK%20Bayern.pdf"
+    },
+    "aok_bremen_bremerhaven": {
+      "last_scraped": "2026-05-22T18:54:36+00:00",
+      "model": null,
+      "name": "AOK Bremen/Bremerhaven",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/237/51.%20%C3%84nderung%20der%20Satzung_Stand%2019.12.2023.pdf"
+    },
+    "aok_hessen": {
+      "last_scraped": "2026-05-22T18:55:10+00:00",
+      "model": null,
+      "name": "AOK Hessen",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/239/AOK%20Hessen_Satzung_01.01.2026.pdf"
+    },
+    "aok_niedersachsen": {
+      "last_scraped": "2026-05-22T18:55:46+00:00",
+      "model": null,
+      "name": "AOK Niedersachsen",
+      "provider": "openai",
+      "satzung_date": "2022-03-24",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/241/aok_niedersachsen_24032022.pdf"
+    },
+    "aok_nordost": {
+      "last_scraped": "2026-05-22T18:56:12+00:00",
+      "model": null,
+      "name": "AOK Nordost",
+      "provider": "openai",
+      "satzung_date": "2022-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1209/aok_nordost_01012022.pdf"
+    },
+    "aok_nordwest": {
+      "last_scraped": "2026-05-22T18:57:11+00:00",
+      "model": null,
+      "name": "AOK NordWest",
+      "provider": "openai",
+      "satzung_date": "2024-12-24",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/249/Satzung%20Stand%2010.12.24.pdf"
+    },
+    "aok_plus": {
+      "last_scraped": "2026-05-22T18:57:50+00:00",
+      "model": null,
+      "name": "AOK PLUS",
+      "provider": "openai",
+      "satzung_date": "2025-02-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/245/AOK%20PLUS_Satzung%20KV%20Stand%2001.02.2025.pdf"
+    },
+    "aok_rheinland_hamburg": {
+      "last_scraped": "2026-05-22T18:59:01+00:00",
+      "model": null,
+      "name": "AOK Rheinland/Hamburg",
+      "provider": "openai",
+      "satzung_date": "2024-11-15",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/242/aok%20rhl-hh-satzung.pdf"
+    },
+    "aok_rheinland_pfalz_saarland": {
+      "last_scraped": "2026-05-22T18:58:22+00:00",
+      "model": null,
+      "name": "AOK Rheinland-Pfalz/Saarland",
+      "provider": "openai",
+      "satzung_date": "2024-06-26",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/243/Satzung_13012025%282%29.pdf"
+    },
+    "aok_sachsen_anhalt": {
+      "last_scraped": "2026-05-22T18:59:35+00:00",
+      "model": null,
+      "name": "AOK Sachsen-Anhalt",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/246/2025_Satzung%20_AOK_Sachsen-Anhalt.pdf"
+    },
+    "audi_bkk": {
+      "last_scraped": "2026-05-22T19:00:04+00:00",
+      "model": null,
+      "name": "Audi BKK",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/4/Satzung_KV_Audi_BKK_01.01.2023_Stand_20260101.pdf"
+    },
+    "barmer": {
+      "last_scraped": "2026-05-22T18:45:44+00:00",
+      "model": null,
+      "name": "BARMER",
+      "provider": "openai",
+      "satzung_date": "2026-01-07",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/250/barmer-satzung-der-barmer-barrierefrei-19-data_07.01.26.pdf"
+    },
+    "bergische_krankenkasse": {
+      "last_scraped": "2026-05-22T19:00:51+00:00",
+      "model": null,
+      "name": "BERGISCHE KRANKENKASSE",
+      "provider": "openai",
+      "satzung_date": "2026-06-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/27/BERGISCHE_Krankenkasse_Satzung_20260601.pdf"
+    },
+    "bertelsmann_bkk": {
+      "last_scraped": "2026-05-22T19:01:18+00:00",
+      "model": null,
+      "name": "Bertelsmann BKK",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1115/Satzung%20Bertelsmann%20BKK%20Krankenversicherung%20inkl.%20Nachtrag%2053%20-%20Stand%2012.01.2024_bf.pdf"
+    },
+    "big_direkt_gesund": {
+      "last_scraped": "2026-05-22T18:49:51+00:00",
+      "model": null,
+      "name": "BIG direkt gesund",
+      "provider": "openai",
+      "satzung_date": "2026-01-02",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/262/BIG%20Satzung%2020210101%20i.d.F.%20des%2016.%20Nachtrags%20Stand%2001.01.2026_0.pdf"
+    },
+    "bkk24": {
+      "last_scraped": "2026-05-22T19:16:00+00:00",
+      "model": null,
+      "name": "BKK24",
+      "provider": "openai",
+      "satzung_date": "2025-12-30",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/12/BKK24-Satzung_30.12.2025.pdf"
+    },
+    "bkk_akzo_nobel_bayern": {
+      "last_scraped": "2026-05-22T19:01:50+00:00",
+      "model": null,
+      "name": "BKK Akzo Nobel Bayern",
+      "provider": "openai",
+      "satzung_date": "2022-09-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/21/bkk-akzo-nobel_satzung-bkk_satzung-pflegekasse_2022.pdf"
+    },
+    "bkk_b_braun_aesculap": {
+      "last_scraped": "2026-05-22T19:29:01+00:00",
+      "model": null,
+      "name": "BKK B. Braun Aesculap",
+      "provider": "openai",
+      "satzung_date": "2020-08-28",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1131/BKK%20BBA%20Satzung%2028.08.2020.pdf"
+    },
+    "bkk_d_rkoppadler": {
+      "last_scraped": "2026-05-22T19:03:01+00:00",
+      "model": null,
+      "name": "BKK DürkoppAdler",
+      "provider": "openai",
+      "satzung_date": "2025-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/56/BKK_DA-20250701_Satzung%202021%20i.d.F.%20des%2015.%20Nachtrages.pdf"
+    },
+    "bkk_diakonie": {
+      "last_scraped": "2026-05-22T19:02:13+00:00",
+      "model": null,
+      "name": "BKK Diakonie",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/29/Satzung%20vom%2001%2001%2010%20inkl.%2059-62,%2064.pdf"
+    },
+    "bkk_euregio": {
+      "last_scraped": "2026-05-22T19:03:32+00:00",
+      "model": null,
+      "name": "BKK EUREGIO",
+      "provider": "openai",
+      "satzung_date": "2022-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/20/BKK-Euregio-01.07.2022.pdf"
+    },
+    "bkk_ewe": {
+      "last_scraped": "2026-05-22T19:29:05+00:00",
+      "model": null,
+      "name": "BKK EWE",
+      "provider": "openai",
+      "satzung_date": "2020-05-20",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1137/BKK%20EWE%20Satzung%2020.05.2020.pdf"
+    },
+    "bkk_exklusiv": {
+      "last_scraped": "2026-05-22T19:04:08+00:00",
+      "model": null,
+      "name": "BKK exklusiv",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/69/Satzung%20BKK%20ab%202024.01.01%20in%20aktueller%20Fassung%20einschl.%20der%20Nachtr%C3%A4ge%20bis%20Nr.%2063.pdf"
+    },
+    "bkk_faber_castell_partner": {
+      "last_scraped": "2026-05-22T19:04:30+00:00",
+      "model": null,
+      "name": "BKK Faber-Castell & Partner",
+      "provider": "openai",
+      "satzung_date": "2024-12-12",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/70/BKK_Faber-Castell-Partner_Satzung_Stand-Dezember-2025.pdf"
+    },
+    "bkk_firmus": {
+      "last_scraped": "2026-05-22T19:05:06+00:00",
+      "model": null,
+      "name": "BKK firmus",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/187/Satzung%20der%20BKK%20firmus,%20Stand%2001.05.2026.pdf"
+    },
+    "bkk_freudenberg": {
+      "last_scraped": "2026-05-22T19:05:44+00:00",
+      "model": null,
+      "name": "BKK Freudenberg",
+      "provider": "openai",
+      "satzung_date": null,
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/119/Satzung%20BKK_01.01.1998%20mit%2046.%20Nachtrag_Stand%2001-2025_Einklang_16.%20Nachtrag.pdf"
+    },
+    "bkk_gildemeister_seidensticker": {
+      "last_scraped": "2026-05-22T19:06:27+00:00",
+      "model": null,
+      "name": "BKK GILDEMEISTER SEIDENSTICKER",
+      "provider": "openai",
+      "satzung_date": "2025-02-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/124/Satzung%20in%20der%20Fassung%20vom%2001.02.2025.pdf"
+    },
+    "bkk_groz_beckert": {
+      "last_scraped": "2026-05-22T19:29:35+00:00",
+      "model": null,
+      "name": "BKK Groz-Beckert",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1141/bkk-gb_satzung_2024.pdf"
+    },
+    "bkk_herkules": {
+      "last_scraped": "2026-05-22T19:07:31+00:00",
+      "model": null,
+      "name": "BKK HERKULES",
+      "provider": "openai",
+      "satzung_date": "2024-11-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/130/31.-Nachtrag-Stand-01.11.2024.pdf"
+    },
+    "bkk_karl_mayer": {
+      "last_scraped": "2026-05-22T19:29:40+00:00",
+      "model": null,
+      "name": "BKK KARL MAYER",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1144/BKK%20Karl%20Mayer%20Satzungs%C3%A4nderung%2001.01.2020.pdf"
+    },
+    "bkk_linde": {
+      "last_scraped": "2026-05-22T19:08:07+00:00",
+      "model": null,
+      "name": "BKK Linde",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1150/BKK-Linde_Satzung_Jan26%201.pdf"
+    },
+    "bkk_mahle": {
+      "last_scraped": "2026-05-22T19:30:07+00:00",
+      "model": null,
+      "name": "BKK MAHLE",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1151/BKK%20Mahle%20Satzung%2001.01.2020.pdf"
+    },
+    "bkk_melitta_hmr": {
+      "last_scraped": "2026-05-22T19:08:56+00:00",
+      "model": null,
+      "name": "bkk melitta hmr",
+      "provider": "openai",
+      "satzung_date": "2025-12-30",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/385/Satzung%20der%20BKK%20Melitta%20HMR%20inkl.%208%20Satzungsnachtrag%20%28Ver%C3%B6ffentlicht%20am%2030.12.2025%29.pdf"
+    },
+    "bkk_merck": {
+      "last_scraped": "2026-05-22T19:30:56+00:00",
+      "model": null,
+      "name": "BKK Merck",
+      "provider": "openai",
+      "satzung_date": "2024-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1152/Satzung_2022_inkl_6._Satzungsnachtrag.pdf"
+    },
+    "bkk_miele": {
+      "last_scraped": "2026-05-22T19:31:28+00:00",
+      "model": null,
+      "name": "BKK Miele",
+      "provider": "openai",
+      "satzung_date": "2021-10-05",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1153/bkk_miele_05102021.pdf"
+    },
+    "bkk_mtu": {
+      "last_scraped": "2026-05-22T19:32:02+00:00",
+      "model": null,
+      "name": "BKK MTU",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1154/BKK%20MTU%20Satzung%2001.01.2020.pdf"
+    },
+    "bkk_pfaff": {
+      "last_scraped": "2026-05-22T19:09:36+00:00",
+      "model": null,
+      "name": "BKK PFAFF",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/158/Satzung%20BKK%20PFAFF%20ab%2001.01.2025_HP.pdf"
+    },
+    "bkk_pfalz": {
+      "last_scraped": "2026-05-22T19:10:12+00:00",
+      "model": null,
+      "name": "BKK Pfalz",
+      "provider": "openai",
+      "satzung_date": "2020-09-22",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/159/BKK%20Pfalz%20Satzung%2022.09.2020.pdf"
+    },
+    "bkk_provita": {
+      "last_scraped": "2026-05-22T19:10:51+00:00",
+      "model": null,
+      "name": "BKK ProVita",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/383/SATZUNG-BKK-PROVITA_KV-01.01.2024-neues-Design.pdf"
+    },
+    "bkk_public": {
+      "last_scraped": "2026-05-22T19:11:28+00:00",
+      "model": null,
+      "name": "BKK Public",
+      "provider": "openai",
+      "satzung_date": "2023-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/162/Satzung_BKK_Public_idF_63_Nachtrag.pdf"
+    },
+    "bkk_pwc": {
+      "last_scraped": "2026-05-22T19:32:35+00:00",
+      "model": null,
+      "name": "BKK PwC",
+      "provider": "openai",
+      "satzung_date": "2020-05-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1156/BKK%20pwc%20Satzung%2001.05.2020.pdf"
+    },
+    "bkk_rieker_ricosta_weisser": {
+      "last_scraped": "2026-05-22T19:33:08+00:00",
+      "model": null,
+      "name": "BKK Rieker.Ricosta.Weisser",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1157/BKK%20RRW%20Satzung%2001.01.2020.pdf"
+    },
+    "bkk_salzgitter": {
+      "last_scraped": "2026-05-22T19:33:38+00:00",
+      "model": null,
+      "name": "BKK Salzgitter",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1159/BKK%20SALZGITTER%20Satzung%2001.01.2020.pdf"
+    },
+    "bkk_sbh": {
+      "last_scraped": "2026-05-22T19:12:12+00:00",
+      "model": null,
+      "name": "BKK SBH",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/176/Krankenkasse-Stand-2024-01-01-mit-Anhaengen.pdf"
+    },
+    "bkk_scheufelen": {
+      "last_scraped": "2026-05-22T19:12:57+00:00",
+      "model": null,
+      "name": "BKK Scheufelen",
+      "provider": "openai",
+      "satzung_date": "2020-08-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/394/BKK%20Scheufelen%20Satzung%2001.08.2020.pdf"
+    },
+    "bkk_technoform": {
+      "last_scraped": "2026-05-22T19:13:29+00:00",
+      "model": null,
+      "name": "BKK Technoform",
+      "provider": "openai",
+      "satzung_date": "2025-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/181/Satzung%20der%20BKK%20Technoform%20i.d.F.%20des%2033.%20Nachtrags%20Stand%2001.07.2025.pdf"
+    },
+    "bkk_vdn": {
+      "last_scraped": "2026-05-22T19:14:11+00:00",
+      "model": null,
+      "name": "BKK VDN",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/189/2026_Satzung.pdf"
+    },
+    "bkk_verbundplus": {
+      "last_scraped": "2026-05-22T19:14:42+00:00",
+      "model": null,
+      "name": "BKK VerbundPlus",
+      "provider": "openai",
+      "satzung_date": "2025-03-24",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/64/Satzung%20inkl.%209.%20Nachtrag%20formatiert.pdf"
+    },
+    "bkk_w_rth": {
+      "last_scraped": "2026-05-22T19:34:12+00:00",
+      "model": null,
+      "name": "BKK Würth",
+      "provider": "openai",
+      "satzung_date": "2020-03-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1173/BKK%20W%C3%9CRTH%20Satzung%2001.03.2020.pdf"
+    },
+    "bkk_werra_meissner": {
+      "last_scraped": "2026-05-22T19:14:47+00:00",
+      "model": null,
+      "name": "BKK Werra-Meissner",
+      "provider": "openai",
+      "satzung_date": "2024-11-29",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/194/Satzung_Neufassung_BKK_WM_01.01.2025.pdf"
+    },
+    "bkk_wirtschaft_finanzen": {
+      "last_scraped": "2026-05-22T19:15:24+00:00",
+      "model": null,
+      "name": "BKK WIRTSCHAFT & FINANZEN",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1147/Satzung%20BKK%20WF%20070626%20Stand%20241210_in%20der%20Fassung%20des%2055.%20Satzungsnachtrags.pdf"
+    },
+    "bmw_bkk": {
+      "last_scraped": "2026-05-22T19:34:43+00:00",
+      "model": null,
+      "name": "BMW BKK",
+      "provider": "openai",
+      "satzung_date": "2024-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1129/Satzung_der_Betriebskrankenkasse_der_BMW_AG.pdf"
+    },
+    "bosch_bkk": {
+      "last_scraped": "2026-05-22T19:16:31+00:00",
+      "model": null,
+      "name": "Bosch BKK",
+      "provider": "openai",
+      "satzung_date": "2023-12-11",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/199/BOSCH%20BKK%20Satzung%2011.12.2023.pdf"
+    },
+    "continentale_bkk": {
+      "last_scraped": "2026-05-22T19:17:18+00:00",
+      "model": null,
+      "name": "Continentale BKK",
+      "provider": "openai",
+      "satzung_date": "2023-12-13",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/160/KV_Satzung_Gesamt.pdf"
+    },
+    "dak_gesundheit": {
+      "last_scraped": "2026-05-22T18:46:16+00:00",
+      "model": null,
+      "name": "DAK Gesundheit",
+      "provider": "openai",
+      "satzung_date": "2025-07-25",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/251/satzung-der-dak-gesundheit-in-der-fassung-des-59-nachtrag-stand-25-07-2025.pdf"
+    },
+    "debeka_bkk": {
+      "last_scraped": "2026-05-22T19:17:44+00:00",
+      "model": null,
+      "name": "Debeka BKK",
+      "provider": "openai",
+      "satzung_date": "2022-07-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1119/Satzung%20der%20Debeka%20BKK_%2042.%20Nachtrag%20%282022_07_01%29.pdf"
+    },
+    "energie_bkk": {
+      "last_scraped": "2026-05-22T19:18:22+00:00",
+      "model": null,
+      "name": "energie-BKK",
+      "provider": "openai",
+      "satzung_date": "2022-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1112/satzung_der_energie-bkk.pdf"
+    },
+    "ernst_young_bkk": {
+      "last_scraped": "2026-05-22T19:35:14+00:00",
+      "model": null,
+      "name": "Ernst & Young BKK",
+      "provider": "openai",
+      "satzung_date": "2021-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1136/ernstyoung_satzung.pdf"
+    },
+    "heimat_krankenkasse": {
+      "last_scraped": "2026-05-22T19:18:56+00:00",
+      "model": null,
+      "name": "Heimat Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1211/Satzung_der_Heimat_Krankenkasse_Stand_2026-01_inkl._Anlagen.pdf"
+    },
+    "hek_hanseatische_krankenkasse": {
+      "last_scraped": "2026-05-22T18:46:43+00:00",
+      "model": null,
+      "name": "HEK - Hanseatische Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/254/Satzung%20in%20der%20Fassung%20des%20115.%20Nachtrages.pdf"
+    },
+    "hkk_krankenkasse": {
+      "last_scraped": "2026-05-22T18:47:10+00:00",
+      "model": null,
+      "name": "hkk Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2025-12-24",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/261/251223_hkk%20satzung_incl._genehmigtem_88._und_89._nachtrag.pdf"
+    },
+    "ikk_brandenburg_und_berlin": {
+      "last_scraped": "2026-05-22T18:51:08+00:00",
+      "model": null,
+      "name": "IKK Brandenburg und Berlin",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/265/Satzung%20inkl.%20Richtlinien_Stand%2001.01.2026.pdf"
+    },
+    "ikk_classic": {
+      "last_scraped": "2026-05-22T18:51:43+00:00",
+      "model": null,
+      "name": "IKK classic",
+      "provider": "openai",
+      "satzung_date": "2025-01-08",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/283/Satzung%20IKK%20classic.pdf"
+    },
+    "ikk_die_innovationskasse": {
+      "last_scraped": "2026-05-22T18:50:27+00:00",
+      "model": null,
+      "name": "IKK - Die Innovationskasse",
+      "provider": "openai",
+      "satzung_date": "2026-04-15",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/382/vb_20260415_satzung_kv_nachtrag_127.pdf"
+    },
+    "ikk_gesund_plus": {
+      "last_scraped": "2026-05-22T18:52:29+00:00",
+      "model": null,
+      "name": "IKK gesund plus",
+      "provider": "openai",
+      "satzung_date": "2025-12-10",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/279/Sa20251210_90NT.pdf"
+    },
+    "ikk_s_dwest": {
+      "last_scraped": "2026-05-22T18:53:14+00:00",
+      "model": null,
+      "name": "IKK Südwest",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/277/KV-Satzung_IKKSW_01_25.pdf.crdownload"
+    },
+    "kkh_kaufm_nnische_krankenkasse": {
+      "last_scraped": "2026-05-22T18:47:59+00:00",
+      "model": null,
+      "name": "KKH Kaufmännische Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2026-05-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/257/satzung-kkh-05-26.pdf"
+    },
+    "knappschaft": {
+      "last_scraped": "2026-05-22T18:48:34+00:00",
+      "model": null,
+      "name": "KNAPPSCHAFT",
+      "provider": "openai",
+      "satzung_date": "2025-12-11",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1187/Satzung_KBS_11_12_2025_bf.pdf"
+    },
+    "koenig_bauer_bkk": {
+      "last_scraped": "2026-05-22T19:35:49+00:00",
+      "model": null,
+      "name": "Koenig & Bauer BKK",
+      "provider": "openai",
+      "satzung_date": "2021-11-29",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1145/koenigbauer_satzung.pdf"
+    },
+    "krones_bkk": {
+      "last_scraped": "2026-05-22T19:36:20+00:00",
+      "model": null,
+      "name": "Krones BKK",
+      "provider": "openai",
+      "satzung_date": "2021-12-09",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1148/krones_bkk_satzung.pdf"
+    },
+    "landwirtschaftliche_krankenkasse_lkk": {
+      "last_scraped": "2026-05-22T19:28:36+00:00",
+      "model": null,
+      "name": "Landwirtschaftliche Krankenkasse - LKK",
+      "provider": "openai",
+      "satzung_date": "2020-11-12",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1215/svlfg_12112020.pdf"
+    },
+    "mercedes_benz_bkk": {
+      "last_scraped": "2026-05-22T19:36:48+00:00",
+      "model": null,
+      "name": "Mercedes-Benz BKK",
+      "provider": "openai",
+      "satzung_date": "2022-10-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1176/MB-BKK_Satzung_Stand_01.10.2022.pdf"
+    },
+    "mhplus_krankenkasse": {
+      "last_scraped": "2026-05-22T19:19:35+00:00",
+      "model": null,
+      "name": "mhplus Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/216/Satzung_20231011_19.%20Nachtrag.doc.pdf"
+    },
+    "mkk_meine_krankenkasse": {
+      "last_scraped": "2026-05-22T19:20:10+00:00",
+      "model": null,
+      "name": "mkk - meine krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2025-11-18",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/190/251118_satzung-mkk-november-2025.pdf"
+    },
+    "mobil_krankenkasse": {
+      "last_scraped": "2026-05-22T19:20:49+00:00",
+      "model": null,
+      "name": "Mobil Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/148/Satzung%20i.%20d.%20F.%20d.%20Nachtrags%20Nr.%2037_Stand%2001.01.2025.pdf"
+    },
+    "novitas_bkk": {
+      "last_scraped": "2026-05-22T19:21:33+00:00",
+      "model": null,
+      "name": "novitas bkk",
+      "provider": "openai",
+      "satzung_date": "2022-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/219/Novitas%20BKK%20Satzung.pdf"
+    },
+    "pronova_bkk": {
+      "last_scraped": "2026-05-22T19:22:10+00:00",
+      "model": null,
+      "name": "Pronova BKK",
+      "provider": "openai",
+      "satzung_date": "2026-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1189/Satzung%20der%20Pronova%20BKK%20Stand%2001.01.2026%20inkl.%2035.%20bis%2038.%20Nachtrag.pdf"
+    },
+    "r_v_betriebskrankenkasse": {
+      "last_scraped": "2026-05-22T19:22:46+00:00",
+      "model": null,
+      "name": "R+V Betriebskrankenkasse",
+      "provider": "openai",
+      "satzung_date": "2023-07-15",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/165/Satzung_RuVBKK.pdf"
+    },
+    "s_dzucker_bkk": {
+      "last_scraped": "2026-05-22T19:37:26+00:00",
+      "model": null,
+      "name": "Südzucker-BKK",
+      "provider": "openai",
+      "satzung_date": "2020-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1179/BKK%20S%C3%BCdzucker%20Satzung%2001.01.2020.pdf"
+    },
+    "salus_bkk": {
+      "last_scraped": "2026-05-22T19:23:37+00:00",
+      "model": null,
+      "name": "Salus BKK",
+      "provider": "openai",
+      "satzung_date": "2024-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/220/Salus_BKK_Satzung_60_Nachtrag.pdf"
+    },
+    "sbk": {
+      "last_scraped": "2026-05-22T19:24:04+00:00",
+      "model": null,
+      "name": "SBK",
+      "provider": "openai",
+      "satzung_date": "2024-07-24",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/222/Satzung_SBK_vom_1.1.2010__einschl._72._Nachtrag_.pdf"
+    },
+    "securvita_krankenkasse": {
+      "last_scraped": "2026-05-22T19:24:52+00:00",
+      "model": null,
+      "name": "SECURVITA Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2020-04-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/224/satzung.pdf"
+    },
+    "skd_bkk": {
+      "last_scraped": "2026-05-22T19:25:16+00:00",
+      "model": null,
+      "name": "SKD BKK",
+      "provider": "openai",
+      "satzung_date": "2020-01-16",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/226/SKD%20BKK%20Satzung16.01.2020.pdf"
+    },
+    "techniker_krankenkasse_tk": {
+      "last_scraped": "2026-05-22T18:49:15+00:00",
+      "model": null,
+      "name": "Techniker Krankenkasse (TK)",
+      "provider": "openai",
+      "satzung_date": "2026-01-05",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/258/tk-satzung-data.pdf"
+    },
+    "tui_bkk": {
+      "last_scraped": "2026-05-22T19:25:49+00:00",
+      "model": null,
+      "name": "TUI BKK",
+      "provider": "openai",
+      "satzung_date": "2020-01-15",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/185/TUI%20BKK%2015.01.2020%20Satzung.pdf"
+    },
+    "viactiv_krankenkasse": {
+      "last_scraped": "2026-05-22T19:26:23+00:00",
+      "model": null,
+      "name": "VIACTIV Krankenkasse",
+      "provider": "openai",
+      "satzung_date": "2025-12-10",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/193/Satzung%20VIACTIV%20Krankenkasse01.07.2021%20Nachtrag18.pdf"
+    },
+    "vivida_bkk": {
+      "last_scraped": "2026-05-22T19:26:55+00:00",
+      "model": null,
+      "name": "vivida bkk",
+      "provider": "openai",
+      "satzung_date": "2025-12-08",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/1218/vivida%20bkk_Satzung_251208.pdf"
+    },
+    "wmf_bkk": {
+      "last_scraped": "2026-05-22T19:27:17+00:00",
+      "model": null,
+      "name": "WMF BKK",
+      "provider": "openai",
+      "satzung_date": "2025-01-01",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/232/2025-01-01_Satzung.pdf"
+    },
+    "zf_bkk": {
+      "last_scraped": "2026-05-22T19:27:49+00:00",
+      "model": null,
+      "name": "ZF BKK",
+      "provider": "openai",
+      "satzung_date": "2025-12-03",
+      "satzung_pdf_url": "https://www.krankenkassen.de/download/krankenkassen-satzung/392/satzung_kv%20%281%29.pdf"
+    }
+  },
+  "updated_at": "2026-05-22T19:37:26+00:00",
+  "version": 1
+}

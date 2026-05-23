@@ -1,0 +1,10 @@
+{
+    "krankenkasse": {
+        "name": "BKK KARL MAYER",
+        "slug": "bkk_karl_mayer",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1144/BKK%20Karl%20Mayer%20Satzungs%C3%A4nderung%2001.01.2020.pdf",
+        "satzung_stand": "01.01.2020"
+    },
+    "satzungsleistungen": [],
+    "bonus_massnahmen": []
+}

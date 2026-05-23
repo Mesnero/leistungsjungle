@@ -1,0 +1,636 @@
+{
+    "krankenkasse": {
+        "name": "SBK",
+        "slug": "sbk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/222/Satzung_SBK_vom_1.1.2010__einschl._72._Nachtrag_.pdf",
+        "satzung_stand": "24.07.2024"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die SBK gewährt Leistungen zur Verhinderung und Verminderung von Krankheitsrisiken sowie zur Förderung des selbstbestimmten gesundheitsorientierten Handelns. Gefördert werden insbesondere verhaltensbezogene Prävention, Prävention und Gesundheitsförderung in Lebenswelten sowie betriebliche Gesundheitsförderung.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Kurse je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy=false": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Individuelle Maßnahmen der primären Prävention; für Versicherte ab Vollendung des 18. Lebensjahres mit 25 % Eigenanteil"
+                }
+            ]
+        },
+        {
+            "name": "Digitale und telemedizinische Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die SBK gewährt Sachleistungen zur Förderung des selbstbestimmten gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen und Verfahren. Wenn eine Sachleistung im Einzelfall nicht möglich ist, kann ein Zuschuss für die entstandenen Kosten gewährt werden.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die Leistung im Einzelfall nicht als Sachleistung zur Verfügung gestellt werden kann"
+                }
+            ]
+        },
+        {
+            "name": "Krankheitsverhütung durch Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die SBK gewährt über die gesetzlichen Leistungen hinausgehende Schutzimpfungen gegen übertragbare Krankheiten, sofern diese nicht vom öffentlichen Gesundheitsdienst durchgeführt werden oder in die Zuständigkeit des Arbeitgebers fallen. Die Leistung wird grundsätzlich als Sachleistung erbracht oder nach vertraglichen Regelungen erstattet.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach vertraglicher Regelung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn kein anderer Kostenträger zuständig ist"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistung in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Zu den übrigen Kosten einer ambulanten Vorsorgeleistung in anerkannten Kurorten wird ein Zuschuss gewährt. Für chronisch kranke Kleinkinder gilt ein höherer täglicher Zuschuss als für andere Versicherte.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich während der Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahme mindestens 21 Tage; für chronisch kranke Kleinkinder abweichend 25 EUR täglich"
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten neben der Behandlungspflege auch Grundpflege und hauswirtschaftliche Versorgung, wenn dies zur Sicherung des ärztlichen Behandlungsziels erforderlich ist. Die Leistung ist zeitlich begrenzt und setzt voraus, dass keine im Haushalt lebende Person den Kranken ausreichend versorgen kann.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Stunden täglich, maximal 26 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur soweit eine im Haushalt lebende Person nicht ausreichend pflegen oder versorgen kann"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Über die gesetzlichen Regelungen hinaus gewährt die SBK Haushaltshilfe bei Krankenhausbehandlung, ärztlich bescheinigter schwerer Erkrankung oder akuter Verschlimmerung einer Erkrankung. Voraussetzung ist, dass im Haushalt mindestens ein Kind lebt und keine andere im Haushalt lebende Person den Haushalt weiterführen kann.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 52 Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt muss mindestens ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind leben"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Auf ärztliche Veranlassung können osteopathische Leistungen in Anspruch genommen werden, wenn die Behandlung medizinisch geeignet ist und nicht vom Gemeinsamen Bundesausschuss ausgeschlossen wurde. Die Leistung muss qualitätsgesichert durch entsprechend ausgebildete Leistungserbringer erfolgen.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "Maximal 6 Sitzungen je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur auf ärztliche Veranlassung und durch qualifizierte Osteopathen"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn dies zur Verhütung oder Vermeidung von Erkrankungen medizinisch angezeigt ist. Bei entsprechenden Risiken können zusätzliche diagnostische Leistungen einbezogen werden.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "1x alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zertifizierte Ärzte oder berechtigte Leistungserbringer; erneute Erstattung frühestens nach 2 Jahren"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Behandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ambulante medizinische Leistungen können auch von nicht zugelassenen Leistungserbringern in Anspruch genommen werden, wenn die SBK hierfür eine Vereinbarung geschlossen hat und die Behandlung medizinisch notwendig ist. Die Leistung ist auf die vereinbarten Anbieter und Inhalte beschränkt.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Vereinbarung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung mit der SBK und medizinischer Notwendigkeit"
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen bei Schwangerschaft und Geburt",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die SBK beteiligt sich über die gesetzlichen Leistungen hinaus an ausgewählten Leistungen bei Schwangerschaft und Mutterschaft. Dazu gehören insbesondere die Begleitperson beim Geburtsvorbereitungskurs, Hebammen-Rufbereitschaft, bestimmte Vorsorgeuntersuchungen und ausgewählte Arzneimittel.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft/Mutterschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gesamtzuschuss je Schwangerschaft/Mutterschaft begrenzt; einzelne Leistungen nur bei den jeweils genannten Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung: festsitzender Retainer",
+            "kategorie": "Zahn",
+            "beschreibung": "Über die gesetzlichen Leistungen hinaus erhalten Versicherte einen Zuschuss zum Einsatz festsitzender Retentionsspangen nach erfolgreichem Abschluss der kieferorthopädischen Behandlung.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Je Kiefer"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach erfolgreichem Behandlungsabschluss der kieferorthopädischen Behandlung"
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorgeuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die SBK beteiligt sich an den Kosten für Hautkrebsvorsorgeuntersuchungen für Versicherte bis zur Vollendung des 35. Lebensjahres, wenn Risikofaktoren vorliegen. Die Untersuchung umfasst Anamnese, Ganzkörperinspektion, Befundmitteilung, Beratung und Dokumentation.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 35,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren und durch qualifizierte Hautärzte/Dermatologen"
+                }
+            ]
+        },
+        {
+            "name": "Brustkrebsuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die SBK erstattet Kosten für eine Brustkrebsuntersuchung durch medizinische Tastuntersucherinnen, wenn eine familiäre oder medizinische Vorbelastung nachgewiesen ist und die Untersuchung ärztlich veranlasst wurde.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 58.5,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesener familiärer oder medizinischer Vorbelastung und ärztlicher Veranlassung"
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte: Artikulations-App",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die SBK erstattet die Kosten für die Nutzung eines digitalen Therapiesystems für eine Artikulations-App bei Kindern. Voraussetzung sind eine ärztliche Verordnung, die Begleitung durch einen Logopäden und die Einhaltung der medizinprodukterechtlichen sowie datenschutzrechtlichen Vorgaben.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 199,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 3,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder ab vollendetem 3. Lebensjahr; Nutzung längstens 6 Monate"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche kinderorthopädische Hilfsmittel (Helmtherapie)",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Säuglinge und Kleinkinder kann die SBK die Kosten für eine Kopforthesenversorgung übernehmen, wenn diese medizinisch erforderlich ist, um den Erfolg der Krankenbehandlung zu sichern. Die Versorgung setzt eine fachärztliche Indikationsstellung, Verordnung und Genehmigung voraus.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Einmalig je Versorgung, maximal 2.000 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Versicherte ab dem 4. und bis zum vollendeten 15. Lebensmonat; zunächst 80 %, Rest nach Abschlussbestätigung"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "SBK-Bonusprogramm",
+        "beschreibung": "Versicherte können am SBK-Bonusprogramm für gesundheitsbewusstes Verhalten teilnehmen. Der Gesundheitsbonus kann entweder als Geldbonus ausgezahlt oder als zweckgebundener Bonus für Zuschussleistungen verwendet werden. Die Teilnahme ist zu erklären und an Nachweise über bonifizierbare Gesundheitsmaßnahmen gebunden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Bonusmaßnahmen werden nachgewiesen und können je nach Wahl als Geldbonus oder zweckgebundener Zuschuss genutzt werden."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifizierbar sind gesetzlich geregelte Zahnvorsorge sowie professionelle Zahnreinigung, je nach Altersgruppe und Bonusprogramm.",
+            "pdf_page": 61,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je nach Altersgruppe; für Erwachsene und Kinder/Jugendliche unterschiedliche Bonuswerte"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifiziert werden Gesundheitsuntersuchungen und U-Untersuchungen nach den gesetzlichen Vorgaben, abhängig von der Altersgruppe.",
+            "pdf_page": 61,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je nach Altersgruppe; U-Untersuchungen im ersten Lebensjahr und weitere U-Untersuchungen bis ins Jugendalter"
+                }
+            ]
+        },
+        {
+            "name": "Individueller Impfschutz In- und Ausland",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonifiziert werden Schutzimpfungen im In- und Ausland, einschließlich Kombinationsimpfstoffen, einmal pro Jahr.",
+            "pdf_page": 62,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Schutzimpfungen nach den Bonusregeln der SBK"
+                }
+            ]
+        },
+        {
+            "name": "Krebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonifiziert werden Hautkrebs-Früherkennung, Früherkennungsuntersuchungen für Frauen oder Männer sowie Darmkrebs-Früherkennung.",
+            "pdf_page": 62,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je nach Altersgruppe und Vorsorgeart"
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft im Sportverein oder regelmäßige Teilnahme am Hochschul- oder Betriebssport / Sportkurse",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird regelmäßige Teilnahme an bewegungsfördernden Angeboten im Sportverein, am Hochschul- oder Betriebssport oder an qualifiziert angeleiteten Sportkursen.",
+            "pdf_page": 63,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nicht für Maßnahmen der betrieblichen Gesundheitsförderung"
+                }
+            ]
+        },
+        {
+            "name": "Zertifizierter (online-) Gesundheitskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifiziert wird die regelmäßige Teilnahme an individuellen Maßnahmen der primären Prävention in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum.",
+            "pdf_page": 63,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2x pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zertifizierte Kurse nach § 20 Abs. 5 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird die regelmäßige fachkundige Vorbereitung zum Erwerb des Sportabzeichens oder eines Leistungsabzeichens eines deutschen Sportverbandes.",
+            "pdf_page": 64,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorbereitung außerhalb der Mitgliedschaft im Sportverein"
+                }
+            ]
+        },
+        {
+            "name": "Schwimmabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird die regelmäßige fachkundige Vorbereitung zum Erwerb des Schwimmabzeichens.",
+            "pdf_page": 64,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Pro Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vorbereitung außerhalb der Mitgliedschaft im Sportverein"
+                }
+            ]
+        },
+        {
+            "name": "Fit und Aktiv",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert werden aktive sportliche Outdoor-Aktivitäten sowie Sportveranstaltungen oder andere bewegungsfördernde Angebote mit fachkundiger Vorbereitung und Anleitung.",
+            "pdf_page": 65,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2x pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nicht für Maßnahmen der betrieblichen Gesundheitsförderung"
+                }
+            ]
+        },
+        {
+            "name": "10.000 Schritte Challenge – digitales Bonusprogramm",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird regelmäßige körperliche Bewegung im Rahmen einer 7-Tage-Challenge mit dem Ziel von 10.000 Schritten pro Tag.",
+            "pdf_page": 65,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 20,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2x pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Challenge kann bei Nichterreichen wiederholt werden"
+                }
+            ]
+        },
+        {
+            "name": "Untersuchungen der Mutterschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonifiziert werden Untersuchungen der Mutterschaftsvorsorge gemäß der aktuellen Mutterschaftsrichtlinie.",
+            "pdf_page": 66,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachgewiesene Schwangerschaft"
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einer Rückbildungsgymnastik",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonifiziert wird die Teilnahme an einer Rückbildungsgymnastik bei einer zugelassenen oder berechtigten Hebamme oder einem vergleichbar qualifizierten Anbieter.",
+            "pdf_page": 66,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Geburt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachgewiesene Schwangerschaft"
+                }
+            ]
+        },
+        {
+            "name": "Eltern-Baby- oder Eltern-Kind-Kurs mit entwicklungsförderndem Charakter",
+            "kategorie": "Familie",
+            "beschreibung": "Bonifiziert wird die Teilnahme an Eltern-Baby- oder Eltern-Kind-Kursen mit entwicklungsförderndem Charakter sowie an vergleichbaren gesundheitsbezogenen Angeboten.",
+            "pdf_page": 66,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Eltern mit Baby oder Kind"
+                }
+            ]
+        }
+    ]
+}

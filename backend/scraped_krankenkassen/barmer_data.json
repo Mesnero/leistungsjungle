@@ -1,0 +1,856 @@
+{
+    "krankenkasse": {
+        "name": "BARMER",
+        "slug": "barmer",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/250/barmer-satzung-der-barmer-barrierefrei-19-data_07.01.26.pdf",
+        "satzung_stand": "07.01.2026"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Osteopathische Leistungen für Neugeborene",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte unter 1 Jahr haben Anspruch auf Erstattung osteopathischer Leistungen, wenn die Behandlung medizinisch notwendig ist und ärztlich verordnet sowie durch qualifizierte Leistungserbringer erbracht wird. Die Leistung ist ausgeschlossen, wenn der Gemeinsame Bundesausschuss sie von der Versorgung ausschließt.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft bzw. je Leistungsfall, zusammen mit § 28d begrenzt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 0,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gilt für Versicherte, die das 1. Lebensjahr noch nicht vollendet haben."
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Behandlung durch nicht zugelassene Leistungserbringer(innen)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die BARMER kann ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern übernehmen, wenn eine Vereinbarung mit diesen besteht und die Behandlung medizinisch notwendig ist. Die Leistungserbringer müssen bestimmte Qualifikations- und Zulassungsvoraussetzungen erfüllen.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der jeweiligen Vereinbarung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung der BARMER mit dem nicht zugelassenen Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Behandlung durch nicht zugelassene Krankenhäuser",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können stationäre Krankenhausbehandlung in nicht zugelassenen Krankenhäusern erhalten, wenn eine Vereinbarung mit dem Krankenhaus besteht und die medizinischen sowie formalen Voraussetzungen erfüllt sind. Dazu gehören unter anderem Krankenhausbehandlungsbedürftigkeit, ein Kostenvoranschlag und die vorherige Einwilligung der BARMER.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der jeweiligen Vereinbarung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung der BARMER mit dem Krankenhaus und vorheriger Einwilligung."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen für Familien",
+            "kategorie": "Familie",
+            "beschreibung": "Während der Schwangerschaft übernimmt die BARMER unter bestimmten Voraussetzungen zusätzliche familienbezogene Leistungen, darunter Hebammen-Rufbereitschaft, professionelle Zahnreinigung, bestimmte Tests und ausgewählte Arzneimittel sowie osteopathische Leistungen. Für die Leistungen gelten jeweils medizinische und formale Voraussetzungen; insgesamt ist die Erstattung je Schwangerschaft begrenzt.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nur während der Schwangerschaft; einzelne Leistungen teils nur bei besonderem Untersuchungsanlass oder in den letzten fünf Wochen vor dem Entbindungstermin."
+                }
+            ]
+        },
+        {
+            "name": "Zahnversiegelung bei kieferorthopädischer Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte bis 18 Jahre können Kosten für eine Zahnversiegelung im Zusammenhang mit einer bewilligten kieferorthopädischen Behandlung erstattet bekommen. Voraussetzung ist unter anderem ein bewilligter Behandlungsplan und die Behandlung mit festsitzenden kieferorthopädischen Geräten.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig je kieferorthopädischem Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Zusammenhang mit kieferorthopädischer Behandlung."
+                }
+            ]
+        },
+        {
+            "name": "Haut-Check",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte unter 35 Jahren können Kosten für einen Haut-Check erstattet bekommen, wenn die Untersuchung medizinisch als Vorsorgeleistung angezeigt ist und nicht bereits Bestandteil einer anderen Versorgung ist. Die Leistung richtet sich insbesondere an Personen mit erhöhtem Melanomrisiko.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Innerhalb von zwei Kalenderjahren bis zur Höhe des EBM-Betrags"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Vorsorgeleistung und erhöhtem Melanomrisiko bzw. einzelfallbezogenem Untersuchungsanlass."
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die BARMER erstattet Kosten für digitale Versorgungsprodukte, wenn diese in einem Satzungsverzeichnis aufgeführt, ärztlich verordnet oder medizinisch indiziert und vorab genehmigt sind. Die Produkte müssen als zulässige Medizinprodukte gelten und die Datenschutzanforderungen erfüllen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Je Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für in der Anlage aufgeführte digitale Versorgungsprodukte mit Genehmigung vor Inanspruchnahme."
+                }
+            ]
+        },
+        {
+            "name": "Prävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte haben Anspruch auf Leistungen der primären Prävention und Gesundheitsförderung nach den gesetzlichen Präventionskriterien. Je Kalenderjahr können neben Leistungen nach § 20a und § 20b SGB V höchstens zwei Maßnahmen der individuellen Prävention beansprucht werden.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 75,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Maßnahmen je Kalenderjahr; online-basiert bis 100 EUR je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen müssen den Kriterien des Leitfadens Prävention entsprechen."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die BARMER übernimmt zusätzliche Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe, soweit kein Anspruch nach § 20i SGB V besteht. Dazu gehören unter anderem STIKO-Impfungen, Reiseimpfungen, FSME, HPV, Keuchhusten-Auffrischung, Masern und RSV-Impfung für Schwangere.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach medizinischer Indikation bzw. gemäß Impfempfehlung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Einzelne Impfungen haben eigene Alters- oder Schwangerschaftsvoraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen zur Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte können Leistungen zur Förderung des selbstbestimmten Umgangs mit digitalen und telemedizinischen Anwendungen erhalten. Die Angebote müssen definierte Qualitätskriterien erfüllen; wenn eine Sachleistung nicht möglich ist, ist eine Kostenerstattung bis zu einem jährlichen Höchstbetrag vorgesehen.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmal kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Angebote mit Gesundheitsbezug und erfüllten Qualitätskriterien."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorge- und Rehabilitationsleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Die BARMER kann ambulante und stationäre Vorsorge- und Rehabilitationsleistungen sowie Mutter-/Vater-Kind-Maßnahmen erbringen. Für chronisch kranke Kleinkinder bei ambulanten Vorsorgeleistungen wird ein täglicher Zuschuss gewährt; stationäre Maßnahmen werden nach vereinbarten Vergütungen übernommen.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 21,
+                "waehrung": "EUR",
+                "turnus": "Täglich bei ambulanten Vorsorgeleistungen für chronisch kranke Kleinkinder"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilweise nur für Mütter/Väter, Vater-Kind-Maßnahmen oder chronisch kranke Kleinkinder."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Versicherte erhalten Haushaltshilfe, wenn sie den Haushalt wegen bestimmter Leistungen oder wegen Krankheit vorübergehend nicht weiterführen können und im Haushalt ein Kind lebt, das die jeweiligen Alters- oder Hilfebedürftigkeitsvoraussetzungen erfüllt. Der Anspruch ist zeitlich begrenzt.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu vier Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt muss ein Kind unter 14 Jahren bzw. in bestimmten Fällen unter 12 Jahren leben oder ein behindertes, hilfebedürftiges Kind."
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte erhalten neben Behandlungspflege auch Grundpflege und hauswirtschaftliche Versorgung, soweit dies zur Sicherung des ärztlichen Behandlungsziels notwendig ist und keine ausreichende Pflegeperson im Haushalt vorhanden ist. Der Anspruch ist zeitlich begrenzt und endet bei Eintritt von Pflegebedürftigkeit nach SGB XI.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu vier Wochen je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn häusliche Pflege zur Sicherung des Behandlungsziels notwendig ist."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "BARMER Bonusprogramm",
+        "beschreibung": "Die BARMER vergibt Bonuspunkte für nachgewiesene gesundheitsbewusste Maßnahmen. Punkte können als Geldbonus oder als Zuschuss für bestimmte Leistungen genutzt werden; zusätzlich gibt es Erfolgsboni für nachgewiesene Gesundheitsziele und einen Bonus für betriebliche Gesundheitsförderung.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 0.1,
+        "wechselkurs_gesundheitskonto": 0.2,
+        "hinweis": "Die Satzung enthält mehrere Bonusarten mit unterschiedlichen Punktwerten und Auszahlungs-/Zuschussregeln."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Leistungen zur Erfassung von gesundheitlichen Risiken und Früherkennung von Krankheiten",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachgewiesene Inanspruchnahme von Früherkennungsleistungen wird mit Bonuspunkten belohnt. Die Leistung ist je nach Art der Untersuchung bepunktbar.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "Punkte",
+                "turnus": "Je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis gemäß Bonuskarte oder digital."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Kinder- und Jugenduntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzliche Kinder- und Jugenduntersuchungen werden im Bonusprogramm mit Punkten belohnt. Für Kinder und Jugendliche bis 17 Jahre gilt ein erhöhter Punktwert.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "Je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen für Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachgewiesene Schutzimpfungen werden im Bonusprogramm mit Punkten belohnt. Dies gilt für Impfungen nach § 20i SGB V und nach der Satzung.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "Punkte",
+                "turnus": "Je Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Vollständige Inanspruchnahme der Leistungen zur Schwangerschafts- und Mutterschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vollständige Inanspruchnahme der Schwangerschafts- und Mutterschaftsvorsorge wird im Bonusprogramm mit Punkten belohnt.",
+            "pdf_page": 37,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "Punkte",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Schwangerschaft und vollständiger Inanspruchnahme."
+                }
+            ]
+        },
+        {
+            "name": "Leistungen zur Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Zahnvorsorgeleistungen werden im Bonusprogramm mit Punkten belohnt. Sie sind bis zu zweimal jährlich bepunktbar.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "Punkte",
+                "turnus": "2x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bis zu zweimal pro Jahr bepunktbar."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die professionelle Zahnreinigung wird im Bonusprogramm mit Punkten belohnt und ist einmal jährlich bepunktbar.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Einmal jährlich bepunktbar."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft mit sportlicher Betätigung in einem Verein des Deutschen Olympischen Sportbundes (DOSB)",
+            "kategorie": "Bewegung",
+            "beschreibung": "Eine aktive Mitgliedschaft mit sportlicher Betätigung in einem DOSB-Verein wird als regelmäßige sportliche Aktivität bepunktet.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der aktiven Mitgliedschaft."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an mehrtägigen, qualitätsgesicherten Sport- und Gesundheitschallenges",
+            "kategorie": "Bewegung",
+            "beschreibung": "Mehr­tägige qualitätsgesicherte Sport- und Gesundheitschallenges, die den Präventionskriterien entsprechen, werden mit Punkten belohnt. Beispiele sind Lauf-, Meditations-, Rücken-, Mobility- oder Ernährungs-Challenges.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Challenge mit Gesundheitsbezug."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft mit sportlicher Betätigung im Hochschulsport oder Betriebssport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Aktive Mitgliedschaft im Hochschulsport oder Betriebssport wird als sportliche Aktivität bepunktet.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der aktiven Mitgliedschaft."
+                }
+            ]
+        },
+        {
+            "name": "Aktive Mitgliedschaft mit sportlicher Betätigung in einem qualitätsgesicherten Sport- oder Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Eine aktive Mitgliedschaft in einem qualitätsgesicherten Sport- oder Fitnessstudio wird im Bonusprogramm berücksichtigt.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Mitgliedschaft nachzuweisen."
+                }
+            ]
+        },
+        {
+            "name": "Ablegen eines sportlichen Leistungsnachweises",
+            "kategorie": "Bewegung",
+            "beschreibung": "Sportliche Leistungsnachweise wie das Deutsche Sportabzeichen oder Leistungsabzeichen eines DOSB-Fachverbandes werden bepunktet.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis eines sportlichen Leistungsabzeichens."
+                }
+            ]
+        },
+        {
+            "name": "Teilnahme an einer Sportveranstaltung unter fachlicher Anleitung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Die Teilnahme an einer Sportveranstaltung unter fachlicher Anleitung wird im Bonusprogramm mit Punkten belohnt.",
+            "pdf_page": 38,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Fachlich angeleitete Sportveranstaltung."
+                }
+            ]
+        },
+        {
+            "name": "Rückbildungsgymnastik",
+            "kategorie": "Bewegung",
+            "beschreibung": "Rückbildungsgymnastik wird als sportliche Aktivität im Bonusprogramm bepunktet.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Teilnahme."
+                }
+            ]
+        },
+        {
+            "name": "Babyschwimmkurs oder Schwimmkurs für Kinder ab 3 Jahren",
+            "kategorie": "Bewegung",
+            "beschreibung": "Babyschwimmkurse oder Schwimmkurse für Kinder ab 3 Jahren werden im Bonusprogramm bepunktet.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Kurs für Kinder bzw. Babyschwimmen."
+                }
+            ]
+        },
+        {
+            "name": "Eltern-Baby- oder Eltern-Kind-Kurs",
+            "kategorie": "Familie",
+            "beschreibung": "Eltern-Baby- und Eltern-Kind-Kurse werden im Bonusprogramm mit Punkten belohnt.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme an einem Eltern-Kind- oder Eltern-Baby-Kurs."
+                }
+            ]
+        },
+        {
+            "name": "Wöchentlich mindestens 50.000 Schritte in vier aufeinanderfolgenden Wochen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Das Erreichen eines Schrittziels über vier aufeinanderfolgende Wochen wird im Bonusprogramm bepunktet, wenn eine qualitätsgesicherte Gesundheitsapplikation genutzt wird.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nutzung einer qualitätsgesicherten Gesundheitsapplikation mit digitaler Begleitung."
+                }
+            ]
+        },
+        {
+            "name": "Wöchentlich mindestens 40 Kilometer Rad fahren in vier aufeinanderfolgenden Wochen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Das Erreichen eines Radfahrziels über vier aufeinanderfolgende Wochen wird im Bonusprogramm bepunktet, wenn eine qualitätsgesicherte Gesundheitsapplikation genutzt wird.",
+            "pdf_page": 39,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "1x jährlich je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nutzung einer qualitätsgesicherten Gesundheitsapplikation mit digitaler Begleitung."
+                }
+            ]
+        },
+        {
+            "name": "Bewegungskurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Regelmäßige Bewegungskurse, auch online, werden im Bonusprogramm bepunktet.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 2 Maßnahmen jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung zur verhaltensbezogenen Prävention oder vergleichbares qualitätsgesichertes Angebot."
+                }
+            ]
+        },
+        {
+            "name": "Entspannungskurs",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Regelmäßige Entspannungskurse, auch online, werden im Bonusprogramm bepunktet.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 2 Maßnahmen jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung zur verhaltensbezogenen Prävention oder vergleichbares qualitätsgesichertes Angebot."
+                }
+            ]
+        },
+        {
+            "name": "Ernährungskurs",
+            "kategorie": "Ernährung",
+            "beschreibung": "Regelmäßige Ernährungskurse, auch online, werden im Bonusprogramm bepunktet.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 2 Maßnahmen jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung zur verhaltensbezogenen Prävention oder vergleichbares qualitätsgesichertes Angebot."
+                }
+            ]
+        },
+        {
+            "name": "Raucher- und Suchtentwöhnungskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Raucher- und Suchtentwöhnungskurse, auch online, werden im Bonusprogramm bepunktet.",
+            "pdf_page": 40,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 150,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 2 Maßnahmen jährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung zur verhaltensbezogenen Prävention oder vergleichbares qualitätsgesichertes Angebot."
+                }
+            ]
+        },
+        {
+            "name": "Bonus für gesundheitsbewusstes Verhalten",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten für nachgewiesene Vorsorge-, Impf-, Schwangerschafts-, Zahnvorsorge- und Präventionsleistungen Bonuspunkte. Die Punkte können als Geldbonus oder als Zuschuss für bestimmte Leistungen genutzt werden; bei Erreichen bestimmter Punktzahlen gibt es zusätzliche Gutschriften.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Je Kalenderjahr bzw. nach Maßgabe der Anlage"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis über Bonuskarte oder digital; Antrag bis 31.12. des Folgejahres."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgsbonus für gesundheitsbewusstes Verhalten",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte ab 15 Jahren erhalten einen Bonus, wenn sie mindestens zwei Gesundheitsfaktoren erfolgreich nachweisen und dabei mindestens regelmäßige sportliche Betätigung belegen. Bei vier nachgewiesenen Faktoren ist zusätzlich ein Zuschuss für bestimmte Gesundheitsleistungen möglich.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Mindestens zwei Gesundheitsfaktoren, davon zwingend regelmäßige sportliche Betätigung."
+                }
+            ]
+        },
+        {
+            "name": "Erfolgsbonus für gesundheitsbewusstes Verhalten für Kinder und Jugendliche",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte zwischen 6 und unter 15 Jahren erhalten einen Bonus, wenn sie regelmäßig qualitätsgesichert sportlich aktiv sind und Leistungen zur verhaltensbezogenen Prävention vollständig in Anspruch nehmen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 6,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Regelmäßige sportliche Betätigung und vollständige Inanspruchnahme von Präventionsleistungen."
+                }
+            ]
+        },
+        {
+            "name": "Bonus für Maßnahmen betrieblicher Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "BARMER-versicherte Beschäftigte können für die Teilnahme an qualifizierten Maßnahmen der betrieblichen Gesundheitsförderung einen Bonus erhalten. Die Höhe richtet sich nach Art und Anzahl der absolvierten Maßnahmen; Arbeitgeber können ebenfalls einen Bonus erhalten.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für BARMER-versicherte Beschäftigte bzw. Arbeitgeber im Rahmen eines Vertrages zur betrieblichen Gesundheitsförderung."
+                }
+            ]
+        }
+    ]
+}

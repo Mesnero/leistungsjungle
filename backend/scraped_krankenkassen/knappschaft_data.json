@@ -1,0 +1,790 @@
+{
+    "krankenkasse": {
+        "name": "KNAPPSCHAFT",
+        "slug": "knappschaft",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1187/Satzung_KBS_11_12_2025_bf.pdf",
+        "satzung_stand": "11.12.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die KNAPPSCHAFT gewährt Leistungen zur Förderung der digitalen Gesundheitskompetenz. Die Angebote sollen Versicherte befähigen, digitale Gesundheitsanwendungen und digitale Gesundheitsinformationen selbstbestimmt zu nutzen und die Orientierung im digitalen Gesundheitswesen zu verbessern.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "laufend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte der KNAPPSCHAFT"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die KNAPPSCHAFT gewährt Leistungen zur Primärprävention in den Handlungsfeldern Bewegung, Ernährung, Stressreduktion/Entspannung und Suchtmittelkonsum. Eigene Leistungen werden ohne Kostenbeteiligung erbracht; bei Fremdanbietern ist ein Zuschuss nach Teilnahmenachweis möglich.",
+            "pdf_page": 49,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "maximal 2 Präventionskurse je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte der KNAPPSCHAFT; bei Fremdanbietern nur bei Vorlage einer Teilnahmebestätigung und Teilnahme an 80 % der Kurseinheiten"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Die KNAPPSCHAFT übernimmt die Kosten für Schutzimpfungen gegen übertragbare Krankheiten sowie für bestimmte reisemedizinisch indizierte Impfungen bei erhöhtem Auslandsrisiko, soweit keine andere Leistungspflicht besteht.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Soweit nicht ein anderer Kostenträger zuständig ist und die gesetzlichen Voraussetzungen vorliegen"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Vorsorgeleistungen in Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Für ambulante Vorsorgeleistungen in anerkannten Kurorten wird ein Zuschuss zu den übrigen Kosten gewährt, wenn die Maßnahme mindestens 14 Kalendertage dauert. Für chronisch kranke Kleinkinder gilt ein täglicher Zuschuss, für alle anderen Versicherte ein Pauschalbetrag.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "1x pro Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maßnahme in anerkanntem Kurort, mindestens 14 Kalendertage; für chronisch kranke Kleinkinder 25 Euro täglich"
+                }
+            ]
+        },
+        {
+            "name": "Ambulante Behandlung durch nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können ambulante medizinische Leistungen von nicht zugelassenen Leistungserbringern in Anspruch nehmen, wenn die Behandlung medizinisch notwendig ist und eine entsprechende Vereinbarung mit der KNAPPSCHAFT besteht. Die Vergütung erfolgt nach den geschlossenen Vereinbarungen.",
+            "pdf_page": 51,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "je vereinbarter Leistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehender Vereinbarung der KNAPPSCHAFT mit dem nicht zugelassenen Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für genehmigte Kosten der künstlichen Befruchtung gewährt die KNAPPSCHAFT einen zusätzlichen Kostenzuschuss. Die Leistung setzt einen vor Behandlungsbeginn genehmigten Behandlungsplan und die Behandlung durch berechtigte Leistungserbringer voraus.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "pro Versuch"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruch auf Maßnahmen der künstlichen Befruchtung nach den gesetzlichen Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die KNAPPSCHAFT erstattet sportmedizinische Vorsorgeuntersuchungen und Beratungen sowie bei medizinischer Notwendigkeit bestimmte Zusatzuntersuchungen. Voraussetzung ist die Durchführung durch entsprechend qualifizierte Leistungserbringer und eine ärztliche Bescheinigung.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "erneut frühestens nach 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn im Einzelfall geeignet und notwendig zur Verhütung kardialer oder orthopädischer Erkrankungen"
+                }
+            ]
+        },
+        {
+            "name": "Zuschuss zu den Kosten eines Geburtsvorbereitungskurses für Begleitpersonen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für Begleitpersonen wird ein Zuschuss zu den Kosten eines Geburtsvorbereitungskurses gewährt. Der Kurs muss von einer zugelassenen oder berechtigten Hebamme geleitet werden; die Begleitperson muss Vater des Kindes oder (Ehe-)Partner der Schwangeren sein.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Begleitperson muss Vater des Kindes oder (Ehe-)Partner der Schwangeren sein"
+                }
+            ]
+        },
+        {
+            "name": "Fissurenversiegelung der Prämolaren",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte erhalten bis zur Vollendung des 14. Lebensjahres einen Zuschuss für die Versiegelung der kariesfreien Prämolaren. Die Leistung muss durch zugelassene Vertragszahnärzte oder berechtigte Leistungserbringer erbracht werden.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 90,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 14,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bis zur Vollendung des 14. Lebensjahres"
+                }
+            ]
+        },
+        {
+            "name": "Glattflächenversiegelung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte vom 10. bis zum vollendeten 18. Lebensjahr erhalten einen einmaligen Zuschuss zur Versiegelung der Glattflächen während einer kieferorthopädischen Behandlung mit festsitzenden Apparaturen.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "einmalig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 10,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Während einer kieferorthopädischen Behandlung mit festsitzenden Apparaturen"
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der besonderen Therapierichtungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Für Versicherte bis zur Vollendung des 18. Lebensjahres erstattet die KNAPPSCHAFT Kosten für nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus Homöopathie, Phytotherapie und Anthroposophie, wenn die medizinische Notwendigkeit vorliegt und die Verordnung auf Privatrezept erfolgt.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "bis zu 100 Euro pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch notwendig, ärztliche Verordnung auf Privatrezept, Bezug in Apotheke oder zulässigem Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Leistungen bei Schwangerschaft und Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die gesetzlichen Schwangerschaftsleistungen hinaus beteiligt sich die KNAPPSCHAFT an bestimmten zusätzlichen Leistungen in der Schwangerschaft, darunter Hebammen-Rufbereitschaft, zusätzliche Hebammenberatungen, ausgewählte ärztliche Vorsorgeleistungen und Präparate zur Folsäure-, Jod- und Eisenprophylaxe.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; einzelne Leistungen jeweils nach den in § 57j genannten Voraussetzungen"
+                }
+            ]
+        },
+        {
+            "name": "Naturheilverfahren und Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die KNAPPSCHAFT erstattet Kosten für Osteopathie und weitere Heilmittel im Rahmen von Naturheilverfahren, soweit die Behandlung medizinisch notwendig ist und nicht ausgeschlossen wurde. Erstattet werden Leistungen nur bei qualifizierten Leistungserbringern und gegen Vorlage von ärztlicher Bescheinigung und Rechnung.",
+            "pdf_page": 56,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "bis zu 150 Euro pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Osteopathie bis 30 Euro je Behandlung; weitere Heilmittel im Rahmen von Naturheilverfahren bis insgesamt 50 Euro pro Kalenderjahr"
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Hautkrebsvorsorge bei Risikofaktoren",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bei Versicherten unter 35 Jahren übernimmt die KNAPPSCHAFT im Einzelfall die Kosten für eine erweiterte Hautkrebsvorsorge, wenn Risikofaktoren auf eine drohende Erkrankung hinweisen. Die Untersuchung umfasst die visuelle Ganzkörperinspektion und gegebenenfalls eine Auflichtmikroskopie.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 35,
+                "waehrung": "EUR",
+                "turnus": "frühestens alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 34,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren und durch Dermatologen bzw. Fachärzte für Haut- und Geschlechtskrankheiten"
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Versicherte erhalten Haushaltshilfe, wenn die gesetzlichen Voraussetzungen vorliegen und im Haushalt ein Kind lebt, das bei Beginn der Hilfe das 15. Lebensjahr noch nicht vollendet hat. Zusätzlich muss eine andere im Haushalt lebende Person den Haushalt nicht weiterführen können.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "für die Dauer der Notwendigkeit, in bestimmten Fällen längstens 26 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebt ein Kind unter 15 Jahren"
+                }
+            ]
+        },
+        {
+            "name": "Krankenhausbehandlung und stationäre Entbindung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für bestimmte Versicherte besteht bei stationärer Behandlung und stationärer Entbindung ein Anspruch auf Unterbringung im Zweibettzimmer ohne gesondert berechenbare Zusatzleistungen sowie auf Behandlung durch den leitenden Arzt. Der Anspruch ist an die in der Satzung genannten Bestands- und Übergangsregelungen gebunden.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "bei stationärer Behandlung bzw. Entbindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 59 Absatz 3 genannten Versicherten; bei stationärer Entbindung entsprechend"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen. Die Erstattung erfolgt grundsätzlich bis zur Höhe der Kosten einer Sach- oder Dienstleistung, höchstens bis zu den tatsächlich entstandenen Kosten, abzüglich gesetzlicher Zuzahlungen und eines Verwaltungskostenabschlags.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "nach Wahl, mindestens quartalsweise bindend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vor Inanspruchnahme der Leistung muss Kostenerstattung gewählt und die KNAPPSCHAFT informiert werden"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung von Arzneimitteln im Einzelfall",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können im Rahmen der Arzneimittelversorgung im Einzelfall Kostenerstattung wählen, wenn sie ein anderes als das regulär vorgesehene Arzneimittel wählen. Erstattet wird höchstens der Betrag, den die KNAPPSCHAFT als Sachleistung zu tragen hätte, abzüglich gesetzlicher Zuzahlungen und Verwaltungskostenabschlag.",
+            "pdf_page": 69,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "je Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur unter den Voraussetzungen des § 129 Absatz 1 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für die Inanspruchnahme von Leistungen in Ländern des EWR/der EU",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können Leistungserbringer in Staaten des EWR bzw. der EU im Wege der Kostenerstattung in Anspruch nehmen. Erstattet werden die nachgewiesenen Aufwendungen bis zur Höhe der inländischen Sachleistungskosten, abzüglich gesetzlicher Zuzahlungen und Verwaltungskostenabschlag.",
+            "pdf_page": 70,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "je Antrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn die inländischen Leistungsvoraussetzungen erfüllt sind"
+                }
+            ]
+        },
+        {
+            "name": "Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillig versicherte Beamte, die bei der KNAPPSCHAFT tätig sind, können für sich und ihre familienversicherten Angehörigen Teilkostenerstattung wählen. Die Erstattung richtet sich nach dem jeweiligen Beihilfebemessungssatz und den satzungsmäßigen Vorgaben.",
+            "pdf_page": 71,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "laufend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für freiwillig versicherte Beamte bei der KNAPPSCHAFT und deren familienversicherte Angehörige"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Selbstbehalt",
+            "kategorie": "Prävention",
+            "beschreibung": "Mitglieder können einen Selbstbehalttarif wählen. Je nach Einkommensgruppe wird eine Prämienzahlung gewährt, wenn im Kalenderjahr bestimmte Selbstbehalte vereinbart werden und die tariflichen Voraussetzungen erfüllt sind.",
+            "pdf_page": 72,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder, die keinen Tarif nach §§ 66b und 66h gewählt haben oder deren Beiträge nicht vollständig von Dritten getragen werden"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Prämienzahlung bei Leistungsfreiheit",
+            "kategorie": "Prävention",
+            "beschreibung": "Volljährige freiwillige Mitglieder mit hohem beitragspflichtigem Jahreseinkommen können bei Leistungsfreiheit im Kalenderjahr eine Prämie erhalten. Die Höhe der Prämie steigt mit der Dauer der leistungsfreien Mitgliedschaft.",
+            "pdf_page": 75,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 140,
+                "waehrung": "EUR",
+                "turnus": "pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für volljährige freiwillige Mitglieder mit beitragspflichtigem Jahreseinkommen ab der Beitragsbemessungsgrenze"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif für prosper / proGesund",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte, die vertragsgemäß an der besonderen Versorgung prosper/proGesund teilnehmen, erhalten eine Prämienzahlung. Die Höhe richtet sich nach der Teilnahme und ggf. einer vollstationären Behandlung in einem teilnehmenden Netzkrankenhaus.",
+            "pdf_page": 76,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "einmal pro Betrachtungszeitraum"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vertragsgemäßer Teilnahme an prosper/proGesund"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif zur Kostenerstattung Arzt",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Mitglieder mit selbst getragenen Beiträgen können für den Bereich der ambulanten ärztlichen Versorgung einen Kostenerstattungstarif wählen. Erstattet werden die entstandenen und nachgewiesenen Kosten im tariflich vorgesehenen Umfang.",
+            "pdf_page": 77,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "monatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Wahl der Kostenerstattung und ohne gleichzeitigen Selbstbehalttarif"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif zur Kostenerstattung Zahnarzt",
+            "kategorie": "Zahn",
+            "beschreibung": "Mitglieder mit selbst getragenen Beiträgen können für den Bereich der ambulanten zahnärztlichen Versorgung einen Kostenerstattungstarif wählen. Der Tarif umfasst auch Zahnersatz und ambulante Kieferorthopädie sowie unter bestimmten Voraussetzungen medizinisch notwendigen Zahnersatz.",
+            "pdf_page": 77,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "monatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Wahl der Kostenerstattung und ohne gleichzeitigen Selbstbehalttarif"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Krankengeld",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte Mitglieder können einen Wahltarif Krankengeld als Ergänzung zum gesetzlichen Krankengeld wählen. Die Höhe des versicherbaren Krankengeldes und die Prämie richten sich nach dem gewählten Tarif und der Bindungsfrist.",
+            "pdf_page": 80,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 30,
+                "waehrung": "EUR",
+                "turnus": "monatlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für die in § 53 Absatz 6 SGB V genannten Mitglieder"
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Freiwillig versicherte Beamte können für sich und ihre familienversicherten Angehörigen Teilkostenerstattung wählen. Die Erstattung erfolgt nach den in der Satzung festgelegten Prozentsätzen für Beihilfeberechtigte, Ehegatten und Kinder.",
+            "pdf_page": 83,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "laufend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für freiwillig versicherte Beamte bei der KNAPPSCHAFT"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die KNAPPSCHAFT vergibt pro Bonusjahr Geldboni für definierte Vorsorge- und Gesundheitsmaßnahmen. Der Nachweis erfolgt über einen Nachweisbogen; die Auszahlung ist einmalig je Bonusjahr möglich. Zusätzlich gibt es ein Gesundheitskonto gesundPlus, das bei Erfüllung von Pflichtmaßnahmen ein Guthaben für ausgewählte Zusatzleistungen bereitstellt.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Für ein Bonusjahr kann entweder der Bonus nach § 68 oder das Gesundheitskonto gesundPlus nach § 68a genutzt werden, nicht beides gleichzeitig."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Untersuchungen zur Früherkennung von Krebserkrankungen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonus für Untersuchungen zur Früherkennung von Krebserkrankungen nach den gesetzlichen Voraussetzungen.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "je Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Sofern zur Inanspruchnahme berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonus für Leistungen zur Verhütung übertragbarer Krankheiten nach den gesetzlichen Voraussetzungen; Auszahlung jeweils nach vollständiger Immunisierung.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "je Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach § 20i SGB V in Verbindung mit § 53 der Satzung"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonus für die Gesundheitsuntersuchung nach den gesetzlichen Voraussetzungen.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "je Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Sofern zur Inanspruchnahme berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung nach § 26 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonus für Gesundheitsuntersuchungen nach § 26 SGB V.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "je Bonusjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Sofern zur Inanspruchnahme berechtigt"
+                }
+            ]
+        },
+        {
+            "name": "Zahnuntersuchungen",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonus für Zahnuntersuchungen nach den gesetzlichen Voraussetzungen, kalenderjährlich begrenzt.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "maximal 2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach § 22 Absatz 1, § 22a oder § 55 Absatz 1 Satz 4 Nummer 2 SGB V"
+                }
+            ]
+        },
+        {
+            "name": "Bewegungsangebote im Fitnessstudio oder Sportverein",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für die regelmäßige Wahrnehmung von Bewegungsangeboten in einem qualitätsgesicherten Fitnessstudio oder Sportverein.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 70,
+                "waehrung": "EUR",
+                "turnus": "maximal 1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei regelmäßiger Aktivität"
+                }
+            ]
+        },
+        {
+            "name": "Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für den Erwerb eines anerkannten Sportabzeichens einschließlich qualifiziertem Trainingsvorlauf.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "maximal 1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei regelmäßiger Aktivität"
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsbonus",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonus für weibliche Versicherte, die während der Schwangerschaft die nach den Mutterschafts-Richtlinien vorgesehenen Vorsorgeuntersuchungen und Leistungen in Anspruch nehmen. Die Auszahlung erfolgt nach der Geburt.",
+            "pdf_page": 89,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Inanspruchnahme der Mutterschafts-Richtlinien zwischen Feststellung der Schwangerschaft und Geburt"
+                }
+            ]
+        }
+    ]
+}

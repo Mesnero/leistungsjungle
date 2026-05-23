@@ -1,0 +1,680 @@
+{
+    "krankenkasse": {
+        "name": "AOK Bremen/Bremerhaven",
+        "slug": "aok_bremen_bremerhaven",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/237/51.%20%C3%84nderung%20der%20Satzung_Stand%2019.12.2023.pdf",
+        "satzung_stand": "19.12.2023"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Zuschuss bei ambulanten Vorsorgekuren",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei medizinisch erforderlichen ambulanten Vorsorgeleistungen in anerkannten Kurorten wird ein Zuschuss zu Unterkunft, Verpflegung, Kurtaxe und Fahrkosten gewährt. Für chronisch kranke Kleinkinder und für Kinderkuren im Rahmen einer Gruppentherapie gelten abweichende Zuschüsse.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 8,
+                "waehrung": "EUR",
+                "turnus": "Täglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinisch erforderlicher ambulanter Vorsorgeleistung in anerkannten Kurorten; für chronisch kranke Kleinkinder 21 EUR täglich, für Kinderkur als Gruppentherapie 4 EUR bis längstens 6 Wochen."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die AOK erstattet osteopathische Leistungen, wenn sie medizinisch geeignet sind und von einem qualifizierten Leistungserbringer durchgeführt werden. Die Behandlung darf nicht vom Gemeinsamen Bundesausschuss ausgeschlossen sein.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 3x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Eignung und Durchführung durch einen zur Ausübung der Heilkunde berechtigten Leistungserbringer mit osteopathischer Ausbildung."
+                }
+            ]
+        },
+        {
+            "name": "Homöopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Erstattet werden die Kosten für homöopathische Erstanamnese und Folgebehandlung, sofern sie von Vertragsärzten mit Zusatzqualifikation Homöopathie erbracht werden und nicht bereits zur vertragsärztlichen Versorgung gehören.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Rechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur durch Vertragsärzte mit Zusatzqualifikation Homöopathie und nur für Leistungen außerhalb der regulären vertragsärztlichen Versorgung."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die AOK übernimmt die Kosten für Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe oder leistet Zuschüsse nach den Ausführungsbestimmungen des Vorstandes, soweit keine anderen Kostenträger zuständig sind.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Maßgabe der Ausführungsbestimmungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Soweit nicht andere Kostenträger zuständig sind; in den in § 20i Abs. 1 SGB V genannten Fällen keine Leistung nach dieser Satzung."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheits- und Vorsorgeleistungen bei Schwangerschaft und Geburt",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK übernimmt zusätzliche Vorsorgemaßnahmen rund um Schwangerschaft und Geburt, darunter bestimmte Tests, Kurse und die Unterbringung oder Geburtsvorbereitung einer Begleitperson, sofern diese AOK-versichert ist.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Schwangere; Leistungen nur, sofern sie keine Leistungen nach den Mutterschaftsrichtlinien sind. Begleitperson muss bei den genannten Leistungen AOK-versichert sein."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchungen",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte können einmal pro Kalenderjahr eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen. Bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen im Rahmen der Untersuchung erstattet werden.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durchführung durch zugelassene Vertragsärzte; zusätzliche Leistungen nur bei ärztlich bescheinigten Risiken."
+                }
+            ]
+        },
+        {
+            "name": "Zahnschutzschienen",
+            "kategorie": "Zahn",
+            "beschreibung": "Die AOK erstattet Zahnschutzschienen als individuellen Zahnmundschutz zur Prävention bei Risikosportarten mit erhöhtem Verletzungsrisiko.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Bei Bedarf"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Veranlassung durch zugelassene Vertragszahnärzte."
+                }
+            ]
+        },
+        {
+            "name": "Hebammenrufbereitschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK erstattet die Kosten für die Rufbereitschaft einer freiberuflich tätigen Hebamme in den letzten Wochen der Schwangerschaft. Die Hebamme muss zugelassen oder zur Versorgung berechtigt sein.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Inanspruchnahme von Hebammenhilfe während Schwangerschaft und Geburt; Rufbereitschaft mit 24-stündiger Erreichbarkeit und sofortiger Bereitschaft zu mehrstündiger Geburtshilfe."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Versicherte können zwei professionelle Zahnreinigungen pro Kalenderjahr in Anspruch nehmen. Die Leistung muss durch zugelassene oder nach § 13 Abs. 4 SGB V berechtigte Leistungserbringer erbracht werden.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Maximal 40 EUR pro Zahnreinigung."
+                }
+            ]
+        },
+        {
+            "name": "Schwimmschutz",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die AOK erstattet einen Schwimmschutz für die Ohren, wenn medizinisch notwendig, um wiederholte Entzündungen durch eindringendes Wasser zu verhindern.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bei medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinische Notwendigkeit muss von einem zugelassenen Vertragsarzt festgestellt werden."
+                }
+            ]
+        },
+        {
+            "name": "Diabetes-Typ-1-Früherkennungsuntersuchung für Kinder im Alter zwischen 2 und 6 Jahren",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für versicherte Kinder zwischen 2 und 6 Jahren werden die Kosten für eine Diabetes-Typ-1-Früherkennungsuntersuchung einmal jährlich erstattet.",
+            "pdf_page": 30,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 2,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für versicherte Kinder."
+                }
+            ]
+        },
+        {
+            "name": "Erweiterte Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei bestehenden Risikofaktoren erstattet die AOK für Versicherte ab 18 Jahren im Einzelfall Gesundheitsuntersuchungen über den gesetzlichen Anspruch hinaus. Die Leistung ist auf eine Untersuchung alle zwei Jahre begrenzt.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Alle zwei Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei bestehenden Risikofaktoren und gegen Vorlage spezifizierter Rechnungen; durch zugelassene oder nach § 13 Abs. 4 SGB V berechtigte Ärzte durchgeführt oder veranlasst."
+                }
+            ]
+        },
+        {
+            "name": "Früherkennung und Frühförderung",
+            "kategorie": "Familie",
+            "beschreibung": "Die AOK übernimmt Kosten für bestimmte Frühförder- und Früherkennungsangebote für Kinder und Eltern, darunter PEKIP, DELFI, Babyschwimmen, Babymassage sowie weitere Kurse wie Erste-Hilfe bei Kindernotfällen, Schwimmkurs Seepferdchen und Trageberatung.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Leistungen der Frühförderung und Früherkennung; teils pro Erziehungsberechtigten, teils pro Kind, je nach Kursart."
+                }
+            ]
+        },
+        {
+            "name": "Kopforthesen",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Versicherte bis zum vollendeten 15. Lebensmonat übernimmt die AOK die Kosten für eine Behandlung mittels Kopforthesen, wenn die Indikation fachärztlich gestellt und bestätigt wurde.",
+            "pdf_page": 32,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Indikationsstellung und Verordnung durch spezialisierte orthopädische Einrichtung/Fachklinik oder Facharzt für Orthopädie; konventionelle Therapie nicht möglich oder nicht erfolgversprechend."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen zur Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die AOK stellt Haushaltshilfe auch in zusätzlichen Fällen zur Verfügung, wenn im Haushalt ein Kind lebt, das noch nicht 14 Jahre alt ist oder behindert und auf Hilfe angewiesen ist, und die Weiterführung des Haushalts nicht möglich ist.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur wenn im Haushalt ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind lebt und keine andere im Haushalt lebende Person den Haushalt weiterführen kann."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "AOK-Bonusprogramm",
+        "beschreibung": "Versicherte sammeln für definierte Gesundheitsmaßnahmen Bonuspunkte, die in eine Geldprämie eingelöst werden können. Die Teilnahme ist elektronisch oder in Papierform möglich; 100 Bonuspunkte entsprechen 1,00 Euro.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 0.01,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonuspunkte können ab 300 Punkten elektronisch eingelöst werden; in Papierform erfolgt die Auszahlung einmal jährlich. Das Programm begann am 01.01.2023."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonifiziert werden Schutzimpfungen einschließlich Grundimmunisierungen und empfohlener Auffrischungen.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Je Impfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte ab vollendetem 15. Lebensjahr; vollständige Immunisierung muss nachgewiesen werden."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung Check-Up",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifiziert wird die Gesundheitsuntersuchung nach den gesetzlichen Vorgaben, einschließlich der altersabhängigen Intervalle.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Nach gesetzlichem Intervall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der Untersuchung erforderlich; Bonifizierung nur im Rahmen der gesetzlichen Intervalle."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonifiziert wird das Hautkrebsscreening als Maßnahme zur Früherkennung von Hautkrebs.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab Vollendung des 18. Lebensjahres."
+                }
+            ]
+        },
+        {
+            "name": "Kinder- und Jugendvorsorge",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonifiziert werden die Vorsorgeuntersuchungen für Kinder und Jugendliche von der Geburt bis zur Vollendung des 18. Lebensjahres.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U1 bis J2; jede Vorsorgeuntersuchung wird einzeln bonifiziert."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonifiziert werden alters- oder geschlechtsspezifische Krebsfrüherkennungsuntersuchungen.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Gemäß den gesetzlichen Krebsfrüherkennungsregelungen."
+                }
+            ]
+        },
+        {
+            "name": "Mutterschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bonifiziert werden die im Mutterpass vorgesehenen Vorsorgeuntersuchungen während der Schwangerschaft.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Je Vorsorgeuntersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je Schwangerschaft und je durchgeführter Vorsorgeuntersuchung."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonifiziert wird eine professionelle Zahnreinigung in einer vertragszahnärztlichen Praxis.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis durch den Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonifiziert wird die nachgewiesene Zahnvorsorge in einer vertragszahnärztlichen Praxis.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nach §§ 22, 55 Abs. 1 Satz 4 Nr. 2 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Sportverein/Fitnessstudio/Hochschulsport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird die aktive, regelmäßige sportliche Betätigung im Sportverein, Fitnessstudio oder Hochschulsport.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 3000,
+                "waehrung": "Punkte",
+                "turnus": "Je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 15,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Regelmäßige aktive Teilnahme; im Sportverein mindestens 2x monatlich, im Fitnessstudio mindestens 2x monatlich, im Hochschulsport regelmäßig."
+                }
+            ]
+        },
+        {
+            "name": "Raucherentwöhnungskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifiziert wird die vollständige Teilnahme an einem zertifizierten Raucherentwöhnungskurs.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kurs muss ZPP-zertifiziert sein; vollständige Teilnahme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Anerkanntes Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonifiziert wird das erfolgreiche Ablegen eines anerkannten Sportabzeichens.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 1x pro Jahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anerkanntes Sportabzeichen, z. B. Deutsches Sportabzeichen, Seepferdchen oder Freischwimmer."
+                }
+            ]
+        },
+        {
+            "name": "Sonderaktionen",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifiziert wird die aktive Teilnahme an gekennzeichneten Sonderaktionen der AOK zur Förderung einer gesundheitsbewussten Lebensweise.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Bis zu 2 Bonifizierungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je Bonifizierung sind zwei Teilnahmen an Veranstaltungen/Aktionen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonifiziert wird eine sportmedizinische Untersuchung durch einen Arzt mit Zusatzqualifikation Sportmedizin.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "1x im Jahr der Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis per Rechnung oder Bestätigung mit Stempel/Unterschrift des Arztes."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Früherkennungsuntersuchung (FU)",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonifiziert werden zahnärztliche Früherkennungsuntersuchungen für Kinder im Alter von 30 bis 72 Monaten.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1000,
+                "waehrung": "Punkte",
+                "turnus": "Maximal 3 Termine"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 3,
+                    "alter_max": 6,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "30 bis 72 Monate; im Abstand von mindestens 12 Monaten, maximal 3 FU-Termine."
+                }
+            ]
+        },
+        {
+            "name": "Sonderaktionen mit erhöhtem Bonus",
+            "kategorie": "Prävention",
+            "beschreibung": "Bei bestimmten Aktionen kann der Bonuswert für Maßnahmen der Kategorien Sport und Bewegung, Vorsorge und Impfungen verdoppelt werden.",
+            "pdf_page": 42,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 2000,
+                "waehrung": "Punkte",
+                "turnus": "Aktionsbezogen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei entsprechend gekennzeichneten Aktionen; bonusabhängig von der jeweiligen Maßnahme."
+                }
+            ]
+        }
+    ]
+}

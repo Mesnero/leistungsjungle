@@ -1,0 +1,1120 @@
+{
+    "krankenkasse": {
+        "name": "Landwirtschaftliche Krankenkasse - LKK",
+        "slug": "landwirtschaftliche_krankenkasse_lkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1215/svlfg_12112020.pdf",
+        "satzung_stand": "12.11.2020"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte erhalten Leistungen zur Verbesserung des allgemeinen Gesundheitszustandes in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Die Förderung ist auf maximal zwei Kurse pro Versicherten und Kalenderjahr begrenzt.",
+            "pdf_page": 57,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte der landwirtschaftlichen Krankenkasse; Kurse müssen den Präventionsvorgaben entsprechen."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Über die gesetzlichen Impfleistungen hinaus werden weitere von der STIKO empfohlene Schutzimpfungen übernommen. Das gilt auch für Reiseimpfungen, wenn sie wegen eines erhöhten Gesundheitsrisikos indiziert und STIKO-empfohlen sind.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach medizinischer Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte; Impfung muss von der STIKO empfohlen sein."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Krankenkasse bietet Leistungen zur Vermittlung von Kompetenzen für den selbstbestimmten gesundheitsorientierten Einsatz digitaler und telemedizinischer Anwendungen. Die Angebote müssen den Vorgaben des GKV-Spitzenverbandes entsprechen.",
+            "pdf_page": 58,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Angebot"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte; nur gesundheitsbezogene digitale Kompetenzen."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für ambulante Vorsorgeleistungen in anerkannten Kurorten wird ein Zuschuss zu Unterbringung, Verpflegung und Reisekosten gezahlt. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich während der ambulanten Vorsorge"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistung in anerkanntem Kurort."
+                }
+            ]
+        },
+        {
+            "name": "Häusliche Krankenpflege",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Krankenkasse gewährt häusliche Krankenpflege als Mehrleistung, einschließlich Grundpflege und hauswirtschaftlicher Versorgung, für längstens drei Monate.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Monate je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei medizinischer Notwendigkeit nach den gesetzlichen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Betriebshilfe während stationärer Behandlung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Dauert eine Krankenhaus- oder stationäre Rehabilitationsbehandlung länger als 13 Wochen, wird Betriebshilfe für bis zu weitere vier Wochen erbracht, solange besondere Verhältnisse im Unternehmen dies erfordern.",
+            "pdf_page": 59,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 weitere Wochen je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für landwirtschaftliche Unternehmerinnen und Unternehmer; stationäre Behandlung länger als 13 Wochen."
+                }
+            ]
+        },
+        {
+            "name": "Betriebshilfe bei Krankheit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Während einer ärztlich bescheinigten Krankheit wird Betriebshilfe zunächst bis zu vier Wochen erbracht. Bei fortdauernder Krankheit kann sie verlängert werden, solange besondere Verhältnisse im Unternehmen dies erfordern.",
+            "pdf_page": 60,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen, verlängerbar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für versicherte landwirtschaftliche Unternehmerinnen und Unternehmer; ärztlich bescheinigte Krankheit, Unternehmensführung gefährdet, keine stationäre Behandlung."
+                }
+            ]
+        },
+        {
+            "name": "Betriebshilfe während Schwangerschaft und Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Während der Schwangerschaft und bis acht Wochen nach der Entbindung, bei Frühgeburt, Mehrlingsgeburt oder ärztlich festgestellter Behinderung des Kindes bis zu zwölf Wochen nach der Entbindung, wird Betriebshilfe erbracht, wenn die Unternehmensführung gefährdet ist.",
+            "pdf_page": 60,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Während Schwangerschaft; ab 6 Wochen vor der voraussichtlichen Entbindung zusätzlich ärztlich bescheinigte Arbeitsunfähigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Erstreckung der Betriebshilfe",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Betriebshilfe wird auf mitarbeitende Ehegatten, Lebenspartner, mitarbeitende Familienangehörige sowie bestimmte Unternehmen mit ständig Beschäftigten erstreckt, wenn die Weiterführung ohne Betriebshilfe nicht sichergestellt ist.",
+            "pdf_page": 60,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei den in § 114 genannten Personengruppen und Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Als Mehrleistung wird Haushaltshilfe in entsprechender Anwendung der Betriebshilfe-Regeln erbracht, wenn die Weiterführung des landwirtschaftlichen Haushalts nicht möglich und anders nicht sicherzustellen ist.",
+            "pdf_page": 61,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wenn kein landwirtschaftlicher Haushalt weitergeführt werden kann und die gesetzlichen Voraussetzungen vorliegen."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe für landwirtschaftliche Unternehmerinnen oder Unternehmer ohne landwirtschaftlichen Haushalt",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für versicherte landwirtschaftliche Unternehmerinnen oder Unternehmer sowie mitarbeitende Ehegatten oder Lebenspartner ohne landwirtschaftlichen Haushalt wird Haushaltshilfe nach den gesetzlichen Regeln erbracht, wenn keine Betriebshilfe möglich ist.",
+            "pdf_page": 61,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Kein landwirtschaftlicher Haushalt vorhanden und keine Betriebshilfe erbracht."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe für sonstige Personen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für sonstige Versicherte mit eigenem Haushalt gelten die gesetzlichen Regeln zur Haushaltshilfe; auch bei ärztlich bescheinigter Krankheit kann Haushaltshilfe erbracht werden.",
+            "pdf_page": 61,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 14,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für sonstige Versicherte mit eigenem Haushalt."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathische Leistungen",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und nicht ausgeschlossen wurde. Die Leistung muss durch qualifizierte Leistungserbringer erbracht werden.",
+            "pdf_page": 71,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Sitzung, maximal 250 Euro je Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinischer Eignung und qualifizierter Leistungserbringung."
+                }
+            ]
+        },
+        {
+            "name": "Ärztliche Zweitmeinung Onkologie",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bei bestimmten onkologischen Diagnosen können Versicherte eine unabhängige ärztliche Zweitmeinung zu planbaren Eingriffen einholen. Die Krankenkasse übernimmt die Kosten vollständig.",
+            "pdf_page": 71,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Eingriff bzw. je Zweitmeinungsanlass"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei den im Anhang zu § 130b genannten onkologischen Diagnosen und bestehender Versicherung."
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für die 24-stündige Rufbereitschaft einer zugelassenen oder berechtigten freiberuflichen Hebamme in den letzten sechs Wochen vor dem Entbindungstermin werden Kosten erstattet.",
+            "pdf_page": 73,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "In den letzten sechs Wochen vor dem Entbindungstermin."
+                }
+            ]
+        },
+        {
+            "name": "Toxoplasmose-Test und B-Streptokokken Untersuchung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Im Einzelfall werden die Kosten für einen Toxoplasmose-Test und eine B-Streptokokken-Untersuchung erstattet, wenn ein medizinischer Anlass oder ein Risiko vorliegt.",
+            "pdf_page": 73,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmal je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Kontakt mit Tieren bzw. bei familiärer Vorbelastung oder ärztlicher Empfehlung."
+                }
+            ]
+        },
+        {
+            "name": "Untersuchung von Kindern und Jugendlichen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Zusätzlich zu den gesetzlichen Vorsorgeleistungen werden die Kosten für U10, U11 und J2 erstattet, wenn ein individueller Untersuchungsanlass oder Risikofaktoren vorliegen und keine vertragliche Versorgung besteht.",
+            "pdf_page": 73,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 4,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder und Jugendliche; nur bei bestehendem Untersuchungsanlass und ohne vertragliche Versorgung."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Im Einzelfall werden die Kosten für ein Hautkrebsscreening übernommen, wenn Risikofaktoren vorliegen und eine vertragsärztliche Leistung nicht zur Verfügung steht.",
+            "pdf_page": 74,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Einmal innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Risikofaktoren und wenn keine GKV-Regelleistung verfügbar ist."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die Krankenkasse übernimmt zusätzlich zu den gesetzlichen Ansprüchen die Kosten für eine professionelle Zahnreinigung durch zugelassene oder berechtigte Leistungserbringer.",
+            "pdf_page": 74,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte; Durchführung durch zugelassene oder berechtigte Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Sanierung bei einer Besiedlung mit Methicillin-resistentem Staphylococcus aureus (MRSA)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Krankenkasse beteiligt sich an den Kosten einer MRSA-Sanierung vor einem planbaren operativen Eingriff und übernimmt unter bestimmten Voraussetzungen auch Kosten für Kontaktpersonen sowie Untersuchungen und notwendige Arzneimittel.",
+            "pdf_page": 74,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Sanierungsversuche je planbarem operativen Eingriff"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei MRSA-Besiedlung und indiziertem planbaren operativen Eingriff; ggf. auch für bestimmte Kontaktpersonen."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe für Begleitpersonen während einer Kinderrehabilitation",
+            "kategorie": "Familie",
+            "beschreibung": "Als ergänzende Leistung zur Kinderrehabilitation wird Betriebs- und Haushaltshilfe gewährt, wenn die gesetzlichen Voraussetzungen erfüllt sind.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Kinderrehabilitation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur im Zusammenhang mit einer Kinderrehabilitation und bei erfüllten gesetzlichen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Leistungen zur medizinischen Rehabilitation oder bei onkologischen Nachsorgeleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Dauert eine medizinische Rehabilitation oder onkologische Nachsorge länger als 13 Wochen, wird Betriebs- und Haushaltshilfe für bis zu weitere vier Wochen erbracht; Verlängerungen sind nur bei außergewöhnlichen Erschwernissen möglich.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 weitere Wochen je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei medizinischer Rehabilitation oder onkologischer Nachsorge; besondere Verhältnisse im Unternehmen."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Schonungszeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Während einer ärztlich verordneten Schonungszeit, die unmittelbar an eine stationäre Heilbehandlung anschließt, wird Betriebs- und Haushaltshilfe für bis zu drei Tage erbracht.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Tage je Schonungszeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich verordnete Schonungszeit unmittelbar nach stationärer Heilbehandlung."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Arbeitsunfähigkeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Während einer ärztlich bescheinigten Arbeitsunfähigkeit wird Betriebs- und Haushaltshilfe zunächst bis zu vier Wochen erbracht; bei fortdauernder Arbeitsunfähigkeit kann sie verlängert werden.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen, verlängerbar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Arbeitsunfähigkeit ärztlich bescheinigt und Hilfe zur Aufrechterhaltung des Unternehmens bzw. Haushalts erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Schwangerschaft und nach Entbindung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Während der Schwangerschaft und nach der Entbindung wird Betriebshilfe erbracht, wenn die Unternehmensführung gefährdet ist; bei bestimmten Geburtskonstellationen verlängert sich der Zeitraum bis zu zwölf Wochen nach der Entbindung.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Während Schwangerschaft; ab 6 Wochen vor der Entbindung zusätzlich ärztlich bescheinigte Arbeitsunfähigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei medizinischen Vorsorge- und Rehabilitationsleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Betriebs- und Haushaltshilfe kann während medizinischer Vorsorgeleistungen und medizinischer Rehabilitationsmaßnahmen erbracht werden; der zeitliche Umfang richtet sich nach den entsprechenden Regelungen.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter den Voraussetzungen des § 36 Absatz 1 ALG."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Tod",
+            "kategorie": "Familie",
+            "beschreibung": "Die Leistungen nach den einschlägigen Vorschriften können auch für den Todestag erbracht werden; eine Selbstbeteiligung richtet sich nach dem Einkommen.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Todesfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Todesfall nach den gesetzlichen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Präventionsleistungen der landwirtschaftlichen Alterskasse",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Alterskasse erbringt auf Antrag medizinische Präventionsleistungen zur Sicherung der Erwerbsfähigkeit, einschließlich allgemeiner und spezieller gesundheitsfördernder Maßnahmen sowie digitaler oder stationärer Angebote.",
+            "pdf_page": 47,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Bewilligung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Erste gesundheitliche Beeinträchtigungen, die die ausgeübte Beschäftigung gefährden."
+                }
+            ]
+        },
+        {
+            "name": "Anschlussheilbehandlungen",
+            "kategorie": "Reha",
+            "beschreibung": "Die Alterskasse erbringt medizinische Rehabilitation auch in Form von Anschlussheilbehandlungen, wenn die medizinische Notwendigkeit während einer vorausgehenden Krankenhausbehandlung festgestellt wird.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Rehabilitationsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unmittelbar im Anschluss an eine Krankenhausbehandlung."
+                }
+            ]
+        },
+        {
+            "name": "Kinderrehabilitationen",
+            "kategorie": "Familie",
+            "beschreibung": "Kinder- und Jugendrehabilitationen werden erbracht, wenn dadurch eine erhebliche Gesundheitsgefährdung beseitigt oder die Gesundheit wesentlich gebessert werden kann. Die Leistung kann stationär oder ambulant erfolgen und umfasst auch Begleitpersonen und Familienangehörige unter bestimmten Voraussetzungen.",
+            "pdf_page": 48,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Rehabilitationsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder und Jugendliche; Rehabilitationsbedürftigkeit und -fähigkeit müssen vorliegen."
+                }
+            ]
+        },
+        {
+            "name": "Ergänzende Leistungen bei Präventionsleistungen, Kinderrehabilitationen sowie onkologischen Nachsorgeleistungen",
+            "kategorie": "Reha",
+            "beschreibung": "Zu Präventions-, Kinderrehabilitations- und onkologischen Nachsorgeleistungen können ergänzende Leistungen wie Fahrtkosten und weitere Leistungen nach dem SGB IX erbracht werden.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Zusammenhang mit den genannten Leistungen zur Teilhabe."
+                }
+            ]
+        },
+        {
+            "name": "Onkologische Nachsorgeleistungen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die Alterskasse erbringt onkologische Nachsorgeleistungen für Versicherte und bestimmte Angehörige, wenn die persönlichen und versicherungsrechtlichen Voraussetzungen erfüllt sind. Die Leistungen sollen das Rehabilitationsziel unterstützen und können wiederholt gewährt werden.",
+            "pdf_page": 50,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Wochen, verlängerbar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei gesicherter onkologischer Diagnose und erfüllten Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Zuwendungsvergabe zur Forschungsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Alterskasse kann Einrichtungen, die auf dem Gebiet der Rehabilitation forschen oder die Rehabilitation fördern, durch Zuwendungen unterstützen. Ein Anspruch besteht nicht; die Förderung steht unter Haushaltsvorbehalt.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Haushaltslage"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für geeignete Forschungseinrichtungen; kein individueller Leistungsanspruch."
+                }
+            ]
+        },
+        {
+            "name": "Rehabilitationsvorbereitung",
+            "kategorie": "Reha",
+            "beschreibung": "Zur Vorbereitung von Rehabilitationsleistungen können Informations-, Motivations- und Maßnahmen zum Abbau von Risikoverhalten erbracht werden.",
+            "pdf_page": 52,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Rehabilitationsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Zusammenhang mit medizinischer Rehabilitation, Kinderrehabilitation oder sonstigen Leistungen."
+                }
+            ]
+        },
+        {
+            "name": "Rehabilitationsnachsorge",
+            "kategorie": "Reha",
+            "beschreibung": "Nach einer Rehabilitationsleistung können nachgehende Maßnahmen zur Sicherung und Stabilisierung des Erfolges erbracht werden. Art, Ort, Dauer, Umfang und Beginn bestimmt die Alterskasse.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Rehabilitationsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Anschluss an eine medizinische Rehabilitation, Kinderrehabilitation oder sonstige Leistung."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe für Begleitpersonen während einer Kinderrehabilitation",
+            "kategorie": "Familie",
+            "beschreibung": "Die Alterskasse gewährt Betriebs- und Haushaltshilfe für Begleitpersonen im Rahmen einer Kinderrehabilitation, wenn die gesetzlichen Voraussetzungen erfüllt sind.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Kinderrehabilitation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur im Zusammenhang mit einer Kinderrehabilitation."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei medizinischer Rehabilitation oder onkologischen Nachsorgeleistungen",
+            "kategorie": "Reha",
+            "beschreibung": "Dauert eine medizinische Rehabilitation oder onkologische Nachsorge länger als 13 Wochen, kann Betriebs- und Haushaltshilfe für bis zu weitere vier Wochen erbracht werden; Verlängerungen sind nur bei außergewöhnlichen Erschwernissen möglich.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 weitere Wochen je Fall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei medizinischer Rehabilitation oder onkologischer Nachsorge."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Schonungszeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Während einer ärztlich verordneten Schonungszeit, die unmittelbar an eine stationäre Heilbehandlung anschließt, wird Betriebs- und Haushaltshilfe für bis zu drei Tage erbracht.",
+            "pdf_page": 53,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 3 Tage je Schonungszeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztlich verordnete Schonungszeit unmittelbar nach stationärer Heilbehandlung."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Arbeitsunfähigkeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Während einer ärztlich bescheinigten Arbeitsunfähigkeit wird Betriebs- und Haushaltshilfe zunächst bis zu vier Wochen erbracht; bei fortdauernder Arbeitsunfähigkeit kann sie verlängert werden.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen, verlängerbar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Arbeitsunfähigkeit ärztlich bescheinigt und Hilfe zur Aufrechterhaltung des Unternehmens bzw. Haushalts erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Schwangerschaft und nach Entbindung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Während der Schwangerschaft und nach der Entbindung wird Betriebshilfe erbracht, wenn die Unternehmensführung gefährdet ist; bei bestimmten Geburtskonstellationen verlängert sich der Zeitraum bis zu zwölf Wochen nach der Entbindung.",
+            "pdf_page": 54,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Während Schwangerschaft; ab 6 Wochen vor der Entbindung zusätzlich ärztlich bescheinigte Arbeitsunfähigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei medizinischen Vorsorge- und Rehabilitationsleistungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Betriebs- und Haushaltshilfe kann während medizinischer Vorsorgeleistungen und medizinischer Rehabilitationsmaßnahmen erbracht werden; der zeitliche Umfang richtet sich nach den entsprechenden Regelungen.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter den Voraussetzungen des § 36 Absatz 1 ALG."
+                }
+            ]
+        },
+        {
+            "name": "Betriebs- und Haushaltshilfe bei Tod",
+            "kategorie": "Familie",
+            "beschreibung": "Die Leistungen nach den einschlägigen Vorschriften können auch für den Todestag erbracht werden; eine Selbstbeteiligung richtet sich nach dem Einkommen.",
+            "pdf_page": 55,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Todesfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Todesfall nach den gesetzlichen Voraussetzungen."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "LKK-Bonusprogramm",
+        "beschreibung": "Versicherte können für gesundheitsbewusstes Verhalten Bonuspunkte sammeln. Die Punkte werden als Geldbonus ausgezahlt; 1 Bonuspunkt entspricht 1 Euro. Zusätzlich gibt es ein separates Bonusprogramm für bestimmte Einzelmaßnahmen und besondere Versorgungsformen.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonuspunkte verfallen bei zu langen Abständen zwischen anrechenbaren Maßnahmen; Auszahlung jeweils auf Antrag und bei erfüllten Voraussetzungen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Für die Inanspruchnahme qualitätsgesicherter Leistungen der Primärprävention werden Bonuspunkte gutgeschrieben. Die Maßnahmen müssen regelmäßig in Anspruch genommen werden.",
+            "pdf_page": 67,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "Je in Anspruch genommener Leistung zur Primärprävention"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte und ggf. deren mitversicherte Angehörige; regelmäßige Inanspruchnahme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Gesundheitsuntersuchungen nach den gesetzlichen Vorschriften werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "Je in Anspruch genommener Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms und bei gesetzlich zulässiger Durchführung."
+                }
+            ]
+        },
+        {
+            "name": "Untersuchungen zur Früherkennung von Krebserkrankungen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Für Früherkennungsuntersuchungen auf Krebserkrankungen werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "Je in Anspruch genommener Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms und bei gesetzlich zulässiger Durchführung."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Für durchgeführte Schutzimpfungen werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 4,
+                "waehrung": "Punkte",
+                "turnus": "Je durchgeführter Schutzimpfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Im Rahmen des Bonusprogramms und bei gesetzlich zulässiger Durchführung."
+                }
+            ]
+        },
+        {
+            "name": "Kinderuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für die vollständige Durchführung der U3 bis U7 sowie für einzelne weitere Kinder- und Jugenduntersuchungen und zahnärztliche Kinderfrüherkennungsuntersuchungen werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "Je vollständiger bzw. je durchgeführter Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder; Nachweis auch über Vorsorgepass möglich."
+                }
+            ]
+        },
+        {
+            "name": "Kinderuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für einzelne weitere Kinder- und Jugenduntersuchungen werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "Punkte",
+                "turnus": "Je durchgeführter Untersuchung U7a, U8, U9, J1 oder J2"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder und Jugendliche."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Kinderfrüherkennungsuntersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Für zahnärztliche Kinderfrüherkennungsuntersuchungen werden Bonuspunkte gewährt.",
+            "pdf_page": 68,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "Punkte",
+                "turnus": "Je durchgeführter Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kinder."
+                }
+            ]
+        },
+        {
+            "name": "Strukturiertes Behandlungsprogramm",
+            "kategorie": "Prävention",
+            "beschreibung": "Für die Teilnahme an einem strukturierten Behandlungsprogramm wird bei Beginn eine einmalige Prämie gezahlt.",
+            "pdf_page": 69,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Teilnahmebeginn"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an einem strukturierten Behandlungsprogramm mit Vertrag der Krankenkasse."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+# Dev-Setup für Leistungsjungle.
+# Beide Services mit Hot-Reload via Volume-Mounts —
+# Source-Änderungen werden live übernommen, kein Rebuild nötig.
+#
+# Start:   docker compose up
+# Stop:    docker compose down
+# Rebuild: docker compose up --build
+
+services:
+  backend:
+    build: ./backend
+    container_name: leistungsjungle-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Source live mounten — uvicorn --reload picked up changes automatisch
+      - ./backend:/app
+      # Cache-Folder ausblenden damit lokal/container nicht kollidiert
+      - /app/.venv
+      - /app/__pycache__
+    environment:
+      - PYTHONIOENCODING=utf-8
+      - PYTHONUNBUFFERED=1
+    # .env Files (OPENAI_API_KEY, GEMINI_API_KEY, CORS_ORIGINS)
+    env_file:
+      - ./backend/.env
+
+  frontend:
+    build: ./frontend
+    container_name: leistungsjungle-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      # Container-eigene node_modules behalten (Plattform-spezifisch)
+      - /app/node_modules
+    environment:
+      # Browser ruft localhost:8000 auf, nicht den container hostname —
+      # weil die API-Calls vom Browser des Hosts ausgehen
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend

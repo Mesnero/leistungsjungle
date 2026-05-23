@@ -1,0 +1,578 @@
+{
+    "krankenkasse": {
+        "name": "Ernst & Young BKK",
+        "slug": "ernst_young_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1136/ernstyoung_satzung.pdf",
+        "satzung_stand": "01.01.2021"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Häusliche Krankenpflege (zusätzliche Grundpflege und hauswirtschaftliche Versorgung)",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Neben der Behandlungspflege wird im Einzelfall auch Grundpflege und hauswirtschaftliche Versorgung erbracht, wenn keine Pflegebedürftigkeit ab Pflegegrad 2 vorliegt und keine andere im Haushalt lebende Person den Kranken ausreichend versorgen kann. Die Leistung ist auf bis zu 1 Stunde je Einsatz, bis zu 25 Einsätze pro Monat und längstens 6 Monate je Krankheitsfall begrenzt.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 25 Pflegeeinsätze je Kalendermonat, längstens 6 Monate je Krankheitsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur wenn Pflegebedürftigkeit mit mindestens Pflegegrad 2 nicht vorliegt und keine andere im Haushalt lebende Person den Kranken im erforderlichen Umfang pflegen und versorgen kann."
+                }
+            ]
+        },
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Über die gesetzlichen Fälle hinaus wird Haushaltshilfe auch bei Krankenhausbehandlung sowie bei bestimmten Vorsorge-, Reha- und Präventionsleistungen oder bei akuter bzw. schwerer Krankheit gewährt, wenn der Haushalt nicht anders weitergeführt werden kann. Voraussetzung ist zusätzlich, dass im Haushalt ein Kind lebt, das bei Beginn der Hilfe das 12. Lebensjahr noch nicht vollendet hat oder behindert und auf Hilfe angewiesen ist.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Längstens 4 Wochen je Fall; bei schwerer Krankheit/akuter Verschlimmerung zusätzlich weitere 4 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur wenn im Haushalt ein Kind lebt, das bei Beginn der Haushaltshilfe das 12. Lebensjahr noch nicht vollendet hat oder behindert und auf Hilfe angewiesen ist."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in einzelnen Leistungsbereichen. Für ambulante ärztliche Versorgung und veranlasste Leistungen werden 40 % des Rechnungsbetrags erstattet; bei anderen Bereichen gilt höchstens die Vergütung, die die Kasse als Sachleistung tragen müsste. Es gelten Abzüge für Zuzahlungen sowie Verwaltungs- bzw. Bearbeitungskosten.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 40,
+                "waehrung": "Prozent",
+                "turnus": "Nach Wahl der Kostenerstattung; Rechnungen bis 30.06. des Folgejahres einreichbar"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme; Bindung mindestens ein Kalendervierteljahr."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung für Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bei Arzneimitteln kann im Einzelfall Kostenerstattung gewählt werden, wenn ein anderes als das regulär vorgesehene Arzneimittel verwendet wird. Die Erstattung ist auf die Höhe der Sachleistung begrenzt; höhere Kosten trägt der Versicherte selbst. Es gelten pro Verordnung prozentuale Abschläge sowie ein zusätzlicher Verwaltungskostenabzug.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall bei Wahl der Kostenerstattung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der Wahl der Kostenerstattung für Arzneimittel."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse fördert Kurse zur Bewegungsförderung, Ernährung, Stressmanagement und zum Umgang mit Suchtmitteln. Erstattet werden die Kursgebühren bzw. Kosten für qualitätsgesicherte Fremdanbieter bis zur festgelegten Jahresobergrenze.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Maximal 2 Kurse je Versicherten im Kalenderjahr; bis 200 EUR für Erwachsene bzw. 120 EUR für Kinder ab 4 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 4,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Kinder gilt die Obergrenze ab 4 Jahren; Teilnahme an qualitätsgesicherten Präventionskursen nach Leitfaden Prävention."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Über die gesetzlichen Impfleistungen hinaus werden weitere Impfungen gegen Typhus, Gelbfieber, Cholera, Hepatitis A und B, Tollwut, Meningokokken-Meningitis, Pneumokokken, FSME sowie HPV bei Mädchen und Jungen bis zur Vollendung des 23. Lebensjahres übernommen. Der Impfstoff wird vollständig übernommen; für Impfung und Beratung erfolgt eine Erstattung nach GOÄ.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 23,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "HPV-Impfung nur bis zur Vollendung des 23. Lebensjahres; sonst keine besondere Altersgrenze genannt."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung und Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Über die gesetzliche zahnärztliche Behandlung hinaus werden bestimmte zahnärztliche Leistungen und die professionelle Zahnreinigung bezuschusst. Die Erstattung beträgt 70 %; für die professionellen Zahnreinigungskosten gilt ein jährlicher Höchstbetrag.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Jährlich, insgesamt maximal 100 EUR; professionelle Zahnreinigung ab 18 Jahren bis 50 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Professionelle Zahnreinigung nur ab Vollendung des 18. Lebensjahres; zahnärztliche Leistungen nach den genannten Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Ehemänner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die Hebammengebührenordnung hinaus werden die Kosten für den Geburtsvorbereitungskurs für Ehemänner erstattet. Die Erstattung orientiert sich an den Preisen der jeweils gültigen Hebammengebührenverordnung.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Geburtsvorbereitungskurs"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "M",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Ehemänner im Zusammenhang mit Geburtsvorbereitung."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für ausgewählte zusätzliche Vorsorgeleistungen in der Schwangerschaft wird ein Zuschuss zu den Kosten gewährt, etwa für bestimmte Ultraschalluntersuchungen, B-Streptokokken-Test und weitere serologische Tests bei besonderem Risiko. Die Gesamtförderung ist pro Schwangerschaft begrenzt.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 90,
+                "waehrung": "Prozent",
+                "turnus": "Insgesamt maximal 100 EUR pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Schwangerschaft und nur für die in der Satzung genannten Untersuchungen bei medizinischer Indikation bzw. besonderer Infektionsgefahr."
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel der besonderen Therapierichtung",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Apothekenpflichtige Arzneimittel aus Homöopathie, Phytotherapie und Anthroposophie werden bezuschusst, wenn sie ärztlich verordnet sind und zur Behandlung, Linderung oder Verhütung einer Verschlimmerung erforderlich sind. Ausgeschlossene Arzneimittel und bestimmte nicht verschreibungspflichtige homöopathische Mittel sind nicht erstattungsfähig.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 100 EUR pro Versicherten und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ärztlicher Verordnung und für nicht ausgeschlossene Arzneimittel."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen für Frauen",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Zusätzliche, individuell begründete Vorsorgeuntersuchungen für Frauen ab 20 Jahren werden bezuschusst, wenn aufgrund der Gesundheitssituation eine Erkrankung droht. Erfasst sind insbesondere Sonographie der Mamma, Mammographie und Vaginalultraschall.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 50 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 20,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei individueller gesundheitlicher Gefährdung und durch zugelassenen Facharzt für Frauenheilkunde und Geburtshilfe."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorgeuntersuchungen für Männer",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Zusätzliche, individuell begründete Vorsorgeuntersuchungen für Männer ab 20 Jahren werden bezuschusst, wenn aufgrund der Gesundheitssituation eine Erkrankung droht. Genannt ist insbesondere der PSA-Test.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 25,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 25 EUR pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 20,
+                    "alter_max": 150,
+                    "geschlecht": "M",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei individueller gesundheitlicher Gefährdung und durch zugelassenen Arzt."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Osteopathische Behandlungen werden bezuschusst, wenn sie vor Beginn ärztlich verordnet sind und von einem qualifizierten Osteopathen durchgeführt werden. Die Erstattung ist auf vier Behandlungen pro Jahr begrenzt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Behandlungen je Kalenderjahr; maximal 200 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur mit ärztlicher Verordnung und durch qualifizierten Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Künstliche Befruchtung",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Über die gesetzlichen Leistungen hinaus wird pro Maßnahme ein zusätzlicher Zuschuss für künstliche Befruchtung gewährt. Die Förderung ist auf maximal drei Behandlungsversuche begrenzt.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "Pro Maßnahme, maximal 3 Behandlungsversuche"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der gesetzlichen Regelungen zur künstlichen Befruchtung und auf Antrag."
+                }
+            ]
+        },
+        {
+            "name": "Stationäre Behandlung in nicht zugelassenen Krankenhäusern",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Stationäre Behandlungen können auch in nicht zugelassenen Krankenhäusern übernommen werden, wenn die stationäre Behandlungsnotwendigkeit vorliegt und die Maßnahme medizinisch sinnvoll ist. Die Kostenübernahme ist auf die Kosten eines zugelassenen Krankenhauses begrenzt.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei erfüllten Voraussetzungen der stationären Behandlungsnotwendigkeit und medizinischer Sinnhaftigkeit."
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für die Rufbereitschaft einer freiberuflich tätigen Hebamme in den letzten drei Monaten der Schwangerschaft wird ein Zuschuss gewährt, wenn ein entsprechender Vertrag vorliegt und die Kosten vorab beantragt und genehmigt wurden. Erstattet werden die tatsächlich entstandenen Kosten bis zur Höchstgrenze je Schwangerschaft.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in den letzten drei Monaten der Schwangerschaft; Hebamme muss zugelassen sein und ein Vertrag über 24-stündige Erreichbarkeit bestehen."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V wird ein täglicher Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe gezahlt. Für chronisch kranke Kleinkinder ist der Zuschuss höher.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich; für chronisch kranke Kleinkinder 25 EUR"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Versicherte können für definierte Vorsorge-, Impf- und Präventionsmaßnahmen einen Bonus erhalten. Es gibt einen Grund-Bonus je nachgewiesener Maßnahme sowie einen EY BKK-Bonus bei Erfüllung weiterer Aktivitätskriterien; alternativ kann der EY BKK-Bonus als Gesundheitskonto-Zuschuss genutzt werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 1,
+        "hinweis": "Anwartschaftsversicherte und Personen nach § 264 SGB V sind ausgeschlossen; Details und Kataloge ergeben sich aus Anlage 1."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheits-Checkups und Früherkennungsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis von Leistungen zur Erfassung gesundheitlicher Risiken und Früherkennung von Krankheiten.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahmeberechtigt nur, soweit ein Anspruch auf die jeweilige Leistung besteht."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis einer in Anspruch genommenen Schutzimpfung.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahmeberechtigt nur, soweit ein Anspruch auf die jeweilige Leistung besteht."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Vorsorgeuntersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Einmalige zahnärztliche Vorsorge im Kalenderjahr; bei Versicherten unter 18 Jahren halbjährlich.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je Maßnahme im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Unter 18 Jahren halbjährlich nachzuweisen."
+                },
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab 18 Jahren einmal pro Kalenderjahr."
+                }
+            ]
+        },
+        {
+            "name": "Zertifizierte Präventionskurse",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einer zertifizierten Leistung der Krankenkassen zur verhaltensbezogenen Prävention.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "EY BKK-Bonus bei mindestens 2 Maßnahmen im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Eine von mindestens zwei erforderlichen Maßnahmen für den EY BKK-Bonus."
+                }
+            ]
+        },
+        {
+            "name": "Schwimmabzeichen, Sportabzeichen oder Wanderabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis eines Schwimmabzeichens, Sportabzeichens oder Wanderabzeichens.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "EY BKK-Bonus bei mindestens 2 Maßnahmen im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Eine von mindestens zwei erforderlichen Maßnahmen für den EY BKK-Bonus."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiger Sport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis einer aktiven Mitgliedschaft in einem Sportverein oder Fitnessstudio.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "EY BKK-Bonus bei mindestens 2 Maßnahmen im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Eine von mindestens zwei erforderlichen Maßnahmen für den EY BKK-Bonus."
+                }
+            ]
+        },
+        {
+            "name": "Gemeinschaftssportliche Aktivität im Freien",
+            "kategorie": "Bewegung",
+            "beschreibung": "Teilnahme an einer qualifizierten gemeinschaftssportlichen Aktivität im Freien mit regelmäßiger Vorbereitung und Ausdauerleistung im Mittelpunkt.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "EY BKK-Bonus bei mindestens 2 Maßnahmen im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Selbst organisierte sportliche Aktivitäten ohne Qualitätsnachweis werden nicht anerkannt."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitskurs ohne Zuschuss",
+            "kategorie": "Prävention",
+            "beschreibung": "Teilnahme an einem Gesundheitskurs ohne Zuschuss für mindestens 12 Monate.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "EY BKK-Bonus bei mindestens 2 Maßnahmen im Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Eine von mindestens zwei erforderlichen Maßnahmen für den EY BKK-Bonus."
+                }
+            ]
+        }
+    ]
+}

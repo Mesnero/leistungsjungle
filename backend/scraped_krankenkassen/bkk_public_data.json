@@ -1,0 +1,768 @@
+{
+    "krankenkasse": {
+        "name": "BKK Public",
+        "slug": "bkk_public",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/162/Satzung_BKK_Public_idF_63_Nachtrag.pdf",
+        "satzung_stand": "01.01.2023"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die Kasse gewährt Haushaltshilfe, wenn Versicherte häusliche Krankenpflege erhalten und eine im Haushalt lebende Person den Haushalt nicht weiterführen kann oder wenn die Weiterführung des Haushalts wegen Krankheit ärztlich bescheinigt unmöglich ist und keine andere im Haushalt lebende Person den Haushalt weiterführen kann. Als Haushaltshilfe ist grundsätzlich eine Ersatzkraft zu stellen; ersatzweise können angemessene Kosten einer selbstbeschafften Ersatzkraft erstattet werden.",
+            "pdf_page": 12,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Wochen, einmalig verlängerbar um 2 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei häuslicher Krankenpflege oder ärztlich bescheinigter Unfähigkeit zur Haushaltsführung; keine andere im Haushalt lebende Person kann den Haushalt weiterführen."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld bei nicht kontinuierlicher Arbeit",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung wird Krankengeld in Höhe von 70 % des entgangenen Arbeitsentgelts gezahlt, begrenzt auf 90 % des entgangenen Nettoarbeitsentgelts. Es wird für die Tage gezahlt, an denen das Mitglied bei Arbeitsfähigkeit gearbeitet hätte.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 70,
+                "waehrung": "Prozent",
+                "turnus": "Für die Tage der Arbeitsunfähigkeit, an denen gearbeitet worden wäre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Mitglieder mit nicht kontinuierlicher Arbeitsverrichtung und -vergütung."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können statt Sach- oder Dienstleistungen Kostenerstattung wählen, auch in einzelnen Leistungsbereichen. Die Erstattung ist auf die Vergütung begrenzt, die die Kasse bei Sach- oder Dienstleistung zu tragen hätte; gesetzliche Zuzahlungen werden abgezogen. Für Leistungen im EU-/EWR-Ausland und in der Schweiz gelten besondere Erstattungsregeln, bei Krankenhausleistungen ist dort vorherige Zustimmung erforderlich.",
+            "pdf_page": 13,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Nach Inanspruchnahme, mindestens für ein Kalendervierteljahr bindend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung vor Inanspruchnahme; bei nicht im SGB V genannten Leistungserbringern vorherige Zustimmung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung Wahlarzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können im Rahmen der Arzneimittelversorgung im Einzelfall Kostenerstattung wählen und unter den gesetzlichen Voraussetzungen ein anderes Arzneimittel als das regulär abzugebende wählen. Die Erstattung ist auf die Vergütung begrenzt, die die Kasse als Sachleistung zu tragen hätte, und wird um die gesetzlich vorgesehenen Abschläge gekürzt.",
+            "pdf_page": 14,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Im Einzelfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen von § 13 Abs. 2 i. V. m. § 129 SGB V; Vorlage von Rechnungen und Verordnungen erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Behandlung",
+            "kategorie": "Zahn",
+            "beschreibung": "Über die gesetzliche zahnärztliche Behandlung hinaus werden bestimmte zusätzliche zahnärztliche Leistungen erstattet, darunter Fissuren-Versiegelung der kariesfreien Prämolaren im bleibenden Gebiss, eine zweite Zahnsteinentfernung im Kalenderjahr, Bakterientest vor Parodontosebehandlung und Kariesinfiltration.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Bis insgesamt 400,00 Euro je Kalenderjahr für § 11 Abs. 6-Leistungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur im Rahmen der zusätzlichen Leistungen nach § 11 Abs. 6 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Für Versicherte ab Vollendung des 18. Lebensjahres werden zweimal je Kalenderjahr die Kosten für eine professionelle Zahnreinigung übernommen.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 120,
+                "waehrung": "EUR",
+                "turnus": "2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte ab 18 Jahren."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen mit ärztlicher Verordnung in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und der Leistungserbringer die fachlichen Voraussetzungen erfüllt. Erstattet werden die Kosten gegen Vorlage von Originalrechnung und ärztlicher Verordnung.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Im Rahmen des jährlichen Höchstbetrags für § 11 Abs. 6-Leistungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung erforderlich; Leistung darf nicht vom G-BA ausgeschlossen sein."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsvorsorge",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Für Versicherte ab 18 Jahren wird ergänzend zum gesetzlichen Anspruch einmal je Kalenderjahr eine Hautkrebsuntersuchung übernommen, wenn Risikofaktoren auf eine drohende Erkrankung hinweisen und die Untersuchung durch Fachärzte für Haut- und Geschlechtskrankheiten bzw. Dermatologen erbracht wird.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ergänzend zum gesetzlichen Anspruch; Risikofaktoren müssen vorliegen."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige, apothekenpflichtige Arzneimittel",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Erstattet werden nicht verschreibungspflichtige, apothekenpflichtige Arzneimittel aus den Bereichen Homöopathie, Phytotherapie und Anthroposophie, wenn sie ärztlich per Privatrezept verordnet wurden und medizinisch notwendig sind. Die Arzneimittel müssen in der Apotheke oder im zulässigen Versandhandel bezogen worden sein.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Im Rahmen des jährlichen Höchstbetrags für § 11 Abs. 6-Leistungen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung und Originalrechnungen erforderlich; nicht vom G-BA ausgeschlossen."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Versicherte können eine sportmedizinische Vorsorgeuntersuchung und Beratung in Anspruch nehmen, wenn sie medizinisch geeignet und notwendig ist, um kardiale oder orthopädische Erkrankungen zu verhüten. Bei ärztlich bescheinigten Risiken können zusätzliche diagnostische Leistungen mit übernommen werden.",
+            "pdf_page": 16,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Erneut erst nach mindestens 2 Jahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistung durch zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzbezeichnung Sportmedizin; ärztliche Bescheinigung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Hebammenrufpauschale",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für versicherte Frauen wird in der 38. bis 42. Schwangerschaftswoche eine Hebammenrufpauschale übernommen. Die Leistung umfasst die unmittelbare Erreichbarkeit, Bereitschaft zur Geburtshilfe, räumliche Nähe und die Bereitschaft, bei Bedarf sofort zur Schwangeren zu fahren.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur in der 38. bis 42. Schwangerschaftswoche; Leistung durch berechtigte Hebamme."
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Väter",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Je Schwangerschaft werden die Kosten für einen Geburtsvorbereitungskurs für werdende Väter übernommen. Die Erstattung erfolgt nach den vereinbarten Vertragssätzen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "1x pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "M",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je Schwangerschaft; Kurs muss von einer berechtigten Hebamme erbracht werden."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Ergänzend zum gesetzlichen Anspruch wird einmal je Kalenderjahr eine Gesundheitsuntersuchung zur Früherkennung von Krankheiten übernommen, insbesondere zur Früherkennung von Herz-Kreislauf-, Nieren- und Zuckerkrankheiten, wenn Risikofaktoren auf eine drohende Erkrankung hinweisen.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ergänzend zum gesetzlichen Anspruch; Risikofaktoren müssen vorliegen."
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsbezogene medizinisch notwendige Leistungen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Bei individuellem Untersuchungsanlass beteiligt sich die Kasse an medizinisch notwendigen Leistungen in der Schwangerschaft, die dazu dienen, Risiken frühzeitig zu erkennen und Folgekosten zu vermeiden. Dazu zählen unter anderem Toxoplasmose-Test, B-Streptokokken-Test, Antikörperbestimmungen auf Windpocken und Ringelröteln sowie CMV-Test.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei medizinisch notwendigem individuellen Untersuchungsanlass; nicht Leistungen nach Mutterschaftsrichtlinie."
+                }
+            ]
+        },
+        {
+            "name": "Folsäure in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Für schwangere Versicherte werden nicht verschreibungspflichtige apothekenpflichtige Arzneimittel mit dem Wirkstoff Folsäure übernommen, soweit sie für den Zeitraum der Schwangerschaft erforderlich sind und nicht ausgeschlossen sind.",
+            "pdf_page": 18,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für schwangere Versicherte; Bezug über Apotheke oder zulässigen Versandhandel."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse bietet Leistungen zur Förderung der digitalen Gesundheitskompetenz an. Eigene oder im Auftrag erbrachte Leistungen sind kostenfrei; bei Fremdanbietern kann unter bestimmten Qualitäts- und Nachweisanforderungen ein Zuschuss gewährt werden.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1 Kurs pro Versichertem und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei qualitätsgesicherten Fremdanbietern und Vorlage einer Teilnahmebestätigung mit 100 % Teilnahme."
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die Kasse fördert Leistungen der primären Prävention und Gesundheitsförderung im individuellen Ansatz, in Lebenswelten und in Betrieben. Für Fremdanbieter werden bei erfüllten Qualitätskriterien Zuschüsse gewährt; für selbst erbrachte Leistungen fallen keine Kostenbeteiligungen an.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 85,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse pro Versichertem und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei Fremdanbietern mit Teilnahmebestätigung und mindestens 80 % Teilnahme; für Kinder bis 18 Jahre 100 % bis max. 155,00 Euro je Kalenderjahr."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Ergänzend zu den öffentlich durchgeführten Impfungen übernimmt die Kasse Kosten für Schutzimpfungen im Rahmen von Verträgen sowie für ärztlich empfohlene Impfungen bei erhöhtem Gesundheitsrisiko durch nicht beruflich bedingten Auslandsaufenthalt. Grippeschutzimpfungen werden ebenfalls übernommen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Impfleistung; bei selbst bezahlten ärztlich empfohlenen Impfungen 1x je Impfung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei ärztlich empfohlenen Impfungen bzw. Impfungen nach den einschlägigen Verträgen; keine Erstattung, wenn Dritte die Kosten tragen."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen zur Einholung einer unabhängigen ärztlichen Zweitmeinung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können über die gesetzliche Zweitmeinung hinaus eine unabhängige ärztliche Zweitmeinung zur Erforderlichkeit planbarer operativer Eingriffe einholen. Die Kasse organisiert dies über Vertragspartner; bei selbst beschaffter Leistung werden die Kosten bis zu einem Höchstbetrag übernommen.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 350,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x pro Kalenderjahr und Indikation"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei vorliegender Krankenhauseinweisung, Überweisung mit Operationsempfehlung oder ärztlicher Bestätigung eines geplanten operativen Eingriffs."
+                }
+            ]
+        },
+        {
+            "name": "Nicht zugelassene Leistungserbringer",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Kasse übernimmt unter bestimmten Voraussetzungen auch die Kosten für stationäre Behandlungen in nicht zugelassenen Krankenhäusern bis zur Höhe vergleichbarer Vertragssätze. Erforderlich sind unter anderem eine ärztliche Bescheinigung der Krankenhausbehandlungsbedürftigkeit, gleichwertige Versorgung, Zustimmung der Kasse vor Aufnahme und Vorlage eines Behandlungs- oder Aufnahmevertrags.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Für die Dauer der medizinischen Notwendigkeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur stationäre Behandlung; Zustimmung der Kasse vor Krankenhausaufnahme erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistung Brustkrebsuntersuchung discovering hands",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Im Einzelfall werden die Kosten für eine Brustkrebsuntersuchung durch qualifizierte Medizinische Tastuntersucherinnen im Rahmen von discovering hands übernommen. Voraussetzung ist eine familiäre oder medizinische Vorbelastung und die Veranlassung durch einen teilnehmenden oder berechtigten Frauenarzt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 55,
+                "waehrung": "EUR",
+                "turnus": "1x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei nachgewiesener familiärer oder medizinischer Vorbelastung bei Brustkrebs."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V übernimmt die Kasse einen täglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für ambulante Vorsorgeleistungen bei chronisch kranken Kleinkindern ist der Zuschuss höher.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Bei ambulanten Vorsorgeleistungen nach § 23 Abs. 2 SGB V; für chronisch kranke Kleinkinder 25,00 Euro täglich."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "BKK AktivPlus",
+        "beschreibung": "Das Bonusprogramm vergütet gesundheitsbewusstes Verhalten mit Geldbonus. Versicherte sammeln durch nachgewiesene Vorsorge-, Impf- und Präventionsmaßnahmen sowie weitere definierte Aktivitäten Bonusbeträge; die Auszahlung erfolgt nach Nachweis im Folgejahr. Zusätzlich gibt es einen Babybonus und einen Bonus für betriebliche Gesundheitsförderung.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusaktivitäten müssen fristgerecht nachgewiesen werden; Details und Fristen ergeben sich aus den Teilnahmebedingungen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Gesundheitsuntersuchung nach § 25 Abs. 1 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonus für die Teilnahme an der gesetzlichen Gesundheitsuntersuchung zur Früherkennung, einschließlich Check-up und Früherkennung von Bauchaortenaneurysmen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 18,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Krebsfrüherkennungsuntersuchung",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Bonus für die Teilnahme an Krebsfrüherkennungsuntersuchungen nach den gesetzlichen Richtlinien, etwa für Gebärmutterhals, Brust, Prostata, Haut und Darm.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme nach Buchstabe b"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 20,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Je nach Alters- und Geschlechtsvoraussetzungen der jeweiligen Früherkennungsuntersuchung."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsuntersuchung für Kinder und Jugendliche",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bonus für die Teilnahme an Vorsorgeuntersuchungen und speziellen Früherkennungsuntersuchungen bei Kindern und Jugendlichen, einschließlich U1 bis U11 sowie J1 und J2.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme nach Buchstabe c"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Nur für Kinder und Jugendliche; Nachweis der jeweiligen Vorsorgeuntersuchung."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Bonus für nachgewiesene Schutzimpfungen; Mehrfachimpfungen gelten als eine Impfung.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesene Maßnahme nach Buchstabe d"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Zahnärztliche Untersuchung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonus für eine nachgewiesene zahnärztliche Untersuchung.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Bonus für eine nachgewiesene professionelle Zahnreinigung.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Präventionskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Bonus für die regelmäßige Teilnahme an zertifizierten Präventionskursen nach § 20 Abs. 5 SGB V.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Bewegungsangebot im Verein oder qualitätsgesicherten Fitness-Studio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für die regelmäßige Teilnahme an Bewegungsangeboten im Verein oder im qualitätsgesicherten Fitness-Studio.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Regelmäßiger Sport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für regelmäßigen Sport unter qualifizierter Leitung, etwa organisierte Volksläufe, Radtouren, Wanderungen oder qualifizierte Lauftreffs.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Private Sportmaßnahmen ohne Qualitätsnachweis werden nicht anerkannt."
+                }
+            ]
+        },
+        {
+            "name": "DOSB-Sportabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Bonus für die Ablegung eines DOSB-Sportabzeichens.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 5,
+                "waehrung": "EUR",
+                "turnus": "Maximal 1x je Buchstabe"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur nach Maßgabe der Bonus-Teilnahmebedingungen."
+                }
+            ]
+        },
+        {
+            "name": "Babybonus",
+            "kategorie": "Familie",
+            "beschreibung": "Bonus für Schwangere und ihr bei der BKK versichertes Kind, wenn die Schwangerschaftsvorsorge vollständig wahrgenommen wurde und für das Baby die U1 und U2 sowie alle speziellen Früherkennungsuntersuchungen in den ersten 10 Lebenstagen nachgewiesen sind.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Mutter und bei der BKK versichertes Kind müssen die Voraussetzungen erfüllen."
+                }
+            ]
+        },
+        {
+            "name": "Bonus für Maßnahmen der betrieblichen Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Für von der BKK ausgewählte Arbeitgeber und teilnehmende Versicherte gibt es einen Bonus, wenn im Betrieb Maßnahmen der betrieblichen Gesundheitsförderung durchgeführt werden. Die konkrete Höhe und der Nachweis werden im Bonusvertrag geregelt.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach Bonusvertrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei ausgewählten Arbeitgebern und teilnehmenden Versicherten; Höhe im Bonusvertrag geregelt."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,798 @@
+{
+    "krankenkasse": {
+        "name": "AOK Niedersachsen",
+        "slug": "aok_niedersachsen",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/241/aok_niedersachsen_24032022.pdf",
+        "satzung_stand": "24.03.2022"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Bonus für Arbeitgeber bei Maßnahmen betrieblicher Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK fördert Arbeitgeber, die betriebliche Gesundheitsförderung dauerhaft implementieren, mit einem Bonus für Arbeitgeber und teilnehmende Versicherte. Die Vergabe ist an den Nachweis der Umsetzung und eine Qualitätsprüfung gebunden.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Je teilnehmenden Versicherten, maximal 3 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Arbeitgeber mit dauerhaft implementierten Maßnahmen der betrieblichen Gesundheitsförderung; Bonus auch für teilnehmende Versicherte."
+                }
+            ]
+        },
+        {
+            "name": "Primäre Prävention durch Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die AOK übernimmt die Kosten für empfohlene Schutzimpfungen und bestimmte weitere Impfungen, soweit keine andere Kostenträgerschaft besteht. Erstattet werden auch Impfstoffe und ärztliche Leistungen nach den genannten Vorgaben.",
+            "pdf_page": 9,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Impfleistung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für STIKO-empfohlene Impfungen; teils volle Kostenübernahme für bestimmte Impfungen nach Abs. 2 bis 4."
+                }
+            ]
+        },
+        {
+            "name": "Strukturierte Behandlungsprogramme",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können an strukturierten Behandlungsprogrammen für Diabetes mellitus Typ I und II, Brustkrebs, koronare Herzerkrankungen sowie Asthma/COPD teilnehmen. Dies gilt auch für entsprechende Programme anderer AOKs im Rahmen der länderübergreifenden Betreuung.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Programmlaufzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an zugelassenen strukturierten Behandlungsprogrammen nach § 137f SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Förderung der digitalen Gesundheitskompetenz",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK trägt mit Sachleistungen zur Förderung des selbstbestimmten, gesundheitsorientierten Einsatzes digitaler oder telemedizinischer Anwendungen bei. Genannt werden unter anderem der AOK-Gesundheitsnavigator und der AOK-Elternratgeber.",
+            "pdf_page": 10,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Laufend"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Sachleistungen nach § 20k SGB V und den Festlegungen des GKV-Spitzenverbandes."
+                }
+            ]
+        },
+        {
+            "name": "Krankengeld-Wahltarif",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK bietet einen Wahltarif mit Krankengeldanspruch für bestimmte Mitgliedergruppen an. Je nach Tarifausprägung gelten unterschiedliche Leistungszeiträume, Prämien und Bindungsfristen.",
+            "pdf_page": 11,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je nach Tarifausprägung und Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 50,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für hauptberuflich selbständig Erwerbstätige bis 50 Jahre sowie weitere wahlberechtigte Personenkreise nach § 7g."
+                },
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Auch für bestimmte Arbeitnehmer ohne Entgeltfortzahlungsanspruch und für Künstler/Publizisten nach KSVG."
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Bonus",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK bietet einen Wahltarif mit Grundbonus, Gesundheitsbonus und Selbstbehalt an. Die Teilnahme ist an bestimmte Voraussetzungen gebunden und endet nach den tariflichen Regeln.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahmeberechtigte Mitglieder; nicht wählbar bei vollständig von Dritten getragenen Beiträgen."
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Selbstbehalt",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK bietet einen Wahltarif mit Grundbonus und Selbstbehalten in mehreren Tarifklassen an. Die Höhe von Bonus und Selbstbehalt richtet sich nach dem beitragspflichtigen Einkommen und der gewählten Tarifklasse.",
+            "pdf_page": 17,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahmeberechtigte Mitglieder; Tarifklasse abhängig vom beitragspflichtigen Einkommen."
+                }
+            ]
+        },
+        {
+            "name": "Zuschuss bei ambulanten Vorsorgeleistungen in anerkannten Kurorten",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei medizinisch erforderlichen ambulanten Vorsorgeleistungen in anerkannten Kurorten zahlt die AOK einen täglichen Zuschuss zu Unterkunft, Verpflegung, Kurtaxe und Fahrkosten. Für chronisch kranke Kleinkinder gilt ein höherer Zuschuss.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 13,
+                "waehrung": "EUR",
+                "turnus": "Täglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Medizinisch erforderliche ambulante Vorsorgeleistung in einem anerkannten Kurort."
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorge und Rehabilitation für Mütter",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK übernimmt bei medizinisch erforderlichen Vorsorge- oder Rehabilitationsleistungen in Einrichtungen des Müttergenesungswerks oder gleichartigen Einrichtungen die Kosten. Bei Mutter-Kind- oder Vater-Kind-Maßnahmen gilt dies auch für das Kind.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Pro Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mütter bei medizinisch erforderlicher Vorsorge oder Rehabilitation; Kind bei Mutter-Kind- oder Vater-Kind-Maßnahme."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen zur Haushaltshilfe",
+            "kategorie": "Familie",
+            "beschreibung": "Die AOK stellt über die gesetzlichen Fälle hinaus Haushaltshilfe zur Verfügung, wenn die Weiterführung des Haushalts aus den genannten Gründen nicht möglich ist und ein Kind im Haushalt lebt. In begründeten Ausnahmefällen kann ebenfalls Haushaltshilfe gewährt werden.",
+            "pdf_page": 19,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 52 Wochen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Im Haushalt lebt ein Kind unter 14 Jahren oder ein behindertes, auf Hilfe angewiesenes Kind."
+                }
+            ]
+        },
+        {
+            "name": "Mehrleistungen nach § 11 Abs. 6 SGB V",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK stellt zusätzliche Mehrleistungen und Leistungen nach § 20i Abs. 2 SGB V zur Verfügung. Erstattet werden die tatsächlich entstandenen Kosten nach Vorlage personifizierter Originalrechnungen.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Originalrechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Versicherte; für bestimmte Leistungen gilt eine jährliche Gesamtobergrenze."
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Versicherte können osteopathische Leistungen in Anspruch nehmen, wenn die Behandlung medizinisch geeignet ist und qualitätsgesichert durch einen entsprechend qualifizierten Leistungserbringer erfolgt. Die Leistung darf nicht vom Gemeinsamen Bundesausschuss ausgeschlossen sein.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Originalrechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Behandlung durch berechtigten Osteopathen; medizinische Eignung erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Homöopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die AOK erstattet die Kosten für homöopathische Erstanamnese und Folgebehandlung durch Vertragsärzte mit Zusatzqualifikation Homöopathie. Außerdem werden bestimmte nicht verschreibungspflichtige apothekenpflichtige homöopathische Arzneimittel unter den genannten Voraussetzungen erstattet.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Originalrechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Behandlung durch Vertragsarzt mit Zusatzqualifikation Homöopathie; Arzneimittel nur bei entsprechender Verordnung und Zulassung."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheits- und Vorsorgeleistungen bei Schwangerschaft und Geburt",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK übernimmt die Kosten für zusätzliche Vorsorgemaßnahmen rund um Schwangerschaft und Geburt, soweit diese nicht bereits Leistungen der Mutterschaftsrichtlinien sind. Dazu gehören unter anderem bestimmte Tests, Ultraschall, Nackenfaltenmessung, Geburtsvorbereitung für Begleitpersonen und die Unterbringung einer Begleitperson.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Maßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur bei Schwangerschaft; einzelne Leistungen nur bei qualifiziertem Arzt."
+                }
+            ]
+        },
+        {
+            "name": "Kostenübernahme von Früherkennungsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK übernimmt die Kosten für die zusätzlichen Früherkennungsuntersuchungen U10, U11 und J2. Anspruchsberechtigt sind Kinder und Jugendliche innerhalb der jeweils genannten Altersfenster.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Untersuchung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 17,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "U10, U11 und J2 nur innerhalb der jeweils genannten Altersgrenzen."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen der Hebammenhilfe",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Weibliche Versicherte erhalten eine 24-stündige Rufbereitschaft ihrer freiberuflichen Hebamme sowie eine individuelle Beratungsleistung zur Still- und Ernährungsberatung, Rauchentwöhnung und zur Wahl des Geburtsortes und Geburtsmodus. Die Abrechnung erfolgt direkt zwischen AOK und Hebamme.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 250,
+                "waehrung": "EUR",
+                "turnus": "Je Geburt"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Außerklinische Geburt oder Beleggeburt in 1:1-Betreuung durch die Hebamme vereinbart."
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die AOK erstattet die Kosten für professionelle Zahnreinigung durch zugelassene oder berechtigte Leistungserbringer. Die Leistung ist auf zwei Behandlungen pro Kalenderjahr begrenzt.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Bis zu 2x pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene oder nach § 13 Abs. 4 SGB V berechtigte Leistungserbringer."
+                }
+            ]
+        },
+        {
+            "name": "Hautkrebsscreening",
+            "kategorie": "Krebsvorsorge",
+            "beschreibung": "Die AOK erstattet die Kosten für ein Hautkrebsscreening für Versicherte bis zur Vollendung des 35. Lebensjahres, wenn Risikofaktoren vorliegen und die Leistung durch Fachärzte für Haut- und Geschlechtskrankheiten oder Dermatologen erbracht wird. Die Leistung ist alle zwei Jahre möglich.",
+            "pdf_page": 22,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 35,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Risikofaktoren müssen vorliegen; Leistung durch Facharzt für Haut- und Geschlechtskrankheiten oder Dermatologen."
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Kinderorthopädische Leistungen",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die AOK übernimmt die Kosten für bestimmte kinderorthopädische Leistungen, darunter Kopforthesen und propriozeptive Einlagen, wenn die medizinischen Voraussetzungen und Verordnungen vorliegen. Die Leistung ist an Altersgrenzen, Indikationen und Nachweise gebunden.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Für Kopforthesen bis 15 Monate und propriozeptive Einlagen bis 18 Jahre; ärztliche Verordnung und medizinische Indikation erforderlich."
+                }
+            ]
+        },
+        {
+            "name": "Nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der besonderen Therapierichtungen (Phytotherapie und Anthroposophie)",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die AOK erstattet Kosten für bestimmte nicht verschreibungspflichtige apothekenpflichtige Arzneimittel der Phytotherapie und Anthroposophie, wenn sie ärztlich verordnet und medizinisch notwendig sind. Ausgeschlossene Arzneimittel werden nicht erstattet.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Je Originalrechnung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Verordnung durch zugelassenen Vertragsarzt auf Privatrezept; Bezug in Apotheke oder zulässigem Versandhandel."
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittelberatung für Schwangere und Stillende",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die AOK übernimmt die Kosten für eine Arzneimittelberatung in der Schwangerschaft und in der Stillzeit. Die Beratung umfasst Aufklärung zur Einnahme sowie Informationen über Wirkungen, Nebenwirkungen und Gegenanzeigen.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Einmal je Schwangerschaft und einmal je Stillzeit"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Einmal je Schwangerschaft und einmal je Stillzeit; durch teilnehmende Apotheke."
+                }
+            ]
+        },
+        {
+            "name": "Digitale Versorgungsprodukte",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK übernimmt die Kosten für die Nutzung digitaler Versorgungsprodukte, sofern ein Vertrag mit dem jeweiligen Dienstleister besteht und die Qualitätsanforderungen erfüllt sind. Die konkrete finanzielle Beteiligung ergibt sich aus dem jeweiligen Vertrag.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Vertragsabhängig"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für digitale Versorgungsprodukte mit Vertrag zwischen AOK und Dienstleister."
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Vorsorgeuntersuchungen und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Die AOK erstattet sportmedizinische Vorsorgeuntersuchungen und Beratung, wenn sie geeignet und notwendig sind, um kardiale oder orthopädische Erkrankungen zu verhüten oder frühzeitig zu erkennen. Die Leistung ist an die Qualifikation des Arztes gebunden und alle zwei Jahre möglich.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Alle 2 Jahre"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durch zugelassene Vertragsärzte mit Zusatzbezeichnung Sportmedizin."
+                }
+            ]
+        },
+        {
+            "name": "Kostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können anstelle von Sach- oder Dienstleistungen Kostenerstattung wählen, auch beschränkt auf bestimmte Leistungsbereiche. Die Erstattung erfolgt nach den gesetzlichen Vorgaben und unter Abzug der vorgesehenen Verwaltungskosten.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 95,
+                "waehrung": "Prozent",
+                "turnus": "Je Antrag"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Wahl der Kostenerstattung durch schriftliche Erklärung; je nach Leistungsbereich und gesetzlichen Voraussetzungen."
+                }
+            ]
+        },
+        {
+            "name": "Hausarztzentrierte Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die AOK bietet die Teilnahme an der hausarztzentrierten Versorgung auf Grundlage entsprechender Versorgungsverträge an. Versicherte verpflichten sich dabei, fachärztliche Behandlungen grundsätzlich über den gewählten Hausarzt zu koordinieren.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Freiwillige Teilnahme an der hausarztzentrierten Versorgung nach § 73b SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Besondere Versorgung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Versicherte können an Verträgen zur besonderen Versorgung nach § 140a SGB V teilnehmen. Die Teilnahme ist freiwillig und richtet sich nach den jeweiligen Teilnahmebedingungen.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Während der Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme nach Maßgabe der zwischen AOK und Leistungserbringern geschlossenen Verträge."
+                }
+            ]
+        },
+        {
+            "name": "Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Bestimmte freiwillig versicherte Angestellte können Teilkostenerstattung nach den Satzungsregeln wählen. Die Höhe richtet sich nach dem jeweils maßgeblichen Beihilfesatz und den geltenden Beihilfevorschriften.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 50,
+                "waehrung": "Prozent",
+                "turnus": "Laufend während der Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für freiwillig versicherte Angestellte mit Dienstordnung nach § 351 RVO und vergleichbare Personenkreise."
+                }
+            ]
+        },
+        {
+            "name": "Wahltarif Teilkostenerstattung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Die Teilnahme an der Teilkostenerstattung kann als Wahltarif ausgestaltet werden. Für berechtigte Mitglieder wird eine Prämie gezahlt, deren Höhe sich nach dem Beihilfebemessungssatz richtet.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Laufend während der Teilnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mitglieder mit Anspruch auf Teilkostenerstattung nach § 14 der Satzung."
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Bonus für gesundheitsbewusstes Verhalten",
+        "beschreibung": "Die AOK vergibt für nachgewiesene gesundheitsbewusste Maßnahmen Punkte, die in Euro umgerechnet werden. Das Programm umfasst Vorsorge-, Impf- und Präventionsleistungen; die Einzelheiten stehen in den Ausführungsbestimmungen.",
+        "waehrung": "Punkte",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "1 Punkt entspricht 1 Euro. Familienversicherte Kinder können unter den genannten Bedingungen eigenständig teilnehmen."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Früherkennungsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachgewiesene Leistungen zur Früherkennung von Krankheiten nach den genannten Vorsorgeuntersuchungen werden bonifiziert.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach §§ 25, 25a und 26 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachgewiesene Schutzimpfungen werden im Bonusprogramm berücksichtigt.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Leistungen nach § 20i SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Qualitätsgesicherte Präventionsleistungen",
+            "kategorie": "Prävention",
+            "beschreibung": "Qualitätsgesicherte Leistungen der AOK und ihrer Kooperationspartner zur primären Prävention können für das Bonusprogramm angerechnet werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 1,
+                "waehrung": "Punkte",
+                "turnus": "Je nach Nachweis"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätsgesicherte Leistungen nach § 20 Abs. 5 SGB V."
+                }
+            ]
+        },
+        {
+            "name": "Vorsorge- und Früherkennungsuntersuchungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Für den Gesundheitsbonus werden Vorsorge- und Früherkennungsuntersuchungen nach den genannten gesetzlichen Vorschriften berücksichtigt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mitglieder und mitversicherte Ehe- oder Lebenspartner."
+                }
+            ]
+        },
+        {
+            "name": "Zahnvorsorge",
+            "kategorie": "Zahn",
+            "beschreibung": "Für den Gesundheitsbonus werden Zahnvorsorgeleistungen nach den gesetzlichen Vorgaben berücksichtigt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mitglieder und mitversicherte Ehe- oder Lebenspartner."
+                }
+            ]
+        },
+        {
+            "name": "Öffentlich empfohlene Schutzimpfungen",
+            "kategorie": "Impfung",
+            "beschreibung": "Für den Gesundheitsbonus werden öffentlich empfohlene Schutzimpfungen nach der Satzung berücksichtigt.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Für Mitglieder und mitversicherte Ehe- oder Lebenspartner."
+                }
+            ]
+        },
+        {
+            "name": "Gesundheitsbonus",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis der genannten Vorsorge-, Zahnvorsorge- und Impfmaßnahmen führt zu einem Gesundheitsbonus.",
+            "pdf_page": 15,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 80,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nachweis der bonifizierbaren Maßnahmen bis 31.03. des Folgejahres."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "krankenkasse": {
+        "name": "BKK EWE",
+        "slug": "bkk_ewe",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1137/BKK%20EWE%20Satzung%2020.05.2020.pdf",
+        "satzung_stand": "20.05.2020"
+    },
+    "satzungsleistungen": [],
+    "bonus_massnahmen": []
+}

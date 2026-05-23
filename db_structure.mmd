@@ -1,0 +1,65 @@
+erDiagram
+    %% --- BEZIEHUNGEN ---
+    krankenkassen ||--o{ satzungsleistungen : "bietet an"
+    krankenkassen ||--|| bonusprogramme : "definiert"
+    bonusprogramme ||--o{ bonus_massnahmen : "beinhaltet"
+    satzungsleistungen ||--o{ eligibility_rules : "wird gesteuert durch"
+    bonus_massnahmen ||--o{ eligibility_rules : "wird gesteuert durch"
+
+    %% --- ENTITÄTEN ---
+    krankenkassen {
+        int id PK
+        string name
+        string slug UK
+        string website
+    }
+
+    satzungsleistungen {
+        int id PK "fortlaufende Nummer"
+        int krankenkasse_id FK
+        string name
+        string kategorie
+        text beschreibung
+        string link_zur_leistung
+        string erstattungs_typ
+        numeric wert
+        string waehrung
+        string turnus
+    }
+
+    bonusprogramme {
+        int id PK
+        int krankenkasse_id FK
+        string programm_name
+        text beschreibung
+        string waehrung
+        numeric wechselkurs_cash
+        numeric wechselkurs_gesundheitskonto
+        text hinweis
+    }
+
+    bonus_massnahmen {
+        int id PK "fortlaufende Nummer"
+        int bonusprogramm_id FK
+        string name
+        string kategorie
+        text beschreibung
+        string link_zur_leistung
+        string erstattungs_typ
+        int punkte_wert
+        string waehrung
+        string turnus
+    }
+
+    eligibility_rules {
+        int id PK
+        int satzungsleistung_id FK "NULL erlaubt"
+        int bonus_massnahme_id FK "NULL erlaubt"
+        int alter_min
+        int alter_max
+        gender_type geschlecht "Enum: M-W-ALL"
+        boolean requires_pregnancy
+        boolean requires_children
+        string focus_category "Filter: allgemein-schwangerschaft-familie"
+        text zusatz_voraussetzung
+    }

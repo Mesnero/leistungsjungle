@@ -1,0 +1,746 @@
+{
+    "krankenkasse": {
+        "name": "vivida bkk",
+        "slug": "vivida_bkk",
+        "website": "https://www.krankenkassen.de/download/krankenkassen-satzung/1218/vivida%20bkk_Satzung_251208.pdf",
+        "satzung_stand": "08.12.2025"
+    },
+    "satzungsleistungen": [
+        {
+            "name": "Kopforthesen zur Cranio-Therapie",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Für Versicherte im frühen Säuglingsalter übernimmt die vivida bkk die Kosten für Kopforthesen, wenn die Versorgung medizinisch erforderlich ist und die Voraussetzungen durch eine spezialisierte orthopädische Fachklinik oder einen Facharzt festgestellt wurden. Die Leistung ist an strenge medizinische Kriterien und eine vorherige Verordnung gebunden.",
+            "pdf_page": 20,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 1500,
+                "waehrung": "EUR",
+                "turnus": "Einmalig je Behandlungsfall"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 1,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ab dem 4. und bis zum vollendeten 15. Lebensmonat"
+                }
+            ]
+        },
+        {
+            "name": "Messgeräte zur kontinuierlichen Glukosemessung (rtCGM)",
+            "kategorie": "Hilfsmittel",
+            "beschreibung": "Die vivida bkk übernimmt die Versorgung mit einem Real-Time-Messgerät und Sensoren zur kontinuierlichen Glukosemessung für Versicherte mit Diabetes mellitus Typ 2 unter bestimmten Therapie- und Verordnungsvoraussetzungen. Ziel ist die Unterstützung einer nachhaltigen Lebensstilveränderung und die Vermeidung von Über- und Unterzuckerungen.",
+            "pdf_page": 21,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 60,
+                "waehrung": "EUR",
+                "turnus": "Einmalig für das Auslesegerät; bis zu 60 EUR je Sensor bzw. 120 EUR pro Monat; zusätzlich einmalig 55 EUR für die Unterweisung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Diabetes mellitus Typ 2, BOT-Therapie, Therapieziele mit anderen Mitteln nicht erreichbar, ärztliche Verordnung mit geeigneter Qualifikation"
+                }
+            ]
+        },
+        {
+            "name": "Osteopathie",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Die vivida bkk erstattet ärztlich verordnete osteopathische Leistungen, sofern sie medizinisch notwendig sind und von qualifizierten Leistungserbringern durchgeführt werden. Die Behandlung darf nicht vom Gemeinsamen Bundesausschuss ausgeschlossen sein.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 40,
+                "waehrung": "EUR",
+                "turnus": "Bis zu 4 Sitzungen pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung und qualitätsgesicherte Durchführung durch qualifizierten Osteopathen"
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel der besonderen Therapierichtung",
+            "kategorie": "Alternative Medizin",
+            "beschreibung": "Für Versicherte bis zum vollendeten 15. Lebensjahr erstattet die vivida bkk nicht verschreibungspflichtige apothekenpflichtige Arzneimittel aus den besonderen Therapierichtungen Homöopathie, Phytotherapie und Anthroposophie, wenn sie medizinisch notwendig und ärztlich verordnet sind. Die Erstattung ist an den Bezug über Apotheke oder zulässigen Versandhandel gebunden.",
+            "pdf_page": 23,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 200,
+                "waehrung": "EUR",
+                "turnus": "Pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 15,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Versicherte bis zum vollendeten 15. Lebensjahr"
+                }
+            ]
+        },
+        {
+            "name": "Professionelle Zahnreinigung",
+            "kategorie": "Zahn",
+            "beschreibung": "Die vivida bkk beteiligt sich an den Kosten der professionellen Zahnreinigung, wenn sie durch eine zugelassene Zahnarztpraxis oder einen berechtigten Leistungserbringer durchgeführt wird. Die Rechnung muss fristgerecht eingereicht werden.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Kalenderjährlich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Durchführung durch zugelassene Zahnarztpraxis oder berechtigten Leistungserbringer"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen bei Schwangerschaft und Mutterschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vivida bkk beteiligt sich über die gesetzlichen Leistungen hinaus an ausgewählten Leistungen rund um Schwangerschaft und Mutterschaft. Für die gesamte Schwangerschaft bzw. Mutterschaft gilt ein gemeinsamer Höchstbetrag; einzelne Leistungen sind jeweils auf die tatsächlichen Kosten begrenzt.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 500,
+                "waehrung": "EUR",
+                "turnus": "Pro Schwangerschaft / Mutterschaft"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Nur für Schwangere bzw. im Zusammenhang mit Mutterschaft; Rechnung bis 31.03. des Folgejahres"
+                }
+            ]
+        },
+        {
+            "name": "Schwangerschaftsvorsorge",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vivida bkk beteiligt sich an ärztlichen Vorsorgeleistungen mit individuellem Untersuchungsanlass, um Risiken früh zu erkennen und die gesundheitliche Entwicklung des Kindes zu schützen. Dazu zählen unter anderem bestimmte Infektions- und Antikörpertests in der Schwangerschaft.",
+            "pdf_page": 24,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Rahmen des Schwangerschafts-/Mutterschaftsbudgets"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "B-Streptokokken-Test, Ringelröteln-, Windpocken-, Toxoplasmose- und CMV-Test bei entsprechender Indikation"
+                }
+            ]
+        },
+        {
+            "name": "Rufbereitschaft Hebammen",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vivida bkk erstattet Kosten für die Rufbereitschaft einer freiberuflich tätigen Hebamme ab der 38. Schwangerschaftswoche und bis zwei Wochen nach der Entbindung. Voraussetzung ist eine zugelassene oder berechtigte Hebamme mit 24-stündiger Erreichbarkeit und sofortiger Geburtsbereitschaft.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Ab der 38. Schwangerschaftswoche bis 2 Wochen nach Entbindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Hebammenhilfe durch freiberuflich tätige Hebamme"
+                }
+            ]
+        },
+        {
+            "name": "Arzneimittel in der Schwangerschaft",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vivida bkk beteiligt sich an den Kosten bestimmter nicht verschreibungspflichtiger apothekenpflichtiger Arzneimittel in der Schwangerschaft, insbesondere zur Prophylaxe mit Folsäure, Jod, Magnesium und Eisen. Auch bestimmte Arzneimittel der besonderen Therapierichtungen können unter den genannten Voraussetzungen erstattungsfähig sein.",
+            "pdf_page": 25,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Rahmen des Schwangerschafts-/Mutterschaftsbudgets"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "W",
+                    "requires_pregnancy": true,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Verordnung auf Privatrezept und Bezug über Apotheke oder zulässigen Versandhandel"
+                }
+            ]
+        },
+        {
+            "name": "Geburtsvorbereitungskurs für Ehemann oder Partner",
+            "kategorie": "Schwangerschaft",
+            "beschreibung": "Die vivida bkk beteiligt sich an den Kosten eines Geburtsvorbereitungskurses für den Ehemann oder Partner der Schwangeren. Der Kurs muss von einer berechtigten Hebamme erbracht werden.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Im Rahmen des Schwangerschafts-/Mutterschaftsbudgets"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Anspruchsberechtigt ist der Ehemann oder Partner der Schwangeren"
+                }
+            ]
+        },
+        {
+            "name": "Individuelle Beratungsleistungen nach Entbindung",
+            "kategorie": "Familie",
+            "beschreibung": "Bis zu 12 Monate nach der Entbindung beteiligt sich die vivida bkk an individuellen Beratungsleistungen zur Förderung der Entwicklung des Neugeborenen und zur Vermeidung von Risiken. Erstattungsfähig ist insbesondere Still- und Ernährungsberatung unter den genannten Voraussetzungen.",
+            "pdf_page": 26,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Bis 12 Monate nach Entbindung"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Leistung im Zusammenhang mit dem neugeborenen Kind nach Entbindung"
+                }
+            ]
+        },
+        {
+            "name": "Sportmedizinische Untersuchung und Beratung",
+            "kategorie": "Prävention",
+            "beschreibung": "Vor Aufnahme einer sportlichen Betätigung beteiligt sich die vivida bkk an den Kosten einer sportmedizinischen Untersuchung und Beratung, wenn gesundheitliche Risikofaktoren vorliegen. Unter bestimmten Voraussetzungen können zusätzliche diagnostische Leistungen mit einbezogen werden.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 100,
+                "waehrung": "Prozent",
+                "turnus": "Einmal innerhalb von zwei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ärztliche Bescheinigung, zugelassene Vertragsärzte oder berechtigte Leistungserbringer mit Zusatzweiterbildung Sportmedizin"
+                }
+            ]
+        },
+        {
+            "name": "Zusätzliche Leistungen Zähne: Versiegelung der kariesfreien Prämolaren",
+            "kategorie": "Zahn",
+            "beschreibung": "Die vivida bkk erstattet die Versiegelung der kariesfreien Prämolaren 4 und 5 im bleibenden Gebiss bei Kindern und Jugendlichen. Die Leistung ist an eine zahnärztliche bzw. kieferorthopädische Durchführung und die fristgerechte Vorlage der Rechnung gebunden.",
+            "pdf_page": 27,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 15,
+                "waehrung": "EUR",
+                "turnus": "Je Zahn"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 7,
+                    "alter_max": 18,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Vom 7. Lebensjahr bis zum vollendeten 18. Lebensjahr"
+                }
+            ]
+        },
+        {
+            "name": "Primärprävention",
+            "kategorie": "Prävention",
+            "beschreibung": "Die vivida bkk fördert Maßnahmen der primären Prävention und Gesundheitsförderung in den Handlungsfeldern Bewegung, Ernährung, Stressmanagement und Suchtmittelkonsum. Gefördert werden sowohl eigene Angebote als auch qualitätsgesicherte Fremdangebote nach den Vorgaben des Präventionsleitfadens.",
+            "pdf_page": 28,
+            "erstattungs_logik": {
+                "typ": "Anteilig",
+                "wert": 80,
+                "waehrung": "Prozent",
+                "turnus": "Maximal 2 Kurse pro Versichertem und Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Qualitätskriterien des GKV-Leitfadens Prävention; bei Fremdanbietern Teilnahmebestätigung mit mindestens 80% Teilnahme"
+                }
+            ]
+        },
+        {
+            "name": "Schutzimpfungen und andere Maßnahmen der spezifischen Prophylaxe",
+            "kategorie": "Impfung",
+            "beschreibung": "Die vivida bkk übernimmt zusätzlich zu den gesetzlichen Impfleistungen weitere Schutzimpfungen und Maßnahmen der spezifischen Prophylaxe, darunter Influenza-, Meningokokken-B- und Malaria-Prophylaxe. Die Leistungen werden grundsätzlich als Sachleistung erbracht; bei Kostenerstattung gelten die genannten Höchstbeträge.",
+            "pdf_page": 29,
+            "erstattungs_logik": {
+                "typ": "Volle Übernahme",
+                "wert": 0,
+                "waehrung": "EUR",
+                "turnus": "Nach medizinischer Notwendigkeit; Erstattung bei fehlender Sachleistung bis zu den Höchstbeträgen"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "STIKO-Empfehlungen sowie die in der Satzung genannten zusätzlichen Impfungen/Prophylaxen"
+                }
+            ]
+        },
+        {
+            "name": "Medizinische Vorsorgeleistungen",
+            "kategorie": "Vorsorgekur",
+            "beschreibung": "Bei ambulanten Vorsorgeleistungen nach § 23 Absatz 2 SGB V zahlt die vivida bkk einen kalendertäglichen Zuschuss zu Unterkunft, Verpflegung, Fahrkosten und Kurtaxe. Für chronisch kranke Kleinkinder gilt ein erhöhter Zuschuss.",
+            "pdf_page": 31,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 16,
+                "waehrung": "EUR",
+                "turnus": "Kalendertäglich"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Ambulante Vorsorgeleistungen nach § 23 Absatz 2 SGB V"
+                }
+            ]
+        }
+    ],
+    "bonusprogramm_meta": {
+        "programm_name": "Vorsorge-Bonus / Aktiv-Bonus",
+        "beschreibung": "Die vivida bkk bietet zwei Bonusprogramme für gesundheitsbewusstes Verhalten an. Der Vorsorge-Bonus vergütet Vorsorge- und Impfmaßnahmen, der Aktiv-Bonus belohnt die Teilnahme an qualitätsgesicherten Bewegungs- und Präventionsangeboten; alternativ kann ein höherer Bonus oder ein Rechnungszuschuss gewählt werden.",
+        "waehrung": "EUR",
+        "wechselkurs_cash": 1,
+        "wechselkurs_gesundheitskonto": 0,
+        "hinweis": "Bonusmaßnahmen werden als Geldbonus oder Rechnungszuschuss ausgezahlt; Teilnahme- und Einreichungsfristen sind zu beachten."
+    },
+    "bonus_massnahmen": [
+        {
+            "name": "Vorsorge-Bonus: Leistung zur Erfassung und Bewertung von gesundheitlichen Risiken und Belastungen",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis einer Vorsorgeleistung zur Erfassung und Bewertung von gesundheitlichen Risiken und Belastungen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Einzelmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm im jeweiligen Kalenderjahr"
+                }
+            ]
+        },
+        {
+            "name": "Vorsorge-Bonus: Früherkennungsuntersuchung",
+            "kategorie": "Vorsorge",
+            "beschreibung": "Nachweis einer Früherkennungsuntersuchung nach den gesetzlichen Früherkennungsregelungen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Einzelmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm im jeweiligen Kalenderjahr"
+                }
+            ]
+        },
+        {
+            "name": "Vorsorge-Bonus: Schutzimpfung",
+            "kategorie": "Impfung",
+            "beschreibung": "Nachweis einer Schutzimpfung oder einer anderen Maßnahme der spezifischen Prophylaxe.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 10,
+                "waehrung": "EUR",
+                "turnus": "Je nachgewiesener Einzelmaßnahme"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme am Bonusprogramm im jeweiligen Kalenderjahr"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Mitgliedschaft im Sportverein, in der Sportschule oder im qualitätsgesicherten Fitnessstudio",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis einer aktiven Mitgliedschaft in einem Sportverein, einer Sportschule oder einem qualitätsgesicherten Fitnessstudio.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Hochschulsport, Volkshochschulsport oder Betriebssport",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis der Teilnahme an Hochschulsport, Volkshochschulsport oder Betriebssport außerhalb der Arbeitszeit.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: (Baby-)Schwimmkurs",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis der Teilnahme an einem (Baby-)Schwimmkurs.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Kinderturnen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis der Teilnahme an Kinderturnen.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Sport-AG der Schule",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis der Teilnahme an einer freiwilligen Sport-AG der Schule.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": true,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Sportveranstaltung",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis der Teilnahme an einer Sportveranstaltung unter qualifizierter Leitung mit angeleitetem Trainingsvorlauf; bei Volks- und Breitensportveranstaltungen gelten die genannten Nachweise. ",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Sport- oder Schwimmabzeichen",
+            "kategorie": "Bewegung",
+            "beschreibung": "Nachweis des Erwerbs eines anerkannten Sport- oder Schwimmabzeichens einschließlich qualifiziertem Trainingsvorlauf.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: andere qualitätsgesicherte Maßnahme zur Prävention und Gesundheitsförderung",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis einer anderen qualitätsgesicherten Maßnahme zur Prävention und Gesundheitsförderung nach den gesetzlichen Vorgaben.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: zertifizierter Präventionskurs",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis der erfolgreichen Durchführung eines zertifizierten Präventionskurses nach den gesetzlichen Vorgaben.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: zertifiziertes digitales Präventions- und Gesundheitsförderungsangebot",
+            "kategorie": "Prävention",
+            "beschreibung": "Nachweis der erfolgreichen Durchführung eines zertifizierten digitalen Präventions- und Gesundheitsförderungsangebots.",
+            "pdf_page": 33,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an qualitätsgesicherten Angeboten zur Förderung eines gesundheitsbewussten Verhaltens"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Gesundheitswert im Normbereich mit Bonusauszahlung",
+            "kategorie": "Prävention",
+            "beschreibung": "Wenn zusätzlich ein Gesundheitswert im Normbereich nachgewiesen wird, kann der Aktiv-Bonus erhöht oder alternativ als Rechnungszuschuss genutzt werden.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Bonuspunkt (Geldwert)",
+                "wert": 100,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzliche Voraussetzung: Gesundheitswert im Normbereich (BMI, Körperfett oder Blutdruck)"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Rechnungszuschuss für selbstfinanzierte Gesundheitsleistung nach Anlage 1",
+            "kategorie": "Prävention",
+            "beschreibung": "Bei Nachweis einer selbstfinanzierten Gesundheitsleistung nach Anlage 1 kann statt der Barauszahlung ein Rechnungszuschuss gewählt werden.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 150,
+                "waehrung": "EUR",
+                "turnus": "Einmalig pro Teilnahmejahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzliche Voraussetzung: Gesundheitswert im Normbereich (BMI, Körperfett oder Blutdruck)"
+                }
+            ]
+        },
+        {
+            "name": "Aktiv-Bonus: Rechnungszuschuss für selbstfinanzierte Gesundheitsleistung nach Anlage 2",
+            "kategorie": "Prävention",
+            "beschreibung": "Bei Nachweis einer selbstfinanzierten Gesundheitsleistung nach Anlage 2 kann ein höherer Rechnungszuschuss gewählt werden; danach ist die Teilnahme für zwei Folgejahre ausgeschlossen.",
+            "pdf_page": 34,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 300,
+                "waehrung": "EUR",
+                "turnus": "Einmalig innerhalb von drei Kalenderjahren"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Zusätzliche Voraussetzung: Gesundheitswert im Normbereich (BMI, Körperfett oder Blutdruck)"
+                }
+            ]
+        },
+        {
+            "name": "Arbeitnehmerbonus für betriebliche Gesundheitsförderung",
+            "kategorie": "Stressmanagement",
+            "beschreibung": "Versicherte erhalten einen Bonus, wenn sie an einem zertifizierten Angebot der betrieblichen Gesundheitsförderung ihres Arbeitgebers in den genannten Handlungsfeldern mit mindestens 80 % teilnehmen. Der Bonus wird nach Nachweis der Teilnahme ausgezahlt.",
+            "pdf_page": 35,
+            "erstattungs_logik": {
+                "typ": "Zuschuss (Festbetrag)",
+                "wert": 50,
+                "waehrung": "EUR",
+                "turnus": "Einmal pro Kalenderjahr"
+            },
+            "eligibility_rules": [
+                {
+                    "alter_min": 0,
+                    "alter_max": 150,
+                    "geschlecht": "ALL",
+                    "requires_pregnancy": false,
+                    "requires_children": false,
+                    "zusatz_voraussetzung": "Teilnahme an mindestens einem zertifizierten Angebot der betrieblichen Gesundheitsförderung des Arbeitgebers mit mindestens 80% Teilnahme"
+                }
+            ]
+        }
+    ]
+}

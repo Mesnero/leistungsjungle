@@ -1,0 +1,171 @@
+{
+  "$comment": "Gemini-kompatibles Response-Schema fürs Krankenkassen-Scraping. Subset von OpenAPI 3.0 + JSON-Schema $defs/$ref. v0.4: Strukturen via $defs entdoppelt, id-Feld + 'Bonus:'-Präfix entfernt. Beim Gemini-Call: response_mime_type='application/json', response_schema=<dieses Dict>.",
+  "type": "object",
+  "required": ["krankenkasse", "satzungsleistungen"],
+  "propertyOrdering": ["krankenkasse", "satzungsleistungen", "bonusprogramm_meta", "bonus_massnahmen"],
+
+  "$defs": {
+    "erstattungs_logik": {
+      "type": "object",
+      "required": ["typ", "wert", "waehrung", "turnus"],
+      "propertyOrdering": ["typ", "wert", "waehrung", "turnus"],
+      "properties": {
+        "typ": {
+          "type": "string",
+          "description": "Art der Erstattung. Bevorzugte Werte: 'Zuschuss (Festbetrag)', 'Anteilig', 'Volle Übernahme', 'Bonuspunkt (Geldwert)'. Wichtig wenn wert=0 (z.B. Volle Übernahme heißt wert=0 aber semantisch 'alles')."
+        },
+        "wert": {
+          "type": "number",
+          "description": "Numerischer Wert: bei Festbetrag = €-Betrag, bei Anteilig = Prozent (0-100), bei Volle Übernahme = 0, bei Bonuspunkt = Punktezahl."
+        },
+        "waehrung": {
+          "type": "string",
+          "description": "'EUR' für Geldbeträge, 'Prozent' für anteilige Erstattung, 'Punkte' für Bonus."
+        },
+        "turnus": {
+          "type": "string",
+          "description": "Wie oft beanspruchbar, z.B. '1x pro Kalenderjahr', 'Pro Schwangerschaft', 'Maximal 2 Maßnahmen je Kalenderjahr', 'Täglich'."
+        }
+      }
+    },
+
+    "eligibility_rule": {
+      "type": "object",
+      "required": ["alter_min", "alter_max", "geschlecht", "requires_pregnancy", "requires_children"],
+      "propertyOrdering": ["alter_min", "alter_max", "geschlecht", "requires_pregnancy", "requires_children", "zusatz_voraussetzung"],
+      "properties": {
+        "alter_min": {
+          "type": "integer",
+          "description": "Untere Altersgrenze inklusive. 0 wenn keine Untergrenze.",
+          "minimum": 0,
+          "maximum": 150
+        },
+        "alter_max": {
+          "type": "integer",
+          "description": "Obere Altersgrenze inklusive. 150 wenn keine Obergrenze.",
+          "minimum": 0,
+          "maximum": 150
+        },
+        "geschlecht": {
+          "type": "string",
+          "enum": ["ALL", "W", "M", "D"],
+          "description": "ALL=alle, W=weiblich, M=männlich, D=divers."
+        },
+        "requires_pregnancy": {
+          "type": "boolean",
+          "description": "True wenn die Leistung nur bei aktuell schwangeren Versicherten gilt."
+        },
+        "requires_children": {
+          "type": "boolean",
+          "description": "True wenn die Leistung familienversicherte Kinder voraussetzt (z.B. Bonus für Kinder-U-Untersuchungen)."
+        },
+        "zusatz_voraussetzung": {
+          "type": "string",
+          "description": "Freier Text mit zusätzlichen Bedingungen, z.B. 'Nur bei Netzwerk-Zahnärzten', 'Ab der 37. Schwangerschaftswoche'."
+        }
+      }
+    },
+
+    "leistung": {
+      "$comment": "Geteilte Definition für satzungsleistungen UND bonus_massnahmen.",
+      "type": "object",
+      "required": ["name", "kategorie", "beschreibung", "pdf_page", "erstattungs_logik", "eligibility_rules"],
+      "propertyOrdering": ["name", "kategorie", "beschreibung", "pdf_page", "erstattungs_logik", "eligibility_rules"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Prägnanter Titel der Leistung, z.B. 'Professionelle Zahnreinigung', 'Hebammen-Rufbereitschaft', 'Zahnärztliche Vorsorgeuntersuchung'. KEIN 'Bonus:'-Präfix bei Bonus-Maßnahmen — die Zugehörigkeit ergibt sich aus der Section."
+        },
+        "kategorie": {
+          "type": "string",
+          "description": "Hauptkategorie. Bevorzugte Werte: 'Vorsorge', 'Schwangerschaft', 'Zahn', 'Impfung', 'Krebsvorsorge', 'Alternative Medizin', 'Reha', 'Hilfsmittel', 'Sehhilfe', 'Familie', 'Bewegung', 'Ernährung', 'Stressmanagement', 'Vorsorgekur', 'Prävention'."
+        },
+        "beschreibung": {
+          "type": "string",
+          "description": "Klartext-Beschreibung der Leistung in 1-3 Sätzen. KEINE Emoji-Erstattungsangaben — die kommen strukturiert in erstattungs_logik."
+        },
+        "pdf_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Seitenzahl im Satzungs-PDF (krankenkasse.website) wo diese Leistung dokumentiert ist. Aus den '--- Seite N ---'-Markern im Input ableiten. Wenn unklar, die plausibelste Seite (z.B. Kapitel-Start) wählen."
+        },
+        "erstattungs_logik": { "$ref": "#/$defs/erstattungs_logik" },
+        "eligibility_rules": {
+          "type": "array",
+          "description": "Mindestens eine Regel die festlegt für wen die Leistung gilt.",
+          "items": { "$ref": "#/$defs/eligibility_rule" }
+        }
+      }
+    }
+  },
+
+  "properties": {
+    "krankenkasse": {
+      "type": "object",
+      "required": ["name", "slug"],
+      "propertyOrdering": ["name", "slug", "website", "satzung_stand"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Offizieller Name, z.B. 'Techniker Krankenkasse', 'AOK Baden-Württemberg'."
+        },
+        "slug": {
+          "type": "string",
+          "description": "kebab-case ASCII-ID, z.B. 'tk', 'aok_baden_wuerttemberg'. Umlaute transliterieren (ü→ue, ö→oe, ä→ae)."
+        },
+        "website": {
+          "type": "string",
+          "description": "URL zum offiziellen Satzungs-PDF. Browser kann mit #page=N direkt zur Stelle springen."
+        },
+        "satzung_stand": {
+          "type": "string",
+          "description": "Datum der aktuellen Satzung im Format DD.MM.YYYY, z.B. '01.01.2025'."
+        }
+      }
+    },
+
+    "satzungsleistungen": {
+      "type": "array",
+      "description": "Alle pflichtmäßigen + zusätzlichen Satzungsleistungen der Krankenkasse.",
+      "items": { "$ref": "#/$defs/leistung" }
+    },
+
+    "bonusprogramm_meta": {
+      "type": "object",
+      "description": "Top-level Meta-Info zum Bonusprogramm. Weglassen wenn die KK kein Bonusprogramm hat.",
+      "propertyOrdering": ["programm_name", "beschreibung", "waehrung", "wechselkurs_cash", "wechselkurs_gesundheitskonto", "hinweis"],
+      "properties": {
+        "programm_name": {
+          "type": "string",
+          "description": "Offizieller Name des Bonusprogramms, z.B. 'TK-Fit', 'AOK-Bonusprogramm'."
+        },
+        "beschreibung": {
+          "type": "string",
+          "description": "1-3 Sätze: wie funktioniert das Programm, wie wird der Bonus ausgezahlt."
+        },
+        "waehrung": {
+          "type": "string",
+          "description": "'Punkte' wenn Punkte-basiert, 'EUR' wenn direkt Cash."
+        },
+        "wechselkurs_cash": {
+          "type": "number",
+          "description": "Wert von 1 Einheit (waehrung) in € als Cash. Bei waehrung='EUR' immer 1. Bei Punkten typisch 0.01."
+        },
+        "wechselkurs_gesundheitskonto": {
+          "type": "number",
+          "description": "Wert von 1 Einheit in € fürs Gesundheitskonto. 0 wenn nicht angeboten."
+        },
+        "hinweis": {
+          "type": "string",
+          "description": "Klartext-Hinweis für User, z.B. 'Bonuswerte werden in den Ausführungsbestimmungen festgelegt.'"
+        }
+      }
+    },
+
+    "bonus_massnahmen": {
+      "type": "array",
+      "description": "Konkrete Bonus-Maßnahmen für die der Versicherte Punkte/Geld bekommt. Leer wenn die KK kein Bonusprogramm hat.",
+      "items": { "$ref": "#/$defs/leistung" }
+    }
+  }
+}
