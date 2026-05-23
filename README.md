@@ -17,21 +17,38 @@ frontend/          Vite + React + TS, iOS-26-Look (kein Tailwind)
 
 Keine Datenbank, keine Migrations. Der Scraper schreibt JSON-Dateien, das Backend lädt sie beim Start in den RAM. Docker-Compose-Setup für Dev liegt im Repo-Root.
 
-## Deployment (Netlify + Backend separat)
+## Deployment
 
-Das Repo enthält ein `netlify.toml` das nur das **Frontend** als statisches SPA baut.
-Das Backend muss separat gehostet werden — z.B. auf Render/Fly.io/Railway/Hetzner.
+### Option A: Render.com (Backend + Frontend zusammen, gratis) — empfohlen
 
-**Netlify Setup:**
-1. Repo connecten → Netlify erkennt das `netlify.toml` automatisch
-2. In Site Settings → Environment Variables setzen:
-   - `VITE_API_URL` = `https://dein-backend.example.com`
-3. Deploy triggern. Output landet in `frontend/dist/`
+Das `render.yaml` Blueprint deployed beides als zwei verlinkte Services:
+- `leistungsjungle-backend` — FastAPI im Docker-Container
+- `leistungsjungle-frontend` — Vite-Build als Static Site
 
-**Backend separat deployen:**
-- `docker compose up backend` lokal, oder per Dockerfile auf jedem Container-Hoster
-- `OPENAI_API_KEY` + `GEMINI_API_KEY` in den Hoster-Secrets setzen
-- `CORS_ORIGINS` muss die Netlify-URL enthalten (z.B. `https://leistungsjungle.netlify.app`)
+Frontend `VITE_API_URL` und Backend `CORS_ORIGINS` werden automatisch verkabelt.
+
+**Setup:**
+1. https://dashboard.render.com/blueprints → New Blueprint Instance
+2. GitHub-Repo verbinden — Render erkennt `render.yaml` automatisch
+3. Im Backend-Service Secrets nachtragen: `OPENAI_API_KEY`, `GEMINI_API_KEY`
+4. Deploy. Backend bekommt `*.onrender.com`-URL, Frontend ebenfalls
+5. Achtung: Free Tier schläft nach 15min Idle, braucht ~30s zum Aufwachen
+
+### Option B: Netlify Frontend + Backend separat
+
+Falls du das Backend woanders hostest (z.B. Fly.io für no-sleep), liegt im Repo
+auch ein `netlify.toml` das nur das Frontend deployed:
+1. Netlify → New Site from Git → Repo connecten
+2. Env-Var `VITE_API_URL` auf dein Backend-URL setzen
+3. `CORS_ORIGINS` im Backend muss die Netlify-URL enthalten
+
+### Lokal mit Docker
+
+```bash
+docker compose up --build
+# Frontend → http://localhost:5173
+# Backend  → http://localhost:8000
+```
 
 ## Quick Start
 

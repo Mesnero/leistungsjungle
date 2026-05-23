@@ -1,0 +1,61 @@
+# Render.com Blueprint — deployed Backend (Docker) + Frontend (Static) zusammen.
+# Sleep nach 15min Idle aufm Free Tier; ~30s Wake. Reicht für Demos.
+#
+# Setup:
+#   1. https://dashboard.render.com/blueprints → New Blueprint
+#   2. GitHub-Repo verbinden, Render erkennt diese Datei automatisch
+#   3. OPENAI_API_KEY + GEMINI_API_KEY als Env-Vars im Backend-Service nachtragen
+#   4. CORS_ORIGINS auf die Frontend-URL setzen (z.B. https://leistungsjungle-frontend.onrender.com)
+#   5. Deploy
+
+services:
+  # ─── Backend: FastAPI + Scraper im Docker-Container ─────────────────
+  - type: web
+    name: leistungsjungle-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHONIOENCODING
+        value: utf-8
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      # CORS — muss die Frontend-URL enthalten. Render erlaubt
+      # gegenseitige Referenzen zwischen Services:
+      - key: CORS_ORIGINS
+        fromService:
+          type: web
+          name: leistungsjungle-frontend
+          property: host
+      # API-Keys → manuell im Dashboard nachtragen (Render Secret)
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+
+  # ─── Frontend: Vite-Build als Static Site ───────────────────────────
+  - type: web
+    name: leistungsjungle-frontend
+    runtime: static
+    plan: free
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: ./frontend/dist
+    pullRequestPreviewsEnabled: true
+    envVars:
+      # Frontend ruft Backend-URL auf — wird automatisch verlinkt
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: leistungsjungle-backend
+          property: host
+    routes:
+      # SPA — alle Pfade auf index.html
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
