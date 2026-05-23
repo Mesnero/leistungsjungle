@@ -12,6 +12,9 @@ services:
     container_name: leistungsjungle-backend
     ports:
       - "8000:8000"
+    # Dev-Override: --reload mit gemounteter Source.
+    # Production-CMD im Dockerfile bleibt unangetastet (für Render-Deploy).
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       # Source live mounten — uvicorn --reload picked up changes automatisch
       - ./backend:/app
