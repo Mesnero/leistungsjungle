@@ -1,6 +1,6 @@
 // API-Wrapper für /coach/chat.
 
-const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
+import { API_BASE } from './api';
 
 /**
  * @param {object} args
@@ -9,7 +9,7 @@ const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
  * @returns {Promise<{ reply: string, leistungen: object[] }>}
  */
 export async function chatCoach({ messages, context }) {
-  const r = await fetch(`${BASE}/coach/chat`, {
+  const r = await fetch(`${API_BASE}/coach/chat`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ messages, context }),
