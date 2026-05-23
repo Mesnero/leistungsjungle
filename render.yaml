@@ -36,10 +36,10 @@ services:
         sync: false
 
   # ─── Frontend: Vite-Build als Static Site ───────────────────────────
+  # Static Sites haben bei Render kein „plan"-Feld — sind immer free.
   - type: web
     name: leistungsjungle-frontend
     runtime: static
-    plan: free
     buildCommand: cd frontend && npm ci && npm run build
     staticPublishPath: ./frontend/dist
     pullRequestPreviewsEnabled: true
